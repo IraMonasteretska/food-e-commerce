@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="header__searchbox">
+                            <select class="customselect" name="state">
+                                <option value="0">Products</option>
+                                <option value="1">Products And Discussions</option>
+                            </select>
+
+                            <div class="searchinputfield">
+                                <input type="text" placeholder="Search on Food...">
+                                <button>
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3 col-8">
+                    <div class="header__rightsect">
+                        <div class="mobsearchbtn">
+                            <button><img src="img/header/search-icon.svg" alt="search"></button>
+                        </div>
+                        <div class="headeraccwrap">
+                            <div class="header__account">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="ddtext">
+                                    <p class="subtext">Sign In</p>
+                                    <p class="ddtitle">Account</p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <a href="#" class="greenbtn">Login</a>
+                                <p>New customer?</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+                        </div>
+                        <div class="headercartwrap">
+                            <div class="header__cart">
+                                <div class="cartimg">
+                                    <img src="img/header/cart-icon.png" alt="cart">
+                                    <div class="prodcount">0</div>
+                                </div>
+                                <p class="header__cartprice">$ 15.77</p>
+                            </div>
+                            <div class="header__cartdropdown">
+                                <div class="titleblock">
+                                    <p>The product has been added to the cart</p>
+                                    <button class="closecart"><img src="img/header/close.svg" alt="close"></button>
+                                </div>
+                                <div class="header__cartbody">
+                                    <div class="header__cartrow">
+                                        <div class="header__cartimg">
+                                            <img src="img/header/headercartimg.png" alt="product">
+                                        </div>
+                                        <div class="header__cartdescr">
+                                            <p>
+                                                Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                            </p>
+                                            <div class="header__cartcounter">
+                                                <p>
+                                                    Number of pieces:
+                                                </p>
+                                                <div class="number">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cartprice">
+                                            <p class="price">$ 15.77</p>
+                                            <p class="oldprice">$ 25.12</p>
+                                        </div>
+                                        <div class="header__cartdelete">
+                                            <button class="deleterow"><img src="img/header/delete-icon.svg"
+                                                    alt="delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cartfooter">
+                                    <p>everything: <span>$ 15.77</span></p>
+                                    <a href="#">To order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="faq-searchwrapper">
+            <div class="container">
+                <div class="faq-searchsect">
+                    <p class="title">Frequently asked questions.</p>
+                    <p class="descr">
+                        Morbi pulvinar justo quis lorem ultricies, id tincidunt libero consequat. Nam tincidunt interdum
+                        condimentum.
+                    </p>
+                    <div class="searchbox">
+                        <form action="#">
+                            <div class="searchfield">
+                                <input type="text" placeholder="Search...">
+                                <button class="searchbtn">
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="faqnav shadowbox">
+                            <p class="title">Table of Contents:</p>
+                            <ul>
+                                <li><a href="#faq1">Can I cancel my order?</a></li>
+                                <li><a href="#faq2">How do I get free shipping or flat rate shipping?</a></li>
+                                <li><a href="#faq3">Why is the discount not applied to my order?</a></li>
+                                <li><a href="#faq4">How can I place an order?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="faqcontent">
+                            <div class="faqcontent__box" id="faq1">
+                                <p class="title">Can I cancel my order?</p>
+                                <div class="descr">
+                                    <p>
+                                        Nulla leo nibh, malesuada et rutrum in, faucibus non magna. Suspendisse pharetra
+                                        urna felis, a congue nisi placerat ac. Nulla ac aliquam nunc, id posuere felis.
+                                        Nam tortor nunc, volutpat vel diam in, molestie interdum risus. Ut mollis, dolor
+                                        et rutrum ultrices, lorem arcu luctus massa, et varius tellus ligula a massa.
+                                        Fusce aliquam molestie sapien, vitae maximus tellus gravida id. Pellentesque
+                                        lobortis lobortis nunc commodo tincidunt. Maecenas blandit rutrum orci, et
+                                        feugiat nunc dapibus et. Vivamus accumsan neque at ultricies egestas. Duis nec
+                                        eleifend dolor. Maecenas luctus diam nec magna euismod consectetur. Maecenas nec
+                                        sapien sed neque convallis suscipit ac vel neque. Nunc tincidunt augue et
+                                        fermentum congue. Nullam a odio sit amet est accumsan cursus.
+                                    </p>
+                                    <p>
+                                        Nulla ac aliquam nunc, id posuere felis. Nam tortor nunc, volutpat vel diam in,
+                                        molestie interdum risus. Ut mollis, dolor et rutrum ultrices, lorem arcu luctus
+                                        massa, et varius tellus ligula a massa. Fusce aliquam molestie sapien, vitae
+                                        maximus tellus gravida id.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faqcontent__box" id="faq2">
+                                <p class="title">How do I get free shipping or flat rate shipping?</p>
+                                <div class="descr">
+                                    <p>
+                                        Praesent pharetra elementum dui, vehicula fringilla sem semper a. Aliquam congue
+                                        elementum aliquam. Quisque finibus scelerisque leo, et posuere sem porttitor
+                                        sed. Curabitur fermentum dolor ut feugiat tristique. Donec ornare, nibh eu
+                                        pulvinar facilisis, leo mi viverra mauris, sit amet tristique eros lectus nec
+                                        purus. Nulla felis mi, faucibus eget lectus at, feugiat luctus velit. Aliquam
+                                        erat volutpat. Nam pharetra consequat nisl, sed vulputate ipsum sodales in.
+                                        Integer id condimentum mi, eget consectetur elit. Pellentesque habitant morbi
+                                        tristique senectus et netus et malesuada fames ac turpis egestas. Duis sed odio
+                                        mauris. Suspendisse iaculis dui eu enim luctus, quis faucibus neque feugiat.
+                                        Etiam tincidunt leo egestas leo convallis pretium. Integer eget lobortis lacus.
+                                        Nullam ut posuere sem. In imperdiet erat sed vulputate euismod.
+                                    </p>
+                                    <p>
+                                        Suspendisse vehicula odio pellentesque, elementum sapien non, imperdiet felis.
+                                        Nullam ultrices eros ligula, eget porta nisi volutpat et. Nullam a quam at est
+                                        congue imperdiet et vel massa. Quisque dignissim neque finibus faucibus
+                                        sollicitudin. Mauris venenatis aliquam elementum. Duis dictum, libero nec
+                                        dignissim viverra, turpis metus eleifend arcu, a dapibus nisi neque eget nisl.
+                                        Cras tortor ligula, tristique quis maximus a, fringilla sit amet mi. Donec
+                                        maximus varius odio id viverra. Suspendisse arcu ante, consectetur placerat
+                                        porttitor eget, viverra ut urna.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faqcontent__box" id="faq3">
+                                <p class="title">Why is the discount not applied to my order?</p>
+                                <div class="descr">
+                                    <p>
+                                        Integer maximus porttitor quam, eu commodo libero convallis quis. Donec
+                                        vestibulum est sed ante congue, sed placerat velit dignissim. Aliquam elit
+                                        justo, eleifend euismod nisi a, tincidunt aliquet sapien. Donec sodales mollis
+                                        iaculis. Etiam sodales purus et nulla dapibus finibus. Ut volutpat pharetra
+                                        ipsum, ut maximus leo pharetra ac. Maecenas mollis in est cursus fringilla.
+                                        Curabitur quam nisi, mollis ut placerat nec, rhoncus non mi. Integer vitae
+                                        suscipit tortor.
+                                    </p>
+                                    <p>
+                                        Aliquam erat volutpat. Maecenas iaculis ante purus, ut varius felis dignissim
+                                        ultrices. In vitae turpis ac lacus imperdiet finibus. Nulla gravida pretium
+                                        felis, nec consectetur turpis mollis eu. Nunc dapibus velit eros, vitae pharetra
+                                        arcu eleifend et. Praesent blandit ultrices accumsan. Morbi vel aliquet sem.
+                                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                                        ridiculus mus. Sed purus justo, venenatis sit amet lacus ut, euismod eleifend
+                                        ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                        tincidunt mollis ligula eu auctor. Aenean malesuada urna eget turpis lacinia, et
+                                        porta tortor pretium. Curabitur orci ligula, bibendum a orci imperdiet, faucibus
+                                        tristique tortor. Cras mollis tortor ac massa malesuada, sed aliquet diam
+                                        ultrices. Mauris tempor hendrerit lectus vitae maximus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faqcontent__box" id="faq4">
+                                <p class="title">How can I place an order?</p>
+                                <div class="descr">
+                                    <p>
+                                        Integer maximus porttitor quam, eu commodo libero convallis quis. Donec
+                                        vestibulum est sed ante congue, sed placerat velit dignissim. Aliquam elit
+                                        justo, eleifend euismod nisi a, tincidunt aliquet sapien. Donec sodales mollis
+                                        iaculis. Etiam sodales purus et nulla dapibus finibus. Ut volutpat pharetra
+                                        ipsum, ut maximus leo pharetra ac. Maecenas mollis in est cursus fringilla.
+                                        Curabitur quam nisi, mollis ut placerat nec, rhoncus non mi. Integer vitae
+                                        suscipit tortor.
+                                    </p>
+                                    <p>
+                                        Aliquam erat volutpat. Maecenas iaculis ante purus, ut varius felis dignissim
+                                        ultrices. In vitae turpis ac lacus imperdiet finibus. Nulla gravida pretium
+                                        felis, nec consectetur turpis mollis eu. Nunc dapibus velit eros, vitae pharetra
+                                        arcu eleifend et. Praesent blandit ultrices accumsan. Morbi vel aliquet sem.
+                                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                                        ridiculus mus. Sed purus justo, venenatis sit amet lacus ut, euismod eleifend
+                                        ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                        tincidunt mollis ligula eu auctor. Aenean malesuada urna eget turpis lacinia, et
+                                        porta tortor pretium. Curabitur orci ligula, bibendum a orci imperdiet, faucibus
+                                        tristique tortor. Cras mollis tortor ac massa malesuada, sed aliquet diam
+                                        ultrices. Mauris tempor hendrerit lectus vitae maximus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="bgelem1" src="img/background-elements/bgelem4.png" alt="img">
+            <img class="bgelem2" src="img/background-elements/bgelem5.png" alt="img">
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

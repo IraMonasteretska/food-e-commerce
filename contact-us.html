@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="header__searchbox">
+                            <select class="customselect" name="state">
+                                <option value="0">Products</option>
+                                <option value="1">Products And Discussions</option>
+                            </select>
+
+                            <div class="searchinputfield">
+                                <input type="text" placeholder="Search on Food...">
+                                <button>
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3 col-8">
+                    <div class="header__rightsect">
+                        <div class="mobsearchbtn">
+                            <button><img src="img/header/search-icon.svg" alt="search"></button>
+                        </div>
+                        <div class="headeraccwrap">
+                            <div class="header__account">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="ddtext">
+                                    <p class="subtext">Sign In</p>
+                                    <p class="ddtitle">Account</p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <a href="#" class="greenbtn">Login</a>
+                                <p>New customer?</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+                        </div>
+                        <div class="headercartwrap">
+                            <div class="header__cart">
+                                <div class="cartimg">
+                                    <img src="img/header/cart-icon.png" alt="cart">
+                                    <div class="prodcount">0</div>
+                                </div>
+                                <p class="header__cartprice">$ 15.77</p>
+                            </div>
+                            <div class="header__cartdropdown">
+                                <div class="titleblock">
+                                    <p>The product has been added to the cart</p>
+                                    <button class="closecart"><img src="img/header/close.svg" alt="close"></button>
+                                </div>
+                                <div class="header__cartbody">
+                                    <div class="header__cartrow">
+                                        <div class="header__cartimg">
+                                            <img src="img/header/headercartimg.png" alt="product">
+                                        </div>
+                                        <div class="header__cartdescr">
+                                            <p>
+                                                Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                            </p>
+                                            <div class="header__cartcounter">
+                                                <p>
+                                                    Number of pieces:
+                                                </p>
+                                                <div class="number">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cartprice">
+                                            <p class="price">$ 15.77</p>
+                                            <p class="oldprice">$ 25.12</p>
+                                        </div>
+                                        <div class="header__cartdelete">
+                                            <button class="deleterow"><img src="img/header/delete-icon.svg"
+                                                    alt="delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cartfooter">
+                                    <p>everything: <span>$ 15.77</span></p>
+                                    <a href="#">To order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <img src="img/background-elements/bgelem1.png" alt="img" class="mainbgelem">
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contactussect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="contactussect__descr">
+                            <h1>Contact.<br> Get in touch</h1>
+                            <p class="descr">
+                                If you have any questions for us, you can write to us and our manager will contact you.
+                            </p>
+                            <a href="#" class="iconbtn">
+                                <img src="img/contactus/chat-icon.svg" alt="icon">
+                                <span>Chat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 contactussect__formcol">
+                        <div class="formwrapper">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="inputfield">
+                                            <input type="text" id="fullname" placeholder="Full Name*">
+                                            <label for="fullname">Full Name*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputfield">
+                                            <input type="number" id="phonenum" placeholder="Phone Number*">
+                                            <label for="phonenum">Phone Number*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputfield">
+                                            <input type="email" id="email" placeholder="Email*">
+                                            <label for="email">Email*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="inputfield">
+                                            <textarea id="message" placeholder="Message"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="submit" class="greenbtn submitbtn" value="submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contactsinformation">
+            <div class="container">
+                <img src="img/background-elements/bgelem3.png" alt="img" class="bgelem">
+                <div class="contactsinformation__wrap">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contactsinformation__box">
+                                <div class="icon">
+                                    <img src="img/contactus/phone-ic.svg" alt="icon">
+                                </div>
+                                <p class="title">Phone</p>
+                                <a class="descr" href="tel:4315118899">(431) 511 - 8899</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contactsinformation__box">
+                                <div class="icon">
+                                    <img src="img/contactus/email-ic.svg" alt="icon">
+                                </div>
+                                <p class="title">Email</p>
+                                <a class="descr" href="mailto:contact@info.com">contact@info.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contactsinformation__box">
+                                <div class="icon">
+                                    <img src="img/contactus/local-ic.svg" alt="icon">
+                                </div>
+                                <p class="title">Location</p>
+                                <p class="descr">Taun sloud, AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="askedquestions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="askedquestions__left">
+                            <h2>
+                                Frequently<br>
+                                asked<br>
+                                questions.
+                            </h2>
+                            <a href="#" class="iconbtn">
+                                <img src="img/contactus/info-ic.svg" alt="icon">
+                                <span>Reference center</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="askedquestions__right">
+                            <img class="bgelem" src="img/background-elements/bgelem2.png" alt="img">
+                            <div class="faqsect shadowbox">
+                                <div class="faqsect__row">
+                                    <div class="faqsect__rowheader open">
+                                        <p>Can I cancel my order?</p>
+                                        <div class="faqsect__status">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="faqsect__rowbody" style="display: block;">
+                                        <p>
+                                            Most orders are shipped within 1 hour of being placed. Food will not be able
+                                            to cancel an order once it has been shipped. You will be able to start the
+                                            return process after receiving your order. For this you need to contact one
+                                            of our managers. Refunds will be made after the goods are returned in their
+                                            original condition.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqsect__row">
+                                    <div class="faqsect__rowheader">
+                                        <p>How do I get free shipping or flat rate shipping?</p>
+                                        <div class="faqsect__status">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="faqsect__rowbody">
+                                        <p>
+                                            Most orders are shipped within 1 hour of being placed. Food will not be able
+                                            to cancel an order once it has been shipped. You will be able to start the
+                                            return process after receiving your order. For this you need to contact one
+                                            of our managers. Refunds will be made after the goods are returned in their
+                                            original condition.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqsect__row">
+                                    <div class="faqsect__rowheader">
+                                        <p>Why is the discount not applied to my order?</p>
+                                        <div class="faqsect__status">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="faqsect__rowbody">
+                                        <p>
+                                            Most orders are shipped within 1 hour of being placed. Food will not be able
+                                            to cancel an order once it has been shipped. You will be able to start the
+                                            return process after receiving your order. For this you need to contact one
+                                            of our managers. Refunds will be made after the goods are returned in their
+                                            original condition.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqsect__row">
+                                    <div class="faqsect__rowheader">
+                                        <p>How can I place an order?</p>
+                                        <div class="faqsect__status">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="faqsect__rowbody">
+                                        <p>
+                                            Most orders are shipped within 1 hour of being placed. Food will not be able
+                                            to cancel an order once it has been shipped. You will be able to start the
+                                            return process after receiving your order. For this you need to contact one
+                                            of our managers. Refunds will be made after the goods are returned in their
+                                            original condition.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

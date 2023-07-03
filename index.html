@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="header__searchbox">
+                            <select class="customselect" name="state">
+                                <option value="0">Products</option>
+                                <option value="1">Products And Discussions</option>
+                            </select>
+
+                            <div class="searchinputfield">
+                                <input type="text" placeholder="Search on Food...">
+                                <button>
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3 col-8">
+                    <div class="header__rightsect">
+                        <div class="mobsearchbtn">
+                            <button><img src="img/header/search-icon.svg" alt="search"></button>
+                        </div>
+                        <div class="headeraccwrap">
+                            <div class="header__account">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="ddtext">
+                                    <p class="subtext">Sign In</p>
+                                    <p class="ddtitle">Account</p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <a href="#" class="greenbtn">Login</a>
+                                <p>New customer?</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+                        </div>
+                        <div class="headercartwrap">
+                            <div class="header__cart">
+                                <div class="cartimg">
+                                    <img src="img/header/cart-icon.png" alt="cart">
+                                    <div class="prodcount">0</div>
+                                </div>
+                                <p class="header__cartprice">$ 15.77</p>
+                            </div>
+                            <div class="header__cartdropdown">
+                                <div class="titleblock">
+                                    <p>The product has been added to the cart</p>
+                                    <button class="closecart"><img src="img/header/close.svg" alt="close"></button>
+                                </div>
+                                <div class="header__cartbody">
+                                    <div class="header__cartrow">
+                                        <div class="header__cartimg">
+                                            <img src="img/header/headercartimg.png" alt="product">
+                                        </div>
+                                        <div class="header__cartdescr">
+                                            <p>
+                                                Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                            </p>
+                                            <div class="header__cartcounter">
+                                                <p>
+                                                    Number of pieces:
+                                                </p>
+                                                <div class="number">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cartprice">
+                                            <p class="price">$ 15.77</p>
+                                            <p class="oldprice">$ 25.12</p>
+                                        </div>
+                                        <div class="header__cartdelete">
+                                            <button class="deleterow"><img src="img/header/delete-icon.svg"
+                                                    alt="delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cartfooter">
+                                    <p>everything: <span>$ 15.77</span></p>
+                                    <a href="#">To order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="mainslidersect">
+            <div class="container">
+                <div class="swiper mainslider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mainslider__slide">
+                                <img src="img/main/main-slide1.png" alt="slide img">
+                                <div class="row">
+                                    <div class="col-xl-5 offset-xl-1 col-md-6 col-sm-8">
+                                        <div class="slideinfo">
+                                            <p class="mainslider__slidetitle">
+                                                Gluten-free croissants
+                                            </p>
+                                            <p class="descr">
+                                                Freshly baked gluten-free croissants for you!
+                                            </p>
+                                            <a href="#">
+                                                <span>
+                                                    Shop now
+                                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mainslider__slide">
+                                <img src="img/main/main-slide2.png" alt="slide img">
+                                <div class="row">
+                                    <div class="col-xl-5 offset-xl-1 col-md-6 col-sm-8">
+                                        <div class="slideinfo">
+                                            <p class="mainslider__slidetitle">
+                                                Refer a friend
+                                            </p>
+                                            <p class="descr">
+                                                Recommend our service to a friend and get a guaranteed discount for you
+                                                and your friend
+                                            </p>
+                                            <a href="#">
+                                                <span>
+                                                    Shop now
+                                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next custom sl1"></div>
+                <div class="swiper-button-prev custom sl1"></div>
+            </div>
+        </section>
+
+        <section class="productsection">
+            <div class="container">
+                <div class="productsection__header">
+                    <p>Product for special </p>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="productsection-sliderwrapper">
+                    <div class="swiper productsection-slider ps1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product1.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 23.45</p>
+                                        <p class="aboutproduct">
+                                            BJORG Organic Coconut Nectar Drink, Coconut Water and Milk
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel orange">
+                                                New
+                                            </div>
+                                            <img src="img/main/product2.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price discont">Now $ 19.99 <span>$ 25.12</span></p>
+                                        <p class="aboutproduct">
+                                            Go Free Corn Flakes Gluten Free Cereal Bar, 12 Pieces
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/main/product3.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price discont">Now $ 12.99<span>$ 19.11</span></p>
+                                        <p class="aboutproduct">
+                                            Tinsel Cereals Tsolation Natura Rizza from 350 grams
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="productbox">
+                                        <a href="#">
+                                            <div class="productbox__img">
+                                                <img src="img/main/product4.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="productbox__descr">
+                                            <p class="price">$ 26.55</p>
+                                            <p class="aboutproduct">
+                                                Yes with Rice - Shortbread Filled with Hazelnut Cream - 200 g
+                                            </p>
+                                            <div class="prodcount">
+                                                <p class="addtocart">Add to cart</p>
+                                                <div class="number productadd">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="productbox">
+                                        <a href="#">
+                                            <div class="productbox__img">
+                                                <img src="img/main/product3.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="productbox__descr">
+                                            <p class="price discont">Now $ 12.99<span>$ 19.11</span></p>
+                                            <p class="aboutproduct">
+                                                Tinsel Cereals Tsolation Natura Rizza from 350 grams
+                                            </p>
+                                            <div class="prodcount">
+                                                <p class="addtocart">Add to cart</p>
+                                                <div class="number productadd">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next custom sl2"></div>
+                    <div class="swiper-button-prev custom sl2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productsection">
+            <div class="container">
+                <div class="productsection__header">
+                    <p>New items</p>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="productsection-sliderwrapper">
+                    <div class="swiper productsection-slider ps2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product5.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 44.76</p>
+                                        <p class="aboutproduct">
+                                            Riso Scotti Snack - Peanut Crunchy with Sesame - 24 Pieces
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product6.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 76.34</p>
+                                        <p class="aboutproduct">
+                                            ALPRO SUGAR FREE, OAT drink, 100% vegetable with vitamins...
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product7.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 15.77</p>
+                                        <p class="aboutproduct">
+                                            Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product8.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$8.00</p>
+                                        <p class="aboutproduct">
+                                            Riso Scotti Snack - Peanut Crunchy with Sesame - 24 Pieces
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product8.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$8.00</p>
+                                        <p class="aboutproduct">
+                                            Riso Scotti Snack - Peanut Crunchy with Sesame - 24 Pieces
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-next custom sl3"></div>
+                    <div class="swiper-button-prev custom sl3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipesslider">
+            <div class="container">
+                <div class="productsection__header">
+                    <p>Recipes center</p>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="productsection-sliderwrapper">
+                    <div class="swiper recipes-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/rec1.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic1.svg" alt="icon">
+                                                    Dairy
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    11 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    10 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Chocolate Cheese Muffins
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/rec2.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic4.svg" alt="icon">
+                                                    Parve
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    3-5 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    8 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Cinnamon Apple Bake Cheese Muffins
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/rec3.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic1.svg" alt="icon">
+                                                    Dairy
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    11 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    10 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Cherry Cheesecake Blintzes
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/rec2.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic4.svg" alt="icon">
+                                                    Parve
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    3-5 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    8 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Cinnamon Apple Bake Cheese Muffins
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next custom sl4"></div>
+                    <div class="swiper-button-prev custom sl4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latestfooddiscuss">
+            <div class="container">
+                <div class="productsection__header">
+                    <p>Latest food discussions</p>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="productsection-sliderwrapper">
+                    <div class="swiper discuss-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/discuss1.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic1.svg" alt="icon">
+                                                    Dairy
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    11 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    10 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Chocolate Cheese Muffins
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/discuss2.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic4.svg" alt="icon">
+                                                    Parve
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    3-5 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    8 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Cinnamon Apple Bake Cheese Muffins
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/discuss3.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic1.svg" alt="icon">
+                                                    Dairy
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    11 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    10 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Cherry Cheesecake Blintzes
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recipesslide">
+                                    <div class="recipesslide__imgwrap">
+                                        <img src="img/main/rec2.png" alt="img">
+                                    </div>
+                                    <div class="recipesslide__descr">
+                                        <div class="recipesslide__info">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/main/recipes-ic4.svg" alt="icon">
+                                                    Parve
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic2.svg" alt="icon">
+                                                    3-5 Servings
+                                                </li>
+                                                <li>
+                                                    <img src="img/main/recipes-ic3.svg" alt="icon">
+                                                    8 min
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="recipesslide__title">
+                                            Cinnamon Apple Bake Cheese Muffins
+                                        </p>
+                                        <div class="recipesslide__readmore">
+                                            <a href="#" class="greenarrlink">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next custom sl5"></div>
+                    <div class="swiper-button-prev custom sl5"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+.signsection {
+    min-height: 100vh;
+    padding: 70px 0;
+    position: relative;
+
+
+    .bgelem1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bgelem2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.signcontent {
+    max-width: 460px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    .title {
+        text-align: center;
+        margin-bottom: 15px;
+        color: $base-green;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-bottom: 30px;
+        color: $bace-color;
+        line-height: 160%;
+    }
+
+    .logbtngroup {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        a {
+            width: 100%;
+            max-width: calc(50% - 10px);
+            flex: 0 0 calc(50% - 10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            background: #ECEDEF;
+            border: 1px solid #ECEDEF;
+            height: 55px;
+            color: #626D76;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.3s;
+
+            i {
+                margin-right: 15px;
+                font-size: 20px;
+            }
+
+            &:hover {
+                color: $base-green;
+                border-color: $base-green;
+                background: $base-green;
+                color: $white;
+            }
+        }
+    }
+
+    .or-line {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        color: $bace-color;
+        font-size: 14px;
+        text-decoration: line-through;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #DBDCE2;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        span {
+            display: inline-block;
+            background: $white;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+.signsection {
+    .inputfield {
+        input {
+            font-size: 18px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+    }
+}
+
+.inputfield {
+    position: relative;
+
+    .passeye {
+        position: absolute;
+        right: 30px;
+        top: 56px;
+        cursor: pointer;
+
+        svg {
+            vertical-align: top;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: $base-green;
+
+                    &.line {
+                        stroke: $base-green;
+                    }
+                }
+            }
+        }
+
+        &.showpass {
+            .line {
+                display: none;
+            }
+        }
+    }
+}
+
+.forgotpasslink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0 0;
+
+    .rememberme {
+        label {
+            color: #8C8D93;
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 160%;
+            cursor: pointer;
+            padding-left: 30px;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 17px;
+                height: 17px;
+                border-radius: 3px;
+                border: 1.5px solid #93949A;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        input {
+            display: none;
+
+            &:checked {
+                &+label {
+                    &::after {
+                        background: url('../img/login/check.svg') no-repeat center / 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        color: $base-green;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 160%;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    }
+}
+
+.signsection {
+    .formbtn {
+        min-height: 60px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        margin-top: 35px;
+    }
+}
+
+.signuptext {
+    margin-top: 20px;
+
+    p {
+        margin: 0;
+        color: $bace-color;
+        line-height: 160%;
+        text-align: center;
+
+        a {
+            color: $base-green;
+
+            &:hover {
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
+        }
+    }
+}
+
+.signsection_forgotpass {
+    padding-top: 220px;
+
+    .signcontent {
+        .title {
+            font-size: 38px;
+
+            span {
+                color: #13B086;
+            }
+        }
+
+        .subtitle {
+            margin-bottom: 40px;
+            color: #10284D;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1199.8px) {
+
+    .inputfield .passeye {
+        top: 53px;
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .signsection .bgelem2 {
+        width: 150px;
+    }
+
+    .signsection .bgelem1 {
+        width: 200px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .signcontent .title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .signcontent .subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .signcontent .logbtngroup a {
+        padding: 5px 10px;
+        max-width: calc(50% - 5px);
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .signcontent .logbtngroup,
+    .signcontent .or-line {
+        margin-bottom: 20px;
+    }
+
+    .signsection .bgelem2 {
+        width: 110px;
+    }
+
+    .signsection .bgelem1 {
+        width: 110px;
+    }
+
+    .forgotpasslink .rememberme label {
+        padding-left: 25px;
+    }
+
+    .inputfield .passeye {
+        top: 48px;
+        right: 15px;
+    }
+
+    .forgotpasslink {
+        margin: 20px 0 0 0;
+    }
+
+    .signsection .formbtn {
+        min-height: 50px;
+        font-size: 16px;
+    }
+
+    .signsection .formbtn {
+        margin-top: 30px;
+    }
+
+    .signsection_forgotpass .signcontent .title {
+        font-size: 32px;
+    }
+
+    .signsection_forgotpass .signcontent .subtitle {
+        margin-bottom: 30px;
+    }
+
+    .signsection_forgotpass {
+        padding-top: 160px;
+    }
+
+
+
+    .forgotpasslink a,
+    .forgotpasslink .rememberme label,
+    .signuptext p {
+        font-size: 14px;
+    }
+
+    .signsection .inputfield label,
+    .signsection .inputfield input {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:360.8px) {
+    .forgotpasslink {
+
+        .rememberme,
+        a {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .rememberme {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media(max-height:500px) {
+    .signsection_forgotpass {
+        padding-top: 60px;
+    }
+}

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Poetsenone';
+    src: url('../fonts/PoetsenOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bace-color: #21292F;
+$base-green: #158466;
+$green:#097659;
+$white: #fff;
+$orange: #FF810D;
+$base-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+
+@media(min-width:1551px) {
+    .container {
+        max-width: 1450px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3B454D;
+    font-size: 16px;
+
+    * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+p {
+    margin-top: 0;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+.greenbtn {
+    width: 100%;
+    border-radius: 30px;
+    background: $base-green;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 13px;
+    transition: 0.3s;
+    border: none;
+
+    &:hover {
+        background: #13b086;
+    }
+}
+
+.bordergreenbtn {
+    width: 100%;
+    border-radius: 30px;
+    background: $white;
+    border: 1px solid $base-green;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $base-green;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 13px;
+    transition: 0.3s;
+
+    &:hover {
+        background: $base-green;
+        color: #fff;
+    }
+
+}
+
+// slider arrows
+.swiper-button-next.custom,
+.swiper-button-prev.custom {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #D9DBDF;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &::after {
+        font-size: 14px;
+        font-weight: 500;
+        color: #D9DBDF;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        border: 1px solid $base-green;
+
+        &::after {
+            color: $base-green;
+        }
+    }
+}
+
+.swiper-button-next.custom {
+    right: -45px;
+}
+
+.swiper-button-prev.custom {
+    left: -45px;
+}
+
+// ---
+.greenarrlink {
+    flex: 0 0 auto;
+    width: 110px;
+    color: $base-green;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-right: 32px;
+    text-align: right;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../img/main/greenarrow.svg) no-repeat center/100%;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &::after {
+            transform: translate(5px, -50%);
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+// breadcrumbs
+
+.breadcrumbs {
+    padding: 45px 0 10px;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 30px;
+            color: $green;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 85%;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: #3B454C;
+                position: relative;
+                transition: 0.3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 15px;
+                    height: 20px;
+                    position: absolute;
+                    right: -24px;
+                    top: -1px;
+                    background: url('../img/general/breadcrumb-arrow.svg') no-repeat center / 100%;
+                }
+            }
+        }
+    }
+}
+
+h1,
+h2 {
+    color: $bace-color;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.shadowbox {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Poetsenone';
+
+.generalselect {
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container .select2-selection--single {
+        height: 43px;
+        border-radius: 35px !important;
+        border: 1px solid #D9DBDF;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 43px;
+        color: #3B454C;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 25px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        background: url(../img/header/select-arrow.svg) no-repeat center center/16px;
+        top: 8px;
+        right: 15px;
+        transition: 0.3s;
+
+        b {
+            display: none;
+        }
+    }
+
+    .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
+        transform: rotate(-180deg);
+    }
+}
+
+@media(max-width:1550.8px) {
+
+    h1,
+    h2 {
+        font-size: 48px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    h1,
+    h2 {
+        font-size: 42px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .breadcrumbs {
+        padding: 20px 0 10px;
+
+        ul {
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+
+    h1,
+    h2 {
+        font-size: 36px;
+    }
+
+}
