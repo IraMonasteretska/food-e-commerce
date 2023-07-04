@@ -38,7 +38,7 @@ $(document).ready(function () {
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
+        count = count < 0 ? 0 : count;
         $input.val(count);
         $input.change();
         return false;
@@ -251,8 +251,193 @@ $(document).ready(function () {
         $(this).prev('.filter__checksect').toggleClass('show');
     });
 
- 
+    // range slider init
 
+    if ($('#rangeslider').length) {
+        $("#rangeslider").ionRangeSlider({
+            type: 'double',
+            min: 0,
+            max: 200,
+            from: 0,
+            to: 200,
+            prefix: '$ '
+        });
+    }
+
+    // Catalog filter (tablet/mobile)
+
+    $('.filterbtn').click(function () {
+        $('body').addClass('hidden');
+        $('.categorysect__body .categorysect__filter').addClass('show');
+    });
+
+    $('.closefilter').click(function(){
+        $('body').removeClass('hidden');
+        $('.categorysect__body .categorysect__filter').removeClass('show');
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // range slider
+
+    // // maps a value from one range to another
+    // Number.prototype.map = function (inMin, inMax, outMin, outMax) {
+    //     return (this - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+    // }
+
+    // // remaps a value from a range to a logarithmic scale
+    // Number.prototype.mapLog = function (min, max) {
+    //     const mapped = (this - min) * (Math.log(max) - Math.log(min)) / (max - min) + Math.log(min);
+    //     return Math.exp(mapped);
+    // }
+
+    // // remaps a value from a range to a logarithmic scale (reversed)
+    // Number.prototype.mapLogRev = function (min, max) {
+    //     return (Math.log(this) - Math.log(min)) * (max - min) / (Math.log(max) - Math.log(min)) + Math.log(min);
+    //     //return (Math.log(this) - Math.log(min)) / (Math.log(max) - Math.log(min)) / (max - min) + min;
+    // }
+
+    // // -------------------------------------------
+    // // Variables
+    // // -------------------------------------------
+
+    // let MIN = 1;
+    // let MAX = 200;
+    // let initFrom = 1;
+    // let initTo = 200;
+
+    // const $logSlider = $('.range-slider');
+    // const $inputMin = $('.input-min');
+    // const $inputMax = $('.input-max');
+    // const $inputFrom = $('.input-from');
+    // const $inputTo = $('.input-to');
+
+    // // -------------------------------------------
+    // // Initializing
+    // // -------------------------------------------
+
+    // // min
+    // $inputMin.attr('placeholder', `min $${MIN.toLocaleString()}`);
+    // $inputMin.attr('data-value', MIN);
+
+    // // max
+    // $inputMax.attr('placeholder', `max $${MAX.toLocaleString()}`);
+    // $inputMax.attr('data-value', MAX);
+
+    // // from
+    // $inputFrom.attr('placeholder', `from $${initFrom.toLocaleString()}`);
+    // $inputFrom.attr('data-value', initFrom);
+    // $inputFrom.attr('min', MIN);
+    // $inputFrom.attr('max', MAX);
+
+    // // to
+    // $inputTo.attr('placeholder', `to $${initTo.toLocaleString()}`);
+    // $inputTo.attr('data-value', initTo);
+    // $inputTo.attr('min', MIN);
+    // $inputTo.attr('max', MAX);
+
+    // // slider
+    // $logSlider.ionRangeSlider({
+    //     type: 'double',
+    //     grid: false,
+    //     min: mapLogarithmicReverse(MIN),
+    //     max: mapLogarithmicReverse(MAX),
+    //     from: mapLogarithmicReverse(initFrom),
+    //     to: mapLogarithmicReverse(initTo),
+    //     prettify: prettifyLog,
+    //     prefix: '$',
+    //     postfix: '',
+    //     onStart: printSliderData,
+    //     onChange: printSliderData,
+    //     onUpdate: printSliderData
+    // });
+
+
+    // // -------------------------------------------
+    // // Helper functions
+    // // -------------------------------------------
+
+    // function mapLogarithmic(value) {
+    //     return Math.ceil(value.mapLog(MIN, MAX));
+    // }
+
+    // function mapLogarithmicReverse(value) {
+    //     return parseFloat(value).mapLogRev(MIN, MAX);
+    // }
+
+    // function prettifyLog(value) {
+    //     return mapLogarithmic(value).toLocaleString('en-US');
+    // }
+
+    // // -------------------------------------------
+    // // Event Handler
+    // // -------------------------------------------
+
+    // // slider
+    // function printSliderData() {
+    //     const prettyFrom = mapLogarithmic($logSlider.data('from'));
+    //     const prettyTo = mapLogarithmic($logSlider.data('to'));
+
+    //     $('.output-from').text(prettyFrom);
+    //     $('.output-to').text(prettyTo);
+    // }
+
+
+
+
+
+
+
+
+    // number inputs
+    // $('.number-input').on('focus', e => {
+    //     const currentTarget = e.currentTarget;
+    //     currentTarget.value = currentTarget.dataset.value;
+    // });
+
+    // $('.number-input').on('change', e => {
+    //     const min = $inputMin.val() || $inputMin.attr('data-value');
+    //     const max = $inputMax.val() || $inputMax.attr('data-value');
+    //     const from = $inputFrom.val() || $inputFrom.attr('data-value');
+    //     const to = $inputTo.val() || $inputTo.attr('data-value');
+
+    //     $logSlider.data('ionRangeSlider').update({
+    //         min: mapLogarithmicReverse(min),
+    //         max: mapLogarithmicReverse(max),
+    //         from: mapLogarithmicReverse(from),
+    //         to: mapLogarithmicReverse(to)
+    //     });
+    // });
+
+    // $('.number-input').on('blur', e => {
+    //     const currentTarget = e.currentTarget;
+    //     const prefix = currentTarget.dataset.prefix;
+    //     const localizedValue = Math.trunc(currentTarget.value).toLocaleString();
+
+    //     currentTarget.placeholder = `${prefix} $${localizedValue}`;
+    //     currentTarget.dataset.value = currentTarget.value;
+    //     currentTarget.value = '';
+    // });
 
 
 

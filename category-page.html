@@ -11,6 +11,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/19b6c9e17e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -157,6 +158,10 @@
                             <option value="4">By rating</option>
                         </select>
                     </div>
+
+                    <div class="filterbtn">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
                 </div>
                 <div class="categorysect__discounts">
                     <a href="#">
@@ -201,218 +206,231 @@
                     </a>
                 </div>
                 <div class="categorysect__body">
+
                     <div class="categorysect__filter">
-                        <div class="filter__selected">
-                            <div class="filter__selected-head">
-                                <p>Selected filters</p>
-                                <a href="#">Clear all</a>
-                            </div>
-                            <div class="filter__selected-labels">
-                                <div class="selectedlabel">
-                                    <span>Careal</span>
-                                    <img src="img/general/close.svg" alt="remove">
+
+                        <div class="filter-overlay">
+                            <button class="closefilter">
+                                <img src="img/general/close.svg" alt="">
+                            </button>
+
+                            <div class="filter__selected">
+                                <div class="filter__selected-head">
+                                    <p>Selected filters</p>
+                                    <a href="#">Clear all</a>
+                                </div>
+                                <div class="filter__selected-labels">
+                                    <div class="selectedlabel">
+                                        <span>Careal</span>
+                                        <img src="img/general/close.svg" alt="remove">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="filter__toogleblock">
-                            <div class="filter__toogleblock-head">
-                                <p>Brend</p>
-                                <img src="img/general/green-arrow.svg" alt="arrow">
-                            </div>
-                            <div class="filter__toogleblock-body">
-                                <div class="searchbox">
-                                    <form action="#">
-                                        <div class="searchfield">
-                                            <input type="text" placeholder="Search on Food...">
-                                            <button class="searchbtn">
-                                                <img src="img/header/search-icon.svg" alt="search">
-                                            </button>
+                            <div class="filter__toogleblock">
+                                <div class="filter__toogleblock-head">
+                                    <p>Brend</p>
+                                    <img src="img/general/green-arrow.svg" alt="arrow">
+                                </div>
+                                <div class="filter__toogleblock-body">
+                                    <div class="searchbox">
+                                        <form action="#">
+                                            <div class="searchfield">
+                                                <input type="text" placeholder="Search on Food...">
+                                                <button class="searchbtn">
+                                                    <img src="img/header/search-icon.svg" alt="search">
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="filter__checksect">
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="filtcheck1">
+                                            <label for="filtcheck1">Careal <span>(2)</span></label>
                                         </div>
-                                    </form>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="filtcheck2">
+                                            <label for="filtcheck2">EQUIP <span>(4)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="filtcheck3">
+                                            <label for="filtcheck3">Play Day <span>(1)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="filtcheck4">
+                                            <label for="filtcheck4">Adams <span>(5)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="filtcheck5">
+                                            <label for="filtcheck5">Adams <span>(5)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="filtcheck6">
+                                            <label for="filtcheck6">Adams <span>(5)</span></label>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="showall">
+                                        <span>Show All</span>
+                                        <span>Hide</span>
+                                    </a>
                                 </div>
-                                <div class="filter__checksect">
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="filtcheck1">
-                                        <label for="filtcheck1">Careal <span>(2)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="filtcheck2">
-                                        <label for="filtcheck2">EQUIP <span>(4)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="filtcheck3">
-                                        <label for="filtcheck3">Play Day <span>(1)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="filtcheck4">
-                                        <label for="filtcheck4">Adams <span>(5)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="filtcheck5">
-                                        <label for="filtcheck5">Adams <span>(5)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="filtcheck6">
-                                        <label for="filtcheck6">Adams <span>(5)</span></label>
-                                    </div>
+                            </div>
+
+                            <div class="filter__toogleblock">
+                                <div class="filter__toogleblock-head">
+                                    <p>Price</p>
+                                    <img src="img/general/green-arrow.svg" alt="arrow">
                                 </div>
-                                <a href="#" class="showall">
-                                    <span>Show All</span>
-                                    <span>Hide</span>
-                                </a>
-                            </div>
-                        </div>
+                                <div class="filter__toogleblock-body">
 
-                        <div class="filter__toogleblock">
-                            <div class="filter__toogleblock-head">
-                                <p>Price</p>
-                                <img src="img/general/green-arrow.svg" alt="arrow">
-                            </div>
-                            <div class="filter__toogleblock-body">
+                                    <div class="rangesliderwrap">
+                                        <p class="output">$<span class="output-from">1</span> — $<span
+                                                class="output-to">200</span></p>
+                                        <!-- <input type="text" class="range-slider logarithmic">
+                                        <div class="fromtoprice">
+                                            <span>$1</span>
+                                            <span>$200</span>
+                                        </div> -->
 
-                                <div class="rangesliderwrap">
-                                    <p class="output">$<span class="output-from">1</span> — $<span
-                                            class="output-to">200</span></p>
-                                   
+                                        <input type="text" id="rangeslider" name="example_name" value="" />
 
-                                    
+                                    </div>
 
                                 </div>
-
                             </div>
-                        </div>
 
-                        <div class="filter__toogleblock">
-                            <div class="filter__toogleblock-head">
-                                <p>Main Ingredient</p>
-                                <img src="img/general/green-arrow.svg" alt="arrow">
-                            </div>
-                            <div class="filter__toogleblock-body">
-                                <div class="filter__checksect">
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="ingr1">
-                                        <label for="ingr1">Soybean <span>(11)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="ingr2">
-                                        <label for="ingr2">Spirulina <span>(33)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="ingr3">
-                                        <label for="ingr3">Squid <span>(77)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="ingr4">
-                                        <label for="ingr4">Whole Wheat <span>(5)</span></label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="ingr5">
-                                        <label for="ingr5">Whole Wheat <span>(43)</span></label>
-                                    </div>
+                            <div class="filter__toogleblock">
+                                <div class="filter__toogleblock-head">
+                                    <p>Main Ingredient</p>
+                                    <img src="img/general/green-arrow.svg" alt="arrow">
                                 </div>
-                                <a href="#" class="showall">
-                                    <span>Show All</span>
-                                    <span>Hide</span>
-                                </a>
+                                <div class="filter__toogleblock-body">
+                                    <div class="filter__checksect">
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="ingr1">
+                                            <label for="ingr1">Soybean <span>(11)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="ingr2">
+                                            <label for="ingr2">Spirulina <span>(33)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="ingr3">
+                                            <label for="ingr3">Squid <span>(77)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="ingr4">
+                                            <label for="ingr4">Whole Wheat <span>(5)</span></label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="ingr5">
+                                            <label for="ingr5">Whole Wheat <span>(43)</span></label>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="showall">
+                                        <span>Show All</span>
+                                        <span>Hide</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="filter__toogleblock">
-                            <div class="filter__toogleblock-head">
-                                <p>Customer Rating</p>
-                                <img src="img/general/green-arrow.svg" alt="arrow">
-                            </div>
-                            <div class="filter__toogleblock-body">
-                                <div class="filter__checksect">
-                                    <div class="radiofield">
-                                        <input type="radio" id="rating1" name="customer-rating">
-                                        <label for="rating1">
-                                            <span class="ratingstars">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                            </span>
-                                            <span>(26)</span>
-                                        </label>
-                                    </div>
-                                    <div class="radiofield">
-                                        <input type="radio" id="rating2" name="customer-rating">
-                                        <label for="rating2">
-                                            <span class="ratingstars">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                            </span>
-                                            <span>(8)</span>
-                                        </label>
-                                    </div>
-                                    <div class="radiofield">
-                                        <input type="radio" id="rating3" name="customer-rating">
-                                        <label for="rating3">
-                                            <span class="ratingstars">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                            </span>
-                                            <span>(9)</span>
-                                        </label>
-                                    </div>
-                                    <div class="radiofield">
-                                        <input type="radio" id="rating4" name="customer-rating">
-                                        <label for="rating4">
-                                            <span class="ratingstars">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                            </span>
-                                            <span>(2)</span>
-                                        </label>
-                                    </div>
-                                    <div class="radiofield">
-                                        <input type="radio" id="rating5" name="customer-rating">
-                                        <label for="rating5">
-                                            <span class="ratingstars">
-                                                <img src="img/category/star.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                                <img src="img/category/star-emp.svg" alt="img">
-                                            </span>
-                                            <span>(0)</span>
-                                        </label>
+                            <div class="filter__toogleblock">
+                                <div class="filter__toogleblock-head">
+                                    <p>Customer Rating</p>
+                                    <img src="img/general/green-arrow.svg" alt="arrow">
+                                </div>
+                                <div class="filter__toogleblock-body">
+                                    <div class="filter__checksect">
+                                        <div class="radiofield">
+                                            <input type="radio" id="rating1" name="customer-rating">
+                                            <label for="rating1">
+                                                <span class="ratingstars">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                </span>
+                                                <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="radiofield">
+                                            <input type="radio" id="rating2" name="customer-rating">
+                                            <label for="rating2">
+                                                <span class="ratingstars">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                </span>
+                                                <span>(8)</span>
+                                            </label>
+                                        </div>
+                                        <div class="radiofield">
+                                            <input type="radio" id="rating3" name="customer-rating">
+                                            <label for="rating3">
+                                                <span class="ratingstars">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                </span>
+                                                <span>(9)</span>
+                                            </label>
+                                        </div>
+                                        <div class="radiofield">
+                                            <input type="radio" id="rating4" name="customer-rating">
+                                            <label for="rating4">
+                                                <span class="ratingstars">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                </span>
+                                                <span>(2)</span>
+                                            </label>
+                                        </div>
+                                        <div class="radiofield">
+                                            <input type="radio" id="rating5" name="customer-rating">
+                                            <label for="rating5">
+                                                <span class="ratingstars">
+                                                    <img src="img/category/star.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                    <img src="img/category/star-emp.svg" alt="img">
+                                                </span>
+                                                <span>(0)</span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="filter__toogleblock">
-                            <div class="filter__toogleblock-head">
-                                <p>Retailer</p>
-                                <img src="img/general/green-arrow.svg" alt="arrow">
-                            </div>
-                            <div class="filter__toogleblock-body">
-                                <div class="filter__checksect">
-                                    <div class="checkfield withoutcheck">
-                                        <input type="checkbox" id="retailer1">
-                                        <label for="retailer1">Soybean</label>
+                            <div class="filter__toogleblock">
+                                <div class="filter__toogleblock-head">
+                                    <p>Retailer</p>
+                                    <img src="img/general/green-arrow.svg" alt="arrow">
+                                </div>
+                                <div class="filter__toogleblock-body">
+                                    <div class="filter__checksect">
+                                        <div class="checkfield withoutcheck">
+                                            <input type="checkbox" id="retailer1">
+                                            <label for="retailer1">Soybean</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+
                     <div class="categorysect__prodsect">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-lg-6 col-md-4">
                                 <div class="productbox">
                                     <a href="#">
                                         <div class="productbox__img">
@@ -424,73 +442,289 @@
                                         <p class="aboutproduct">
                                             Céréal Apricot Tart, Gluten Free, Lactose Free
                                         </p>
-                                        
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-lg-6 col-md-4">
                                 <div class="productbox">
                                     <a href="#">
                                         <div class="productbox__img">
-                                            <img src="img/category/categori-pr1.png" alt="product">
+                                            <div class="productlabel orange">
+                                                Top
+                                            </div>
+                                            <img src="img/category/categori-pr2.png" alt="product">
                                         </div>
                                     </a>
                                     <div class="productbox__descr">
-                                        <p class="price">$ 69.00</p>
+                                        <p class="price discont">Now $ 20.99<span>$ 22.10</span></p>
                                         <p class="aboutproduct">
-                                            Céréal Apricot Tart, Gluten Free, Lactose Free
+                                            Musclefit Protein Pancake Prepared Fast easy...
                                         </p>
-                                        
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-lg-6 col-md-4">
                                 <div class="productbox">
                                     <a href="#">
                                         <div class="productbox__img">
-                                            <img src="img/category/categori-pr1.png" alt="product">
+                                            <img src="img/category/categori-pr3.png" alt="product">
                                         </div>
                                     </a>
                                     <div class="productbox__descr">
-                                        <p class="price">$ 69.00</p>
+                                        <p class="price">$ 34.00</p>
                                         <p class="aboutproduct">
-                                            Céréal Apricot Tart, Gluten Free, Lactose Free
+                                            Forno Bonomi Kit Tiramisù. Сomplete kit for...
                                         </p>
-                                        
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-lg-6 col-md-4">
                                 <div class="productbox">
                                     <a href="#">
                                         <div class="productbox__img">
-                                            <img src="img/category/categori-pr1.png" alt="product">
+                                            <img src="img/category/categori-pr4.png" alt="product">
                                         </div>
                                     </a>
                                     <div class="productbox__descr">
-                                        <p class="price">$ 69.00</p>
+                                        <p class="price">$ 20.00</p>
                                         <p class="aboutproduct">
-                                            Céréal Apricot Tart, Gluten Free, Lactose Free
+                                            Forno Bonomi Kit Tiramisù. Сomplete kit for...
                                         </p>
-                                        
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-lg-6 col-md-4">
                                 <div class="productbox">
                                     <a href="#">
                                         <div class="productbox__img">
-                                            <img src="img/category/categori-pr1.png" alt="product">
+                                            <img src="img/category/categori-pr5.png" alt="product">
                                         </div>
                                     </a>
                                     <div class="productbox__descr">
-                                        <p class="price">$ 69.00</p>
+                                        <p class="price">$ 11.00</p>
                                         <p class="aboutproduct">
-                                            Céréal Apricot Tart, Gluten Free, Lactose Free
+                                            Bauli Plumcake "Senza" Mela - 132 G
                                         </p>
-                                        
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr6.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 13.37</p>
+                                        <p class="aboutproduct">
+                                            Biaglut Biscottino Granulato, 340g, 3 1
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr7.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 20.00</p>
+                                        <p class="aboutproduct">
+                                            Biaglut Preparato per pizza, 500g
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr8.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 14.19</p>
+                                        <p class="aboutproduct">
+                                            Bucce di Psillio Biologico - Purezza 99% - da 200 g.
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr9.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 15.99</p>
+                                        <p class="aboutproduct">
+                                            Musclefit Preparato istantaneo per Crepes...
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr10.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 11.34</p>
+                                        <p class="aboutproduct">
+                                            NÄTOO Protein Porridge - Preparato con zero...
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr11.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 5.20</p>
+                                        <p class="aboutproduct">
+                                            Isola Bio Porridge Biologico Fichi e Lamponi...
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-4">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/category/categori-pr12.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 20.00</p>
+                                        <p class="aboutproduct">
+                                            Pesoforma Porridge Cacao e Avena, 5 x 55g
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a></li>
+                                <li><a href="#">1</a></li>
+                                <li class="active"><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li>...</li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a></li>
+                            </ul>
+                            <div class="gotopage">
+                                <span>Go to page</span>
+                                <input type="number" value="8">
+                                <a href="#"><img src="img/general/pagination-next.svg" alt="go to"></a>
                             </div>
                         </div>
                     </div>
