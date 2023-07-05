@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="header__searchbox">
+                            <select class="customselect" name="state">
+                                <option value="0">Products</option>
+                                <option value="1">Products And Discussions</option>
+                            </select>
+
+                            <div class="searchinputfield">
+                                <input type="text" placeholder="Search on Food...">
+                                <button>
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3 col-8">
+                    <div class="header__rightsect">
+                        <div class="mobsearchbtn">
+                            <button><img src="img/header/search-icon.svg" alt="search"></button>
+                        </div>
+                        <div class="headeraccwrap">
+                            <div class="header__account">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="ddtext">
+                                    <p class="subtext">Sign In</p>
+                                    <p class="ddtitle">Account</p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <a href="#" class="greenbtn">Login</a>
+                                <p>New customer?</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+                        </div>
+                        <div class="headercartwrap">
+                            <div class="header__cart">
+                                <div class="cartimg">
+                                    <img src="img/header/cart-icon.png" alt="cart">
+                                    <div class="prodcount">0</div>
+                                </div>
+                                <p class="header__cartprice">$ 15.77</p>
+                            </div>
+                            <div class="header__cartdropdown">
+                                <div class="titleblock">
+                                    <p>The product has been added to the cart</p>
+                                    <button class="closecart"><img src="img/header/close.svg" alt="close"></button>
+                                </div>
+                                <div class="header__cartbody">
+                                    <div class="header__cartrow">
+                                        <div class="header__cartimg">
+                                            <img src="img/header/headercartimg.png" alt="product">
+                                        </div>
+                                        <div class="header__cartdescr">
+                                            <p>
+                                                Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                            </p>
+                                            <div class="header__cartcounter">
+                                                <p>
+                                                    Number of pieces:
+                                                </p>
+                                                <div class="number">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cartprice">
+                                            <p class="price">$ 15.77</p>
+                                            <p class="oldprice">$ 25.12</p>
+                                        </div>
+                                        <div class="header__cartdelete">
+                                            <button class="deleterow"><img src="img/header/delete-icon.svg"
+                                                    alt="delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cartfooter">
+                                    <p>everything: <span>$ 15.77</span></p>
+                                    <a href="#">To order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li>Musclefit Protein Pancake</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="producttopsect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="productslidersect">
+                            <div class="slbigwrap">
+                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                    class="swiper prodbig">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-big.png" alt="Image To Zoom"
+                                                    class="">
+                                                <span class="slidelabel orange">Top</span>
+                                                <span class="zoomicon">
+                                                    <img src="img/product/full-screen.svg" alt="icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-big.png" alt="Image To Zoom"
+                                                    class="">
+                                                <span class="slidelabel orange">Top</span>
+                                                <span class="zoomicon">
+                                                    <img src="img/product/full-screen.svg" alt="icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-big.png" alt="Image To Zoom"
+                                                    class="">
+                                                <span class="slidelabel orange">Top</span>
+                                                <span class="zoomicon">
+                                                    <img src="img/product/full-screen.svg" alt="icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-big.png" alt="Image To Zoom"
+                                                    class="">
+                                                <span class="slidelabel orange">Top</span>
+                                                <span class="zoomicon">
+                                                    <img src="img/product/full-screen.svg" alt="icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-big.png" alt="Image To Zoom"
+                                                    class="">
+                                                <span class="slidelabel orange">Top</span>
+                                                <span class="zoomicon">
+                                                    <img src="img/product/full-screen.svg" alt="icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slsmwrap">
+                                <div thumbsSlider="" class="swiper prodsmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-small1.png" alt="slide image" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-small2.png" alt="slide image" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-small3.png" alt="slide image" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-small4.png" alt="slide image" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="imgwrap">
+                                                <img src="img/product/slide-small5.png" alt="slide image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="productinfo">
+                            <h1 class="productinfo__name">
+                                Musclefit Pancake Proteico Preparato Fast facile e veloce 250g per la tua colazione Fit
+                                (Original)
+                            </h1>
+                            <div class="sellratbox">
+                                <div class="seller">
+                                    <img src="img/product/avatar.svg" alt="avatar">
+                                    <p>Seller: <span>Ecovent</span></p>
+                                </div>
+                                <div class="ratingresponse">
+                                    <div class="stars">
+                                        <img src="img/category/star.svg" alt="">
+                                        <img src="img/category/star.svg" alt="">
+                                        <img src="img/category/star.svg" alt="">
+                                        <img src="img/category/star.svg" alt="">
+                                        <img src="img/category/star-emp.svg" alt="">
+                                    </div>
+                                    <span>(22 response)</span>
+                                </div>
+                            </div>
+                            <p class="productinfo__price">
+                                $ 20.99
+                            </p>
+                            <div class="productinfo__descr">
+                                <p>
+                                    Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus
+                                    justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas ultricies viverra mi,
+                                    vel feugiat nunc bibendum at. Aenean eget dolor elit. Nam ac lorem ipsum. Nullam
+                                    pretium nunc eget suscipit finibus. Sed a orci quis lectus aliquet posuere.
+                                </p>
+                            </div>
+                            <div class="productinfo__addproduct">
+                                <div class="productinfo__addwrap">
+                                    <div class="number">
+                                        <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                        <input type="text" value="1">
+                                        <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="greenbtn">Add to cart</a>
+                            </div>
+                            <div class="productinfo__deliveryinfo">
+                                <p>
+                                    <span class="imgwrap">
+                                        <img src="img/product/delivery-truck.svg" alt="img">
+                                    </span>
+                                    Free shipping, <b>arrives by tomorrow</b> to <u>Sacramento, 95829</u>
+                                </p>
+                                <p>
+                                    <span class="imgwrap">
+                                        <img src="img/product/delivery-truck2.svg" alt="img">
+                                    </span>
+                                    Or faster delivery <b>tomorrow, May 17</b>. Order within <span>9 h 48 min</span>.
+                                </p>
+                                <p>
+                                    <span class="imgwrap">
+                                        <img src="img/product/turn-back.svg" alt="img">
+                                    </span>
+                                    <b>Free 90-day returns</b>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productsection productsection_product">
+            <div class="container">
+                <div class="productsection__header">
+                    <p>You may also be interested</p>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="productsection-sliderwrapper prod">
+                    <div class="swiper productsection-slider ps3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel green">
+                                                New
+                                            </div>
+                                            <img src="img/main/product1.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price">$ 23.45</p>
+                                        <p class="aboutproduct">
+                                            BJORG Organic Coconut Nectar Drink, Coconut Water and Milk
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <div class="productlabel orange">
+                                                New
+                                            </div>
+                                            <img src="img/main/product2.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price discont">Now $ 19.99 <span>$ 25.12</span></p>
+                                        <p class="aboutproduct">
+                                            Go Free Corn Flakes Gluten Free Cereal Bar, 12 Pieces
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="productbox">
+                                    <a href="#">
+                                        <div class="productbox__img">
+                                            <img src="img/main/product3.png" alt="product">
+                                        </div>
+                                    </a>
+                                    <div class="productbox__descr">
+                                        <p class="price discont">Now $ 12.99<span>$ 19.11</span></p>
+                                        <p class="aboutproduct">
+                                            Tinsel Cereals Tsolation Natura Rizza from 350 grams
+                                        </p>
+                                        <div class="prodcount">
+                                            <p class="addtocart">Add to cart</p>
+                                            <div class="number productadd">
+                                                <span class="minus"><img src="img/header/minus.svg" alt="minus"></span>
+                                                <input type="text" value="1" />
+                                                <span class="plus"><img src="img/header/plus.svg" alt="minus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="productbox">
+                                        <a href="#">
+                                            <div class="productbox__img">
+                                                <img src="img/main/product4.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="productbox__descr">
+                                            <p class="price">$ 26.55</p>
+                                            <p class="aboutproduct">
+                                                Yes with Rice - Shortbread Filled with Hazelnut Cream - 200 g
+                                            </p>
+                                            <div class="prodcount">
+                                                <p class="addtocart">Add to cart</p>
+                                                <div class="number productadd">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="productbox">
+                                        <a href="#">
+                                            <div class="productbox__img">
+                                                <img src="img/main/product3.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="productbox__descr">
+                                            <p class="price discont">Now $ 12.99<span>$ 19.11</span></p>
+                                            <p class="aboutproduct">
+                                                Tinsel Cereals Tsolation Natura Rizza from 350 grams
+                                            </p>
+                                            <div class="prodcount">
+                                                <p class="addtocart">Add to cart</p>
+                                                <div class="number productadd">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="productbox">
+                                        <a href="#">
+                                            <div class="productbox__img">
+                                                <img src="img/main/product3.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="productbox__descr">
+                                            <p class="price discont">Now $ 12.99<span>$ 19.11</span></p>
+                                            <p class="aboutproduct">
+                                                Tinsel Cereals Tsolation Natura Rizza from 350 grams
+                                            </p>
+                                            <div class="prodcount">
+                                                <p class="addtocart">Add to cart</p>
+                                                <div class="number productadd">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next custom sl2"></div>
+                    <div class="swiper-button-prev custom sl2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-description">
+            <div class="container">
+                <div class="prinfobox">
+                    <p class="greytitle">
+                        Product description
+                    </p>
+                    <div class="prinfobox__body">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="leftsect">
+                                    <p>
+                                        Most orders are shipped within 1 hour of being placed. Food will not be able to
+                                        cancel an order once it has been shipped. You will be able to start the return
+                                        process after receiving your order. For this you need to contact one of our
+                                        managers. Refunds will be made after the goods are returned in their original
+                                        condition:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            20 g Protein - Per 55 g Serving
+                                        </li>
+                                        <li>
+                                            100% Whole Grains
+                                        </li>
+                                        <li>
+                                            No Added Sugar
+                                        </li>
+                                        <li>
+                                            Just Add Water
+                                        </li>
+                                    </ul>
+                                    <p class="title">Suggested use Pancakes</p>
+                                    <p>1/2 cup mix + 1/3 cup cold water</p>
+                                    <p><b>Heat griddle</b> to low heat (285-295°F).</p>
+                                    <p><b>Combine & whisk</b> ingredients until blended. Set aside and let batter
+                                        thicken for 3 minutes.</p>
+                                    <p>For thinner pancakes add 1-2 tbsp of water.</p>
+                                    <p><b>Pour batter</b> into 3-4 four inch pancakes on a lightly greased, pre-heated
+                                        griddle.</p>
+                                    <p>
+                                        <b>Cook slow-on-low</b> until no more bubbles are forming in the center and
+                                        edges look
+                                        dry (about 3 minutes). Flip and cook until golden brown.
+                                    </p>
+                                    <p class="title">Want More Protein?</p>
+                                    <p>
+                                        <b>23 g</b> - Replace water 1:1 with fat-free milk.
+                                    </p>
+                                    <p>
+                                        <b>26 g</b> - Replace water with 1 large egg + 1 Tbsp water.
+                                    </p>
+                                    <p class="title">Disclaimer</p>
+                                    <p>
+                                        While Food strives to ensure the accuracy of its product images and information,
+                                        some manufacturing changes to packaging and/or ingredients may be pending update
+                                        on our site. Although items may occasionally ship with alternate packaging,
+                                        freshness is always guaranteed. We recommend that you read labels, warnings and
+                                        directions of all products before use and not rely solely on the information
+                                        provided by Food.
+                                    </p>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <!-- <script src="https://www.elevateweb.co.uk/wp-content/themes/radial/jquery.elevatezoom.min.js"></script> -->
+
+    <script src="js/lib/zoomsl.js"></script>
+
+
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>
