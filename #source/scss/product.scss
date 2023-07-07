@@ -591,7 +591,8 @@
                 img {
                     object-fit: cover;
                     object-position: 50% 50%;
-
+                    width: 100%;
+                    height: 100%;
                 }
 
             }
@@ -793,6 +794,11 @@
     padding-bottom: 55px;
 }
 
+.productinfo.mob {
+    display: none;
+}
+
+
 
 @media(max-width:1550.8px) {
     .product-description.review .prinfobox {
@@ -876,4 +882,204 @@
         padding-bottom: 50px;
     }
 
+}
+
+@media(max-width:991.8px) {
+    .prinfobox__body {
+        .rightsect {
+            margin-top: 30px;
+        }
+    }
+
+    .custreviews .custreviews__left,
+    .custreviews .custreviews__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .custreviews .custreviews__right {
+        padding-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+
+    .accordeonsect .accordeonsect_header p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .productslidersect {
+        margin-bottom: 30px;
+    }
+
+    .productinfo__deliveryinfo,
+    .producttopsect {
+        padding-bottom: 0;
+    }
+
+    .prinfobox__body {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .productinfo.mob {
+        display: block;
+    }
+
+    .productinfo {
+        display: none;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .prodbig .imgwrap .slidelabel {
+        font-size: 14px;
+    }
+
+    .prodbig .imgwrap .slidelabel {
+        width: 50px;
+        height: 30px;
+    }
+
+    .productinfo .productinfo__name {
+        font-size: 20px;
+    }
+
+    .sellratbox .seller,
+    .sellratbox .ratingresponse {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .sellratbox .seller {
+        margin-bottom: 15px;
+    }
+
+    .productsection {
+        padding-top: 30px;
+    }
+
+    .prinfobox__body .leftsect {
+        padding-right: 0;
+    }
+
+    .greytitle {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .prinfobox__body .supplementtable .supplementtable__header .dailyval,
+    .prinfobox__body .supplementtable .supplementtable__row .dailyval {
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .prinfobox__body .supplementtable .supplementtable__header .amountperserving,
+    .prinfobox__body .supplementtable .supplementtable__row .amountperserving {
+        max-width: 90px;
+        flex: 0 0 90px;
+        padding-right: 10px;
+    }
+
+    .prinfobox__body .supplementtable .supplementtable__row .supplementtable__title {
+        max-width: calc(100% - 150px);
+        flex: 0 0 calc(100% - 150px);
+        padding-right: 10px;
+    }
+
+    .prinfobox__body .supplementtable__botttext {
+        font-size: 14px;
+    }
+
+    .accordeonsect .accordeonsect_header p {
+        font-size: 16px;
+    }
+
+    .prinfobox {
+        margin-bottom: 40px;
+    }
+
+    .custreviews {
+        padding-top: 0;
+    }
+
+    .custreviews .custreviews__left .writereview {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+        border: none;
+    }
+
+    .custreviews .custreviews__left .productrating {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 30px;
+    }
+
+    .evaluation .stars {
+        max-width: 140px;
+    }
+
+    .productrating__row {
+        margin-bottom: 10px;
+    }
+
+    .custreviews .custreviews__right .imgswrap .imgwrap {
+        width: calc(25% - 5px);
+    }
+
+    .custreviews .custreviews__wrap {
+        padding-bottom: 20px;
+    }
+
+    .prodtestimonial .prodtestimonial__header {
+        align-items: flex-start;
+
+        .prodtestimonial__userbox {
+            max-width: 60%;
+            flex: 0 0 60%;
+        }
+
+        .date {
+            max-width: 40%;
+            flex: 0 0 40%;
+            padding-left: 10px;
+            text-align: right;
+            padding-top: 5px;
+        }
+    }
+
+    .prodbig {
+        margin: 0;
+    }
+
+
+
+}
+
+@media(max-width:360.8px) {
+    .prinfobox__body .supplementtable .supplementtable__row {
+        font-size: 14px;
+    }
+
+    .prinfobox__body .supplementtable .supplementtable__header .dailyval,
+    .prinfobox__body .supplementtable .supplementtable__row .dailyval {
+        max-width: 50px;
+        flex: 0 0 50px;
+    }
+
+    .prinfobox__body .supplementtable .supplementtable__header .amountperserving,
+    .prinfobox__body .supplementtable .supplementtable__row .amountperserving {
+        max-width: 80px;
+        flex: 0 0 80px;
+    }
+
+    .prinfobox__body .supplementtable .supplementtable__row .supplementtable__title {
+        max-width: calc(100% - 130px);
+        flex: 0 0 calc(100% - 130px);
+    }
 }

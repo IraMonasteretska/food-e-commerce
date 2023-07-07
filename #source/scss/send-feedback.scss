@@ -1,0 +1,110 @@
+.sfcontent {
+    padding: 113px 0 170px;
+}
+
+.sfcontent__topsect {
+    text-align: center;
+
+    img {
+        max-height: 180px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 160%;
+        max-width: 610px;
+        margin: 0 auto 70px;
+    }
+
+}
+
+.sfform {
+    max-width: 760px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    padding: 50px 85px 70px 85px;
+
+    .inputfield {
+        margin-bottom: 30px;
+
+        label {
+            text-align: left;
+        }
+    }
+
+    .greenbtn {
+        max-width: 328px;
+        min-height: 60px;
+        margin: 0 auto;
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+}
+
+.selectrating {
+    text-align: center;
+    color: $bace-color;
+
+    p {
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+}
+
+.selectrating__inputs {
+    text-align: center;
+    margin-bottom: 40px;
+
+    input {
+        display: none;
+    }
+
+    #star-1:checked~section [for=star-1] svg path,
+    #star-2:checked~section [for=star-1] svg path,
+    #star-2:checked~section [for=star-2] svg path,
+    #star-3:checked~section [for=star-1] svg path,
+    #star-3:checked~section [for=star-2] svg path,
+    #star-3:checked~section [for=star-3] svg path,
+    #star-4:checked~section [for=star-1] svg path,
+    #star-4:checked~section [for=star-2] svg path,
+    #star-4:checked~section [for=star-3] svg path,
+    #star-4:checked~section [for=star-4] svg path,
+    #star-5:checked~section [for=star-1] svg path,
+    #star-5:checked~section [for=star-2] svg path,
+    #star-5:checked~section [for=star-3] svg path,
+    #star-5:checked~section [for=star-4] svg path,
+    #star-5:checked~section [for=star-5] svg path {
+        fill: rgb(21, 132, 102);
+        stroke: rgb(21, 132, 102);
+    }
+
+    label {
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+
+    label svg {
+        width: 100%;
+        height: auto;
+        transition: transform 200ms ease-in-out;
+    }
+
+    label svg path {
+        transition: fill 200ms ease-in-out, stroke 100ms ease-in-out;
+    }
+
+
+
+    
+}
+

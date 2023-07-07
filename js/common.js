@@ -286,7 +286,14 @@ $(document).ready(function () {
         watchSlidesProgress: true,
 
         breakpoints: {
-            
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            576: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
             991: {
                 slidesPerView: 4,
                 spaceBetween: 20,
@@ -297,6 +304,7 @@ $(document).ready(function () {
             },
         },
     });
+
     var swiper2 = new Swiper(".prodbig", {
         loop: true,
         spaceBetween: 50,
@@ -306,11 +314,15 @@ $(document).ready(function () {
     });
 
 
-    if ($('.example').length) {
-        $(function () {
-            $(".example").imagezoomsl();
-        });
+    if($(window).width() > 991) {
+        if ($('.example').length) {
+            $(function () {
+                $(".example").imagezoomsl();
+            });
+        }
     }
+
+    
 
     var swiper6 = new Swiper(".productsection-slider.ps3", {
         slidesPerView: 5,
@@ -353,9 +365,14 @@ $(document).ready(function () {
     });
 
     // gallery
-    Fancybox.bind("[data-fancybox]", {
-        // Custom options for all galleries
-    });
+    if ($('[data-fancybox]').length) {
+        Fancybox.bind("[data-fancybox]", {
+            // Custom options for all galleries
+        });
+    }
+    
+
+
 
 
 });
