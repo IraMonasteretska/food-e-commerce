@@ -1,10 +1,13 @@
 $(document).ready(function () {
     // HEADER================================================
     // header select
-    $('.customselect').select2({
-        minimumResultsForSearch: -1,
-        dropdownCssClass: "headerselectdropdown"
-    });
+    if ($('.customselect').length) {
+        $('.customselect').select2({
+            minimumResultsForSearch: -1,
+            dropdownCssClass: "headerselectdropdown"
+        });
+    }
+
 
     // header acc dropdown
     $('.header__account').click(function () {
@@ -314,7 +317,7 @@ $(document).ready(function () {
     });
 
 
-    if($(window).width() > 991) {
+    if ($(window).width() > 991) {
         if ($('.example').length) {
             $(function () {
                 $(".example").imagezoomsl();
@@ -322,7 +325,7 @@ $(document).ready(function () {
         }
     }
 
-    
+
 
     var swiper6 = new Swiper(".productsection-slider.ps3", {
         slidesPerView: 5,
@@ -370,8 +373,14 @@ $(document).ready(function () {
             // Custom options for all galleries
         });
     }
-    
 
+
+
+
+
+    if ($('.uploadphoto').length) {
+        $('input[type="file"]').imageuploadify();
+    }
 
 
 
