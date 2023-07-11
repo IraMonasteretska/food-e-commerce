@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/imageuploadify.min.css" />
+    <script src="https://kit.fontawesome.com/19b6c9e17e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-4">
+                    <div class="header__back">
+                        <a href="#">Back</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="header__centerlogo">
+                        <a href="#"><img src="img/header/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="header__securecheckout">
+                        <p>
+                            Secure Checkout
+                            <img src="img/checkout/locked-padlock.svg" alt="icon">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    </div>
+    <main class="main">
+        <div class="checkoutsect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="chinfosect">
+                            <div class="chunfosect__header">
+                                <p>
+                                    <i>1</i>
+                                    Shipping address
+                                    <span>(Where should we deliver your order?)</span>
+                                </p>
+                                <div class="chinfosect__status">
+                                    <span class="minusst"></span>
+                                </div>
+                            </div>
+                            <div class="chunfosect__body">
+                                <div class="chunfosect__payment">
+                                    <p class="title">Your addresses</p>
+
+                                    <div class="chippingoptions">
+                                        <div class="chippingoption addr">
+                                            <input type="radio" name="address" id="addr1" checked>
+                                            <label for="addr1">
+                                                <div class="paytextwrap">
+                                                    <p class="title">Arsen Struk</p>
+                                                    <p class="descr">Taunlift street, Sacramento, CA 95829, NY, Phone
+                                                        number: +353434243651</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="chippingoption addr">
+                                            <input type="radio" name="address" id="addr2" checked>
+                                            <label for="addr2">
+                                                <div class="paytextwrap">
+                                                    <p class="title">Anna Halland</p>
+                                                    <p class="descr">Bordina street, Scala, Foligno, PG, 06034, Italy,
+                                                        Phone number: +354886244661</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="checkout__addaddress popup__btn" data-popup="filepopup"><i
+                                            class="fa-solid fa-plus"></i> Add
+                                        Address</a>
+
+                                    <a href="#" class="chunfosect__abslink">To close <i
+                                            class="fa-solid fa-xmark"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chinfosect">
+                            <div class="chunfosect__header">
+                                <p>
+                                    <i>2</i>
+                                    Select shipping option
+                                </p>
+                                <div class="chinfosect__status">
+                                    <span class="minusst"></span>
+                                </div>
+                            </div>
+                            <div class="chunfosect__body">
+                                <div class="chippingoptions">
+                                    <div class="chippingoption">
+                                        <input type="radio" name="shipping" id="shipping1" checked>
+                                        <label for="shipping1">
+                                            <span class="imgwrap">
+                                                <img src="img/checkout/shippingic1.svg" alt="img">
+                                            </span>
+                                            <b>€3.99 standard</b> - delivered on Friday 19 May.
+                                        </label>
+                                    </div>
+                                    <div class="chippingoption">
+                                        <input type="radio" name="shipping" id="shipping2">
+                                        <label for="shipping2">
+                                            <span class="imgwrap">
+                                                <img src="img/checkout/shippingic2.svg" alt="img">
+                                            </span>
+                                            <b>Or faster delivery tomorrow, May 17. </b>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="chunfosect__descr">
+                                    <p class="title">Delivery instructions</p>
+                                    <p>Add gate codes or other useful information.</p>
+                                    <a href="#" class="chunfosect__abslink">Add</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chinfosect">
+                            <div class="chunfosect__header">
+                                <p>
+                                    <i>3</i>
+                                    Payment method
+                                </p>
+                                <div class="chinfosect__status">
+                                    <span class="checkst"></span>
+                                </div>
+                            </div>
+                            <div class="chunfosect__body">
+                                <div class="chunfosect__payment">
+                                    <p class="title">Your credit cards</p>
+
+                                    <div class="chippingoptions cards">
+
+                                        <div class="chippingoption">
+                                            <input type="radio" name="payment" id="payment1" checked>
+                                            <label for="payment1">
+                                                <span class="payimgwrap">
+                                                    <img src="img/checkout/visa.png" alt="img">
+                                                </span>
+                                                <div class="paytextwrap">
+                                                    <p class="cardtitle">Credit card </p>
+                                                    <p class="cardnum">2344 xxxx xxxx 8880</p>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="chippingoption">
+                                            <input type="radio" name="payment" id="payment2">
+                                            <label for="payment2">
+                                                <span class="payimgwrap">
+                                                    <img src="img/checkout/mastercard.png" alt="img">
+                                                </span>
+                                                <div class="paytextwrap">
+                                                    <p class="cardtitle">Credit card </p>
+                                                    <p class="cardnum">8889 xxxx xxxx 2234</p>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <a href="#" class="chunfosect__abslink">Add Credit Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="basketblock checkout">
+                            <div class="basketblock__header">
+                                <p>
+                                    <img src="img/cart/basket-icon.svg" alt="icon">
+                                    Order Summary
+                                </p>
+                            </div>
+                            <div class="basketblock__body">
+
+                                <div class="ordersumproducts">
+                                    <div class="ordersumproducts__row">
+                                        <div class="imgwrap">
+                                            <img src="img/cart/cart-product1.png" alt="img">
+                                            <span>1</span>
+                                        </div>
+                                        <p class="prodtitle">
+                                            Light - With low carbohydrates Carb Fitness SyrupMax...
+                                        </p>
+                                        <p class="price">
+                                            $25.99
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="discontcode">
+                                    <div class="inputfield">
+                                        <input type="text" placeholder="Enter discount code">
+                                        <input class="greenbtn" type="submit" value="Apply">
+                                    </div>
+                                </div>
+
+                                <div class="basketblock__price">
+                                    <div class="basketblock__pricerow">
+                                        <p class="title">Subtotal <span>( 2 items )</span></p>
+                                        <p class="price">$70.99</p>
+                                    </div>
+                                    <div class="basketblock__pricerow">
+                                        <p class="title">Savings</p>
+                                        <p class="price price_green"><span>-$5.99</span></p>
+                                    </div>
+                                    <div class="basketblock__pricerow shipping">
+                                        <p class="title">Shipping (below $25 order minimum)</p>
+                                        <p class="price">$4.99</p>
+                                    </div>
+                                </div>
+                                <div class="basketblock__totalbox">
+                                    <div class="totalinfo">
+                                        <p class="totalinfo__title">
+                                            Estimated total
+                                        </p>
+                                    </div>
+
+                                    <a href="#" class="greenbtn">
+                                        buy now
+                                        <img src="img/cart/arrright-white.svg" alt="icon">
+                                    </a>
+
+                                    <p class="policy">
+                                        See our <a href="#" target="_blank">Privacy Policy</a>, <a href="#"
+                                            target="_blank">Cookie Policy</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="cartbgelem1" src="img/background-elements/bgelem7.png" alt="img">
+            <img class="cartbgelem2" src="img/background-elements/bgelem8.png" alt="img">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup__window hide filepopup">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="modaltitle">Your address information</p>
+                    <div class="modalform">
+                       
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/imageuploadify.min.js"></script>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>

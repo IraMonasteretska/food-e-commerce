@@ -374,14 +374,36 @@ $(document).ready(function () {
         });
     }
 
-
-
-
+    // Upload photo
 
     if ($('.uploadphoto').length) {
         $('input[type="file"]').imageuploadify();
     }
 
+    // popups
+
+    $('.popup__btn').on('click', function (e) {
+        $('body').addClass('offscroll');
+
+        e.preventDefault;
+        var indexPopup = $(this).attr('data-popup');
+        $('.popup__window').removeClass('active');
+        $('.' + indexPopup).addClass('active');
+        return false;
+    });
+
+    $('.popup__close').on('click', function () {
+        $('.popup__window').removeClass('active');
+        $('body').removeClass('offscroll');
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.popup__body').length) {
+            $('.popup__window').removeClass('active');
+            $('body').removeClass('offscroll');
+        }
+    });
 
 
 });
