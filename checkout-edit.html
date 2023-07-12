@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Checkout edit</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -58,41 +58,7 @@
                                 </div>
                             </div>
                             <div class="chunfosect__body">
-                                <div class="chunfosect__payment shipping-addressinfo">
-                                    <p class="title">Your addresses</p>
-
-                                    <div class="chippingoptions">
-                                        <div class="chippingoption addr">
-                                            <input type="radio" name="address" id="addr1" checked>
-                                            <label for="addr1">
-                                                <div class="paytextwrap">
-                                                    <p class="title">Arsen Struk</p>
-                                                    <p class="descr">Taunlift street, Sacramento, CA 95829, NY, Phone
-                                                        number: +353434243651</p>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="chippingoption addr">
-                                            <input type="radio" name="address" id="addr2" checked>
-                                            <label for="addr2">
-                                                <div class="paytextwrap">
-                                                    <p class="title">Anna Halland</p>
-                                                    <p class="descr">Bordina street, Scala, Foligno, PG, 06034, Italy,
-                                                        Phone number: +354886244661</p>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <a href="#" class="checkout__addaddress popup__btn" data-popup="filepopup"><i
-                                            class="fa-solid fa-plus"></i> Add
-                                        Address</a>
-
-                                    <a href="#" class="chunfosect__abslink">To close <i
-                                            class="fa-solid fa-xmark"></i></a>
-                                </div>
-
-                                <!-- <div class="shipping-addressform">
+                                <div class="shipping-addressform">
                                     <form action="#">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -165,7 +131,7 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 
@@ -221,43 +187,7 @@
                                 </div>
                             </div>
                             <div class="chunfosect__body">
-                                <div class="chunfosect__payment paymethod">
-                                    <p class="title">Your credit cards</p>
-
-                                    <div class="chippingoptions cards">
-
-                                        <div class="chippingoption">
-                                            <input type="radio" name="payment" id="payment1" checked>
-                                            <label for="payment1">
-                                                <span class="payimgwrap">
-                                                    <img src="img/checkout/visa.png" alt="img">
-                                                </span>
-                                                <div class="paytextwrap">
-                                                    <p class="cardtitle">Credit card </p>
-                                                    <p class="cardnum">2344 xxxx xxxx 8880</p>
-                                                </div>
-                                            </label>
-                                        </div>
-
-                                        <div class="chippingoption">
-                                            <input type="radio" name="payment" id="payment2">
-                                            <label for="payment2">
-                                                <span class="payimgwrap">
-                                                    <img src="img/checkout/mastercard.png" alt="img">
-                                                </span>
-                                                <div class="paytextwrap">
-                                                    <p class="cardtitle">Credit card </p>
-                                                    <p class="cardnum">8889 xxxx xxxx 2234</p>
-                                                </div>
-                                            </label>
-                                        </div>
-
-                                    </div>
-
-                                    <a href="#" class="chunfosect__abslink addcard">Add Credit Card</a>
-                                </div>
-
-                                <div class="paymentform hide">
+                                <div class="paymentform">
                                     <form action="#">
                                         <div class="choosecards">
                                             <div class="cardbox">
@@ -331,16 +261,10 @@
 
 
                                 </div>
-
-
-
-
-
-
-
-
                             </div>
                         </div>
+
+
                     </div>
 
                     <div class="col-lg-4">
@@ -483,61 +407,6 @@
         </div>
     </footer>
 
-    <div class="popup__window hide filepopup">
-        <div class="container">
-            <div class="popup__wrapper">
-                <div class="popup__body">
-                    <div class="popup__close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <p class="modaltitle">Your address information</p>
-                    <div class="modalform">
-                        <form action="#">
-                            <div class="inputfield">
-                                <input type="text" id="address" placeholder="Streat address*">
-                                <input type="text" placeholder="Apt, suite, etc. (optinal)">
-                                <label for="address">Streat address*</label>
-                            </div>
-                            <div class="inputfield">
-                                <input type="text" id="city" placeholder="City*">
-                                <label for="city">City*</label>
-                            </div>
-                            <div class="inputfield">
-                                <label for="city">State*</label>
-                                <div class="generalselect">
-                                    <select class="customselect" name="category">
-                                        <option value="0">State</option>
-                                        <option value="1">State 1</option>
-                                        <option value="2">State 2</option>
-                                        <option value="3">State 3</option>
-                                        <option value="4">State 4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="inputfield">
-                                <input type="number" id="city" placeholder="Phone number*">
-                                <label for="city">Phone number*</label>
-                            </div>
-                            <div class="inputfield">
-                                <div class="checkwrapper">
-                                    <input type="checkbox" id="setaddr">
-                                    <label for="setaddr">Set as my preferred delivery address</label>
-                                </div>
-                            </div>
-                            <div class="modalbtngroup">
-                                <a href="#" class="bordergreenbtn">Cancel</a>
-                                <button class="greenbtn">Save</button>
-                            </div>
-
-                        </form>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper.js"></script>

@@ -573,6 +573,18 @@ header.header {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1199.8px) {
 
     .header__rightsect .headercartwrap {
@@ -875,12 +887,211 @@ header.header {
     }
 
     .header__cartdropdown {
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
 
 
 
-    
 
+
+}
+
+
+
+// login user
+
+.loginuser {
+    .header__rightsect {
+        .headercartwrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            max-width: 200px;
+            flex: 0 0 200px;
+            padding-left: 10px;
+
+            .favorite {
+                width: 100%;
+                max-width: 40px;
+                flex: 0 0 40px;
+                background: #F4F4F4;
+                border-radius: 50%;
+                height: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 25px;
+                }
+            }
+
+            .header__cart {
+                width: 100%;
+                max-width: 150px;
+                flex: 0 0 150px;
+                padding-left: 10px;
+            }
+
+        }
+    }
+
+    .header__rightsect .headeraccwrap {
+        margin-right: 10px;
+    }
+
+}
+
+
+
+@media(max-width:1199.8px) {
+
+    .loginuser {
+        .header__rightsect .headercartwrap {
+            max-width: 120px;
+            flex: 0 0 120px;
+            justify-content: space-between;
+        }
+
+        .header__rightsect .header__cart .header__cartprice {
+            display: none;
+        }
+
+        .header__rightsect .headercartwrap .header__cart {
+            max-width: 40px;
+            flex: 0 0 40px;
+            padding-left: 0;
+        }
+
+        .header__rightsect {
+            flex-wrap: wrap;
+        }
+
+        .header__rightsect {
+            .headeraccwrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 40px;
+                flex: 0 0 40px;
+            }
+
+            .header__account {
+                border: none !important;
+                padding: 0 !important;
+                background: $white !important;
+            }
+
+            .ddtext {
+                display: none;
+            }
+
+        }
+
+        .header__rightsect .headercartwrap {
+            padding-left: 15px;
+        }
+
+        .header__rightsect .header__accdropdown {
+            // top: 70px;
+        }
+    }
+
+}
+
+@media(max-width:991.8px) {
+
+    .loginuser {
+        .header__rightsect {
+            padding-left: 0;
+        }
+
+        .header__rightsect .headeraccwrap {
+            margin-right: 0;
+        }
+
+        .header__rightsect .headercartwrap {
+            max-width: calc(100% - 60px);
+            flex: 0 0 calc(100% - 60px);
+        }
+
+        .header__rightsect .headercartwrap {
+            padding-left: 0;
+        }
+
+        .header__rightsect .header__cartdropdown {
+            // top: 70px;
+        }
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .loginuser {
+        .header__rightsect .headercartwrap {
+            max-width: 95px;
+            flex: 0 0 95px;
+        }
+
+        .header__rightsect .headeraccwrap {
+            margin-right: 15px;
+        }
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .loginuser {
+
+        .mobsearchbtn button {
+            width: 30px;
+            height: 30px;
+        }
+
+        .header__rightsect .header__account .imgwrap {
+            width: 30px;
+            height: 30px;
+        }
+
+        .header__rightsect .headercartwrap .favorite,
+        .header__rightsect .headercartwrap .header__cart {
+            max-width: 30px;
+            flex: 0 0 30px;
+            height: 30px;
+        }
+
+        .header__rightsect .header__cart .cartimg {
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+         .header__rightsect .headercartwrap {
+            max-width: 70px;
+            flex: 0 0 70px;
+        }
+
+         .header__rightsect .headeraccwrap {
+            max-width: 30px;
+            flex: 0 0 30px;
+        }
+
+        .mobsearchbtn,
+        .header__rightsect .headeraccwrap {
+            margin-right: 10px;
+        }
+
+        .header__rightsect .header__cart .cartimg .prodcount {
+            top: 0;
+            right: 0;
+        }
+
+
+    }
 }

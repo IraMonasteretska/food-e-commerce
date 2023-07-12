@@ -1,0 +1,105 @@
+.mainslidersect.mainslidersect__recipes {
+    padding-top: 30px;
+
+    .mainslider__slide .slideinfo .mainslider__slidetitle {
+        font-size: 47px;
+        line-height: 140%;
+    }
+}
+
+.recipessearch__wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipessearch {
+    .recipessearch__wrap {
+        padding: 40px 0 52px;
+        border-bottom: 1px solid #D9DBDF;
+    }
+
+    .recipessearch__selectbox {
+        width: 100%;
+        max-width: 270px;
+        flex: 0 0 270px;
+        margin-right: 100px;
+    }
+
+    .recipessearch__searchbox {
+        width: 100%;
+        max-width: 682px;
+        flex: 0 0 682px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .searchblock {
+        width: 100%;
+        max-width: 355px;
+        flex: 0 0 355px;
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 43px;
+            border-radius: 35px;
+            border: 1px solid #D9DBDF;
+            background: #FFF;
+            padding-left: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            padding-right: 45px;
+            transition: 0.3s;
+
+            &::placeholder {
+                color: #9AA0A4;
+            }
+
+            &:focus {
+                border-color: $base-green;
+            }
+        }
+
+        button {
+            border: none;
+            padding: 0;
+            background: $base-green;
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            right: 3px;
+            top: 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: #13b086;
+            }
+        }
+    }
+
+    .bordergreenbtn {
+        width: 100%;
+        max-width: 229px;
+        flex: 0 0 229px;
+        min-height: 45px;
+        font-size: 15px;
+        line-height: 110%;
+    }
+
+    p {
+        margin: 0;
+        color: #8E939A;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 110%;
+    }
+}
+
+
+

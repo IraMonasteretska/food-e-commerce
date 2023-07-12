@@ -1,6 +1,8 @@
 footer.footer {
     padding: 55px 0 30px;
     background: #158466;
+    z-index: 5;
+    position: relative;
 
     .footer__topsect {
         padding-bottom: 60px;

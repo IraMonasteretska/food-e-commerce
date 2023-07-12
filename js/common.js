@@ -405,5 +405,117 @@ $(document).ready(function () {
         }
     });
 
+    // add shipping
+    $('.addshipping').click(function (e) {
+        e.preventDefault();
+        $('.addshipping-text').addClass('edit');
+        $('.addshipping-text').focus();
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.addshipping').length && !$target.closest('.addshipping-text').length) {
+            $('.addshipping-text').removeClass('edit');
+        }
+    });
+
+    // add card
+    $('.addcard').click(function (e) {
+        e.preventDefault();
+        $('.paymethod').addClass('hide');
+        $('.paymentform').removeClass('hide');
+    })
+
+    // Recipes --------------------------------------------------------
+    var swiper4 = new Swiper(".recipes-vslider", {
+        slidesPerView: 3,
+        spaceBetween: 35,
+        // loop: true,
+
+        navigation: {
+            nextEl: ".swiper-button-next.custom.slv",
+            prevEl: ".swiper-button-prev.custom.slv",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1550: {
+                slidesPerView: 3,
+                spaceBetween: 35,
+            },
+        },
+    });
+
+
+
+
+
 
 });
+
+
+
+// contenteditable
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // video
+// if (document.querySelector('video')) {
+//     // const player = new Plyr('#player');
+//     document.addEventListener('DOMContentLoaded', () => {
+//         // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+//         const controls = [
+//             'play-large', // The large play button in the center
+//             'rewind', // Rewind by the seek time (default 10 seconds)
+//             'play', // Play/pause playback
+//             'fast-forward', // Fast forward by the seek time (default 10 seconds)
+//             'progress', // The progress bar and scrubber for playback and buffering
+//             'current-time', // The current time of playback
+//             'duration', // The full duration of the media
+//             'mute', // Toggle mute
+//             'volume', // Volume control
+//             'captions', // Toggle captions
+//             'settings', // Settings menu
+//             'pip', // Picture-in-picture (currently Safari only)
+//             'airplay', // Airplay (currently Safari only)
+//             'fullscreen' // Toggle fullscreen
+//         ];
+
+//         // const player = new Plyr('#player', { controls });
+//         const players = Plyr.setup('.video__controls', {
+//             controls
+//         });
+
+//         // Expose
+//         window.players = players;
+
+//         // Bind event listener
+//         function on(selector, type, callback) {
+//             document.querySelector(selector).addEventListener(type, callback, false);
+//         }
+//     });
+// }
