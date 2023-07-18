@@ -76,7 +76,7 @@
 }
 
 .faq-content {
-    padding: 80px 0 200px;
+    padding: 80px 0 100px;
     color: $bace-color;
     position: relative;
 
@@ -195,7 +195,7 @@
 
 
     .faq-content {
-        padding: 60px 0 100px;
+        padding: 60px 0 50px;
     }
 
 }
@@ -220,7 +220,7 @@
     }
 
     .faq-content {
-        padding: 40px 0 100px;
+        padding: 40px 0 50px;
     }
 }
 
@@ -236,9 +236,10 @@
     .faq-searchsect {
         padding: 25px 15px;
     }
+    
 
     .faq-content {
-        padding: 20px 0 100px;
+        padding: 20px 0 0 0;
     }
 
     .faqcontent .faqcontent__box .title {
@@ -246,9 +247,6 @@
         margin-bottom: 10px;
     }
 
-    .faq-content {
-        padding-bottom: 80px;
-    }
 
     .faq-content .bgelem1,
     .faq-content .bgelem2 {

@@ -1,5 +1,5 @@
 .sfcontent {
-    padding: 113px 0 170px;
+    padding: 113px 0 70px;
 }
 
 .sfcontent__topsect {
@@ -190,7 +190,7 @@
 @media(max-width:991.8px) {
 
     .sfcontent {
-        padding: 70px 0 100px;
+        padding: 70px 0 50px;
     }
 
     .sfcontent__topsect .title {
@@ -207,12 +207,9 @@
 }
 
 @media(max-width:575.8px) {
-    .sfcontent {
-        padding-bottom: 55px;
-    }
 
     .sfcontent {
-        padding: 40px 0 80px;
+        padding: 40px 0 0 0;
     }
 
     .sfcontent__topsect img {

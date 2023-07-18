@@ -295,7 +295,7 @@
 }
 
 .allrecipes {
-    padding: 60px 0 70px;
+    padding: 60px 0 0 0;
 
     .productsection__header {
         margin-bottom: 70px;
@@ -642,16 +642,13 @@
     }
 
     .recipesslider .productsection__header p {
-        font-size: 18px;
+        // font-size: 18px;
 
         &:last-child {
             margin-bottom: 0;
         }
     }
 
-    .allrecipes .productsection__header {
-        margin-bottom: 20px;
-    }
 
     .recipecategoryname {
         padding-top: 15px;
