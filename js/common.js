@@ -486,6 +486,18 @@ $(document).ready(function () {
 
 
 
+
+    // const player = new Plyr('#player');
+    if ($('.js-player').length) {
+        const players = Plyr.setup('.js-player');
+    }
+    
+
+
+
+
+
+
 });
 
 

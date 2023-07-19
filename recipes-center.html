@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
-    <link rel="stylesheet" href="css/lib/imageuploadify.min.css" />
+    <link rel="stylesheet" href="css/lib/plyr-player.css">
     <script src="https://kit.fontawesome.com/19b6c9e17e.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -376,7 +375,7 @@
                                 <div class="recipesslide">
                                     <div class="recipesslide__imgwrap">
                                         <img src="img/recipes/recipeslide1.png" alt="img">
-                                        <button class="playbtn">
+                                        <button class="playbtn popup__btn" data-popup="videopopup">
                                             <img src="img/recipes/playbtn.svg" alt="play">
                                         </button>
                                         <div class="productlabel green">
@@ -411,7 +410,7 @@
                                 <div class="recipesslide">
                                     <div class="recipesslide__imgwrap">
                                         <img src="img/recipes/recipeslide2.png" alt="img">
-                                        <button class="playbtn">
+                                        <button class="playbtn popup__btn" data-popup="videopopup">
                                             <img src="img/recipes/playbtn.svg" alt="play">
                                         </button>
                                     </div>
@@ -443,7 +442,7 @@
                                 <div class="recipesslide">
                                     <div class="recipesslide__imgwrap">
                                         <img src="img/recipes/recipeslide3.png" alt="img">
-                                        <button class="playbtn">
+                                        <button class="playbtn popup__btn" data-popup="videopopup">
                                             <img src="img/recipes/playbtn.svg" alt="play">
                                         </button>
                                     </div>
@@ -475,7 +474,7 @@
                                 <div class="recipesslide">
                                     <div class="recipesslide__imgwrap">
                                         <img src="img/recipes/recipeslide2.png" alt="img">
-                                        <button class="playbtn">
+                                        <button class="playbtn popup__btn" data-popup="videopopup">
                                             <img src="img/recipes/playbtn.svg" alt="play">
                                         </button>
                                     </div>
@@ -813,10 +812,6 @@
             </div>
         </section>
 
-
-
-
-
     </main>
 
     <footer class="footer">
@@ -884,11 +879,241 @@
         </div>
     </footer>
 
+
+    <div class="popup__window hide videopopup">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body">
+                    <div class="popup__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="vodeosect">
+
+                        <div class="popupvideowrap">
+                            <video id="player" class="js-player" playsinline controls poster="img/recipes/videoimg.jpg">
+                                <source src="video/test.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="descrvideowrap">
+                            <div class="video__topinfo">
+                                <div class="video__topinfo-writereview">
+                                    <div class="recipe-rightsect__writereview">
+                                        <div class="ratinfo">
+                                            <div class="ratinfobox">
+                                                <span>4.5</span>
+                                                <div class="stars">
+                                                    <img src="img/category/star.svg" alt="star">
+                                                    <img src="img/category/star.svg" alt="star">
+                                                    <img src="img/category/star.svg" alt="star">
+                                                    <img src="img/category/star.svg" alt="star">
+                                                    <img src="img/category/star-emp.svg" alt="star">
+                                                </div>
+                                            </div>
+                                            <p>Based on 34 Reviews</p>
+                                        </div>
+                                        <a href="#" class="greenbtn">Write a Review</a>
+                                    </div>
+                                </div>
+                                <div class="video__topinfo-soc">
+                                    <div class="recipe-rightsect__setbox">
+                                        <div class="recipe-rightsect__setbox-print">
+                                            <p>Print Recipe:</p>
+                                            <a href="#" class="printlink">
+                                                <img src="img/recipes/recipe-print.svg" alt="print">
+                                            </a>
+                                        </div>
+                                        <div class="recipe-rightsect__setbox-soc">
+                                            <p>Share Recipe:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <img src="img/recipes/recipe-fb.svg" alt="facebook">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <img src="img/recipes/recipe-inst.svg" alt="instagram">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <img src="img/recipes/recipe-tg.svg" alt="telegram">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipe-content">
+                                <p class="title">Description</p>
+                                <p>
+                                    Psum dolor sit amet, consectetur adipiscing elit. Ut quis sem ultricies enim
+                                    placerat ultrices. Sed a ultrices sapien. Nunc eget ultrices risus. Vivamus
+                                    tincidunt, enim ac lobortis tincidunt, velit ex scelerisque arcu, sed pretium lorem
+                                    nisl eget eros. Praesent tortor diam, bibendum eu tristique tincidunt, ultrices nec
+                                    odio.
+                                </p>
+                                <p>
+                                    Duis ligula erat, fermentum eu gravida ut, varius eu nulla. Curabitur nec urna quis
+                                    lacus cursus commodo cursus vel sem. Etiam sit amet metus ut lorem suscipit mattis.
+                                </p>
+
+                                <div class="recipe-ingredients">
+                                    <div class="recipe-ingredients__header">
+                                        <p>
+                                            <img src="img/recipes/ingredients-header-ic.svg" alt="img">
+                                            Ingredients
+                                        </p>
+                                    </div>
+                                    <div class="recipe-ingredients__body">
+                                        <ul>
+                                            <li>1 (30-ounce) bag hash browns</li>
+                                            <li>3 tablespoons Gefen Olive Oil</li>
+                                            <li>1 teaspoon Italian seasoning</li>
+                                            <li>1/2 teaspoon salt</li>
+                                            <li>1/4 teaspoon ground Gefen Black Pepper</li>
+                                            <li>1 cup shredded mozzarella cheese</li>
+                                            <li>2 to 4 vegetarian sausages</li>
+                                            <li>7 eggs</li>
+                                            <li>Chopped chives (optional)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="recipe-reviev">
+                                    <p class="title">Did you like the recipe? Don't forget<br> to rate it and leave a
+                                        review
+                                    </p>
+                                    <form action="#">
+                                        <div class="recipe-reviev__selectrating">
+                                            <p>Select a Rating (required)</p>
+                                            <div class="selectrating__inputs">
+
+                                                <input type="radio" name="stars" id="star-1">
+                                                <input type="radio" name="stars" id="star-2">
+                                                <input type="radio" name="stars" id="star-3">
+                                                <input type="radio" name="stars" id="star-4" checked="">
+                                                <input type="radio" name="stars" id="star-5">
+
+                                                <section>
+                                                    <label for="star-1">
+                                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_248_3325)">
+                                                                <path
+                                                                    d="M28.3924 11.0743L28.3926 11.075C28.5104 11.4379 28.4011 11.8339 28.1138 12.0853L28.1133 12.0857L21.9128 17.5226L21.6616 17.7428L21.7355 18.0686L23.5639 26.1224C23.6482 26.495 23.5037 26.8797 23.1944 27.1038L23.1943 27.1039C22.8857 27.3276 22.4766 27.3449 22.1524 27.1498L22.1511 27.149L15.0777 22.9199L14.7899 22.7479L14.502 22.9199L7.42606 27.149L7.42581 27.1491C7.27348 27.2403 7.10649 27.2851 6.93951 27.2851C6.74531 27.2851 6.55142 27.2248 6.38343 27.1034C6.07515 26.8806 5.92999 26.4965 6.01455 26.1222L7.84283 18.0686L7.91678 17.7428L7.66566 17.5226L1.46507 12.0847L1.464 12.0837C1.1782 11.8343 1.06898 11.4381 1.18696 11.0753C1.30481 10.7128 1.62437 10.4571 2.00352 10.4218C2.00375 10.4217 2.00398 10.4217 2.00421 10.4217L10.2077 9.67693L10.5413 9.64665L10.6729 9.33869L13.9163 1.74837C13.9163 1.74831 13.9164 1.74825 13.9164 1.7482C14.0676 1.39581 14.4101 1.17035 14.7898 1.17035C15.1696 1.17035 15.512 1.39579 15.6632 1.74673C15.6633 1.74699 15.6634 1.74725 15.6635 1.7475L18.9068 9.33866L19.0384 9.64665L19.3719 9.67693L27.5751 10.4218L27.5754 10.4218C27.9551 10.456 28.2755 10.7126 28.3924 11.0743Z"
+                                                                    fill="#fff" stroke="#158466" stroke-width="1.12195">
+                                                                </path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_248_3325">
+                                                                    <rect width="28.4212" height="28.4212" fill="white"
+                                                                        transform="translate(0.579102)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </label>
+                                                    <label for="star-2">
+                                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_248_3325)">
+                                                                <path
+                                                                    d="M28.3924 11.0743L28.3926 11.075C28.5104 11.4379 28.4011 11.8339 28.1138 12.0853L28.1133 12.0857L21.9128 17.5226L21.6616 17.7428L21.7355 18.0686L23.5639 26.1224C23.6482 26.495 23.5037 26.8797 23.1944 27.1038L23.1943 27.1039C22.8857 27.3276 22.4766 27.3449 22.1524 27.1498L22.1511 27.149L15.0777 22.9199L14.7899 22.7479L14.502 22.9199L7.42606 27.149L7.42581 27.1491C7.27348 27.2403 7.10649 27.2851 6.93951 27.2851C6.74531 27.2851 6.55142 27.2248 6.38343 27.1034C6.07515 26.8806 5.92999 26.4965 6.01455 26.1222L7.84283 18.0686L7.91678 17.7428L7.66566 17.5226L1.46507 12.0847L1.464 12.0837C1.1782 11.8343 1.06898 11.4381 1.18696 11.0753C1.30481 10.7128 1.62437 10.4571 2.00352 10.4218C2.00375 10.4217 2.00398 10.4217 2.00421 10.4217L10.2077 9.67693L10.5413 9.64665L10.6729 9.33869L13.9163 1.74837C13.9163 1.74831 13.9164 1.74825 13.9164 1.7482C14.0676 1.39581 14.4101 1.17035 14.7898 1.17035C15.1696 1.17035 15.512 1.39579 15.6632 1.74673C15.6633 1.74699 15.6634 1.74725 15.6635 1.7475L18.9068 9.33866L19.0384 9.64665L19.3719 9.67693L27.5751 10.4218L27.5754 10.4218C27.9551 10.456 28.2755 10.7126 28.3924 11.0743Z"
+                                                                    fill="#fff" stroke="#158466" stroke-width="1.12195">
+                                                                </path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_248_3325">
+                                                                    <rect width="28.4212" height="28.4212" fill="white"
+                                                                        transform="translate(0.579102)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </label>
+                                                    <label for="star-3">
+                                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_248_3325)">
+                                                                <path
+                                                                    d="M28.3924 11.0743L28.3926 11.075C28.5104 11.4379 28.4011 11.8339 28.1138 12.0853L28.1133 12.0857L21.9128 17.5226L21.6616 17.7428L21.7355 18.0686L23.5639 26.1224C23.6482 26.495 23.5037 26.8797 23.1944 27.1038L23.1943 27.1039C22.8857 27.3276 22.4766 27.3449 22.1524 27.1498L22.1511 27.149L15.0777 22.9199L14.7899 22.7479L14.502 22.9199L7.42606 27.149L7.42581 27.1491C7.27348 27.2403 7.10649 27.2851 6.93951 27.2851C6.74531 27.2851 6.55142 27.2248 6.38343 27.1034C6.07515 26.8806 5.92999 26.4965 6.01455 26.1222L7.84283 18.0686L7.91678 17.7428L7.66566 17.5226L1.46507 12.0847L1.464 12.0837C1.1782 11.8343 1.06898 11.4381 1.18696 11.0753C1.30481 10.7128 1.62437 10.4571 2.00352 10.4218C2.00375 10.4217 2.00398 10.4217 2.00421 10.4217L10.2077 9.67693L10.5413 9.64665L10.6729 9.33869L13.9163 1.74837C13.9163 1.74831 13.9164 1.74825 13.9164 1.7482C14.0676 1.39581 14.4101 1.17035 14.7898 1.17035C15.1696 1.17035 15.512 1.39579 15.6632 1.74673C15.6633 1.74699 15.6634 1.74725 15.6635 1.7475L18.9068 9.33866L19.0384 9.64665L19.3719 9.67693L27.5751 10.4218L27.5754 10.4218C27.9551 10.456 28.2755 10.7126 28.3924 11.0743Z"
+                                                                    fill="#fff" stroke="#158466" stroke-width="1.12195">
+                                                                </path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_248_3325">
+                                                                    <rect width="28.4212" height="28.4212" fill="white"
+                                                                        transform="translate(0.579102)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </label>
+                                                    <label for="star-4">
+                                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_248_3325)">
+                                                                <path
+                                                                    d="M28.3924 11.0743L28.3926 11.075C28.5104 11.4379 28.4011 11.8339 28.1138 12.0853L28.1133 12.0857L21.9128 17.5226L21.6616 17.7428L21.7355 18.0686L23.5639 26.1224C23.6482 26.495 23.5037 26.8797 23.1944 27.1038L23.1943 27.1039C22.8857 27.3276 22.4766 27.3449 22.1524 27.1498L22.1511 27.149L15.0777 22.9199L14.7899 22.7479L14.502 22.9199L7.42606 27.149L7.42581 27.1491C7.27348 27.2403 7.10649 27.2851 6.93951 27.2851C6.74531 27.2851 6.55142 27.2248 6.38343 27.1034C6.07515 26.8806 5.92999 26.4965 6.01455 26.1222L7.84283 18.0686L7.91678 17.7428L7.66566 17.5226L1.46507 12.0847L1.464 12.0837C1.1782 11.8343 1.06898 11.4381 1.18696 11.0753C1.30481 10.7128 1.62437 10.4571 2.00352 10.4218C2.00375 10.4217 2.00398 10.4217 2.00421 10.4217L10.2077 9.67693L10.5413 9.64665L10.6729 9.33869L13.9163 1.74837C13.9163 1.74831 13.9164 1.74825 13.9164 1.7482C14.0676 1.39581 14.4101 1.17035 14.7898 1.17035C15.1696 1.17035 15.512 1.39579 15.6632 1.74673C15.6633 1.74699 15.6634 1.74725 15.6635 1.7475L18.9068 9.33866L19.0384 9.64665L19.3719 9.67693L27.5751 10.4218L27.5754 10.4218C27.9551 10.456 28.2755 10.7126 28.3924 11.0743Z"
+                                                                    fill="#fff" stroke="#158466" stroke-width="1.12195">
+                                                                </path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_248_3325">
+                                                                    <rect width="28.4212" height="28.4212" fill="white"
+                                                                        transform="translate(0.579102)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </label>
+                                                    <label for="star-5">
+                                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_248_3325)">
+                                                                <path
+                                                                    d="M28.3924 11.0743L28.3926 11.075C28.5104 11.4379 28.4011 11.8339 28.1138 12.0853L28.1133 12.0857L21.9128 17.5226L21.6616 17.7428L21.7355 18.0686L23.5639 26.1224C23.6482 26.495 23.5037 26.8797 23.1944 27.1038L23.1943 27.1039C22.8857 27.3276 22.4766 27.3449 22.1524 27.1498L22.1511 27.149L15.0777 22.9199L14.7899 22.7479L14.502 22.9199L7.42606 27.149L7.42581 27.1491C7.27348 27.2403 7.10649 27.2851 6.93951 27.2851C6.74531 27.2851 6.55142 27.2248 6.38343 27.1034C6.07515 26.8806 5.92999 26.4965 6.01455 26.1222L7.84283 18.0686L7.91678 17.7428L7.66566 17.5226L1.46507 12.0847L1.464 12.0837C1.1782 11.8343 1.06898 11.4381 1.18696 11.0753C1.30481 10.7128 1.62437 10.4571 2.00352 10.4218C2.00375 10.4217 2.00398 10.4217 2.00421 10.4217L10.2077 9.67693L10.5413 9.64665L10.6729 9.33869L13.9163 1.74837C13.9163 1.74831 13.9164 1.74825 13.9164 1.7482C14.0676 1.39581 14.4101 1.17035 14.7898 1.17035C15.1696 1.17035 15.512 1.39579 15.6632 1.74673C15.6633 1.74699 15.6634 1.74725 15.6635 1.7475L18.9068 9.33866L19.0384 9.64665L19.3719 9.67693L27.5751 10.4218L27.5754 10.4218C27.9551 10.456 28.2755 10.7126 28.3924 11.0743Z"
+                                                                    fill="#fff" stroke="#158466" stroke-width="1.12195">
+                                                                </path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_248_3325">
+                                                                    <rect width="28.4212" height="28.4212" fill="white"
+                                                                        transform="translate(0.579102)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </label>
+
+                                                </section>
+                                            </div>
+                                            <div class="inputfield">
+                                                <textarea id="recipereview"
+                                                    placeholder="Did you like the recipe?"></textarea>
+                                                <label for="recipereview">Please ask a question or write a
+                                                    review</label>
+                                            </div>
+                                            <div class="text-right">
+                                                <input class="greenbtn" type="submit" value="Send feedback">
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="js/lib/imageuploadify.min.js"></script>
-
+    <script src="js/lib/plyr-player.js"></script>
     <script src="js/common.js"></script>
 </body>
 
