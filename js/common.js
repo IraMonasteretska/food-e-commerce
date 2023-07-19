@@ -492,6 +492,9 @@ $(document).ready(function () {
         const players = Plyr.setup('.js-player');
     }
     
+    $('.videopopup .popup__close').click(function(){
+        player.pause();
+    });
 
 
 
