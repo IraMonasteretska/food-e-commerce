@@ -466,35 +466,34 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // VIDEO
     // const player = new Plyr('#player');
     if ($('.js-player').length) {
         const players = Plyr.setup('.js-player');
     }
+
     
     $('.videopopup .popup__close').click(function(){
         player.pause();
     });
+
+
+
+
+
+
+    $('.addingr').on('click', function() {
+        // Створюємо новий елемент .ingrinp з порожнім значенням input
+        const newIngrinp = $('<div class="ingrinp"><input type="text" value=""></div>');
+
+        // Додаємо новий елемент всередину .ingrwrap
+        $('.ingrwrap').append(newIngrinp);
+
+        // Викликаємо метод .focus() для фокусування на новому input
+        newIngrinp.find('input').focus();
+      });
+
+
 
 
 
