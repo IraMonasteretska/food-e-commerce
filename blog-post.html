@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header loginuser">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="header__searchbox">
+                            <select class="customselect" name="state">
+                                <option value="0">Products</option>
+                                <option value="1">Products And Discussions</option>
+                            </select>
+
+                            <div class="searchinputfield">
+                                <input type="text" placeholder="Search on Food...">
+                                <button>
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3 col-8">
+                    <div class="header__rightsect">
+                        <div class="mobsearchbtn">
+                            <button><img src="img/header/search-icon.svg" alt="search"></button>
+                        </div>
+                        <div class="headeraccwrap">
+                            <div class="header__account">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="ddtext">
+                                    <p class="subtext">Sign In</p>
+                                    <p class="ddtitle">Account</p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <a href="#" class="greenbtn">Login</a>
+                                <p>New customer?</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+                        </div>
+                        <div class="headercartwrap">
+                            <a href="#" class="favorite">
+                                <img src="img/header/heart.svg" alt="favorite">
+                            </a>
+                            <div class="header__cart">
+                                <div class="cartimg">
+                                    <img src="img/header/cart-icon.png" alt="cart">
+                                    <div class="prodcount">0</div>
+                                </div>
+                                <p class="header__cartprice">$ 15.77</p>
+                            </div>
+                            <div class="header__cartdropdown">
+                                <div class="titleblock">
+                                    <p>The product has been added to the cart</p>
+                                    <button class="closecart"><img src="img/header/close.svg" alt="close"></button>
+                                </div>
+                                <div class="header__cartbody">
+                                    <div class="header__cartrow">
+                                        <div class="header__cartimg">
+                                            <img src="img/header/headercartimg.png" alt="product">
+                                        </div>
+                                        <div class="header__cartdescr">
+                                            <p>
+                                                Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                            </p>
+                                            <div class="header__cartcounter">
+                                                <p>
+                                                    Number of pieces:
+                                                </p>
+                                                <div class="number">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cartprice">
+                                            <p class="price">$ 15.77</p>
+                                            <p class="oldprice">$ 25.12</p>
+                                        </div>
+                                        <div class="header__cartdelete">
+                                            <button class="deleterow"><img src="img/header/delete-icon.svg"
+                                                    alt="delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cartfooter">
+                                    <p>everything: <span>$ 15.77</span></p>
+                                    <a href="#">To order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">Community blog </a></li>
+                    <li>Finding restaur...</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="postwelcomescreen">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="postwelcomescreen__imgwrap">
+                            <img src="img/blog/postimg.jpg" alt="img">
+                        </div>
+
+                        <div class="postwelcomescreen__info">
+                            <div class="author">
+                                <div class="author__img">
+                                    <img src="img/blog/user.png" alt="user">
+                                </div>
+                                <div class="author__info">
+                                    <p class="name">Meri Cuper</p>
+                                    <p class="date">22 Jan 2023</p>
+                                </div>
+                            </div>
+                            <div class="postwelcomescreen__inforight">
+                                <div class="time">
+                                    <p>
+                                        <img src="img/general/clock-white.svg" alt="time">
+                                        10 min
+                                    </p>
+                                </div>
+                                <div class="category">
+                                    <p>
+                                        Category:
+                                        <span>Gluten</span>
+                                    </p>
+                                </div>
+                                <div class="share">
+                                    <span>share:</span>
+                                    <ul>
+                                        <li><a href="#" target="_blank"><img src="img/general/fb-white.svg"
+                                                    alt="facebook"></a>
+                                        </li>
+                                        <li><a href="#" target="_blank"><img src="img/general/inst-white.svg"
+                                                    alt="instagram"></a></li>
+                                        <li><a href="#" target="_blank"><img src="img/general/tg-white.svg"
+                                                    alt="telegram"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="postcontent">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <h1>How to choose gluten-free baking?</h1>
+                        <p>
+                            Psum dolor sit amet, consectetur adipiscing elit. Ut quis sem ultricies enim placerat
+                            ultrices. Sed
+                            a ultrices sapien. Nunc eget ultrices risus. Vivamus tincidunt, enim ac lobortis tincidunt,
+                            velit ex
+                            scelerisque arcu, sed pretium lorem nisl eget eros. Praesent tortor diam, bibendum eu
+                            tristique
+                            tincidunt, ultrices nec odio. Duis ligula erat, fermentum eu gravida ut, varius eu nulla.
+                            Curabitur
+                            nec urna quis lacus cursus commodo cursus vel sem. Etiam sit amet metus ut lorem suscipit
+                            mattis.
+                        </p>
+                        <p>
+                            Cras dapibus euismod tincidunt. Vivamus tincidunt felis eu augue elementum, sit amet finibus
+                            velit
+                            sollicitudin. Pellentesque tortor eros, fringilla accumsan venenatis at, pulvinar fringilla
+                            ligula.
+                            Quisque fringilla tortor eu fermentum tincidunt. Curabitur in accumsan nisl, et sagittis
+                            nisi. Nam
+                            tempus, turpis viverra ultricies consequat, dolor lorem dapibus risus, quis sodales quam
+                            risus non
+                            erat.
+                        </p>
+                        <blockquote>
+                            “ Donec vehicula luctus magna. Nulla ullamcorper sem a mauris ultricies, ut interdum quam
+                            ullamcorper. Vivamus ac nibh faucibus arcu gravida blandit. Quisque semper augue purus, non
+                            vulputate tellus pharetra id. In ante metus, iaculis id consequat eget, posuere quis mi.“
+                        </blockquote>
+                        <h3>
+                            Pellentesque posuere porta lorem, id pulvinar nulla vulputate ornare
+                        </h3>
+                        <p>
+                            Dolor sit amet, consectetur adipiscing elit. Ut quis sem ultricies enim placerat ultrices.
+                            Sed a ultrices sapien. Nunc eget ultrices risus. Vivamus tincidunt, enim ac lobortis
+                            tincidunt, velit ex scelerisque arcu, sed pretium lorem nisl eget eros. Praesent tortor
+                            diam, bibendum eu tristique tincidunt, ultrices nec odio. Duis ligula erat, fermentum eu
+                            gravida ut, varius eu nulla. Curabitur nec urna quis lacus cursus commodo cursus vel sem.
+                            Etiam sit amet metus ut lorem suscipit mattis:
+                        </p>
+                        <ul>
+                            <li>
+                                Navigating Family Dynamics
+                            </li>
+                            <li>
+                                Aenean posuere sed nibh ac pretium
+                            </li>
+                            <li>
+                                Nam non lorem suscipit, rhoncus risus vel, suscipit magna.
+                            </li>
+                            <li>
+                                Cras aliquet metus nec pharetra porttitor.
+                            </li>
+                        </ul>
+                        <p>
+                            Nam vitae aliquam eros, in aliquet ipsum. Nunc ullamcorper purus vel nibh efficitur, in
+                            gravida lectus pharetra. Morbi tempor, orci at sollicitudin cursus, arcu tortor sodales
+                            turpis, vel pharetra eros sem a orci. Nunc faucibus vitae massa nec egestas. In venenatis
+                            odio a tempus pellentesque. Sed gravida aliquam velit, eu egestas mauris ultricies quis.
+                        </p>
+                        <img src="img/blog/postpic1.jpg" alt="img">
+                        <h3>Sed in mi sit amet risus condimentum iaculis</h3>
+                        <p>
+                            Nunc ullamcorper purus vel nibh efficitur, in gravida lectus pharetra. Morbi tempor, orci at
+                            sollicitudin cursus, arcu tortor sodales turpis, vel pharetra eros sem a orci. Nunc faucibus
+                            vitae massa nec egestas. In venenatis odio a tempus pellentesque. Sed gravida aliquam velit,
+                            eu egestas mauris ultricies quis. Nulla facilisi. Vestibulum faucibus venenatis lacus at
+                            iaculis. Maecenas accumsan, purus vitae mattis condimentum, velit ante condimentum dui, a
+                            efficitur velit ex sit amet lacus.
+                        </p>
+                        <p>
+                            Donec vehicula luctus magna. Nulla ullamcorper sem a mauris ultricies, ut interdum quam
+                            ullamcorper. Vivamus ac nibh faucibus arcu gravida blandit. Quisque semper augue purus, non
+                            vulputate tellus pharetra id. In ante metus, iaculis id consequat eget, posuere quis mi. Sed
+                            ac dignissim tortor. Maecenas venenatis nisi ut tristique interdum. Aliquam pellentesque
+                            lacus felis, et condimentum augue faucibus ac.
+                        </p>
+                        <p>
+                            Nunc faucibus vitae massa nec egestas. In venenatis odio a tempus pellentesque. Sed gravida
+                            aliquam velit, eu egestas mauris ultricies quis. Nulla facilisi. Vestibulum faucibus
+                            venenatis lacus at iaculis. Maecenas accumsan, purus vitae mattis condimentum, velit ante
+                            condimentum dui, a efficitur velit ex sit amet lacus.
+                        </p>
+
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/IUN664s7N-c" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>
+                            Donec vehicula luctus magna. Nulla ullamcorper sem a mauris ultricies, ut interdum quam
+                            ullamcorper. Vivamus ac nibh faucibus arcu gravida blandit. Quisque semper augue purus, non
+                            vulputate tellus pharetra id. In ante metus, iaculis id consequat eget, posuere quis mi. Sed
+                            ac dignissim tortor. Maecenas venenatis nisi ut tristique interdum. Aliquam pellentesque
+                            lacus felis, et condimentum augue faucibus ac.
+                        </p>
+                        <p>
+                            Nunc faucibus vitae massa nec egestas. In venenatis odio a tempus pellentesque. Sed gravida
+                            aliquam velit, eu egestas mauris ultricies quis. Nulla facilisi. Vestibulum faucibus
+                            venenatis lacus at iaculis. Maecenas accumsan, purus vitae mattis condimentum, velit ante
+                            condimentum dui, a efficitur velit ex sit amet lacus.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>
