@@ -472,32 +472,36 @@ $(document).ready(function () {
         const players = Plyr.setup('.js-player');
     }
 
-    
-    $('.videopopup .popup__close').click(function(){
+
+    $('.videopopup .popup__close').click(function () {
         player.pause();
     });
 
-
-
-
-
-
-    $('.addingr').on('click', function() {
-        // Створюємо новий елемент .ingrinp з порожнім значенням input
+    $('.addingr').on('click', function () {
         const newIngrinp = $('<div class="ingrinp"><input type="text" value=""></div>');
 
-        // Додаємо новий елемент всередину .ingrwrap
         $('.ingrwrap').append(newIngrinp);
 
-        // Викликаємо метод .focus() для фокусування на новому input
         newIngrinp.find('input').focus();
-      });
+    });
 
 
+    //   POST
+    //   upload photo
 
+    $('#chooseFile').bind('change', function () {
+        var filename = $("#chooseFile").val();
+        if (/^\s*$/.test(filename)) {
+            $(".file-upload").removeClass('active');
+            $("#noFile").text("No file chosen...");
+        }
+        else {
+            $(".file-upload").addClass('active');
+            $("#noFile").text(filename.replace("C:\\fakepath\\", ""));
+        }
+    });
 
-
-
+    // text editor
 
 
 });

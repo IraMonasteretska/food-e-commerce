@@ -759,114 +759,116 @@
 
     }
 
-    .crrecradiobox {
+    
+
+}
+
+.crrecradiobox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    p {
+        margin: 0;
+        width: 100%;
+        flex: 0 0 300px;
+        flex: 0 0 300px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    .radinpwrap {
+        width: 100%;
+        flex: 0 0 calc(100% - 300px);
+        flex: 0 0 calc(100% - 300px);
         display: flex;
         align-items: center;
-        margin-bottom: 35px;
 
-        p {
-            margin: 0;
-            width: 100%;
-            flex: 0 0 300px;
-            flex: 0 0 300px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 160%;
-        }
+        .radinpbox {
+            margin-right: 70px;
+            min-width: 110px;
 
-        .radinpwrap {
-            width: 100%;
-            flex: 0 0 calc(100% - 300px);
-            flex: 0 0 calc(100% - 300px);
-            display: flex;
-            align-items: center;
+            input {
+                display: none;
 
-            .radinpbox {
-                margin-right: 70px;
-                min-width: 110px;
-
-                input {
-                    display: none;
-
-                    &:checked {
-                        &+label {
-                            &::after {
-                                border-color: $base-green;
-                                background: url('../img/recipes/radio-checked.svg') no-repeat center / 10px;
-                            }
+                &:checked {
+                    &+label {
+                        &::after {
+                            border-color: $base-green;
+                            background: url('../img/recipes/radio-checked.svg') no-repeat center / 10px;
                         }
                     }
                 }
+            }
 
-                label {
-                    position: relative;
-                    padding-left: 32px;
-                    cursor: pointer;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 160%;
+            label {
+                position: relative;
+                padding-left: 32px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 160%;
 
-                    &::after {
-                        content: '';
-                        display: inline-block;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
-                        border: 1px solid #3B454C;
-                        position: absolute;
-                        left: 0;
-                        top: -1px;
-                    }
-                }
-
-                &:last-child {
-                    margin-right: 0;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid #3B454C;
+                    position: absolute;
+                    left: 0;
+                    top: -1px;
                 }
             }
 
-            .preptime {
-                width: 100px;
-                padding: 10px 20px;
-                border-radius: 30px;
-                border: 1px solid #D9DBDF;
-                display: flex;
-                align-items: center;
-
-                input {
-                    width: 100%;
-                    max-width: 24px;
-                    flex: 0 0 24px;
-                    border: none;
-                    color: rgba(33, 41, 47, 1);
-                    font-size: 16px;
-                    font-weight: 500;
-                    text-align: center;
-
-                    &::placeholder {
-                        color: rgba(33, 41, 47, 0.70);
-                    }
-                }
-
-                span {
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 100%;
-                    width: 100%;
-                    max-width: calc(100% - 24px);
-                    flex: 0 0 calc(100% - 24px);
-                }
+            &:last-child {
+                margin-right: 0;
             }
-
-
-
-
         }
-    }
 
-    .crrecradiosect {
-        margin-bottom: 60px;
-    }
+        .preptime {
+            width: 100px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid #D9DBDF;
+            display: flex;
+            align-items: center;
 
+            input {
+                width: 100%;
+                max-width: 24px;
+                flex: 0 0 24px;
+                border: none;
+                color: rgba(33, 41, 47, 1);
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+
+                &::placeholder {
+                    color: rgba(33, 41, 47, 0.70);
+                }
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 100%;
+                width: 100%;
+                max-width: calc(100% - 24px);
+                flex: 0 0 calc(100% - 24px);
+            }
+        }
+
+
+
+
+    }
+}
+
+.crrecradiosect {
+    margin-bottom: 60px;
 }
 
 .createrec-uploadphoto .uplinfotext {
