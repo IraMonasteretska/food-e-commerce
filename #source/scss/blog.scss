@@ -14,6 +14,7 @@
     margin-bottom: 40px;
 }
 
+
 .slidetimebox {
     padding-bottom: 15px;
 
@@ -697,6 +698,32 @@
     }
 }
 
+.ck-editor__editable[role="textbox"] {
+    min-height: 400px;
+}
+
+.ck-content .image {
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    border-radius: 0 0 15px 15px !important;
+    border: 2px solid #DBDCE2;
+}
+
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar {
+    border: 2px solid #DBDCE2;
+    border-bottom: none;
+}
+
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+    border: 2px solid $base-green !important;
+}
+
+.texteditor {
+    margin-bottom: 30px;
+}
 
 .crrecradiosect.crrecradiosect_blog {
     margin-top: 50px;
@@ -724,3 +751,96 @@
     }
 }
 
+@media(max-width:1399.8px) {
+
+    .createrec-uploadphoto.blog {
+        .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+            width: 170px;
+        }
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+    .createpostsection {
+        padding: 50px 0 0 0;
+    }
+
+    .ck-editor__editable[role=textbox] {
+        min-height: 300px;
+    }
+
+
+
+}
+
+@media(max-width:767.8px) {
+
+    .crrecradiosect.crrecradiosect_blog {
+
+        .crrecradiobox {
+            flex-wrap: wrap;
+
+            p {
+                max-width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+
+            .radinpwrap {
+                flex-wrap: wrap;
+                max-width: 100%;
+                flex: 0 0 100%;
+
+                .radinpbox {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+       
+    }
+
+    .createpostsection {
+        padding-top: 30px;
+    }
+
+    .crrecradiosect.crrecradiosect_blog {
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .file-upload .file-select-name {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 15px;
+    }
+
+    .file-upload .file-select-button {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .crrecradiosect.crrecradiosect_blog .crrecradiobox .radinpwrap .radinpbox {
+        margin-right: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .crrecradiosect.crrecradiosect_blog .crrecradiobox p {
+        margin-bottom: 10px;
+    }
+
+    .createrec-uploadphoto.blog .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+        width: 40%;
+    }
+}

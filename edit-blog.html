@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Blog</title>
+    <title>Edit Blog</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/imageuploadify.min.css" />
@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 <body>
     <header class="header loginuser">
@@ -152,24 +153,53 @@
                     <div class="col-lg-8">
                         <form action="#">
                             <div class="inputfield">
-                                <input type="text" id="blogtitle" placeholder="Spinach Cheese Pie">
+                                <input type="text" id="blogtitle" placeholder="Spinach Cheese Pie"
+                                    value="Spinach Cheese Pie">
                                 <label for="blogtitle">Blog title*</label>
                             </div>
-                            <div class="file-upload">
+                            <div class="file-upload active">
                                 <div class="file-select">
                                     <label for="chooseFile">
-                                        <div class="file-select-button" id="fileName"><img src="img/blog/photo-ic.svg" alt="icon">Add Foto</div>
-                                        <div class="file-select-name" id="noFile">Add Photos 5MB maximum size</div>
+                                        <div class="file-select-button" id="fileName"><img src="img/blog/photo-ic.svg"
+                                                alt="icon">Add Foto</div>
+                                        <div class="file-select-name" id="noFile">photo.png</div>
                                     </label>
-                                    <input type="file" name="chooseFile" id="chooseFile">
+                                    <input type="file" name="chooseFile" id="chooseFile" value="c:/passwords.txt">
                                 </div>
                             </div>
                             <div class="texteditor">
                                 <div id="editor">
+                                    <p>
+                                        Psum dolor sit amet, consectetur adipiscing elit. Ut quis sem ultricies enim
+                                    placerat ultrices. Sed a ultrices sapien. Nunc eget ultrices risus. Vivamus
+                                    tincidunt, enim ac lobortis tincidunt, velit ex scelerisque arcu, sed pretium lorem
+                                    nisl eget eros. Praesent tortor diam, bibendum eu tristique tincidunt, ultrices nec
+                                    odio. Duis ligula erat, fermentum eu gravida ut, varius eu nulla.
+                                    </p>
+                                    <p>
+                                        Curabitur nec urna quis lacus cursus commodo cursus vel sem. Etiam sit amet metus ut
+                                    lorem suscipit mattis. Cras dapibus euismod tincidunt. Vivamus tincidunt felis eu
+                                    augue elementum, sit amet finibus velit sollicitudin. Pellentesque tortor eros,
+                                    fringilla accumsan venenatis at, pulvinar fringilla ligula. Quisque fringilla tortor
+                                    eu fermentum tincidunt. Curabitur in accumsan nisl, et sagittis nisi. Nam tempus,
+                                    turpis viverra ultricies consequat, dolor lorem dapibus risus, quis sodales quam
+                                    risus non erat.
+                                    </p>
+
+                                    <img src="img/blog/postimg.jpg" alt="img">
+                                    <p>
+                                        Curabitur nec urna quis lacus cursus commodo cursus vel sem. Etiam sit amet metus ut
+                                    lorem suscipit mattis. Cras dapibus euismod tincidunt. Vivamus tincidunt felis eu
+                                    augue elementum, sit amet finibus velit sollicitudin. Pellentesque tortor eros,
+                                    fringilla accumsan venenatis at, pulvinar fringilla ligula. Quisque fringilla tortor
+                                    eu fermentum tincidunt. Curabitur in accumsan nisl, et sagittis nisi. Nam tempus,
+                                    turpis viverra ultricies consequat, dolor lorem dapibus risus, quis sodales quam
+                                    risus non erat.
+                                    </p>
                                 </div>
                             </div>
                             <div class="inputfield">
-                                <input type="text" id="youtubelink" placeholder="https:">
+                                <input type="text" id="youtubelink" placeholder="https:" value="https://www.youtube.com/watch?v=VWG3npfEoHo">
                                 <label for="youtubelink">YouTube link</label>
                             </div>
                             <div class="crrecradiosect crrecradiosect_blog">
@@ -187,7 +217,7 @@
                                             <label for="selcat2">Dairy</label>
                                         </div>
                                         <div class="radinpbox">
-                                            <input type="radio" id="selcat3" name="selcat">
+                                            <input type="radio" id="selcat3" name="selcat" checked>
                                             <label for="selcat3">Parve</label>
                                         </div>
                                     </div>
@@ -198,7 +228,7 @@
                                     </p>
                                     <div class="radinpwrap">
                                         <div class="preptime">
-                                            <input type="text" value="" placeholder="10">
+                                            <input type="text" value="25" placeholder="10">
                                             <span>min</span>
                                         </div>
                                     </div>
@@ -206,7 +236,7 @@
                             </div>
                             <div class="createrec-uploadphoto blog">
                                 <p class="title">
-                                    Upload photo header* 
+                                    Upload photo header*
                                 </p>
                                 <p>
                                     Please follow the instructions when uploading a photo. Otherwise, your recipe may be
@@ -226,16 +256,11 @@
                                         Photos should not contain your personal information.
                                     </li>
                                 </ul>
-
                                 <div class="uploadphoto">
                                     <input type="file"
                                         accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf"
                                         multiple>
                                 </div>
-
-
-
-
                             </div>
                             <div class="createrecipesect__submit">
                                 <input class="greenbtn" type="submit" value="Send Your Recipe">
@@ -321,6 +346,9 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/super-build/ckeditor.js"></script>
     <script src="js/lib/imageuploadify.min.js"></script>
     <script src="js/common.js"></script>
+
+
+    
 </body>
 
 </html>

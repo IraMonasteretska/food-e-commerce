@@ -271,7 +271,10 @@ input[type=number] {
     position: relative;
 }
 
-
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
@@ -414,6 +417,7 @@ input[type=number] {
         }
     }
 }
+
 
 
 
