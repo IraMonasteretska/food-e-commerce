@@ -8,7 +8,6 @@ $(document).ready(function () {
         });
     }
 
-
     // header acc dropdown
     $('.header__account').click(function () {
         $(this).toggleClass('active');
@@ -645,12 +644,51 @@ $(document).ready(function () {
 
     }
 
+    // Account edit personal info
+    $('.personalinfobox__right a').click(function (e) {
+        e.preventDefault();
+        $(this).parents('.personalinfobox').find('input').addClass('edit');
+
+        var input = $(this).parents('.personalinfobox').find('input');
+        input.focus();
+        
+        var val = input.val();
+        var length = val.length;
+        
+        input[0].setSelectionRange(length, length);
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.personalinfobox__right a').length && !$target.closest('.personalinfobox__left input').length) {
+            $('.personalinfobox input').removeClass('edit');
+        }
+    });
 
 
+    // toggle accsect
+    $('.togglebtn').click(function(){
+        $(this).toggleClass('rotate');
+        $(this).parents('.acccontentsect__header').next('.acccontentsect__body').slideToggle();
+    })
+
+    // sidebar
+    $('.aside-menubtn').click(function(){
+        $('.accountsidebar').addClass('open');
+    });
+
+    $('.closesidebar').click(function(){
+        $('.accountsidebar').removeClass('open');
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.aside-menubtn').length && !$target.closest('.accountsidebar__wrap').length) {
+            $('.accountsidebar').removeClass('open');
+        }
+    });
 
     
-
-
 });
 
 

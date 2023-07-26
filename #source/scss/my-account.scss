@@ -10,7 +10,6 @@
     flex: 0 0 290px;
 }
 
-
 .accountsection-colright {
     width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5);
@@ -47,7 +46,7 @@
         margin: 0;
 
         li {
-            margin-bottom: 22px;
+            margin-bottom: 10px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -63,6 +62,8 @@
                 display: block;
                 padding-left: 40px;
                 transition: 0.3s;
+                padding-top: 7px;
+                padding-bottom: 7px;
 
                 &:hover {
                     color: $base-green;
@@ -77,6 +78,14 @@
 
                 img {
                     vertical-align: top;
+                }
+            }
+
+            &.active {
+                a {
+                    border-radius: 5px;
+                    background: #E7F5EC;
+                    color: $base-green;
                 }
             }
         }
@@ -126,6 +135,7 @@
         font-size: 22px;
         font-weight: 600;
         line-height: 120%;
+        padding-right: 30px;
 
         img {
             position: absolute;
@@ -133,6 +143,19 @@
             top: 50%;
             transform: translateY(-50%);
             max-width: 40px;
+        }
+
+        span {
+            color: $bace-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%;
+
+            a {
+                text-decoration: underline;
+                color: $bace-color;
+                text-underline-offset: 4px;
+            }
         }
     }
 
@@ -148,11 +171,16 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
+        transition: 0.3s;
 
         img {
             max-width: 30px;
             max-height: 100%;
             transition: 0.3s;
+        }
+
+        &.rotate {
+            transform: translateY(-50%) rotate(90deg);
         }
     }
 }
@@ -210,7 +238,7 @@
         flex-wrap: wrap;
         margin-left: -5px;
         margin-right: -5px;
-        
+
         .delivproduct {
             height: 60px;
             display: inline-flex;
@@ -233,16 +261,502 @@
 
 }
 
+.acc-creditbox {
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    min-height: 192px;
+
+    .title {
+        text-align: center;
+        color: #3B454D;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+
+    .cardswrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.40);
+        box-shadow: 0px 1.8211405277252197px 10.926843643188477px 0px rgba(0, 0, 0, 0.06);
+        height: 28px;
+        width: 100%;
+        max-width: 44px;
+        flex: 0 0 44px;
+        display: inline-flex;
+        margin: 0 5px 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+}
+
+.solocard {
+    margin: auto;
+    height: 80px;
+    width: 130px;
+    border-radius: 5.5px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.acc-creditbox.acc-creditbox__solo {
+    .title {
+        margin-bottom: 15px;
+    }
+}
+
+.personalinfobox {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.personalinfobox__left {
+    width: 100%;
+    max-width: calc(100% - 40px);
+    flex: 0 0 calc(100% - 40px);
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 17px;
+        font-weight: 500;
+        color: $bace-color;
+        line-height: 160%;
+
+    }
+
+    input {
+        font-size: 14px;
+        border: none;
+        background: #fff;
+        pointer-events: none;
+        padding: 3px 0;
+        transition: 0.3s;
+
+        &.edit {
+            pointer-events: all;
+            background-color: rgba(37, 150, 136, 0.2);
+            padding: 3px 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.personalinfobox__right {
+    width: 100%;
+    max-width: 40px;
+    flex: 0 0 40px;
+
+    a {
+        color: #259688;
+        font-size: 15px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.aside-menubtn,
+.closesidebar {
+    display: none;
+}
+
+@media(max-width:1550.8px) {
+    .acc-orderbox .delivproducts .delivproduct {
+        max-width: 50px;
+        height: 50px;
+    }
+
+    .acc-creditbox .card {
+        margin: 0 2px 10px;
+        max-width: 42px;
+        flex: 0 0 42px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .accountsection-colleft {
+        max-width: 260px;
+        flex: 0 0 260px;
+    }
+
+    .accountsection-colright {
+        max-width: calc(100% - 260px);
+        flex: 0 0 calc(100% - 260px);
+    }
+
+    .acc-orderbox,
+    .acc-creditbox {
+        padding: 20px 15px;
+    }
+
+    .acc-orderbox .delivproducts .delivproduct {
+        margin: 10px 2px 0;
+        max-width: 47px;
+    }
+
+    .acc-creditbox .card {
+        max-width: 44px;
+        flex: 0 0 44px;
+    }
+
+    .acc-creditbox .title {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .accountcontent__title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .acccontentsect__header p {
+        font-size: 18px;
+    }
+
+    .acc-creditbox .card {
+        max-width: 46px;
+        flex: 0 0 46px;
+        height: 29px;
+        margin: 0 5px 10px;
+    }
+
+    .acc-creditbox {
+        min-height: 130px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .closesidebar {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        transform: rotate(180deg);
+    }
+
+    .accountsidebar__wrap {
+        position: relative;
+    }
+
+    .accountsection-colleft {
+        max-width: 70px;
+        flex: 0 0 70px;
+        z-index: 12;
+
+        .accountsidebar {
+            // display: none;
+            padding-top: 0;
+            background: rgba(3, 3, 3, 0.5);
+            position: fixed;
+            width: 100%;
+            max-width: 100vw;
+            height: 100%;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 2;
+
+            .accountsidebar__wrap {
+                width: 250px;
+                background: #fff;
+                height: 100%;
+                padding: 20px 15px 0 15px;
+            }
+        }
+
+    }
+
+    .accountsection-colright {
+        max-width: calc(100% - 70px);
+        flex: 0 0 calc(100% - 70px);
+    }
+
+    .aside-menubtn {
+        position: sticky;
+        top: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 46px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    .acccontentsect__body {
+        padding: 20px;
+    }
+
+    .accountsection-colleft .accountsidebar {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: 0.5s;
+
+        .accountsidebar__wrap {
+            transition: 0.7s;
+            transform: translateX(-100%);
+        }
+
+        &.open {
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+
+            .accountsidebar__wrap {
+                transform: translateX(0);
+            }
+        }
+    }
 
 
 
 
 
 
+}
+
+@media(max-width:575.8px) {
+    .accountcontent__title {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .acccontentsect__header {
+        padding: 5px 10px;
+    }
+
+    .acccontentsect__header .togglebtn {
+        right: 0;
+    }
+
+    .acccontentsect__header p img {
+        max-width: 30px;
+    }
+
+    .acccontentsect__header p {
+        width: 100%;
+        padding-left: 35px;
+        font-size: 16px;
+    }
+
+    .acccontentsect__body {
+        padding: 10px;
+    }
+
+    .acccontentsect__header p span {
+        font-size: 14px;
+    }
 
 
+}
 
+// Personal INFO
 
+.acccontentsect__header.acccontentsect__header-delacc {
+    flex-wrap: wrap;
 
+    p {
+        width: 100%;
+        max-width: calc(100% - 240px);
+        flex: 0 0 calc(100% - 240px);
+    }
 
+    .deleteacc {
+        width: 100%;
+        max-width: 240px;
+        flex: 0 0 240px;
+        text-align: right;
 
+        img {
+            max-width: 15px;
+            margin-right: 6px;
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $bace-color;
+            font-size: 14px;
+            line-height: 160%;
+            transition: 0.3s;
+
+            &:hover {
+                color: $base-green;
+            }
+        }
+    }
+}
+
+.accpersonalinfosect {
+    max-width: 733px;
+    margin: 0 auto;
+
+    .personalinfobox {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .personalinfobox__left input {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+}
+
+.acccontentsect__body.personalinfo {
+    padding-bottom: 135px;
+}
+
+@media(max-width:767.8px) {
+    .acccontentsect__header.acccontentsect__header-delacc {
+        display: block;
+        padding: 15px 35px;
+    }
+
+    .acccontentsect__header.acccontentsect__header-delacc .deleteacc {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .acccontentsect__header.acccontentsect__header-delacc p {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .acccontentsect__body.personalinfo {
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .acccontentsect__header.acccontentsect__header-delacc {
+        padding: 12px 10px;
+    }
+
+    .personalinfobox__left .title {
+        font-size: 15px;
+    }
+
+    .accpersonalinfosect .personalinfobox .personalinfobox__left input {
+        font-size: 13px;
+    }
+
+    .acccontentsect__body.personalinfo {
+        padding-bottom: 40px;
+    }
+}
+
+// My Address
+
+.acccontentsect__header.twocol {
+    flex-wrap: wrap;
+
+    .leftsect,
+    .rightsect {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    p {
+        padding-right: 0;
+    }
+
+    .greenbtn {
+        max-width: 190px;
+        flex: 0 0 190px;
+
+        img {
+            max-width: 11px;
+            margin-right: 10px;
+        }
+    }
+
+    .searchblock {
+        max-width: 285px;
+        flex: 0 0 285px;
+        margin-right: 25px;
+    }
+
+    .rightsect .flex {
+        justify-content: flex-end;
+    }
+}
+
+.addressinfobox {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    padding: 25px;
+    color: $bace-color;
+    line-height: 160%;
+
+    p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .name {
+        margin-bottom: 15px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+.addressinfobox__btns {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    a {
+        max-width: 128px;
+        min-height: 45px;
+        font-size: 15px;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
