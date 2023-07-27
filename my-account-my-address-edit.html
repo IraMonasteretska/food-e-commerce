@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - My Address</title>
+    <title>My Account - My Address / Edit</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 <body>
     <header class="header">
@@ -119,12 +120,12 @@
             <div class="container">
                 <ul>
                     <li><a href="#">My Account</a></li>
-                    <li>My Address</li>
+                    <li>my Address</li>
                 </ul>
             </div>
         </div>
 
-        <section class="accountsection">
+        <section class="accountsection pbig">
             <div class="container">
                 <div class="row">
                     <div class="accountsection-colleft">
@@ -242,74 +243,73 @@
                                                 <input type="text" placeholder="Search on Food...">
                                                 <button><img src="img/header/search-icon.svg" alt="search"></button>
                                             </div>
-                                            <a href="#" class="greenbtn"><img src="img/account/plus.svg" alt="add"> Add
-                                                Address</a>
+                                            <a href="#" class="greenbtn">Save</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="acccontentsect__body myaddr">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="addressinfobox">
-                                                <div class="addressinfobox__info">
-                                                    <button class="setdefault active">Default</button>
-                                                    <p class="name">Struk Arsen Tarasovich</p>
-                                                    <p>via Bordina 6</p>
-                                                    <p>Bergamo, PG 06034</p>
-                                                    <p>English</p>
+                                <div class="acccontentsect__body">
+                                    <div class="personalinfoeditsect">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="name" placeholder="Full Name*" required>
+                                                        <label for="name">Full Name*</label>
+                                                    </div>
                                                 </div>
-                                                <div class="addressinfobox__btns">
-                                                    <a href="#" class="bordergreenbtn">Edit</a>
-                                                    <a href="#" class="bordergreenbtn">Remove</a>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="address" placeholder="Streat address*">
+                                                        <input type="text" placeholder="Apt, suite, etc. (optinal)">
+                                                        <label for="address">Streat address*</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="addressinfobox">
-                                                <div class="addressinfobox__info">
-                                                    <button class="setdefault">Set as default</button>
-                                                    <p class="name">Struk Andriy Tarasovych</p>
-                                                    <p>via Montanta 9</p>
-                                                    <p>London, LN 08044</p>
-                                                    <p>English</p>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="city" placeholder="City*" required>
+                                                        <label for="city">City*</label>
+                                                    </div>
                                                 </div>
-                                                <div class="addressinfobox__btns">
-                                                    <a href="#" class="bordergreenbtn">Edit</a>
-                                                    <a href="#" class="bordergreenbtn">Remove</a>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <label for="city">State*</label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category">
+                                                                <option value="0">State</option>
+                                                                <option value="1">State 1</option>
+                                                                <option value="2">State 2</option>
+                                                                <option value="3">State 3</option>
+                                                                <option value="4">State 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="addressinfobox">
-                                                <div class="addressinfobox__info">
-                                                    <button class="setdefault">Set as default</button>
-                                                    <p class="name">Struk Bogdan Tarasovych</p>
-                                                    <p>via Montanta 9</p>
-                                                    <p>London, LN 08044</p>
-                                                    <p>English</p>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="zipcode" placeholder="Zip code*" required>
+                                                        <label for="zipcode">Zip code*</label>
+                                                    </div>
                                                 </div>
-                                                <div class="addressinfobox__btns">
-                                                    <a href="#" class="bordergreenbtn">Edit</a>
-                                                    <a href="#" class="bordergreenbtn">Remove</a>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <input type="number" id="tel" placeholder="Phone number*" required>
+                                                        <label for="tel">Phone number*</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="addressinfobox">
-                                                <div class="addressinfobox__info">
-                                                    <button class="setdefault">Set as default</button>
-                                                    <p class="name">Struk Sofi Tarasovych</p>
-                                                    <p>via Montanta 9</p>
-                                                    <p>London, LN 08044</p>
-                                                    <p>English</p>
-                                                </div>
-                                                <div class="addressinfobox__btns">
-                                                    <a href="#" class="bordergreenbtn">Edit</a>
-                                                    <a href="#" class="bordergreenbtn">Remove</a>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <div class="checkwrapper">
+                                                            <input type="checkbox" id="setaddr">
+                                                            <label for="setaddr">Set as my preferred delivery address</label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+
+
+
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -323,7 +323,6 @@
         <img class="accbgel1" src="img/background-elements/bgelem7.png" alt="img">
         <img class="accbgel2" src="img/background-elements/bgelem6.png" alt="img">
     </main>
-    
 
     <footer class="footer">
         <div class="container">

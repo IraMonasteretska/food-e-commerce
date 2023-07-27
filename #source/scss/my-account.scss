@@ -104,7 +104,6 @@
     font-weight: 600;
     line-height: 130%;
 }
-
 // ---
 .acccontentsect {
     margin-bottom: 50px;
@@ -730,6 +729,8 @@
     padding: 25px;
     color: $bace-color;
     line-height: 160%;
+    position: relative;
+    margin-bottom: 25px;
 
     p {
         margin-bottom: 10px;
@@ -740,6 +741,7 @@
         margin-bottom: 15px;
         font-size: 17px;
         font-weight: 500;
+        padding-right: 100px;
     }
 }
 
@@ -758,5 +760,315 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.setdefault {
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: #259688;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &.active {
+        text-decoration: none;
+    }
+}
+
+.accbgel1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    top: 0;
+}
+
+.accbgel2 {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+}
+
+.accountsection {
+    position: relative;
+    z-index: 2;
+}
+
+.mainbgelem {
+    top: -90px;
+}
+
+.accountsection {
+    padding-bottom: 70px;
+}
+
+.acccontentsect__body.myaddr {
+    padding-bottom: 110px;
+}
+
+.modalform .select2-container .select2-selection--single {
+    border-width: 2px;
+}
+
+@media(max-width:1550.8px) {
+
+    .acccontentsect__header.twocol .greenbtn {
+        max-width: 160px;
+        flex: 0 0 160px;
+    }
+
+    .acccontentsect__header.twocol .searchblock {
+        max-width: 260px;
+        flex: 0 0 260px;
+        margin-right: 15px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .acccontentsect__header.twocol .greenbtn {
+        max-width: 150px;
+        flex: 0 0 150px;
+    }
+
+    .acccontentsect__header.twocol .searchblock {
+        max-width: 230px;
+        flex: 0 0 230px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .acccontentsect__header.twocol .leftsect,
+    .acccontentsect__header.twocol .rightsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .acccontentsect__header.twocol .leftsect {
+        margin-bottom: 10px;
+    }
+
+    .acccontentsect__header.twocol .rightsect .flex {
+        justify-content: flex-start;
+    }
+
+    .acccontentsect__header {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .acccontentsect__header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .accountsection {
+        padding-bottom: 0;
+    }
+
+    .acccontentsect__body.myaddr {
+        padding-bottom: 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .acccontentsect__header {
+        padding: 12px 10px;
+    }
+
+    .acccontentsect__header.twocol .searchblock,
+    .acccontentsect__header.twocol .greenbtn {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .acccontentsect__header.twocol .searchblock {
+        margin-bottom: 10px;
+    }
+
+    .acccontentsect__header.twocol .leftsect {
+        margin-bottom: 20px;
+    }
+
+    .addressinfobox {
+        padding: 40px 15px 15px 15px;
+    }
+
+    .addressinfobox__btns a {
+        max-width: 100px;
+        min-height: 36px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .addressinfobox p {
+        margin-bottom: 5px;
+    }
+
+    .addressinfobox .name {
+        padding-right: 0;
+    }
+
+    .setdefault {
+        top: 10px;
+        right: initial;
+        left: 15px;
+    }
+
+    .accbgel1 {
+        width: 100px;
+    }
+
+    .accbgel2 {
+        width: 150px;
+    }
+}
+
+@media(max-width:360.8px) {
+    .acccontentsect__header.twocol .greenbtn {
+        font-size: 14px !important;
+        min-height: 42px !important;
+    }
+
+    .acccontentsect__header.twocol .leftsect {
+        margin-bottom: 10px;
+    }
+
+    .addressinfobox__btns a {
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .addressinfobox p {
+        line-height: 140%;
+    }
+}
+
+// Personal info - edit
+
+.personalinfoeditsect {
+    max-width: 771px;
+    width: 100%;
+}
+
+.personalinfoeditsect {
+    padding-bottom: 40px;
+
+    label {
+        cursor: pointer;
+    }
+
+    .inputfield input+input {
+        margin-top: 15px;
+    }
+
+    .inputfield .generalselect {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        width: 100%;
+    }
+
+    .inputfield .generalselect .select2-container .select2-selection--single {
+        height: 55px;
+    }
+
+    .inputfield .generalselect .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 55px;
+    }
+
+    .generalselect .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 15px;
+    }
+
+    .select2-container .select2-selection--single {
+        border-width: 2px;
+    }
+
+}
+
+.accountsection.pbig {
+    padding-bottom: 175px;
+}
+
+.accountsection {
+    position: relative;
+    z-index: 12;
+}
+
+@media(max-width:1199.8px) {
+    .accountsection.pbig {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .personalinfoeditsect .inputfield .generalselect .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 46px;
+    }
+
+    .personalinfoeditsect .inputfield .generalselect .select2-container .select2-selection--single {
+        height: 46px;
+        border-width: 1px;
+    }
+
+    .modalform .select2-container .select2-selection--single {
+        border-width: 1px;
+    }
+
+    .personalinfoeditsect .generalselect .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 10px;
+    }
+
+    .personalinfoeditsect {
+        padding-bottom: 0;
+    }
+
+    .accountsection.pbig {
+        padding-bottom: 0;
+    }
+}
+
+// Credit cards
+.creditcardswrapper {
+    max-width: 970px;
+}
+
+.addressinfobox .name {
+    img {
+        vertical-align: middle;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+        margin-right: 10px;
+    }
+}
+
+.addressinfobox.crcard {
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+
+    &:hover {
+        border: 1px solid #158466;
+    }
+}
+
+.setdefault {
+    &:hover {
+        text-decoration: none;
     }
 }

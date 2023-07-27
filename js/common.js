@@ -8,6 +8,7 @@ $(document).ready(function () {
         });
     }
 
+
     // header acc dropdown
     $('.header__account').click(function () {
         $(this).toggleClass('active');
