@@ -689,6 +689,12 @@ $(document).ready(function () {
         }
     });
 
+    // Edit cards - set billing
+    $('.selectbilling .setdefault').click(function(){
+        $('.addressinfobox').removeClass('active');
+        $(this).parents('.addressinfobox').addClass('active');
+    })
+
     
 });
 

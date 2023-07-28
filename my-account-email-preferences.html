@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - My Credit Cards</title>
+    <title>My Account - Email preferences</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -119,7 +119,7 @@
             <div class="container">
                 <ul>
                     <li><a href="#">My Account</a></li>
-                    <li>My Credit Cards</li>
+                    <li> email preferences</li>
                 </ul>
             </div>
         </div>
@@ -156,7 +156,7 @@
                                                 My Address
                                             </a>
                                         </li>
-                                        <li class="active">
+                                        <li>
                                             <a href="#">
                                                 <span class="icwrap">
                                                     <img src="img/account/acc-card.svg" alt="icon">
@@ -164,7 +164,7 @@
                                                 My Credit cards
                                             </a>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#">
                                                 <span class="icwrap">
                                                     <img src="img/account/acc-email.svg" alt="icon">
@@ -229,88 +229,39 @@
                     <div class="accountsection-colright">
                         <div class="accountcontent">
                             <div class="acccontentsect">
-                                <div class="acccontentsect__header twocol">
+                                <div class="acccontentsect__header">
                                     <div class="leftsect">
                                         <p>
-                                            <img src="img/account/accsect-ic5.svg" alt="img">
-                                            My Credit Cards
+                                            <img src="img/account/accsect-ic6.svg" alt="img">
+                                            Email preferences
+                                            <span>Choose how we communicate with you and what we share.</span>
                                         </p>
-                                    </div>
-                                    <div class="rightsect">
-                                        <div class="flex">
-                                            <div class="searchblock">
-                                                <input type="text" placeholder="Search on Food...">
-                                                <button><img src="img/header/search-icon.svg" alt="search"></button>
-                                            </div>
-                                            <a href="#" class="greenbtn"><img src="img/account/plus.svg" alt="add"> Add
-                                                Credit Cards</a>
-                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="acccontentsect__body myaddr">
-                                    <div class="creditcardswrapper">
-                                        <div class="row selectbilling">
-                                            <div class="col-xl-6">
-                                                <div class="addressinfobox active">
-                                                    <input type="radio" name="selectbilling" id="billing1" checked>
-                                                    <div class="addressinfobox__info">
-                                                        <label class="setdefault" for="billing1">
-                                                            <span class="act">Available</span>
-                                                            <span class="dis">Set as default</span>
-                                                        </label>
-                                                        <p class="name"> <img src="img/account/cardicon.png" alt="img">
-                                                            MC **** 5684</p>
-                                                        <p>via Bordina 6</p>
-                                                        <p>Bergamo, PG 06034</p>
-                                                        <p>English</p>
-                                                    </div>
-                                                    <div class="addressinfobox__btns">
-                                                        <a href="#" class="bordergreenbtn">Edit</a>
-                                                        <a href="#" class="bordergreenbtn">Remove</a>
-                                                    </div>
-                                                </div>
+                                <div class="acccontentsect__body">
+                                    <div class="marketingemailsbox">
+                                        <p class="title">Marketing emails</p>
+                                        <p>
+                                            Emails about your account and orders are important. We send those even if
+                                            you have opted out of marketing emails.
+                                        </p>
+                                        <p>
+                                            We send marketing emails to <span>name@surname.com</span> <a href="#">Edit</a>
+                                        </p>
+                                    </div>
+                                    <div class="receiveemails">
+                                        <div class="receiveemails__header">
+                                            <p class="title">
+                                                Receive marketing emails
+                                            </p>
+                                            <div class="switch">
+                                                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
                                             </div>
-                                            <div class="col-xl-6">
-                                                <div class="addressinfobox">
-                                                    <input type="radio" name="selectbilling" id="billing2">
-                                                    <div class="addressinfobox__info">
-                                                        <label class="setdefault" for="billing2">
-                                                            <span class="act">Available</span>
-                                                            <span class="dis">Set as default</span>
-                                                        </label>
-                                                        <p class="name"> <img src="img/account/cardicon.png" alt="img">
-                                                            MC **** 5684</p>
-                                                        <p>via Bordina 6</p>
-                                                        <p>Bergamo, PG 06034</p>
-                                                        <p>English</p>
-                                                    </div>
-                                                    <div class="addressinfobox__btns">
-                                                        <a href="#" class="bordergreenbtn">Edit</a>
-                                                        <a href="#" class="bordergreenbtn">Remove</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="addressinfobox">
-                                                    <input type="radio" name="selectbilling" id="billing3">
-                                                    <div class="addressinfobox__info">
-                                                        <label class="setdefault" for="billing3">
-                                                            <span class="act">Available</span>
-                                                            <span class="dis">Set as default</span>
-                                                        </label>
-                                                        <p class="name"> <img src="img/account/cardicon.png" alt="img">
-                                                            MC **** 5684</p>
-                                                        <p>via Bordina 6</p>
-                                                        <p>Bergamo, PG 06034</p>
-                                                        <p>English</p>
-                                                    </div>
-                                                    <div class="addressinfobox__btns">
-                                                        <a href="#" class="bordergreenbtn">Edit</a>
-                                                        <a href="#" class="bordergreenbtn">Remove</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="receiveemails__checkfileds">
+
+                                            
                                         </div>
                                     </div>
                                 </div>

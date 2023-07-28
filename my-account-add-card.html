@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - My Credit Cards</title>
+    <title>My Account - Add Card</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -242,77 +242,142 @@
                                                 <input type="text" placeholder="Search on Food...">
                                                 <button><img src="img/header/search-icon.svg" alt="search"></button>
                                             </div>
-                                            <a href="#" class="greenbtn"><img src="img/account/plus.svg" alt="add"> Add
-                                                Credit Cards</a>
+                                            <a href="#" class="greenbtn">Save</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="acccontentsect__body myaddr">
-                                    <div class="creditcardswrapper">
-                                        <div class="row selectbilling">
-                                            <div class="col-xl-6">
-                                                <div class="addressinfobox active">
-                                                    <input type="radio" name="selectbilling" id="billing1" checked>
-                                                    <div class="addressinfobox__info">
-                                                        <label class="setdefault" for="billing1">
-                                                            <span class="act">Available</span>
-                                                            <span class="dis">Set as default</span>
-                                                        </label>
-                                                        <p class="name"> <img src="img/account/cardicon.png" alt="img">
-                                                            MC **** 5684</p>
-                                                        <p>via Bordina 6</p>
-                                                        <p>Bergamo, PG 06034</p>
-                                                        <p>English</p>
-                                                    </div>
-                                                    <div class="addressinfobox__btns">
-                                                        <a href="#" class="bordergreenbtn">Edit</a>
-                                                        <a href="#" class="bordergreenbtn">Remove</a>
+                                    <form action="#">
+                                        <div class="widthwrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="inputfield inputicon">
+                                                        <input type="number" id="cardnum" placeholder="Card number*"
+                                                            required>
+                                                        <label for="cardnum">Card number *</label>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="addressinfobox">
-                                                    <input type="radio" name="selectbilling" id="billing2">
-                                                    <div class="addressinfobox__info">
-                                                        <label class="setdefault" for="billing2">
-                                                            <span class="act">Available</span>
-                                                            <span class="dis">Set as default</span>
-                                                        </label>
-                                                        <p class="name"> <img src="img/account/cardicon.png" alt="img">
-                                                            MC **** 5684</p>
-                                                        <p>via Bordina 6</p>
-                                                        <p>Bergamo, PG 06034</p>
-                                                        <p>English</p>
-                                                    </div>
-                                                    <div class="addressinfobox__btns">
-                                                        <a href="#" class="bordergreenbtn">Edit</a>
-                                                        <a href="#" class="bordergreenbtn">Remove</a>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="fullname" placeholder="Full Name*"
+                                                            required>
+                                                        <label for="fullname">Full Name*</label>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="addressinfobox">
-                                                    <input type="radio" name="selectbilling" id="billing3">
-                                                    <div class="addressinfobox__info">
-                                                        <label class="setdefault" for="billing3">
-                                                            <span class="act">Available</span>
-                                                            <span class="dis">Set as default</span>
-                                                        </label>
-                                                        <p class="name"> <img src="img/account/cardicon.png" alt="img">
-                                                            MC **** 5684</p>
-                                                        <p>via Bordina 6</p>
-                                                        <p>Bergamo, PG 06034</p>
-                                                        <p>English</p>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <label>MM*</label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category"
+                                                                data-placeholder="MM">
+                                                                <option></option>
+                                                                <option value="0">January</option>
+                                                                <option value="1">February</option>
+                                                                <option value="2">March</option>
+                                                                <option value="3">April</option>
+                                                                <option value="4">May</option>
+                                                                <option value="5">June</option>
+                                                                <option value="6">July</option>
+                                                                <option value="7">August</option>
+                                                                <option value="8">September</option>
+                                                                <option value="9">October</option>
+                                                                <option value="10">November</option>
+                                                                <option value="11">December</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="addressinfobox__btns">
-                                                        <a href="#" class="bordergreenbtn">Edit</a>
-                                                        <a href="#" class="bordergreenbtn">Remove</a>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="year" placeholder="YY" required>
+                                                        <label for="year">YY*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="cvv" placeholder="000" required>
+                                                        <label for="ccv">CCV*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="phonenum" placeholder="Phone number*"
+                                                            required>
+                                                        <label for="phonenum">Phone number*</label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="widthwrap">
+                                            <div class="row align-items-center billingaddressheader">
+                                                <div class="col-md-6">
+                                                    <p class="title">Billing address</p>
+                                                </div>
+                                                <div class="col-md-6 text-right">
+                                                    <a href="#" class="setdefault">Set as default</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="straddr" placeholder="Streat address*"
+                                                            required>
+                                                        <label for="straddr">Streat address*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="apt" placeholder="Apt or unit">
+                                                        <label for="apt">Apt or unit</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="city" placeholder="City*" required>
+                                                        <label for="city">City*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <label>State*</label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category"
+                                                                data-placeholder="State">
+                                                                <option></option>
+                                                                <option value="0">CA</option>
+                                                                <option value="1">AL</option>
+                                                                <option value="2">AK</option>
+                                                                <option value="3">AZ</option>
+                                                                <option value="4">AR</option>
+                                                                <option value="5">CO</option>
+                                                                <option value="6">CT</option>
+                                                                <option value="7">DE</option>
+                                                                <option value="8">FL</option>
+                                                                <option value="9">GA</option>
+                                                                <option value="10">HI</option>
+                                                                <option value="11">ID</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="zip" placeholder="Zip code*" required>
+                                                        <label for="zip">Zip code*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <div class="checkwrapper">
+                                                            <input type="checkbox" id="setaddr1">
+                                                            <label for="setaddr1">Set as default card</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 

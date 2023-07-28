@@ -104,6 +104,7 @@
     font-weight: 600;
     line-height: 130%;
 }
+
 // ---
 .acccontentsect {
     margin-bottom: 50px;
@@ -1062,7 +1063,7 @@
     transition: 0.3s;
     border: 1px solid rgba(0, 0, 0, 0.02);
 
-    &:hover {
+    &.active {
         border: 1px solid #158466;
     }
 }
@@ -1072,3 +1073,251 @@
         text-decoration: none;
     }
 }
+
+// ADD CARD
+
+.widthwrap {
+    max-width: 770px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .generalselect {
+        width: 100%;
+        order: 2;
+    }
+
+    .inputfield .generalselect .select2-container .select2-selection--single {
+        height: 55px;
+    }
+
+    .inputfield .generalselect .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 55px;
+    }
+
+    .generalselect .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 15px;
+    }
+
+    .select2-container .select2-selection--single {
+        border-width: 2px;
+    }
+
+    .title {
+        margin: 0;
+        color: $bace-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    .setdefault {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .billingaddressheader {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .widthwrap {
+        .text-right {
+            text-align: left;
+        }
+
+        .inputfield .generalselect .select2-container .select2-selection--single {
+            height: 46px;
+        }
+
+        .inputfield .generalselect .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 46px;
+        }
+
+        .generalselect .select2-container--default .select2-selection--single .select2-selection__arrow {
+            top: 10px;
+        }
+
+        .select2-container .select2-selection--single {
+            border-width: 1px;
+        }
+
+        .setdefault {
+            left: 0;
+        }
+    }
+
+
+}
+
+// Edit card
+
+.cardhead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    img {
+        width: 100%;
+        max-width: 58px;
+        flex: 0 0 58px;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+        max-width: calc(100% - 58px);
+        flex: calc(100% - 58px);
+        padding-left: 15px;
+        color: $bace-color;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+}
+
+.selectbilling {
+    max-width: 970px;
+
+    .title {
+        margin-bottom: 20px;
+        color: $bace-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    .addressinfobox {
+        border: 1px solid transparent;
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        .setdefault {
+            .act {
+                display: none;
+            }
+
+            .dis {
+                display: inline-block;
+                text-decoration: underline;
+            }
+        }
+
+        &.active {
+            border: 1px solid $base-green;
+
+            .setdefault {
+                .dis {
+                    display: none;
+                }
+
+                .act {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.billingbtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    .bordergreenbtn {
+        min-height: 45px;
+        max-width: 128px;
+        flex: 0 0 128px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    .greenbtn {
+        min-height: 45px;
+        max-width: 225px;
+        flex: 0 0 225px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .billingbtns {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .cardhead {
+        margin-bottom: 20px;
+    }
+
+    .billingbtns .bordergreenbtn {
+        margin: 0 0 20px 0;
+    }
+
+    .billingbtns .bordergreenbtn,
+    .billingbtns .greenbtn {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+}
+
+// Email preferences
+
+.marketingemailsbox {
+    color: $bace-color;
+    margin-bottom: 36px;
+
+    .title {
+        margin-bottom: 19px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+     p {
+        font-size: 15px;
+        line-height: 150%;
+        max-width: 600px;
+
+        span {
+            font-weight: 500;
+        }
+
+        a {
+            display: inline-block;
+            margin-left: 20px;
+            color: $base-green;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+     }
+}
+
+.receiveemails {
+    .title {
+        margin-bottom: 19px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+}
+
+
+.receiveemails__header {
+
+}
+
