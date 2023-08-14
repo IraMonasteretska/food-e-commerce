@@ -695,6 +695,19 @@ $(document).ready(function () {
         $(this).parents('.addressinfobox').addClass('active');
     })
 
+    // my acc - my posted reviews
+    $('.tabbtn').click(function (e) {
+        e.preventDefault();
+        $('.tabbtn').removeClass('active');
+        $(this).addClass('active');
+
+        var tabId = $(this).data('tab');
+        $('.tabcontent').removeClass('show');
+        $('#' + tabId).addClass('show');
+
+
+        $('.casessteps').slick("setPosition", 0);
+    });
     
 });
 
