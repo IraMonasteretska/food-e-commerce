@@ -696,6 +696,7 @@ $(document).ready(function () {
     })
 
     // my acc - my posted reviews
+    // tabs
     $('.tabbtn').click(function (e) {
         e.preventDefault();
         $('.tabbtn').removeClass('active');
@@ -706,8 +707,19 @@ $(document).ready(function () {
         $('#' + tabId).addClass('show');
 
 
-        $('.casessteps').slick("setPosition", 0);
     });
+
+    // edit btn
+    $('.postedreview__edit').click(function(e){
+        e.preventDefault();
+        $(this).parents('.postedreviewbox__right').addClass('edit');
+    });
+
+
+
+
+
+
     
 });
 

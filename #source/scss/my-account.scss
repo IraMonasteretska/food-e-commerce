@@ -860,7 +860,7 @@
     }
 
     .acccontentsect__header {
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 15px;
     }
 }
@@ -1736,6 +1736,7 @@
         border-bottom: 4px solid transparent;
         padding-bottom: 20px;
         display: inline-block;
+        cursor: pointer;
 
         &:last-child {
             margin-right: 0;
@@ -1819,7 +1820,7 @@
     textarea {
         width: 100%;
         border: transparent;
-        font-family: "Montserrat",sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: $bace-color;
         font-size: 15px;
         line-height: 150%;
@@ -1875,5 +1876,376 @@
             text-decoration: none;
         }
     }
+
+    .btngroup {
+        display: none;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 35px;
+
+        a {
+            min-height: 45px;
+            font-size: 15px;
+        }
+
+        .greenbtn {
+            max-width: 225px;
+        }
+
+        .bordergreenbtn {
+            max-width: 128px;
+            margin-right: 20px;
+        }
+    }
+
+}
+
+.postedreviewbox__right.edit {
+    textarea {
+        padding: 17px 30px;
+        border-radius: 15px;
+        border: 2px solid #DBDCE2;
+        height: 130px;
+        pointer-events: all;
+    }
+
+    .postedreview-uploadphoto {
+        display: block;
+    }
+
+    .btngroup {
+        display: flex;
+    }
+
+    .postedreviewbox__bottset {
+        display: none;
+    }
+}
+
+.postedreview-uploadphoto {
+    margin-top: 17px;
+    display: none;
+
+    .addphotovideo {
+        display: none;
+    }
+
+    .imageuploadify .imageuploadify-images-list button.btn-default {
+        width: 120px;
+        height: 105px;
+        padding: 20px 10px 10px 10px;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 130%;
+
+        &::before {
+            width: 26px;
+            height: 26px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+        width: 120px;
+        height: 105px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .postedreviewbox__left {
+        max-width: 120px;
+        flex: 0 0 120px;
+    }
+
+    .postedreviewbox__right {
+        max-width: calc(100% - 120px);
+        flex: 0 0 calc(100% - 120px);
+    }
+
+    .postedreviewbox__right .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .postedreviewbox__right .rating {
+        margin-bottom: 10px;
+    }
+
+    .postedreviewbox__right.edit textarea {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .postedreview-uploadphoto {
+        .uploadphoto .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+            margin-left: 0 !important;
+        }
+
+        .imageuploadify .imageuploadify-images-list button.btn-default {
+            margin-right: 20px;
+        }
+    }
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+
+    .postedreview-uploadphoto .imageuploadify .imageuploadify-images-list button.btn-default {
+        margin-right: 10px;
+    }
+
+    .contactsection__tabbody {
+        padding: 20px;
+    }
+
+    .postedreviewbox__bottomsect .btngroup .greenbtn {
+        max-width: 160px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+
+    .postedreviewbox__left,
+    .postedreviewbox__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .postedreviewbox__left .imgwrap {
+        margin-bottom: 20px;
+
+        img {
+            max-height: 160px;
+        }
+    }
+
+    .postedreviewbox__bottomsect .date {
+        margin-left: 20px;
+    }
+
+    .postedreviewbox__bottomsect .postedreview__share {
+        margin-left: 30px;
+    }
+
+    .postedreviewbox__right.edit .btngroup {
+        justify-content: space-between;
+
+        .bordergreenbtn {
+            margin-right: 0;
+        }
+
+        .bordergreenbtn,
+        .greenbtn {
+            max-width: 45%;
+            flex: 0 0 45%;
+        }
+    }
+
+    .postedreviewbox__bottomsect .btngroup {
+        padding-bottom: 20px;
+    }
+
+    .accpostedreviews__header {
+        padding: 15px 15px 0 15px;
+    }
+
+    .accpostedreviews__header .tabbtn {
+        padding-bottom: 10px;
+    }
+
+    .accpostedreviews__header .tabbtn {
+        margin-right: 20px;
+    }
+
+    .postedreviewbox__right {
+        padding-left: 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .accpostedreviews__header .tabbtn {
+        font-size: 16px;
+    }
+
+    .postedreviewbox {
+        padding: 10px;
+    }
+
+    .postedreviewbox__left .imgwrap img {
+        max-height: 120px;
+    }
+
+    .postedreviewbox__right .title {
+        font-size: 15px;
+    }
+
+    .postedreviewbox__right textarea {
+        -webkit-line-clamp: 4;
+        height: 90px;
+        font-size: 14px;
+    }
+
+    .postedreviewbox__right.edit textarea {
+        height: 200px;
+        overflow: scroll;
+    }
+
+    .postedreview-uploadphoto .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+        width: 90px;
+        height: 90px;
+    }
+
+    .postedreview-uploadphoto .imageuploadify .imageuploadify-images-list button.btn-default {
+        width: 100%;
+        height: 90px;
+    }
+
+    .postedreview-uploadphoto .imageuploadify .imageuploadify-images-list button.btn-default {
+        margin-left: 0;
+    }
+
+    .postedreviewbox__right.edit .btngroup {
+        flex-wrap: wrap;
+    }
+
+    .postedreviewbox__right.edit .btngroup .bordergreenbtn {
+        margin-bottom: 10px;
+    }
+
+    .postedreviewbox__right.edit .btngroup .bordergreenbtn,
+    .postedreviewbox__right.edit .btngroup .greenbtn {
+        max-width: 100%;
+        flex: 0 0 100%;
+        font-size: 13px !important;
+        min-height: 40px !important;
+    }
+
+    .postedreviewbox__bottomsect .date {
+        margin: 10px 0 0 0;
+        display: block;
+    }
+
+    .postedreview-uploadphoto .imageuploadify {
+        min-width: initial;
+    }
+
+    .postedreviewbox__bottomsect {
+        margin-top: 25px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .postedreview-uploadphoto .uploadphoto .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+        margin-right: 0 !important;
+        width: 100%;
+    }
+}
+
+// My posted blog
+.postedblogrow {
+    .col-lg-4 {
+        margin-bottom: 18px;
+    }
+
+    .recipesslide .recipesslide__imgwrap {
+        height: 182px;
+    }
+
+    .recipesslide .recipesslide__descr {
+        padding: 19px;
+    }
+
+    .slidetimebox {
+        padding-bottom: 12px;
+
+        ul li {
+            font-size: 11px;
+        }
+    }
+
+    .recipesslide .recipesslide__title {
+        font-size: 17px;
+        margin-bottom: 20px;
+        min-height: 50px;
+    }
+
+    .greenarrlink {
+        font-size: 13px;
+        padding-right: 22px;
+
+        &::after {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+}
+
+.postedblogeditbtn {
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+    top: 16px;
+}
+
+.mypostedblog {
+    padding: 0;
+}
+
+@media(max-width:991.8px) {
+    .postedblogrow .recipesslide .recipesslide__imgwrap {
+        height: 160px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .contactsection__tabbody {
+        padding: 15px;
+    }
+
+    .postedblogrow .recipesslide .recipesslide__imgwrap {
+        height: 130px;
+    }
+
+    .postedblogrow .recipesslide .recipesslide__descr {
+        padding: 10px;
+    }
+
+    .postedblogrow .recipesslide .recipesslide__title {
+        font-size: 16px;
+        min-height: 46px;
+    }
+    
+}
+
+// Posted recipes
+.postedblogrow {
+
+    .recipesslide__info {
+        margin-bottom: 11px;
+        
+        ul {
+            li {
+                font-size: 11px;
+
+                img {
+                    margin-right: 3px;
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+
+
+
+
 
 }
