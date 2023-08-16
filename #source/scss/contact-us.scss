@@ -334,6 +334,12 @@
     }
 }
 
+.askedquestions__left {
+    h2 {
+        margin-bottom: 45px;
+    }
+}
+
 @media(max-width:1199.8px) {
 
     .contactussect {
@@ -488,6 +494,10 @@
 
     .askedquestions {
         padding-bottom: 0;
+    }
+
+    .askedquestions__left h2 {
+        margin-bottom: 20px;
     }
 
 

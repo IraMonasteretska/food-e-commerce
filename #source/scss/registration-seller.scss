@@ -1,0 +1,160 @@
+.signsection.seller {
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .signuptext {
+        font-size: 12px;
+
+        a {
+            text-underline-offset: 3px;
+        }
+    }
+}
+
+.infoforfield {
+    order: 3;
+    padding-left: 30px;
+    margin-top: 5px;
+    color: $bace-color;
+    font-size: 12px;
+    line-height: 160%;
+    margin-bottom: 0;
+
+    img {
+        width: 14px;
+        vertical-align: middle;
+        margin-top: -3px;
+        margin-right: 5px;
+    }
+}
+
+.regbottsect {
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 15px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1.5px;
+        background: url('../img/login/regline.png') no-repeat center / 100%;
+    }
+
+    p {
+        color: $bace-color;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    a {
+        color: $base-green;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    }
+}
+
+.signcontent.signcontent_seller {
+    max-width: 471px;
+}
+
+.regbottsect .text-center {
+    text-align: center;
+    width: 100%;
+}
+
+.signcontent_seller {
+    .descr {
+        color: $bace-color;
+        font-size: 16px;
+        line-height: 160%;
+        margin-bottom: 30px;
+
+        &.text-center {
+            text-align: center;
+        }
+    }
+}
+
+.number_input::-webkit-inner-spin-button,
+.number_input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.verificationcode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+
+    .number_input {
+        width: 60px;
+        height: 78px;
+        border-radius: 15px;
+        border: 2px solid $base-green;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        color: #222;
+
+        &::placeholder {
+            color: #AAABB1;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .regbottsect p,
+    .regbottsect a {
+        font-size: 14px;
+    }
+
+    .regbottsect {
+        margin-top: 20px;
+    }
+
+    .infoforfield {
+        padding-left: 0;
+    }
+
+    .signcontent_seller .descr {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .signsection.seller .title {
+        margin-bottom: 20px;
+    }
+
+    .verificationcode .number_input {
+        width: 55px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+
+}
+
+@media(max-width:360.8px) {
+    .regbottsect {
+        display: block;
+        text-align: center;
+    }
+}

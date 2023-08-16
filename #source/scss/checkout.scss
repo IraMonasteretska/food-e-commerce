@@ -1173,5 +1173,13 @@
 
     }
 
+    .inputicon input {
+        padding-left: 55px;
+    }
+
+    .paymentform .inputicon:after {
+        top: 48px;
+        left: 20px;
+    }
 
 }

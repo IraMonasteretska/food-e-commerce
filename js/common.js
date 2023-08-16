@@ -652,10 +652,10 @@ $(document).ready(function () {
 
         var input = $(this).parents('.personalinfobox').find('input');
         input.focus();
-        
+
         var val = input.val();
         var length = val.length;
-        
+
         input[0].setSelectionRange(length, length);
     });
 
@@ -668,17 +668,17 @@ $(document).ready(function () {
 
 
     // toggle accsect
-    $('.togglebtn').click(function(){
+    $('.togglebtn').click(function () {
         $(this).toggleClass('rotate');
         $(this).parents('.acccontentsect__header').next('.acccontentsect__body').slideToggle();
     })
 
     // sidebar
-    $('.aside-menubtn').click(function(){
+    $('.aside-menubtn').click(function () {
         $('.accountsidebar').addClass('open');
     });
 
-    $('.closesidebar').click(function(){
+    $('.closesidebar').click(function () {
         $('.accountsidebar').removeClass('open');
     });
 
@@ -690,7 +690,7 @@ $(document).ready(function () {
     });
 
     // Edit cards - set billing
-    $('.selectbilling .setdefault').click(function(){
+    $('.selectbilling .setdefault').click(function () {
         $('.addressinfobox').removeClass('active');
         $(this).parents('.addressinfobox').addClass('active');
     })
@@ -710,17 +710,44 @@ $(document).ready(function () {
     });
 
     // edit btn
-    $('.postedreview__edit').click(function(e){
+    $('.postedreview__edit').click(function (e) {
         e.preventDefault();
         $(this).parents('.postedreviewbox__right').addClass('edit');
     });
 
+    // seller registration
+    // verification code
+    const inputsNL = document.querySelectorAll('.number_input');
 
+    const inputsList = Array.prototype.slice.call(inputsNL);
 
+    inputsList.forEach((input, index) => {
+        input.addEventListener('keyup', function (ev) {
+            if (ev.which === 69) return input.value = '';
+            let value = input.value;
+            let len = value.length;
+            if (ev.which === 8 && inputsList[index - 1]) {
+                return inputsList[index - 1].focus();
+            }
+            if (len === 1) {
+                input.value = value.substr(0, 1);
+                if (inputsList[index + 1]) inputsList[index + 1].focus();
+            } else if (inputsList[index + 1] && ev.which != 8) {
+                input.value = value.substr(0, 1);
+                inputsList[index + 1].focus();
+                inputsList[index + 1].value = value.substr(1, 1);
+            } else if (len > 1 && !inputsList[index + 1]) {
+                input.value = value.substr(0, 1);
+            }
+        })
+    })
 
+    // cart page - select all
 
+    $('.hselall').click(function(){
+        $('.cart__product-check input').prop('checked', true);
+    });
 
-    
 });
 
 
