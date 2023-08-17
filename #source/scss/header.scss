@@ -5,7 +5,7 @@ header.header {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 12;
+    z-index: 11;
 
     .col-xl-5 {
         position: initial;
@@ -1072,12 +1072,12 @@ header.header {
             }
         }
 
-         .header__rightsect .headercartwrap {
+        .header__rightsect .headercartwrap {
             max-width: 70px;
             flex: 0 0 70px;
         }
 
-         .header__rightsect .headeraccwrap {
+        .header__rightsect .headeraccwrap {
             max-width: 30px;
             flex: 0 0 30px;
         }
@@ -1093,5 +1093,120 @@ header.header {
         }
 
 
+    }
+}
+
+
+// SELLER ACC - header
+.header__selleraccsect {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sellacc__setting {
+    margin-right: 30px;
+}
+
+.sellacc__question {
+    margin-right: 30px;
+}
+
+.sellacc__brandnamehead {
+    width: 230px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(../img/header/select-arrow.svg) no-repeat center center/100%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .imgwrap {
+        width: 100%;
+        max-width: 40px;
+        flex: 0 0 40px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .infowrap {
+        width: 100%;
+        max-width: calc(100% - 40px);
+        flex: 0 0 calc(100% - 40px);
+        padding-left: 15px;
+
+        p {
+            margin-bottom: 5px;
+            color: #3B454D;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 110%;
+        }
+
+        .brandid {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 400;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.sellacc__brandname {
+    position: relative;
+
+    .header__accdropdown {
+        right: 0;
+        left: initial;
+        transform: none;
+    }
+}
+
+@media(max-width:991.8px) {
+    .header__rightsect.selleracc {
+        justify-content: flex-end;
+    }
+
+  
+
+}
+
+@media(max-width:767.8px) {
+    .sellacc__brandnamehead .infowrap,
+    .sellacc__brandnamehead:after {
+        display: none;
+    }
+
+    .sellacc__brandnamehead {
+        width: 40px;
+        padding: 0;
+    }
+
+    .header__rightsect .header__accdropdown {
+        width: 240px;
     }
 }

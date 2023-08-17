@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Account - Product list</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/sortable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/selleracc/seller-logo.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-8">
+                    <div class="header__rightsect selleracc">
+                        <a href="#" class="sellacc__setting">
+                            <img src="img/selleracc/settings-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="sellacc__question">
+                            <img src="img/selleracc/question-icon.svg" alt="">
+                        </a>
+                        <div class="sellacc__brandname">
+                            <div class="sellacc__brandnamehead">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="infowrap">
+                                    <p>Brand name</p>
+                                    <p class="brandid">
+                                        <span>Your id:</span>
+                                        01234565
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <p>Lorem, ipsum dolor.</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="accountsection">
+            <div class="container">
+                <div class="row">
+                    <div class="accountsection-colleft">
+                        <div class="aside-menubtn">
+                            <img src="img/account/aside-menu.svg" alt="menu">
+                        </div>
+
+                        <aside class="accountsidebar">
+                            <div class="accountsidebar__wrap">
+                                <div class="closesidebar">
+                                    <img src="img/account/accsect-arrow.svg" alt="close">
+                                </div>
+                                <div class="accountsidebar__box accountsidebar__box-seller">
+                                    <p class="title">Hi, Kate Middleton!</p>
+                                    <ul>
+                                        <li class="dropdownli active">
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic1.svg" alt="icon">
+                                                </span>
+                                                Products list
+                                            </a>
+                                            <ul class="sellacc__sublist">
+                                                <li><a href="#">Categories</a></li>
+                                                <li><a href="#">Categories </a></li>
+                                                <li><a href="#">Deleted items</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic2.svg" alt="icon">
+                                                </span>
+                                                Order list
+                                            </a>
+                                        </li>
+                                        <li class="dropdownli">
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic3.svg" alt="icon">
+                                                </span>
+                                                Promotion list
+                                            </a>
+                                            <ul class="sellacc__sublist">
+                                                <li><a href="#">Coupon</a></li>
+                                                <li><a href="#">Deleted items </a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic4.svg" alt="icon">
+                                                </span>
+                                                reports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic5.svg" alt="icon">
+                                                </span>
+                                                Profile settings
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="accountsidebar__box accountsidebar__box-seller signout">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/account/acc-signout.svg" alt="icon">
+                                                </span>
+                                                Sign Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="accountsection-colright">
+                        <div class="accountcontent">
+                            <div class="acccontentsect acccontentsect__sellist">
+                                <div class="acccontentsect__header acccontentsect__header-delacc">
+                                    <p>
+                                        <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic1.svg"
+                                            alt="img">
+                                        Product list
+                                    </p>
+                                    <span class="addpos">
+                                        <a href="#">
+                                            <img src="img/selleracc/plus-icon.svg" alt="add">
+                                            Add Position
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <div class="acccontentsect__body p0">
+                                    <div class="seller-productslist">
+                                        <a href="#" class="active">All</a>
+                                        <a href="#">At a discount</a>
+                                        <a href="#">Hidden</a>
+                                    </div>
+                                    <div class="recentorder-filter recentorder-filter__seller">
+                                        <div class="leftsect">
+                                            <div class="generalselect">
+                                                <select class="customselect" name="Filter">
+                                                    <option value="0">Filter</option>
+                                                    <option value="1">Filter 1</option>
+                                                    <option value="2">Filter 2</option>
+                                                    <option value="3">Filter 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="rightsect">
+                                            <div class="searchblock">
+                                                <input type="text" placeholder="Search on Food...">
+                                                <button><img src="img/header/search-icon.svg" alt="search"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prodlist-selectbox">
+                                        <p>Select: 0</p>
+                                        <div class="prodlist-selectboxbtn">
+                                            <input type="checkbox" id="seledit">
+                                            <label for="seledit">Edit</label>
+                                        </div>
+                                        <div class="prodlist-selectboxbtn">
+                                            <input type="checkbox" id="selhide">
+                                            <label for="selhide">Hide</label>
+                                        </div>
+                                        <div class="prodlist-selectboxbtn">
+                                            <input type="checkbox" id="seldel">
+                                            <label for="seldel">Delete</label>
+                                        </div>
+                                    </div>
+                                    <div class="sellertable">
+                                        <table class="table sortable">
+                                            <thead>
+                                                <tr>
+                                                    <th class="check no-sort">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="selectall">
+                                                            <label for="selectall"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th class="name">Name</th>
+                                                    <th class="date">Date</th>
+                                                    <th class="code">Code</th>
+                                                    <th class="display">Display</th>
+                                                    <th class="price">Price</th>
+                                                    <th class="qty">Qty.</th>
+                                                    <th class="pricetot">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check1">
+                                                            <label for="check1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="name">
+                                                        <div class="seller-tableproduct">
+                                                            <div class="imgwrap">
+                                                                <img src="img/selleracc/table-product1.png" alt="img">
+                                                            </div>
+                                                            <div class="descrwrap">
+                                                                <p class="title">
+                                                                    Musclefit Protein Pancake Prepared Fast easy...
+                                                                </p>
+                                                                <div class="tags">
+                                                                    <span>Tag: Top <button><img
+                                                                                src="img/selleracc/close.svg"
+                                                                                alt="delete"></button></span>
+                                                                    <span>Discount 10%<button><img
+                                                                                src="img/selleracc/close.svg"
+                                                                                alt="delete"></button></span>
+                                                                </div>
+                                                                <a href="#" class="details">Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="date">
+                                                        <span>05.28.23</span>
+                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
+                                                                alt="edit"></button>
+                                                    </td>
+                                                    <td class="code">456704</td>
+                                                    <td class="display">Published</td>
+                                                    <td class="price">
+                                                        $ 20.99
+                                                        <span>$ 22.10</span>
+                                                    </td>
+                                                    <td class="qty">22</td>
+                                                    <td class="pricetot">$ 461.78</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check2">
+                                                            <label for="check2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="name">
+                                                        <div class="seller-tableproduct">
+                                                            <div class="imgwrap">
+                                                                <img src="img/selleracc/table-product2.png" alt="img">
+                                                            </div>
+                                                            <div class="descrwrap">
+                                                                <p class="title">
+                                                                    Céréal Apricot Tart, Gluten Free, Lactose Free
+                                                                </p>
+                                                                <a href="#" class="details">Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="date">
+                                                        <span>05.28.23</span>
+                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
+                                                                alt="edit"></button>
+                                                    </td>
+                                                    <td class="code">456702</td>
+                                                    <td class="display">Published</td>
+                                                    <td class="price">
+                                                        $ 12.32
+                                                    </td>
+                                                    <td class="qty">20</td>
+                                                    <td class="pricetot">$ 246.4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check3">
+                                                            <label for="check3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="name">
+                                                        <div class="seller-tableproduct">
+                                                            <div class="imgwrap">
+                                                                <img src="img/selleracc/table-product3.png" alt="img">
+                                                            </div>
+                                                            <div class="descrwrap">
+                                                                <p class="title">
+                                                                    Pesoforma Porridge Cacao e Avena, 5 x 55g
+                                                                </p>
+                                                                <a href="#" class="details">Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="date">
+                                                        <span>05.28.23</span>
+                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
+                                                                alt="edit"></button>
+                                                    </td>
+                                                    <td class="code">456701</td>
+                                                    <td class="display">Published</td>
+                                                    <td class="price">
+                                                        $ 18.22
+                                                    </td>
+                                                    <td class="qty">18</td>
+                                                    <td class="pricetot">$ 327.96</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check4">
+                                                            <label for="check4"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="name">
+                                                        <div class="seller-tableproduct">
+                                                            <div class="imgwrap">
+                                                                <img src="img/selleracc/table-product4.png" alt="img">
+                                                            </div>
+                                                            <div class="descrwrap">
+                                                                <p class="title">
+                                                                    Bucce di Psillio Biologico - Purezza 99% - da 200 g.
+                                                                </p>
+                                                                <a href="#" class="details">Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="date">
+                                                        <span>05.28.23</span>
+                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
+                                                                alt="edit"></button>
+                                                    </td>
+                                                    <td class="code">456700</td>
+                                                    <td class="display">Published</td>
+                                                    <td class="price">
+                                                        $ 17.00
+                                                        <span>$ 22.10</span>
+                                                    </td>
+                                                    <td class="qty">15</td>
+                                                    <td class="pricetot">$ 255.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check5">
+                                                            <label for="check5"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="name">
+                                                        <div class="seller-tableproduct">
+                                                            <div class="imgwrap">
+                                                                <img src="img/selleracc/table-product5.png" alt="img">
+                                                            </div>
+                                                            <div class="descrwrap">
+                                                                <p class="title">
+                                                                    Biaglut Biscottino Granulato, 340g, 3 1
+                                                                </p>
+                                                                <a href="#" class="details">Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="date">
+                                                        <span>05.28.23</span>
+                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
+                                                                alt="edit"></button>
+                                                    </td>
+                                                    <td class="code">456699</td>
+                                                    <td class="display">Published</td>
+                                                    <td class="price">
+                                                        $ 20.99
+                                                    </td>
+                                                    <td class="qty">12</td>
+                                                    <td class="pricetot">$ 251.88</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check6">
+                                                            <label for="check6"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="name">
+                                                        <div class="seller-tableproduct">
+                                                            <div class="imgwrap">
+                                                                <img src="img/selleracc/table-product6.png" alt="img">
+                                                            </div>
+                                                            <div class="descrwrap">
+                                                                <p class="title">
+                                                                    Bauli Plumcake "Senza" Mela - 132 G
+                                                                </p>
+                                                                <a href="#" class="details">Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="date">
+                                                        <span>05.14.23</span>
+                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
+                                                                alt="edit"></button>
+                                                    </td>
+                                                    <td class="code">456702</td>
+                                                    <td class="display">Published</td>
+                                                    <td class="price">
+                                                        $ 11.22
+                                                    </td>
+                                                    <td class="qty">10</td>
+                                                    <td class="pricetot">$ 112.02</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="pagination">
+                                        <ul>
+                                            <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li class="active"><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li>...</li>
+                                            <li><a href="#">11</a></li>
+                                            <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

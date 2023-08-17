@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     $(document).click(function (event) {
         let $target = $(event.target);
-        if (!$target.closest('.headeraccwrap').length) {
+        if (!$target.closest('.headeraccwrap').length && !$target.closest('.sellacc__brandnamehead').length) {
             $('.header__account').removeClass('active');
             $('.header__accdropdown').hide();
         }
@@ -744,9 +744,58 @@ $(document).ready(function () {
 
     // cart page - select all
 
-    $('.hselall').click(function(){
+    $('.hselall').click(function () {
         $('.cart__product-check input').prop('checked', true);
     });
+
+
+
+    // SELLER ACCOUNT
+    // header dropdown
+    $('.sellacc__brandnamehead').click(function () {
+        $('.header__accdropdown').toggle();
+    });
+
+    // sidebar dropdowns
+    $('.dropdownli a').click(function (e) {
+        e.preventDefault();
+        $(this).next('.sellacc__sublist').slideToggle();
+    });
+
+
+    // edit date
+
+        $('.editdate').click(function() {
+            var spanElement = $(this).closest('.date').find('span');
+            spanElement.attr('contenteditable', 'true');
+            spanElement.focus();
+            
+            var textNode = spanElement[0].childNodes[0];
+            
+            var range = document.createRange();
+            range.setStart(textNode, textNode.length); // Встановлюємо курсор вкінці тексту
+            range.collapse(true);
+            
+            var selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        });
+    
+        $(document).click(function (event) {
+            let $target = $(event.target);
+            if (!$target.closest('.date span').length && !$target.closest('.editdate').length) {
+                $('.date span').attr('contenteditable', 'false')
+                console.log('sdsd')
+            }
+        });
+    
+        $('#selectall').click(function () {
+            if ($(this).prop('checked')) {
+                $('tbody .tablecheckbox input').prop('checked', true);
+            } else {
+                $('tbody .tablecheckbox input').prop('checked', false);
+            }
+        });
 
 });
 
