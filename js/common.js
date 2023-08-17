@@ -480,7 +480,8 @@ $(document).ready(function () {
     $('.addingr').on('click', function () {
         const newIngrinp = $('<div class="ingrinp"><input type="text" value=""></div>');
 
-        $('.ingrwrap').append(newIngrinp);
+        // $('.ingrwrap').append(newIngrinp);
+        $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
 
         newIngrinp.find('input').focus();
     });
@@ -765,37 +766,40 @@ $(document).ready(function () {
 
     // edit date
 
-        $('.editdate').click(function() {
-            var spanElement = $(this).closest('.date').find('span');
-            spanElement.attr('contenteditable', 'true');
-            spanElement.focus();
-            
-            var textNode = spanElement[0].childNodes[0];
-            
-            var range = document.createRange();
-            range.setStart(textNode, textNode.length); // Встановлюємо курсор вкінці тексту
-            range.collapse(true);
-            
-            var selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-        });
-    
-        $(document).click(function (event) {
-            let $target = $(event.target);
-            if (!$target.closest('.date span').length && !$target.closest('.editdate').length) {
-                $('.date span').attr('contenteditable', 'false')
-                console.log('sdsd')
-            }
-        });
-    
-        $('#selectall').click(function () {
-            if ($(this).prop('checked')) {
-                $('tbody .tablecheckbox input').prop('checked', true);
-            } else {
-                $('tbody .tablecheckbox input').prop('checked', false);
-            }
-        });
+    $('.editdate').click(function () {
+        var spanElement = $(this).closest('.date').find('span');
+        spanElement.attr('contenteditable', 'true');
+        spanElement.focus();
+
+        var textNode = spanElement[0].childNodes[0];
+
+        var range = document.createRange();
+        range.setStart(textNode, textNode.length); // Встановлюємо курсор вкінці тексту
+        range.collapse(true);
+
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.date span').length && !$target.closest('.editdate').length) {
+            $('.date span').attr('contenteditable', 'false')
+            console.log('sdsd')
+        }
+    });
+
+    $('#selectall').click(function () {
+        if ($(this).prop('checked')) {
+            $('tbody .tablecheckbox input').prop('checked', true);
+        } else {
+            $('tbody .tablecheckbox input').prop('checked', false);
+        }
+    });
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 });
 

@@ -17,6 +17,7 @@
             }
         }
     }
+    
 }
 
 .accountsidebar__box ul li.active .sellacc__sublist a {
@@ -591,7 +592,7 @@
     }
 
     .seller-productslist {
-        padding: 15px 15px 0 15px;
+        padding: 5px 15px 0 15px;
     }
 
     .sellertable {
@@ -623,4 +624,113 @@
         }
     }
 
+    .seller-productslist a {
+        padding-top: 10px;
+    }
+
+    .acccontentsect.acccontentsect__sellist .acccontentsect__header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .acccontentsect.acccontentsect__sellist .acccontentsect__header .addpos {
+        padding-left: 5px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .acccontentsect__sellist .pagination ul li {
+        a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+// ADD PRODUCT
+.acccontentsect {
+    z-index: 1;
+}
+
+.selleraddproduct {
+    padding-top: 40px;
+
+    .acccontentsect__header.twocol .greenbtn {
+        min-height: 45px;
+        font-size: 15px;
+    }
+}
+
+.selleraddproduct {
+    .formbox {
+        border-top: 1.5px solid #D9DBDF;
+        padding: 30px 35px;
+
+        .inputfield {
+            margin-bottom: 35px;
+
+            label img {
+                width: 16px;
+                vertical-align: middle;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .selleraddproduct__title {
+        margin-bottom: 25px;
+        color: $bace-color;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+}
+
+.input-infobtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 49px;
+    height: 55px;
+    border-left: 2px solid #DBDCE2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $bace-color;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+input:focus+label+.input-infobtn {
+    border-color: $base-green;
+}
+
+.inputfield.inputfield__infobtn {
+    input {
+        padding-right: 50px;
+    }
+}
+
+.formbox .inputfield .generalselect {
+    order: 2;
+    width: 100%;
+
+    .select2-container .select2-selection--single {
+        height: 55px;
+    }
+
+    .select2-container .select2-selection--single {
+        border-width: 2px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 55px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 15px;
+    }
 }

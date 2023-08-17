@@ -103,6 +103,7 @@
 }
 
 
+
 .recipesslider.recipesslider__reccenter {
     padding: 75px 0 60px;
 }
@@ -674,20 +675,61 @@
         margin-bottom: 30px;
     }
 
-    .addingredients {
-        margin-bottom: 50px;
+}
+.addingredients {
+    margin-bottom: 50px;
 
-        .title {
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 160%;
+    .title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    .ingrinp {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $base-green;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
-        .ingrinp {
+        input {
+            border: none;
+            font-size: 16px;
+            color: #373737;
+            width: 100%;
+
+            &:focus {
+                border: 1px solid #8E939A;
+                border-radius: 5px;
+                height: 40px;
+                width: 250px;
+            }
+        }
+    }
+
+    .addingr {
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            color: $base-green;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%;
             position: relative;
             padding-left: 20px;
-            margin-bottom: 20px;
 
             &::after {
                 content: '';
@@ -702,68 +744,25 @@
                 transform: translateY(-50%);
             }
 
-            input {
-                border: none;
-                font-size: 16px;
-                color: #373737;
-                width: 100%;
-
-                &:focus {
-                    border: 1px solid #8E939A;
-                    border-radius: 5px;
-                    height: 40px;
-                    width: 250px;
-                }
-            }
-        }
-
-        .addingr {
-            cursor: pointer;
-
-            p {
-                margin: 0;
-                color: $base-green;
-                font-size: 14px;
+            .addbtn {
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid $base-green;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 font-weight: 500;
-                line-height: 150%;
-                position: relative;
-                padding-left: 20px;
-
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background: $base-green;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-
-                .addbtn {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 5px;
-                    border: 1px solid $base-green;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 1;
-                    vertical-align: middle;
-                    margin-left: 10px;
-                }
+                font-size: 20px;
+                line-height: 1;
+                vertical-align: middle;
+                margin-left: 10px;
             }
         }
-
     }
 
-    
-
 }
+
 
 .crrecradiobox {
     display: flex;
@@ -821,7 +820,7 @@
                     border: 1px solid #3B454C;
                     position: absolute;
                     left: 0;
-                    top: -1px;
+                    top: 3px;
                 }
             }
 
