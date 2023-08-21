@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Account - Product list</title>
+    <title>Seller Account - Deleted Items</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -81,10 +81,10 @@
                                                 </span>
                                                 Products list
                                             </a>
-                                            <ul class="sellacc__sublist">
+                                            <ul class="sellacc__sublist"  style="display: block;">
                                                 <li><a href="#">Categories</a></li>
                                                 <li><a href="#">Categories </a></li>
-                                                <li><a href="#">Deleted items</a></li>
+                                                <li class="active"><a href="#">Deleted items</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -148,57 +148,25 @@
                                     <p>
                                         <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic1.svg"
                                             alt="img">
-                                        Product list
+                                            Deleted items
                                     </p>
                                     <span class="addpos">
                                         <a href="#">
-                                            <img src="img/selleracc/plus-icon.svg" alt="add">
-                                            Add Position
+                                            <img src="img/header/delete-icon.svg" alt="remove">
+                                            Delete all positions
                                         </a>
                                     </span>
                                 </div>
 
                                 <div class="acccontentsect__body p0">
                                     <div class="seller-productslist">
-                                        <a href="#" class="active">All</a>
-                                        <a href="#">At a discount</a>
-                                        <a href="#">Hidden</a>
+                                        <a href="#">All</a>
+                                        <a href="#" class="active">Products</a>
+                                        <a href="#">Brand</a>
                                     </div>
-                                    <div class="recentorder-filter recentorder-filter__seller">
-                                        <div class="leftsect">
-                                            <div class="generalselect">
-                                                <select class="customselect" name="Filter">
-                                                    <option value="0">Filter</option>
-                                                    <option value="1">Filter 1</option>
-                                                    <option value="2">Filter 2</option>
-                                                    <option value="3">Filter 3</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="rightsect">
-                                            <div class="searchblock">
-                                                <input type="text" placeholder="Search on Food...">
-                                                <button><img src="img/header/search-icon.svg" alt="search"></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="prodlist-selectbox">
-                                        <p>Select: 0</p>
-                                        <div class="prodlist-selectboxbtn">
-                                            <input type="checkbox" id="seledit">
-                                            <label for="seledit">Edit</label>
-                                        </div>
-                                        <div class="prodlist-selectboxbtn">
-                                            <input type="checkbox" id="selhide">
-                                            <label for="selhide">Hide</label>
-                                        </div>
-                                        <div class="prodlist-selectboxbtn">
-                                            <input type="checkbox" id="seldel">
-                                            <label for="seldel">Delete</label>
-                                        </div>
-                                    </div>
+                                  
                                     <div class="sellertable">
-                                        <table class="table sortable">
+                                        <table class="table deleteitems sortable">
                                             <thead>
                                                 <tr>
                                                     <th class="check no-sort">
@@ -208,12 +176,11 @@
                                                         </div>
                                                     </th>
                                                     <th class="name">Name</th>
-                                                    <th class="date">Date</th>
                                                     <th class="code">Code</th>
-                                                    <th class="display">Display</th>
-                                                    <th class="price">Price</th>
                                                     <th class="qty">Qty.</th>
-                                                    <th class="pricetot">Price</th>
+                                                    <th class="price">Price</th>
+                                                    <th class="orders">Orders</th>
+                                                    <th class="actions no-sort"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -228,6 +195,11 @@
                                                         <div class="seller-tableproduct">
                                                             <div class="imgwrap">
                                                                 <img src="img/selleracc/table-product1.png" alt="img">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#deletepopup">
+                                                                    <div class="deleteitem">
+                                                                        <img src="img/selleracc/deleteitem.svg" alt="delete">
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                             <div class="descrwrap">
                                                                 <p class="title">
@@ -246,19 +218,25 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
                                                     <td class="code">456704</td>
-                                                    <td class="display">Published</td>
+                                                    <td class="qty">5</td>
                                                     <td class="price">
                                                         $ 20.99
                                                         <span>$ 22.10</span>
                                                     </td>
-                                                    <td class="qty">22</td>
-                                                    <td class="pricetot">$ 461.78</td>
+                                                    <td class="orders">0</td>
+                                                    <td class="actions">
+                                                        <div class="actionsbox">
+                                                            <span class="actionsbox__btn">
+                                                                Actions
+                                                                <img src="img/selleracc/actions-arrow.svg" alt="arrow">
+                                                            </span>
+                                                            <ul class="actionsbox__dropdown">
+                                                                <li><a href="#">Restore </a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="check">
@@ -271,28 +249,40 @@
                                                         <div class="seller-tableproduct">
                                                             <div class="imgwrap">
                                                                 <img src="img/selleracc/table-product2.png" alt="img">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#deletepopup">
+                                                                    <div class="deleteitem">
+                                                                        <img src="img/selleracc/deleteitem.svg" alt="delete">
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                             <div class="descrwrap">
                                                                 <p class="title">
-                                                                    Céréal Apricot Tart, Gluten Free, Lactose Free
+                                                                    Musclefit Protein Pancake Prepared Fast easy...
                                                                 </p>
                                                                 <a href="#" class="details" data-bs-toggle="modal"
                                                                     data-bs-target="#proddetails">Details</a>
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456702</td>
-                                                    <td class="display">Published</td>
+                                                    <td class="code">456703</td>
+                                                    <td class="qty">10</td>
                                                     <td class="price">
-                                                        $ 12.32
+                                                        $ 14.99
+                                                        <span>$ 22.10</span>
                                                     </td>
-                                                    <td class="qty">20</td>
-                                                    <td class="pricetot">$ 246.4</td>
+                                                    <td class="orders">0</td>
+                                                    <td class="actions">
+                                                        <div class="actionsbox">
+                                                            <span class="actionsbox__btn">
+                                                                Actions
+                                                                <img src="img/selleracc/actions-arrow.svg" alt="arrow">
+                                                            </span>
+                                                            <ul class="actionsbox__dropdown">
+                                                                <li><a href="#">Restore </a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="check">
@@ -305,28 +295,40 @@
                                                         <div class="seller-tableproduct">
                                                             <div class="imgwrap">
                                                                 <img src="img/selleracc/table-product3.png" alt="img">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#deletepopup">
+                                                                    <div class="deleteitem">
+                                                                        <img src="img/selleracc/deleteitem.svg" alt="delete">
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                             <div class="descrwrap">
                                                                 <p class="title">
-                                                                    Pesoforma Porridge Cacao e Avena, 5 x 55g
+                                                                    Musclefit Protein Pancake Prepared Fast easy...
                                                                 </p>
                                                                 <a href="#" class="details" data-bs-toggle="modal"
                                                                     data-bs-target="#proddetails">Details</a>
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456701</td>
-                                                    <td class="display">Published</td>
+                                                    <td class="code">456702</td>
+                                                    <td class="qty">8</td>
                                                     <td class="price">
-                                                        $ 18.22
+                                                        $ 10.99
+                                                        <span>$ 22.10</span>
                                                     </td>
-                                                    <td class="qty">18</td>
-                                                    <td class="pricetot">$ 327.96</td>
+                                                    <td class="orders">0</td>
+                                                    <td class="actions">
+                                                        <div class="actionsbox">
+                                                            <span class="actionsbox__btn">
+                                                                Actions
+                                                                <img src="img/selleracc/actions-arrow.svg" alt="arrow">
+                                                            </span>
+                                                            <ul class="actionsbox__dropdown">
+                                                                <li><a href="#">Restore </a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="check">
@@ -339,97 +341,40 @@
                                                         <div class="seller-tableproduct">
                                                             <div class="imgwrap">
                                                                 <img src="img/selleracc/table-product4.png" alt="img">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#deletepopup">
+                                                                    <div class="deleteitem">
+                                                                        <img src="img/selleracc/deleteitem.svg" alt="delete">
+                                                                    </div>
+                                                                </a>
                                                             </div>
                                                             <div class="descrwrap">
                                                                 <p class="title">
-                                                                    Bucce di Psillio Biologico - Purezza 99% - da 200 g.
+                                                                    Musclefit Protein Pancake Prepared Fast easy...
                                                                 </p>
                                                                 <a href="#" class="details" data-bs-toggle="modal"
                                                                     data-bs-target="#proddetails">Details</a>
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456700</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 17.00
-                                                        <span>$ 22.10</span>
-                                                    </td>
-                                                    <td class="qty">15</td>
-                                                    <td class="pricetot">$ 255.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check5">
-                                                            <label for="check5"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product5.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Biaglut Biscottino Granulato, 340g, 3 1
-                                                                </p>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456699</td>
-                                                    <td class="display">Published</td>
+                                                    <td class="code">456701</td>
+                                                    <td class="qty">12</td>
                                                     <td class="price">
                                                         $ 20.99
+                                                        <span>$ 32.10</span>
                                                     </td>
-                                                    <td class="qty">12</td>
-                                                    <td class="pricetot">$ 251.88</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check6">
-                                                            <label for="check6"></label>
+                                                    <td class="orders">0</td>
+                                                    <td class="actions">
+                                                        <div class="actionsbox">
+                                                            <span class="actionsbox__btn">
+                                                                Actions
+                                                                <img src="img/selleracc/actions-arrow.svg" alt="arrow">
+                                                            </span>
+                                                            <ul class="actionsbox__dropdown">
+                                                                <li><a href="#">Restore </a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
                                                         </div>
                                                     </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product6.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Bauli Plumcake "Senza" Mela - 132 G
-                                                                </p>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.14.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456702</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 11.22
-                                                    </td>
-                                                    <td class="qty">10</td>
-                                                    <td class="pricetot">$ 112.02</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -744,6 +689,23 @@
         </div>
     </div>
 
+    <div class="modal fade generalmodal smallpopup" id="deletepopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="deletepopup__sect">
+                    <img src="img/selleracc/delitem-popupimg.svg" alt="img">
+                    <p class="title">Delete Product</p>
+                    <p>
+                        Sure you want to delete
+                    </p>
+                    <a href="#" class="greenbtn" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                    <a href="#" class="bordergreenbtn">Delete</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
 
 

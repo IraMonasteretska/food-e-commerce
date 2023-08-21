@@ -801,8 +801,18 @@ $(document).ready(function () {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-
+    // Seller acc - delete items
     
+    $('.actionsbox__btn').click(function(){
+        $(this).next('.actionsbox__dropdown').toggle();
+    });
+
+
+
+
+
+
+
 });
 
 

@@ -1180,3 +1180,287 @@ input:focus+label+.input-infobtn {
 
 
 }
+
+.productdetails .greenbtn.editinformation {
+    margin-left: 12px;
+}
+
+.closedetails {
+    position: absolute;
+    right: 35px;
+    top: 48px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(21, 132, 102, 0.10);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .largemodal .modal-dialog {
+        max-width: 900px;
+    }
+
+    .roductdetails__infoblock .infoblock__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .roductdetails__infoblock .positionname {
+        font-size: 21px;
+    }
+
+    .closedetails {
+        top: 20px;
+        right: 20px;
+    }
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .largemodal .modal-dialog {
+        max-width: 700px;
+    }
+
+    .productdetails .title {
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .largemodal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .productdetails .title {
+        font-size: 24px;
+    }
+
+    .productdetails {
+        padding: 35px 15px;
+    }
+
+    .roductdetails__infoblock .positionname {
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .roductdetails__infoblock {
+        padding: 15px;
+    }
+
+    .productdetails .greenbtn.editinformation {
+        margin-top: 15px;
+    }
+
+    .productdetails {
+        padding-top: 50px;
+    }
+}
+
+// Deleted ITEMS
+
+.accountsidebar__box ul li.active .sellacc__sublist li.active a {
+    color: $base-green;
+}
+
+.acccontentsect__header.acccontentsect__header-delacc .addpos img {
+    margin-top: -3px;
+}
+
+.sellertable .deleteitems {
+    .actions {
+        &::after {
+            display: none;
+        }
+    }
+
+    .check {}
+
+    .name {
+        width: calc(100% - 617px);
+    }
+
+    .code {}
+
+    .qty {
+        width: 99px;
+    }
+
+    .price {}
+
+    .orders {
+        width: 115px;
+    }
+
+    .actions {
+        width: 138px;
+        padding-right: 0;
+    }
+
+}
+
+.actionsbox {
+    position: relative;
+
+    .actionsbox__btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        border-radius: 35px;
+        border: 1px solid #158466;
+        background: #FFF;
+        color: $base-green;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 100%;
+        cursor: pointer;
+
+        img {
+            width: 20px;
+            margin-left: 10px;
+        }
+    }
+
+    .actionsbox__dropdown {
+        list-style-type: none;
+        padding: 15px;
+        margin: 0;
+        background: $white;
+        position: absolute;
+        top: calc(100% + 2px);
+        right: 0;
+        width: 172px;
+        border: 1px solid #D9DBDF;
+        filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.06));
+        border-radius: 5px;
+        display: none;
+
+        li {
+            margin-bottom: 20px;
+
+            a {
+                color: #3B454D;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 140%;
+                transition: 0.3s;
+                display: block;
+
+                &:hover {
+                    color: $base-green;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.seller-tableproduct .imgwrap {
+    position: relative;
+}
+
+.deleteitem {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 28px;
+    }
+}
+
+@media(max-width:1550.8px) {
+
+    .sellertable .deleteitems .orders {
+        width: 100px;
+    }
+
+    .sellertable .deleteitems .qty {
+        width: 70px;
+    }
+
+    .sellertable .deleteitems .name {
+        width: calc(100% - 538px);
+    }
+}
+
+// Order list
+.sellertable .orderlist {
+    .status {
+        padding-right: 0;
+        width: 184px;
+
+        .generalselect {
+            width: 184px;
+        }
+
+        .generalselect .select2-container--default .select2-selection--single .select2-selection__rendered {
+            padding-right: 30px;
+        }
+    }
+
+    .info {
+        width: 165px;
+    }
+
+    .client {
+        width: 210px;
+    }
+
+    .amount {
+        width: 110px;
+    }
+
+    .sellertable .name {
+        width: calc(100% - 709px);
+    }
+}
+
+
+
+

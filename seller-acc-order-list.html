@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Account - Product list</title>
+    <title>Seller Account - Order list</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -74,7 +74,7 @@
                                 <div class="accountsidebar__box accountsidebar__box-seller">
                                     <p class="title">Hi, Kate Middleton!</p>
                                     <ul>
-                                        <li class="dropdownli active">
+                                        <li class="dropdownli ">
                                             <a href="#">
                                                 <span class="icwrap">
                                                     <img src="img/selleracc/seller-asideic1.svg" alt="icon">
@@ -87,7 +87,7 @@
                                                 <li><a href="#">Deleted items</a></li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#">
                                                 <span class="icwrap">
                                                     <img src="img/selleracc/seller-asideic2.svg" alt="icon">
@@ -146,14 +146,14 @@
                             <div class="acccontentsect acccontentsect__sellist">
                                 <div class="acccontentsect__header acccontentsect__header-delacc">
                                     <p>
-                                        <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic1.svg"
+                                        <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic6.svg"
                                             alt="img">
-                                        Product list
+                                        Order list
                                     </p>
                                     <span class="addpos">
                                         <a href="#">
                                             <img src="img/selleracc/plus-icon.svg" alt="add">
-                                            Add Position
+                                            Add Order
                                         </a>
                                     </span>
                                 </div>
@@ -161,8 +161,10 @@
                                 <div class="acccontentsect__body p0">
                                     <div class="seller-productslist">
                                         <a href="#" class="active">All</a>
-                                        <a href="#">At a discount</a>
-                                        <a href="#">Hidden</a>
+                                        <a href="#">New</a>
+                                        <a href="#">Shipped</a>
+                                        <a href="#">Pending</a>
+                                        <a href="#">Canceled</a>
                                     </div>
                                     <div class="recentorder-filter recentorder-filter__seller">
                                         <div class="leftsect">
@@ -182,23 +184,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="prodlist-selectbox">
-                                        <p>Select: 0</p>
-                                        <div class="prodlist-selectboxbtn">
-                                            <input type="checkbox" id="seledit">
-                                            <label for="seledit">Edit</label>
-                                        </div>
-                                        <div class="prodlist-selectboxbtn">
-                                            <input type="checkbox" id="selhide">
-                                            <label for="selhide">Hide</label>
-                                        </div>
-                                        <div class="prodlist-selectboxbtn">
-                                            <input type="checkbox" id="seldel">
-                                            <label for="seldel">Delete</label>
-                                        </div>
-                                    </div>
                                     <div class="sellertable">
-                                        <table class="table sortable">
+                                        <table class="table orderlist sortable">
                                             <thead>
                                                 <tr>
                                                     <th class="check no-sort">
@@ -207,13 +194,11 @@
                                                             <label for="selectall"></label>
                                                         </div>
                                                     </th>
-                                                    <th class="name">Name</th>
-                                                    <th class="date">Date</th>
-                                                    <th class="code">Code</th>
-                                                    <th class="display">Display</th>
-                                                    <th class="price">Price</th>
-                                                    <th class="qty">Qty.</th>
-                                                    <th class="pricetot">Price</th>
+                                                    <th class="name">Order</th>
+                                                    <th class="amount">Amount</th>
+                                                    <th class="client">Client</th>
+                                                    <th class="info">Info</th>
+                                                    <th class="status">Status</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -233,204 +218,40 @@
                                                                 <p class="title">
                                                                     Musclefit Protein Pancake Prepared Fast easy...
                                                                 </p>
-                                                                <div class="tags">
-                                                                    <span>Tag: Top <button><img
-                                                                                src="img/selleracc/close.svg"
-                                                                                alt="delete"></button></span>
-                                                                    <span>Discount 10%<button><img
-                                                                                src="img/selleracc/close.svg"
-                                                                                alt="delete"></button></span>
-                                                                </div>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456704</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 20.99
-                                                        <span>$ 22.10</span>
-                                                    </td>
-                                                    <td class="qty">22</td>
-                                                    <td class="pricetot">$ 461.78</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check2">
-                                                            <label for="check2"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product2.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Céréal Apricot Tart, Gluten Free, Lactose Free
+                                                                <p class="infotext">
+                                                                    09:20 AM, 05.27.23
+                                                                    <span>456704</span>
                                                                 </p>
                                                                 <a href="#" class="details" data-bs-toggle="modal"
                                                                     data-bs-target="#proddetails">Details</a>
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
+                                                    <td class="amount">
+                                                        <p>$ 20.99 <span>1 pc.</span></p>
                                                     </td>
-                                                    <td class="code">456702</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 12.32
+                                                    <td class="client">
+                                                        <p>
+                                                            Tom Halland
+                                                            <a href="tel:+12234567890">+1 223 456 7890</a>
+                                                            <a href="mailto:name@surname.com">name@surname.com</a>
+                                                        </p>
                                                     </td>
-                                                    <td class="qty">20</td>
-                                                    <td class="pricetot">$ 246.4</td>
+                                                    <td class="info">
+                                                        Cash payment
+                                                    </td>
+                                                    <td class="status">
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="Accepted">
+                                                                <option value="0">Accept</option>
+                                                                <option value="1">Waiting for payment</option>
+                                                                <option value="2">Cancel</option>
+                                                                <option value="3">Successfully delivered</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check3">
-                                                            <label for="check3"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product3.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Pesoforma Porridge Cacao e Avena, 5 x 55g
-                                                                </p>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456701</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 18.22
-                                                    </td>
-                                                    <td class="qty">18</td>
-                                                    <td class="pricetot">$ 327.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check4">
-                                                            <label for="check4"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product4.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Bucce di Psillio Biologico - Purezza 99% - da 200 g.
-                                                                </p>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456700</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 17.00
-                                                        <span>$ 22.10</span>
-                                                    </td>
-                                                    <td class="qty">15</td>
-                                                    <td class="pricetot">$ 255.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check5">
-                                                            <label for="check5"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product5.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Biaglut Biscottino Granulato, 340g, 3 1
-                                                                </p>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.28.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456699</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 20.99
-                                                    </td>
-                                                    <td class="qty">12</td>
-                                                    <td class="pricetot">$ 251.88</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check6">
-                                                            <label for="check6"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <div class="seller-tableproduct">
-                                                            <div class="imgwrap">
-                                                                <img src="img/selleracc/table-product6.png" alt="img">
-                                                            </div>
-                                                            <div class="descrwrap">
-                                                                <p class="title">
-                                                                    Bauli Plumcake "Senza" Mela - 132 G
-                                                                </p>
-                                                                <a href="#" class="details" data-bs-toggle="modal"
-                                                                    data-bs-target="#proddetails">Details</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="date">
-                                                        <span>05.14.23</span>
-                                                        <button class="editdate"><img src="img/selleracc/edit.svg"
-                                                                alt="edit"></button>
-                                                    </td>
-                                                    <td class="code">456702</td>
-                                                    <td class="display">Published</td>
-                                                    <td class="price">
-                                                        $ 11.22
-                                                    </td>
-                                                    <td class="qty">10</td>
-                                                    <td class="pricetot">$ 112.02</td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -743,9 +564,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
     <script src="js/lib/jquery.js"></script>
