@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Account - Promotion list</title>
+    <title>Seller Account - Add Promotion</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -58,7 +58,7 @@
     </header>
 
     <main class="main">
-        <section class="accountsection">
+        <section class="accountsection selleraddproduct">
             <div class="container">
                 <div class="row">
                     <div class="accountsection-colleft">
@@ -144,154 +144,161 @@
                     <div class="accountsection-colright">
                         <div class="accountcontent">
                             <div class="acccontentsect acccontentsect__sellist">
-                                <div class="acccontentsect__header acccontentsect__header-delacc">
-                                    <p>
-                                        <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic3.svg"
-                                            alt="img">
-                                        Promotion list
-                                    </p>
-                                    <span class="addpos">
-                                        <a href="#">
-                                            <img src="img/selleracc/plus-icon.svg" alt="add">
+                                <div class="acccontentsect__header twocol">
+                                    <div class="leftsect">
+                                        <p>
+                                            <a href="#"><img src="img/selleracc/back-arr.svg" alt="img"></a>
                                             Add Promotion
-                                        </a>
-                                    </span>
+                                        </p>
+                                    </div>
+                                    <div class="rightsect">
+                                        <div class="flex">
+                                            <a href="#" class="greenbtn ">Save changes</a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="acccontentsect__body p0">
-                                    <div class="seller-productslist">
-                                        <a href="#" class="active">All</a>
-                                        <a href="#">In archive</a>
-                                    </div>
-                                    <div class="recentorder-filter recentorder-filter__seller">
-                                        <div class="leftsect">
-                                            <div class="generalselect">
-                                                <select class="customselect" name="Filter">
-                                                    <option value="0">Filter</option>
-                                                    <option value="1">Filter 1</option>
-                                                    <option value="2">Filter 2</option>
-                                                    <option value="3">Filter 3</option>
-                                                </select>
+                                    <form action="#">
+                                        <div class="selleraddproduct">
+                                            <div class="formbox">
+                                                <p class="selleraddproduct__title">Basic information</p>
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <div class="inputfield">
+                                                            <input type="text" id="posname"
+                                                                placeholder="Musclefit Protein Pancake Prepared Fast easy..."
+                                                                required="">
+                                                            <label for="posname">Promotion name*
+                                                                <img src="img/selleracc/question-icon.svg"
+                                                                    alt="question" data-bs-toggle="tooltip"
+                                                                    data-bs-title="Default tooltip">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="inputfield">
+                                                            <div class="generalselect">
+                                                                <select class="customselect" name="category"
+                                                                    id="availability">
+                                                                    <option value="0">Discount for the second item in
+                                                                        the
+                                                                        check</option>
+                                                                    <option value="1">lorem</option>
+                                                                    <option value="2">lorem</option>
+                                                                </select>
+                                                            </div>
+                                                            <label for="promtype">Promotion type*
+                                                                <img src="img/selleracc/question-icon.svg"
+                                                                    alt="question" data-bs-toggle="tooltip"
+                                                                    data-bs-title="Default tooltip">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-3 col-lg-4">
+                                                        <div class="inputfield inputfield__infobtn">
+                                                            <input type="text" id="length" placeholder="0" required="">
+                                                            <label for="length">Discount*
+                                                            </label>
+                                                            <div class="input-infobtn">%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-5 col-lg-8">
+                                                        <div
+                                                            class="inputfield inputfield__infobtn inputfield__infobtn-large">
+                                                            <input type="text" id="length"
+                                                                placeholder="For example: Promo code_food" required="">
+                                                            <label for="length">Promo code*
+                                                            </label>
+                                                            <div class="input-infobtn">Generate</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="inputfield">
+                                                            <p>The offer is valid*</p>
+                                                            <div class="radioinprow addprom">
+                                                                <div class="radiobox">
+                                                                    <input type="radio" id="rad1" name="kosher">
+                                                                    <label for="rad1">For all products</label>
+                                                                </div>
+                                                                <div class="radiobox">
+                                                                    <input type="radio" id="rad2" name="kosher">
+                                                                    <label for="rad2">To the selected positions</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="addpostbox">
+                                                            <a href="#" class="addposbtn">Add position
+                                                                <span>+</span></a>
+                                                            <p>
+                                                                <span>1</span> position selected
+                                                                <button><img src="img/header/delete-icon.svg"
+                                                                        alt="remove"></button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="rightsect">
-                                            <div class="searchblock">
-                                                <input type="text" placeholder="Search on Food...">
-                                                <button><img src="img/header/search-icon.svg" alt="search"></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sellertable">
-                                        <table class="table promotionlist sortable">
-                                            <thead>
-                                                <tr>
-                                                    <th class="check no-sort">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="selectall">
-                                                            <label for="selectall"></label>
-                                                        </div>
-                                                    </th>
-                                                    <th class="name">Discount name</th>
-                                                    <th class="type">Type</th>
-                                                    <th class="promstatus">Status</th>
-                                                    <th class="dates">Start/End date</th>
-                                                    <th class="actions no-sort"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check1">
-                                                            <label for="check1"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <p class="discountname">Summer discounts</p>
-                                                        <p>10% discount; Apply to discounted products</p>
-                                                    </td>
-                                                    <td class="type">
-                                                        <p>
-                                                            Discount for the second item in the check
-                                                        </p>
-                                                    </td>
-                                                    <td class="promstatus">
-                                                        <span class="active">Active</span>
-                                                    </td>
-                                                    <td class="dates">
-                                                        <p>05.31.23 /
-                                                            not specified</p>
-                                                    </td>
-                                                    <td class="actions">
-                                                        <div class="actionsbox">
-                                                            <span class="actionsbox__btn">
-                                                                Actions
-                                                                <img src="img/selleracc/actions-arrow-black.svg" alt="arrow">
-                                                            </span>
-                                                            <ul class="actionsbox__dropdown">
-                                                                <li><a href="#">Edit </a></li>
-                                                                <li><a href="#">Stop the promotion</a></li>
-                                                                <li><a href="#">archive the Promotion</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="check">
-                                                        <div class="tablecheckbox">
-                                                            <input type="checkbox" id="check2">
-                                                            <label for="check2"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="name">
-                                                        <p class="discountname">Discount on non-selling goods</p>
-                                                        <p>10% discount for selected products</p>
-                                                    </td>
-                                                    <td class="type">
-                                                        <p>
-                                                            Discounts on certain products or types of goods
-                                                        </p>
-                                                    </td>
-                                                    <td class="promstatus">
-                                                        <span class="active">Active</span>
-                                                    </td>
-                                                    <td class="dates">
-                                                        <p>
-                                                            06.31.23 /
-                                                            07.07.23
-                                                        </p>
-                                                    </td>
-                                                    <td class="actions">
-                                                        <div class="actionsbox">
-                                                            <span class="actionsbox__btn">
-                                                                Actions
-                                                                <img src="img/selleracc/actions-arrow-black.svg" alt="arrow">
-                                                            </span>
-                                                            <ul class="actionsbox__dropdown">
-                                                                <li><a href="#">Edit </a></li>
-                                                                <li><a href="#">Stop the promotion</a></li>
-                                                                <li><a href="#">archive the Promotion</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
 
-                                    <!-- <div class="pagination">
-                                        <ul>
-                                            <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a>
-                                            </li>
-                                            <li><a href="#">1</a></li>
-                                            <li class="active"><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li>...</li>
-                                            <li><a href="#">11</a></li>
-                                            <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
+                                            <div class="formbox">
+                                                <p class="selleraddproduct__title">Restrictions on use</p>
+                                                <div class="inputfield addprom">
+                                                    <div class="checkwrapper">
+                                                        <input type="checkbox" id="check1">
+                                                        <label for="check1">Limitations on the total number of uses of
+                                                            the
+                                                            promo code</label>
+                                                    </div>
+                                                    <div class="checkwrapper">
+                                                        <input type="checkbox" id="check2">
+                                                        <label for="check2">The discount is valid for the minimum order
+                                                            amount</label>
+                                                    </div>
+                                                    <div class="checkwrapper">
+                                                        <input type="checkbox" id="check3">
+                                                        <label for="check3">Do not use the promo code for products with
+                                                            a
+                                                            valid discount</label>
+                                                    </div>
+                                                    <div class="checkwrapper">
+                                                        <input type="checkbox" id="check4">
+                                                        <label for="check4">Do not use the promo code for wholesale
+                                                            prices</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="formbox">
+                                                <p class="selleraddproduct__title">Validity of the promotion</p>
+                                                <div class="promotiondates">
+                                                    <div class="promotiondates__wrap">
+                                                        <div class="inputfield">
+                                                            <input type="text" id="startdate" placeholder="31.05.23"
+                                                                required="">
+                                                            <label for="startdate">Start date*</label>
+                                                        </div>
+                                                        <div class="inputfield">
+                                                            <input type="text" id="enddate" placeholder="31.06.23"
+                                                                required="">
+                                                            <label for="enddate">End date</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inputfield addprom">
+                                                        <div class="checkwrapper">
+                                                            <input type="checkbox" id="setenddate">
+                                                            <label for="setenddate">Set the end date</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <input type="submit" class="greenbtn addpromsubmit" value="Save">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 
@@ -380,7 +387,7 @@
     <script src="js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/lib/swiper.js"></script>
-    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/popper.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
 </body>

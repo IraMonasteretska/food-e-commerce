@@ -87,7 +87,7 @@
 
 .acccontentsect__body.p0 {
     padding: 0;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .seller-productslist {
@@ -1236,14 +1236,6 @@ input:focus+label+.input-infobtn {
     .productdetails .title {
         margin-bottom: 15px;
     }
-
-
-
-
-
-
-
-
 }
 
 @media(max-width:767.8px) {
@@ -2085,14 +2077,281 @@ input:focus+label+.input-infobtn {
 }
 
 // Promotion list
-.sellertable .promotionlist{
+.actionsbox .actionsbox__dropdown {
+    z-index: 2;
+    text-transform: capitalize;
+    width: 200px;
+}
+
+.sellertable .promotionlist {
     .no-sort {
         &::after {
             display: none;
         }
     }
 
+    .name {
+        width: calc(100% - 751px);
+    }
+
+    .type {
+        width: 230px;
+    }
+
+    .promstatus {
+        width: 137px;
+    }
+
+    .dates {
+        width: 200px;
+    }
+
+    .actions {
+        width: 184px;
+
+        .actionsbox {
+
+            .actionsbox__btn {
+                justify-content: flex-start;
+                padding-left: 25px;
+                border: 1px solid #D9DBDF;
+                color: #3B454C;
+
+                img {
+                    position: absolute;
+                    right: 25px;
+                    transition: 0.3s;
+                }
+
+                &.active {
+                    img {
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    tbody {
+        .dates {
+            font-size: 14px;
+            color: #3B454D;
+        }
+
+        .promstatus {
+            span {
+                display: inline-block;
+                padding: 6px 10px;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 110%;
+                border-radius: 70px;
+
+                &.active {
+                    background: #E7F5EC;
+                }
+            }
+        }
+
+        .type {
+            font-size: 14px;
+            color: #3B454D;
+
+            p {
+                max-width: 200px;
+            }
+        }
+
+        .name {
+            .discountname {
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            p {
+                color: #3B454D;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .sellertable .promotionlist .actions {
+        width: 160px;
+    }
+
+    .sellertable .promotionlist .actions .actionsbox .actionsbox__btn {
+        padding-left: 15px;
+    }
+
+    .sellertable .promotionlist .dates {
+        width: 160px;
+    }
+
+    .sellertable .promotionlist .promstatus {
+        width: 120px;
+    }
+
+    .sellertable .promotionlist .type {
+        width: 200px;
+    }
+
+    .sellertable .promotionlist .name {
+        width: calc(100% - 670px);
+    }
 
 
 
+}
+
+// add promotion
+.inputfield.inputfield__infobtn-large {
+    input {
+        padding-right: 140px;
+    }
+
+    .input-infobtn {
+        width: 136px;
+    }
+}
+
+.addpostbox {
+    display: flex;
+    flex-wrap: wrap;
+
+    .addposbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 190px;
+        height: 45px;
+        border-radius: 40px;
+        border: 1px solid #158466;
+        margin-right: 25px;
+        color: $base-green;
+        font-size: 15px;
+        font-weight: 600;
+
+        span {
+            font-size: 20px;
+            display: inline-block;
+            margin-left: 6px;
+            font-weight: 500;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: $bace-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 160%;
+        padding-top: 10px;
+
+        span {
+            color: $base-green;
+            font-weight: 700;
+        }
+
+        button {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+            padding: 0;
+            border: none;
+            background: transparent;
+            vertical-align: middle;
+            margin-top: -3px;
+
+            img {
+                width: 100%;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.selleraddproduct .formbox .inputfield.addprom {
+    margin-bottom: 0;
+}
+
+.inputfield.addprom {
+    display: block;
+
+    .checkwrapper {
+        display: block;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        label {
+            font-size: 15px;
+
+            &::before {
+                border: 1px solid #3B454C;
+            }
+        }
+
+        input:checked+label:before {
+            border-color: $base-green;
+            background-color: $base-green;
+            background-image: url(../img/selleracc/white-check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 14px;
+        }
+    }
+
+
+
+
+
+}
+
+.selleraddproduct .formbox .promotiondates__wrap .inputfield {
+    margin-bottom: 15px;
+}
+
+.promotiondates__wrap {
+    max-width: 410px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .inputfield {
+        max-width: 180px;
+        width: 100%;
+
+        &:first-child {
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                right: -37px;
+                top: 60px;
+                width: 20px;
+                height: 2px;
+                background: url('../img/selleracc/line.png') no-repeat center / 100%;
+            }
+        }
+    }
+}
+
+.promotiondates {
+    .checkwrapper label:before {
+        top: 2px;
+    }
+}
+
+.addpromsubmit {
+    margin-top: 45px;
+    max-width: 188px;
+    min-height: 60px;
+    font-size: 18px;
 }

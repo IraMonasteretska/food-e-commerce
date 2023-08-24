@@ -804,6 +804,7 @@ $(document).ready(function () {
     // Seller acc - delete items
     
     $('.actionsbox__btn').click(function(){
+        $(this).toggleClass('active')
         $(this).next('.actionsbox__dropdown').toggle();
     });
 
