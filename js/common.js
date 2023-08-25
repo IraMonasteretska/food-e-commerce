@@ -802,17 +802,43 @@ $(document).ready(function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     // Seller acc - delete items
-    
-    $('.actionsbox__btn').click(function(){
+
+    $('.actionsbox__btn').click(function () {
         $(this).toggleClass('active')
         $(this).next('.actionsbox__dropdown').toggle();
+    });
+
+
+    // Coupon code edit
+    $('.coupon .code').click(function () {
+        var spanElement = $(this).closest('.coupon .code').find('span');
+        spanElement.attr('contenteditable', 'true');
+        spanElement.focus();
+
+        var textNode = spanElement[0].childNodes[0];
+
+        var range = document.createRange();
+        range.setStart(textNode, textNode.length); // Встановлюємо курсор вкінці тексту
+        range.collapse(true);
+
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.coupon .code span').length && !$target.closest('.editcouponcode button').length) {
+            $('.coupon .code span').attr('contenteditable', 'false')
+            console.log('sdsd')
+        }
     });
 
 
 
 
 
-
+    
 
 });
 

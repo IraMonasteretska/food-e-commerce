@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Account - Promotion list</title>
+    <title>Seller Account - Coupon</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -103,7 +103,7 @@
                                                 Promotion list
                                             </a>
                                             <ul class="sellacc__sublist" style="display: block;">
-                                                <li><a href="#">Coupon</a></li>
+                                                <li class="active"><a href="#">Coupon</a></li>
                                                 <li><a href="#">Deleted items </a></li>
                                             </ul>
                                         </li>
@@ -148,12 +148,12 @@
                                     <p>
                                         <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic3.svg"
                                             alt="img">
-                                        Promotion list
+                                        Coupon
                                     </p>
                                     <span class="addpos">
                                         <a href="#">
                                             <img src="img/selleracc/plus-icon.svg" alt="add">
-                                            Add Promotion
+                                            Coupon
                                         </a>
                                     </span>
                                 </div>
@@ -161,7 +161,8 @@
                                 <div class="acccontentsect__body p0">
                                     <div class="seller-productslist">
                                         <a href="#" class="active">All</a>
-                                        <a href="#">In archive</a>
+                                        <a href="#">Published</a>
+                                        <a href="#">Automate</a>
                                     </div>
                                     <div class="recentorder-filter recentorder-filter__seller">
                                         <div class="leftsect">
@@ -182,7 +183,7 @@
                                         </div>
                                     </div>
                                     <div class="sellertable">
-                                        <table class="table promotionlist sortable">
+                                        <table class="table coupon sortable">
                                             <thead>
                                                 <tr>
                                                     <th class="check no-sort">
@@ -191,11 +192,13 @@
                                                             <label for="selectall"></label>
                                                         </div>
                                                     </th>
-                                                    <th class="name">Discount name</th>
-                                                    <th class="type">Type</th>
-                                                    <th class="promstatus">Status</th>
-                                                    <th class="dates">Start/End date</th>
-                                                    <th class="actions no-sort"></th>
+                                                    <th class="code">Code</th>
+                                                    <th class="coupontype">Coupon type</th>
+                                                    <th class="couponval">Coupon value</th>
+                                                    <th class="description">Description</th>
+                                                    <th class="ids">Item IDs</th>
+                                                    <th class="limit">Used / Limit</th>
+                                                    <th class="validity">Validity</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -206,34 +209,30 @@
                                                             <label for="check1"></label>
                                                         </div>
                                                     </td>
-                                                    <td class="name">
-                                                        <p class="discountname">Summer discounts</p>
-                                                        <p>10% discount; Apply to discounted products</p>
-                                                    </td>
-                                                    <td class="type">
-                                                        <p>
-                                                            Discount for the second item in the check
-                                                        </p>
-                                                    </td>
-                                                    <td class="promstatus">
-                                                        <span class="active">Active</span>
-                                                    </td>
-                                                    <td class="dates">
-                                                        <p>05.31.23 /
-                                                            not specified</p>
-                                                    </td>
-                                                    <td class="actions">
-                                                        <div class="actionsbox">
-                                                            <span class="actionsbox__btn">
-                                                                Actions
-                                                                <img src="img/selleracc/actions-arrow-black.svg" alt="arrow">
-                                                            </span>
-                                                            <ul class="actionsbox__dropdown">
-                                                                <li><a href="#">Edit </a></li>
-                                                                <li><a href="#">Stop the promotion</a></li>
-                                                                <li><a href="#">archive the Promotion</a></li>
-                                                            </ul>
+                                                    <td class="code">
+                                                        <div class="editcouponcode">
+                                                            <span>etsq8s2</span>
+                                                            <button><img src="img/selleracc/edit.svg"
+                                                                    alt="edit"></button>
                                                         </div>
+                                                    </td>
+                                                    <td class="coupontype">
+                                                        Discount percentage
+                                                    </td>
+                                                    <td class="couponval">
+                                                        -10%
+                                                    </td>
+                                                    <td class="description">
+                                                        Kosher product
+                                                    </td>
+                                                    <td class="ids">
+                                                        38432
+                                                    </td>
+                                                    <td class="limit">
+                                                        10 / ∞
+                                                    </td>
+                                                    <td class="validity">
+                                                        09.12.2023
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -243,43 +242,103 @@
                                                             <label for="check2"></label>
                                                         </div>
                                                     </td>
-                                                    <td class="name">
-                                                        <p class="discountname">Discount on non-selling goods</p>
-                                                        <p>10% discount for selected products</p>
-                                                    </td>
-                                                    <td class="type">
-                                                        <p>
-                                                            Discounts on certain products or types of goods
-                                                        </p>
-                                                    </td>
-                                                    <td class="promstatus">
-                                                        <span class="active">Active</span>
-                                                    </td>
-                                                    <td class="dates">
-                                                        <p>
-                                                            06.31.23 /
-                                                            07.07.23
-                                                        </p>
-                                                    </td>
-                                                    <td class="actions">
-                                                        <div class="actionsbox">
-                                                            <span class="actionsbox__btn">
-                                                                Actions
-                                                                <img src="img/selleracc/actions-arrow-black.svg" alt="arrow">
-                                                            </span>
-                                                            <ul class="actionsbox__dropdown">
-                                                                <li><a href="#">Edit </a></li>
-                                                                <li><a href="#">Stop the promotion</a></li>
-                                                                <li><a href="#">archive the Promotion</a></li>
-                                                            </ul>
+                                                    <td class="code">
+                                                        <div class="editcouponcode">
+                                                            <span>astq3s1</span>
+                                                            <button><img src="img/selleracc/edit.svg"
+                                                                    alt="edit"></button>
                                                         </div>
+                                                    </td>
+                                                    <td class="coupontype">
+                                                        Fixed discount on purchase
+                                                    </td>
+                                                    <td class="couponval">
+                                                        -5%
+                                                    </td>
+                                                    <td class="description">
+                                                        -
+                                                    </td>
+                                                    <td class="ids">
+                                                        38431
+                                                    </td>
+                                                    <td class="limit">
+                                                        5 / ∞
+                                                    </td>
+                                                    <td class="validity">
+                                                        11.10.2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check3">
+                                                            <label for="check3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="code">
+                                                        <div class="editcouponcode">
+                                                            <span>ttdq6s8</span>
+                                                            <button><img src="img/selleracc/edit.svg"
+                                                                    alt="edit"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="coupontype">
+                                                        Discount percentage
+                                                    </td>
+                                                    <td class="couponval">
+                                                        -10%
+                                                    </td>
+                                                    <td class="description">
+                                                        Kosher product
+                                                    </td>
+                                                    <td class="ids">
+                                                        38430
+                                                    </td>
+                                                    <td class="limit">
+                                                        15 / ∞
+                                                    </td>
+                                                    <td class="validity">
+                                                        23.10.2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="check">
+                                                        <div class="tablecheckbox">
+                                                            <input type="checkbox" id="check4">
+                                                            <label for="check4"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="code">
+                                                        <div class="editcouponcode">
+                                                            <span>etsq8s2</span>
+                                                            <button><img src="img/selleracc/edit.svg"
+                                                                    alt="edit"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="coupontype">
+                                                        Discount percentage
+                                                    </td>
+                                                    <td class="couponval">
+                                                        -10%
+                                                    </td>
+                                                    <td class="description">
+                                                        -
+                                                    </td>
+                                                    <td class="ids">
+                                                        38429
+                                                    </td>
+                                                    <td class="limit">
+                                                        20 / ∞
+                                                    </td>
+                                                    <td class="validity">
+                                                        08.10.2023
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
-                                    <!-- <div class="pagination">
+                                    <div class="pagination">
                                         <ul>
                                             <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a>
                                             </li>
@@ -291,7 +350,7 @@
                                             <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a>
                                             </li>
                                         </ul>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -368,10 +427,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
 
 
 

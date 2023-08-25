@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Account - Create Coupon</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/sortable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/selleracc/seller-logo.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-8">
+                    <div class="header__rightsect selleracc">
+                        <a href="#" class="sellacc__setting">
+                            <img src="img/selleracc/settings-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="sellacc__question">
+                            <img src="img/selleracc/question-icon.svg" alt="">
+                        </a>
+                        <div class="sellacc__brandname">
+                            <div class="sellacc__brandnamehead">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="infowrap">
+                                    <p>Brand name</p>
+                                    <p class="brandid">
+                                        <span>Your id:</span>
+                                        01234565
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <p>Lorem, ipsum dolor.</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="accountsection">
+            <div class="container">
+                <div class="row">
+                    <div class="accountsection-colleft">
+                        <div class="aside-menubtn">
+                            <img src="img/account/aside-menu.svg" alt="menu">
+                        </div>
+
+                        <aside class="accountsidebar">
+                            <div class="accountsidebar__wrap">
+                                <div class="closesidebar">
+                                    <img src="img/account/accsect-arrow.svg" alt="close">
+                                </div>
+                                <div class="accountsidebar__box accountsidebar__box-seller">
+                                    <p class="title">Hi, Kate Middleton!</p>
+                                    <ul>
+                                        <li class="dropdownli">
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic1.svg" alt="icon">
+                                                </span>
+                                                Products list
+                                            </a>
+                                            <ul class="sellacc__sublist">
+                                                <li><a href="#">Categories</a></li>
+                                                <li><a href="#">Categories </a></li>
+                                                <li><a href="#">Deleted items</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic2.svg" alt="icon">
+                                                </span>
+                                                Order list
+                                            </a>
+                                        </li>
+                                        <li class="dropdownli active">
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic3.svg" alt="icon">
+                                                </span>
+                                                Promotion list
+                                            </a>
+                                            <ul class="sellacc__sublist" style="display: block;">
+                                                <li class="active"><a href="#">Coupon</a></li>
+                                                <li><a href="#">Deleted items </a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic4.svg" alt="icon">
+                                                </span>
+                                                reports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic5.svg" alt="icon">
+                                                </span>
+                                                Profile settings
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="accountsidebar__box accountsidebar__box-seller signout">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/account/acc-signout.svg" alt="icon">
+                                                </span>
+                                                Sign Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="accountsection-colright">
+                        <div class="accountcontent">
+                            <div class="acccontentsect acccontentsect__sellist">
+                                <div class="acccontentsect__header acccontentsect__header-delacc">
+                                    <p>
+                                        <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic3.svg"
+                                            alt="img">
+                                        Coupon
+                                    </p>
+                                    <span class="addpos">
+                                        <a href="#">
+                                            <img src="img/selleracc/plus-icon.svg" alt="add">
+                                            Coupon
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <div class="acccontentsect__body ">
+                                    <div class="createcoupon">
+                                        <img src="img/selleracc/coupon.png" alt="img">
+                                        <p>
+                                            Coupons are a great way to offer a discount or provide a reward to your
+                                            customers. They will appear after they are created.
+                                        </p>
+                                        <a href="#" class="greenbtn">Create your first coupon</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img class="accbgel1" src="img/background-elements/bgelem7.png" alt="img">
+        <img class="accbgel2" src="img/background-elements/bgelem6.png" alt="img">
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade generalmodal largemodal" id="proddetails" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="productdetails">
+                    <div class="closedetails" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="img/account/close.svg" alt="close">
+                    </div>
+                    <div class="title">Product details</div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Position name</p>
+                                <p class="positionname">
+                                    Musclefit Pancake Proteico Preparato Fast facile e veloce 250g per la tua colazione
+                                    Fit (Original)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Short description</p>
+                                <p>
+                                    Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus
+                                    justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas ultricies viverra mi,
+                                    vel feugiat nunc bibendum at. Aenean eget dolor elit. Nam ac lorem ipsum. Nullam
+                                    pretium nunc eget suscipit finibus. Sed a orci quis lectus aliquet posuere.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <ul class="infoblock__list">
+                                    <li>Price: <span class="infoblock__list-price">$ 20.99</span></li>
+                                    <li>Unit: <span>Pcs</span></li>
+                                    <li>
+                                        <img src="img/general/list-check.svg" alt="img">
+                                        Available
+                                    </li>
+                                    <li>
+                                        Brand: <span>Céréal</span>
+                                    </li>
+                                    <li>
+                                        Category on the marketplace: <span>Products</span>
+                                    </li>
+                                    <li>Select a product type: <span>Cakes</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Product description</p>
+                                <p>
+                                    Most orders are shipped within 1 hour of being placed. Food will not be able to
+                                    cancel an order once it has been shipped. You will be able to start the return
+                                    process after receiving your order. For this you need to contact one of our
+                                    managers. Refunds will be made after the goods are returned in their original
+                                    condition:
+                                </p>
+                                <ul>
+                                    <li>20 g Protein - Per 55 g Serving</li>
+                                    <li>100% Whole Grains</li>
+                                    <li>No Added Sugar</li>
+                                    <li>Just Add Water</li>
+                                </ul>
+                                <p class="subtitle">Suggested use Pancakes</p>
+                                <p>1/2 cup mix + 1/3 cup cold water</p>
+                                <p><b>Heat griddle</b> to low heat (285-295°F).</p>
+                                <p><b>Combine & whisk</b> ingredients until blended. Set aside and let batter thicken
+                                    for 3
+                                    minutes.</p>
+                                <p>For thinner pancakes add 1-2 tbsp of water.</p>
+                                <p>
+                                    <b>Pour batter</b> into 3-4 four inch pancakes on a lightly greased, pre-heated
+                                    griddle.
+                                </p>
+                                <p>
+                                    <b>Cook slow-on-low</b> until no more bubbles are forming in the center and edges
+                                    look dry
+                                    (about 3 minutes). Flip and cook until golden brown.
+                                </p>
+                                <p class="subtitle">Want More Protein?</p>
+                                <p>
+                                    <b>23 g</b> - Replace water 1:1 with fat-free milk.
+                                </p>
+                                <p>
+                                    <b>26 g</b> - Replace water with 1 large egg + 1 Tbsp water.
+                                </p>
+                                <p class="subtitle">Disclaimer</p>
+                                <p>
+                                    While Food strives to ensure the accuracy of its product images and information,
+                                    some manufacturing changes to packaging and/or ingredients may be pending update on
+                                    our site. Although items may occasionally ship with alternate packaging, freshness
+                                    is always guaranteed. We recommend that you read labels, warnings and directions of
+                                    all products before use and not rely solely on the information provided by Food.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Supplement Facts</p>
+                                <div class="productdetails__tablewrap">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <b>Serving Size:</b> 1/2 Cup Mix (55 g)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <b>Servings Per Container:</b> 6
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="productdetails__tablewrap">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col tabletrtitle"></th>
+                                                <th scope="col amperserv">Amount Per Serving</th>
+                                                <th scope="col dailyval">% Daily Value*</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tabletrtitle">Calories</td>
+                                                <td class="amperserv">210</td>
+                                                <td class="dailyval"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Total Fat</td>
+                                                <td class="amperserv">4 g</td>
+                                                <td class="dailyval">5%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Saturated Fat</td>
+                                                <td class="amperserv">0 g</td>
+                                                <td class="dailyval">5%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Trans Fat</td>
+                                                <td class="amperserv">30 mg</td>
+                                                <td class="dailyval"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Cholesterol</td>
+                                                <td class="amperserv">360 mg</td>
+                                                <td class="dailyval">10%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Sodium</td>
+                                                <td class="amperserv">24 g</td>
+                                                <td class="dailyval">16%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Total Carbohydrate</td>
+                                                <td class="amperserv">5 g</td>
+                                                <td class="dailyval">9%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabletrtitle">Dietary Fiber</td>
+                                                <td class="amperserv">7 g</td>
+                                                <td class="dailyval">0%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="afttabtext">
+                                        *The % Daily Value tells you how much a nutrient in a serving of food
+                                        contributes to a daily diet. 2,000 calories a day is used for general nutrition
+                                        advice.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Image</p>
+                                <div class="imgsbox">
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg1.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg2.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg3.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg4.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg5.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="greenbtn editinformation">Edit information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -2355,3 +2355,205 @@ input:focus+label+.input-infobtn {
     min-height: 60px;
     font-size: 18px;
 }
+
+@media(max-width:767.8px) {
+    .radioinprow.addprom {
+        flex-wrap: wrap;
+
+        .radiobox {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .inputfield.inputfield__infobtn-large .input-infobtn {
+        width: 100px;
+    }
+
+    .promotiondates__wrap {
+        flex-wrap: wrap;
+
+        .inputfield {
+            max-width: 100%;
+        }
+    }
+
+    .promotiondates__wrap .inputfield:first-child:after {
+        display: none;
+    }
+
+    .addpromsubmit {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+}
+
+// COUPON
+// create
+.createcoupon {
+    text-align: center;
+    padding: 60px 0 90px;
+
+    img {
+        max-width: 160px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        max-width: 550px;
+        margin: 0 auto 35px;
+        color: $bace-color;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+
+    .greenbtn {
+        max-width: 320px;
+        min-height: 60px;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .createcoupon p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .createcoupon {
+        padding: 40px 0 50px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .createcoupon {
+        padding: 30px 0 30px;
+    }
+
+    .createcoupon img {
+        max-width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .createcoupon p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+// coupon
+
+.sellertable {
+    .coupon {
+        .code {
+            width: 120px;
+        }
+
+        .coupontype {
+            width: calc(100% - 866px);
+        }
+
+        .couponval {
+            width: 140px;
+        }
+
+        .description {
+            width: 186px;
+        }
+
+        .ids {
+            width: 140px;
+        }
+
+        .limit {
+            width: 140px;
+        }
+
+        .validity {
+            width: 100px;
+        }
+
+        tbody {
+
+            .coupontype,
+            .couponval,
+            .description,
+            .ids,
+            .limit,
+            .validity {
+                font-size: 16px;
+                color: #3B454D;
+            }
+        }
+    }
+}
+
+.editcouponcode {
+    width: 110px;
+
+    span {
+        word-break: break-all;
+        color: $base-green;
+        font-size: 16px;
+        font-weight: 600;
+        outline: none;
+    }
+
+    button {
+        border: none;
+        padding: 0;
+        outline: none;
+        background: transparent;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: -2px;
+        display: none;
+    }
+
+    &:hover {
+        button {
+            display: inline-block;
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .sellertable .coupon tbody .coupontype,
+    .sellertable .coupon tbody .couponval,
+    .sellertable .coupon tbody .description,
+    .sellertable .coupon tbody .ids,
+    .sellertable .coupon tbody .limit,
+    .sellertable .coupon tbody .validity {
+        font-size: 14px;
+    }
+
+    .sellertable .coupon .validity {
+        width: 90px;
+    }
+
+    .sellertable .coupon .limit {
+        width: 120px;
+    }
+
+    .sellertable .coupon .ids {
+        width: 100px;
+    }
+
+    .sellertable .coupon .description {
+        width: 160px;
+    }
+
+    .sellertable .coupon .couponval {
+        width: 130px;
+    }
+
+    .sellertable .coupon .coupontype {
+        width: calc(100% - 750px);
+    }
+}
