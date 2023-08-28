@@ -165,16 +165,29 @@
                                 <p class="title">Ingredients*</p>
                                 <div class="ingrwrap">
                                     <div class="ingrinp">
-                                        <input type="text" value="3 tablespoons Gefen Olive Oil">
+                                        <p class="editcontent" contenteditable="true">3 tablespoons Gefen Olive Oil</p>
                                     </div>
                                     <div class="ingrinp">
-                                        <input type="text" value="1/2 teaspoon salt">
+                                        <p class="editcontent" contenteditable="true">1/2 teaspoon salt</p>
                                     </div>
                                 </div>
                                 <div class="addingr">
                                     <p>Add Ingredients <span class="addbtn">+</span></p>
                                 </div>
-
+                            </div>
+                            <div class="addingredients">
+                                <p class="title">Recipe*</p>
+                                <div class="ingrwrap">
+                                    <div class="ingrinp">
+                                        <p class="editcontent" contenteditable="true">3 tablespoons Gefen Olive Oil</p>
+                                    </div>
+                                    <div class="ingrinp">
+                                        <p class="editcontent" contenteditable="true">1/2 teaspoon salt</p>
+                                    </div>
+                                </div>
+                                <div class="addingr">
+                                    <p>Add Ingredients <span class="addbtn">+</span></p>
+                                </div>
                             </div>
                             <div class="crrecradiosect">
                                 <div class="crrecradiobox">
@@ -193,6 +206,24 @@
                                         <div class="radinpbox">
                                             <input type="radio" id="selcat3" name="selcat">
                                             <label for="selcat3">Parve</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="crrecradiobox">
+                                    <p>
+                                        Select Meal Type(s)
+                                    </p>
+                                    <div class="radinpwrap">
+                                        <div class=" generalselect__multiply">
+                                            <select class="customselect" name="category"
+                                                data-placeholder="Meal Type" multiple="multiple">
+                                                <option></option>
+                                                <option value="0">Option 1</option>
+                                                <option value="1">Option 2</option>
+                                                <option value="2">Option 3</option>
+                                                <option value="3">Option 4</option>
+                                                <option value="4">Option 5</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -226,6 +257,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="crrecradiobox">
+                                    <p>
+                                        Serving:
+                                    </p>
+                                    <div class="radinpwrap">
+                                        <div class="preptime large">
+                                            <input type="text" value="" placeholder="2">
+                                            <span>Servings</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="createrec-uploadphoto">
                                 <p class="title">
@@ -249,7 +291,6 @@
                                         Photos should not contain your personal information.
                                     </li>
                                 </ul>
-
                                 <p class="uplinfotext">*Png or JPEG, Max number of photos – 4, Max number of video – 1
                                 </p>
                                 <div class="uploadphoto">
@@ -257,17 +298,11 @@
                                         accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf"
                                         multiple>
                                 </div>
-
-
-
-
                             </div>
-
                             <div class="createrecipesect__submit">
                                 <!-- <input class="greenbtn" type="submit" value="Send Your Recipe"> -->
                                 <span class="greenbtn popup__btn" data-popup="thanks">Send Your Recipe</span>
                             </div>
-
                         </form>
                     </div>
                 </div>

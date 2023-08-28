@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Account - Add Coupon</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/sortable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="img/selleracc/seller-logo.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-8">
+                    <div class="header__rightsect selleracc">
+                        <a href="#" class="sellacc__setting">
+                            <img src="img/selleracc/settings-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="sellacc__question">
+                            <img src="img/selleracc/question-icon.svg" alt="">
+                        </a>
+                        <div class="sellacc__brandname">
+                            <div class="sellacc__brandnamehead">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="infowrap">
+                                    <p>Brand name</p>
+                                    <p class="brandid">
+                                        <span>Your id:</span>
+                                        01234565
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <p>Lorem, ipsum dolor.</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="accountsection">
+            <div class="container">
+                <div class="row">
+                    <div class="accountsection-colleft">
+                        <div class="aside-menubtn">
+                            <img src="img/account/aside-menu.svg" alt="menu">
+                        </div>
+
+                        <aside class="accountsidebar">
+                            <div class="accountsidebar__wrap">
+                                <div class="closesidebar">
+                                    <img src="img/account/accsect-arrow.svg" alt="close">
+                                </div>
+                                <div class="accountsidebar__box accountsidebar__box-seller">
+                                    <p class="title">Hi, Kate Middleton!</p>
+                                    <ul>
+                                        <li class="dropdownli">
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic1.svg" alt="icon">
+                                                </span>
+                                                Products list
+                                            </a>
+                                            <ul class="sellacc__sublist">
+                                                <li><a href="#">Categories</a></li>
+                                                <li><a href="#">Categories </a></li>
+                                                <li><a href="#">Deleted items</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic2.svg" alt="icon">
+                                                </span>
+                                                Order list
+                                            </a>
+                                        </li>
+                                        <li class="dropdownli active">
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic3.svg" alt="icon">
+                                                </span>
+                                                Promotion list
+                                            </a>
+                                            <ul class="sellacc__sublist" style="display: block;">
+                                                <li class="active"><a href="#">Coupon</a></li>
+                                                <li><a href="#">Deleted items </a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic4.svg" alt="icon">
+                                                </span>
+                                                reports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/selleracc/seller-asideic5.svg" alt="icon">
+                                                </span>
+                                                Profile settings
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="accountsidebar__box accountsidebar__box-seller signout">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icwrap">
+                                                    <img src="img/account/acc-signout.svg" alt="icon">
+                                                </span>
+                                                Sign Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="accountsection-colright">
+                        <div class="accountcontent">
+                            <div class="acccontentsect acccontentsect__sellist">
+                                <div class="acccontentsect__header acccontentsect__header-delacc">
+                                    <p>
+                                        <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic3.svg"
+                                            alt="img">
+                                        Add Coupon
+                                    </p>
+                                    <span class="addpos">
+                                        <a href="#">
+                                            <img src="img/selleracc/plus-icon.svg" alt="add">
+                                            Coupon
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <div class="acccontentsect__body addcoupon">
+
+                                    <div class="formbox">
+                                        <div class="row align-items-end">
+                                            <div class="col-xl-8 col-lg-7">
+                                                <div class="inputfield">
+                                                    <input type="text" id="posname" placeholder="Coupon Code"
+                                                        required="">
+                                                    <label for="posname">Add coupon
+                                                        <img src="img/selleracc/question-icon.svg" alt="question"
+                                                            data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-5">
+                                                <a href="#" class="greenbtn generatecode">Generate coupon code</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="inputfield">
+                                                    <textarea placeholder="Description (optinal)"></textarea>
+                                                    <label for="posname">
+                                                        Description (optional)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tabssection">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                                    aria-controls="home-tab-pane" aria-selected="true">Main</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                                    aria-controls="profile-tab-pane" aria-selected="false">Application
+                                                    restrictions</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                                    aria-controls="contact-tab-pane" aria-selected="false">Usage
+                                                    Limits</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                                aria-labelledby="home-tab" tabindex="0">
+
+                                                <div class="formbox">
+                                                    <div class="row">
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <label for="disctype">Discount type</label>
+                                                                <div class="generalselect">
+                                                                    <select class="customselect" name="category"
+                                                                        id="disctype">
+                                                                        <option value="0">Fixed discount on purchase
+                                                                        </option>
+                                                                        <option value="1">lorem</option>
+                                                                        <option value="2">lorem</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="cval1" placeholder="0"
+                                                                    required="">
+                                                                <label for="cval1">Coupon value
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="cval2" placeholder="0"
+                                                                    required="">
+                                                                <label for="cval2">Coupon value
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="inputfield checksect">
+                                                                <p class="title">Free shipping</p>
+                                                                <div class="checkwrapper">
+                                                                    <input type="checkbox" id="freeshipping">
+                                                                    <label for="freeshipping">
+                                                                        Enable if the coupon includes free shipping.
+                                                                        Your shipping area must have <a href="#">a free
+                                                                            shipping
+                                                                            method</a> enabled with a valid free
+                                                                        shipping coupon
+                                                                        (see Free Shipping Requirements).
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                                aria-labelledby="profile-tab" tabindex="0">
+                                                <div class="formbox">
+                                                    <div class="row">
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="mflow1" placeholder="No minimum"
+                                                                    required="">
+                                                                <label for="mflow1">Minimum flow
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="mflow2" placeholder="No maximum"
+                                                                    required="">
+                                                                <label for="mflow2">Maximum flow
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="inputfield checksect">
+                                                                <p class="title">Incompatibility</p>
+                                                                <div class="checkwrapper">
+                                                                    <input type="checkbox" id="ch1">
+                                                                    <label for="ch1">
+                                                                        Enable if the coupon cannot be used in
+                                                                        conjunction with other coupons.
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="inputfield checksect">
+                                                                <p class="title">Only without discounts</p>
+                                                                <div class="checkwrapper">
+                                                                    <input type="checkbox" id="ch2">
+                                                                    <label for="ch2">
+                                                                        Enable if the coupon should not be applied to
+                                                                        discounted items. Coupons for a single item only
+                                                                        apply if the item is sold without a discount.
+                                                                        Coupons for a single purchase are only applied
+                                                                        if items without discounts are placed in the
+                                                                        basket.
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="formbox bordertop">
+                                                    <div class="row">
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="goods"
+                                                                    placeholder="Search by products..." required="">
+                                                                <label for="goods">Goods
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="exclude"
+                                                                    placeholder="Search by products..." required="">
+                                                                <label for="exclude">Exclude Products
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                                aria-labelledby="contact-tab" tabindex="0">
+
+                                                <div class="formbox">
+                                                    <div class="row">
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <label for="couponlimit">Total Coupon Limit</label>
+                                                                <div class="generalselect">
+                                                                    <select class="customselect" name="category"
+                                                                        id="couponlimit">
+                                                                        <option value="0">Unlimited use
+                                                                        </option>
+                                                                        <option value="1">lorem</option>
+                                                                        <option value="2">lorem</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="limit2" placeholder="0"
+                                                                    required="">
+                                                                <label for="limit2">Application limit on X product
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-4 col-lg-6">
+                                                            <div class="inputfield">
+                                                                <input type="text" id="limit3" placeholder="Unlimited use"
+                                                                    required="">
+                                                                <label for="limit3">User limit
+                                                                    <img src="img/selleracc/question-icon.svg"
+                                                                        alt="question" data-bs-toggle="tooltip"
+                                                                        data-bs-title="Default tooltip">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <a href="#" class="greenbtn publish">Publish</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img class="accbgel1" src="img/background-elements/bgelem7.png" alt="img">
+        <img class="accbgel2" src="img/background-elements/bgelem6.png" alt="img">
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__topsect">
+                <div class="row">
+                    <div class="col-lg-3 leftsect">
+                        <a href="#" class="footerlogo">
+                            <img src="img/footer/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">
+                            Mauris faucibus rhoncus orci nec vehicula. Sed nec quam eget felis ullamcorper commodo ac
+                            sed.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 footer__lists">
+                        <div class="footer__list">
+                            <p class="title">Find in fast</p>
+                            <ul>
+                                <li><a href="#">Product for special</a></li>
+                                <li><a href="#">New items</a></li>
+                                <li><a href="#">New recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Sell in Food</p>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Seller</a></li>
+                                <li><a href="#">Admin</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Information</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Category Page</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Privacy police</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <p class="title">Community</p>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Recipes center </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2023 · Food. All Rights Reserved
+                </p>
+                <ul>
+                    <li><a href="#"><img src="img/footer/fb.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/tw.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/ln.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/footer/yt.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/popper.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

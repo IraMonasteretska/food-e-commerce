@@ -34,7 +34,7 @@
         align-items: center;
     }
 
-    
+
     .bordergreenbtn {
         width: 100%;
         max-width: 229px;
@@ -676,6 +676,7 @@
     }
 
 }
+
 .addingredients {
     margin-bottom: 50px;
 
@@ -700,21 +701,19 @@
             background: $base-green;
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 8px;
         }
 
-        input {
-            border: none;
+        .editcontent {
             font-size: 16px;
             color: #373737;
             width: 100%;
+            outline: none;
 
             &:focus {
                 border: 1px solid #8E939A;
                 border-radius: 5px;
-                height: 40px;
-                width: 250px;
+                width: 100%;
             }
         }
     }
@@ -762,7 +761,6 @@
     }
 
 }
-
 
 .crrecradiobox {
     display: flex;
@@ -860,13 +858,81 @@
                 max-width: calc(100% - 24px);
                 flex: 0 0 calc(100% - 24px);
             }
+
+            &.large {
+                width: 100%;
+                max-width: 140px;
+            }
         }
 
 
 
 
     }
+
+    .generalselect__multiply {
+        max-width: 450px;
+        width: 100%;
+    }
 }
+
+.generalselect__multiply {
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container--default .select2-selection--multiple {
+        min-height: 43px;
+        border-radius: 35px !important;
+        border: 1px solid #D9DBDF;
+        padding-left: 20px;
+        padding-right: 26px;
+    }
+
+    .select2-container .select2-search--inline .select2-search__field {
+        height: 20px;
+        margin-top: 10px;
+        padding-left: 0;
+        color: #B3B4BA;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+        font-size: 14px;
+        color: $base-green;
+    }
+
+    .select2-container .select2-selection--multiple .select2-selection__rendered {
+        margin-left: 0;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        margin-top: 7px;
+        background: #E7F5EC;
+        border: 1px solid $base-green;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+        color: $base-green;
+
+    }
+  
+    ul.select2-selection__rendered:after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 26px;
+        background: url(../img/header/select-arrow.svg) no-repeat center center/16px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+}
+
 
 .crrecradiosect {
     margin-bottom: 60px;
@@ -963,7 +1029,6 @@
     font-size: 160px;
 }
 
-
 @media(max-width:1199.8px) {
 
     .createrecipesect {
@@ -1018,6 +1083,14 @@
 
 }
 
+@media(max-width:767.8px) {
+
+    .crrecradiobox .radinpwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
 @media(max-width:575.8px) {
 
     .createrecipesect .crrecradiobox .radinpwrap .radinpbox {
@@ -1045,6 +1118,16 @@
 
     .imageuploadify .imageuploadify-images-list i {
         font-size: 120px;
+    }
+
+    .createrecipesect .crrecradiobox .radinpwrap .preptime.large {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .crrecradiobox .radinpwrap .preptime span {
+        max-width: calc(100% - 34px);
+        flex: 0 0 calc(100% - 34px);
     }
 
 }
@@ -1117,12 +1200,6 @@
     .recfavsortbtns ul li {
         margin-right: 10px;
 
-      
+
     }
-}
-
-@media(max-width:360.8px) {
-
-
-
 }

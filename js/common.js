@@ -477,14 +477,16 @@ $(document).ready(function () {
         player.pause();
     });
 
-    $('.addingr').on('click', function () {
-        const newIngrinp = $('<div class="ingrinp"><input type="text" value=""></div>');
+    // $('.addingr').on('click', function () {
 
-        // $('.ingrwrap').append(newIngrinp);
-        $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
 
-        newIngrinp.find('input').focus();
-    });
+    //     const newIngrinp = $('<div class="ingrinp"><textarea class="auto-resize-textarea"></textarea></div>');
+
+    //     $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
+
+    //     newIngrinp.find('textarea').focus();
+
+    // });
 
 
     //   POST
@@ -786,7 +788,6 @@ $(document).ready(function () {
         let $target = $(event.target);
         if (!$target.closest('.date span').length && !$target.closest('.editdate').length) {
             $('.date span').attr('contenteditable', 'false')
-            console.log('sdsd')
         }
     });
 
@@ -830,22 +831,19 @@ $(document).ready(function () {
         let $target = $(event.target);
         if (!$target.closest('.coupon .code span').length && !$target.closest('.editcouponcode button').length) {
             $('.coupon .code span').attr('contenteditable', 'false')
-            console.log('sdsd')
         }
     });
 
 
+    // create recipes - textarea height
 
-
-
-    
+    $('.addingr').on('click', function () {
+        const newIngrinp = $('<div class="ingrinp"><p class="editcontent" contenteditable="true"></p></div>');
+        $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
+        newIngrinp.find('.editcontent').focus();
+    });
 
 });
-
-
-
-
-
 
 
 
