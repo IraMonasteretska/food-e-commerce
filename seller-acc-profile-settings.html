@@ -129,7 +129,7 @@
                                 <div class="accountsidebar__box accountsidebar__box-seller signout">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#signout">
                                                 <span class="icwrap">
                                                     <img src="img/account/acc-signout.svg" alt="icon">
                                                 </span>
@@ -172,7 +172,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-xxl-4">
+                                                <div class="col-xxl-4 col-lg-6">
                                                     <div class="inputfield">
                                                         <input type="text" id="name" placeholder="Name and surname*"
                                                             required="">
@@ -180,7 +180,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-xxl-4">
+                                                <div class="col-xxl-4 col-lg-6">
                                                     <div class="inputfield">
                                                         <input type="text" id="companyphone" placeholder="Company phone"
                                                             required="">
@@ -208,7 +208,7 @@
                                         <div class="formbox">
                                             <p class="selleraddproduct__title">Information about the company</p>
                                             <div class="row">
-                                                <div class="col-xxl-4">
+                                                <div class="col-xxl-4 col-lg-6">
                                                     <div class="inputfield">
                                                         <input type="text" id="companyname" placeholder="Company name"
                                                             required="">
@@ -219,7 +219,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-xxl-4">
+                                                <div class="col-xxl-4 col-lg-6">
                                                     <div class="inputfield">
                                                         <label for="unit">Country/region</label>
                                                         <div class="generalselect">
@@ -233,17 +233,244 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="col-xxl-4">
+                                                <div class="col-12">
                                                     <div class="inputfield">
-                                                        <input type="text" id="taxnum" placeholder="Identification tax number"
-                                                            required="">
+                                                        <div class="txinfo">
+                                                            <p class="title">Tax information and company records</p>
+                                                            <div class="radiofield">
+                                                                <input type="radio" id="r1" name="tax">
+                                                                <label for="r1">
+                                                                    Community tip VAT number
+                                                                    <img src="img/selleracc/info-ic.svg" alt="question"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-title="VAT number of a community of commercial operators who have a VAT number and who make supplies within the community">
+                                                                </label>
+                                                            </div>
+                                                            <div class="radiofield">
+                                                                <input type="radio" id="r2" name="tax">
+                                                                <label for="r2">
+                                                                    TIN hint
+                                                                    <img src="img/selleracc/info-ic.svg" alt="question"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-title="VAT number of a community of commercial operators who have a VAT number and who make supplies within the community">
+                                                                </label>
+                                                            </div>
+                                                            <div class="radiofield">
+                                                                <input type="radio" id="r3" name="tax">
+                                                                <label for="r3">
+                                                                    Tax payer code hint
+                                                                    <img src="img/selleracc/info-ic.svg" alt="question"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-title="VAT number of a community of commercial operators who have a VAT number and who make supplies within the community">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="taxnum"
+                                                            placeholder="Identification tax number" required="">
                                                         <label for="taxnum">Identification tax number
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="formbox">
+                                            <p class="selleraddproduct__title">Set up shipping and returns</p>
+                                            <p class="setsubtitle">Choose the best shipping and returns experience for
+                                                your business.</p>
+                                            <div class="row">
+                                                <div class="col-xxl-4 col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="retcentername" placeholder="Display Name"
+                                                            required="">
+                                                        <label for="retcentername">Return center name*
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="retcenteralias"
+                                                            placeholder="Letters or numbers" required="">
+                                                        <label for="retcenteralias">Return center alias
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-8">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="straddress" placeholder="Street address*"
+                                                            required="">
+                                                        <label for="straddress">Street address*
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xxl-4 col-lg-6">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="city" placeholder="Street address*"
+                                                            required="">
+                                                        <label for="city">City*
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xxl-2 col-lg-3">
+                                                    <div class="inputfield">
+                                                        <label for="state">State*</label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category" id="state"
+                                                                data-placeholder="State">
+                                                                <option></option>
+                                                                <option value="1">CA</option>
+                                                                <option value="2">CA</option>
+                                                                <option value="3">CA</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xxl-2 col-lg-3">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="zipcode" placeholder="" required="">
+                                                        <label for="zipcode">Zip code*
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="shippingtemplate">
+                                                <p class="selleraddproduct__title">
+                                                    Shipping Template
+                                                    <img src="img/selleracc/info-ic.svg" alt="question"
+                                                        data-bs-toggle="tooltip" data-bs-title="tooltip">
+                                                </p>
+                                                <p class="setsubtitle">
+                                                    Determine the price and speed of delivery of your shipments
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-xxl-8">
+                                                        <div class="templwrap">
+                                                            <div class="checkfield">
+                                                                <input type="checkbox" id="check1">
+                                                                <label for="check1">
+                                                                    Standard shipping
+                                                                    <img src="img/selleracc/info-ic.svg" alt="question"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-title="VAT number of a community of commercial operators who have a VAT number and who make supplies within the community">
+                                                                </label>
+                                                            </div>
+                                                            <p>5 days</p>
+                                                            <p>Free shipping</p>
+                                                            <p>35 countries</p>
+                                                        </div>
+                                                        <div class="templwrap">
+                                                            <div class="checkfield">
+                                                                <input type="checkbox" id="check2">
+                                                                <label for="check2">
+                                                                    Value shipping
+                                                                    <img src="img/selleracc/info-ic.svg" alt="question"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-title="VAT number of a community of commercial operators who have a VAT number and who make supplies within the community">
+                                                                </label>
+                                                            </div>
+                                                            <p>6 days</p>
+                                                            <p>Free shipping</p>
+                                                            <p>30 countries</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="formbox">
+                                            <p class="selleraddproduct__title">Bank information</p>
+
+                                            <div class="crcardwrap">
+                                                <div class="crcardbox">
+                                                    <input type="radio" id="card1" name="card" checked>
+                                                    <label for="card1">
+                                                        <img src="img/selleracc/card1.svg" alt="img">
+                                                    </label>
+                                                </div>
+                                                <div class="crcardbox">
+                                                    <input type="radio" id="card2" name="card">
+                                                    <label for="card2">
+                                                        <img src="img/selleracc/card2.svg" alt="img">
+                                                    </label>
+                                                </div>
+                                                <div class="crcardbox">
+                                                    <input type="radio" id="card3" name="card">
+                                                    <label for="card3">
+                                                        <img src="img/selleracc/card3.svg" alt="img">
+                                                    </label>
+                                                </div>
+                                                <div class="crcardbox">
+                                                    <input type="radio" id="card4" name="card">
+                                                    <label for="card4">
+                                                        <img src="img/selleracc/card4.svg" alt="img">
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xxl-8">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="cardholdername"
+                                                            placeholder="Cardholder name*" required="">
+                                                        <label for="cardholdername">Cardholder name*
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xxl-4 col-lg-6">
+                                                    <div class="inputfield inputicon">
+                                                        <input type="number" id="cardnum" placeholder="Card number*"
+                                                            required="">
+                                                        <label for="cardnum">Card number *</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-2 col-lg-3">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="carddate" placeholder="22/24"
+                                                            required="">
+                                                        <label for="carddate">Date*
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-2 col-lg-3">
+                                                    <div class="inputfield">
+                                                        <input type="text" id="cardcvv" placeholder="000" required="">
+                                                        <label for="cardcvv">CCV*
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <div class="checkwrapper">
+                                                            <input type="checkbox" id="setaddr1">
+                                                            <label for="setaddr1">
+                                                                I've read and agree to the <a href="#">Terms for Food
+                                                                    Marketplace, Food Fulfillment Services, Food Ad
+                                                                    Center</a>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="profsettbtns">
+                                                <a href="#" class="bordergreenbtn">Cancel</a>
+                                                <input type="submit" class="greenbtn" value="Save">
+                                            </div>
+                                        </div>
+
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -321,6 +548,32 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Sign OUt -->
+    <div class="modal fade small" id="signout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="bordergreenbtn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="greenbtn">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 

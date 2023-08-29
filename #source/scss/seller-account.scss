@@ -2772,6 +2772,7 @@ input:focus+label+.input-infobtn {
         .imgwrap {
             position: relative;
             overflow: hidden;
+            border-radius: 50%;
 
             img {
                 width: 100%;
@@ -2909,3 +2910,285 @@ input:focus+label+.input-infobtn {
     margin-bottom: 35px;
 }
 
+.setsubtitle {
+    line-height: 160%;
+    margin-bottom: 35px;
+    color: $bace-color;
+    font-size: 14px;
+}
+
+.formbox .selleraddproduct__title img {
+    margin-top: -3px;
+}
+
+.shippingtemplate {
+    padding-top: 30px;
+}
+
+.templwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .checkfield {
+        width: 100%;
+        max-width: 31%;
+        flex: 0 0 31%;
+
+        input {
+            display: none;
+
+            &:checked {
+                &+label {
+                    &::after {
+                        border-color: $base-green;
+                        background-color: $base-green;
+                        background-image: url(../img/selleracc/white-check.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 14px;
+                    }
+                }
+            }
+        }
+
+        label {
+            position: relative;
+            color: $bace-color;
+            font-weight: 500;
+            padding-left: 30px;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 2px;
+                border: 1px solid #DBDCE2;
+                position: absolute;
+                left: 0;
+                top: 1px;
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+        max-width: 18%;
+        flex: 0 0 18%;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+
+.crcardwrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 35px;
+
+    .crcardbox {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        input {
+            display: none;
+
+            &:checked+label {
+                border: 1px solid $base-green;
+            }
+        }
+
+        label {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5.5px;
+            background: rgba(255, 255, 255, 0.40);
+            box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.05);
+            width: 72px;
+            height: 44px;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+.formbox {
+    .checkwrapper {
+        label a {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    }
+}
+
+.profsettbtns {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+
+    .bordergreenbtn {
+        width: 128px;
+        min-height: 45px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    .greenbtn {
+        width: 225px;
+        min-height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .templwrap p {
+        font-size: 14px;
+    }
+
+    .templwrap .checkfield label {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .templwrap .checkfield,
+    .templwrap p {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .templwrap .checkfield {
+        margin-bottom: 10px;
+    }
+
+    .templwrap p {
+        padding-left: 30px;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .templwrap {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .profsett .selleraddproduct__title {
+        font-size: 18px;
+    }
+
+    .profsett .formbox {
+        padding: 20px;
+    }
+
+    .uploaduserphoto .uploadphoto__rightblock .name {
+        font-size: 18px;
+    }
+
+    .uploaduserphoto .uploadphoto__rightblock label {
+        font-size: 14px;
+    }
+
+    .crcardwrap .crcardbox {
+        margin-right: 25px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .uploaduserphoto .uploadphoto__leftblock {
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .uploaduserphoto .uploadphoto__rightblock {
+        max-width: calc(100% - 60px);
+        flex: 0 0 calc(100% - 60px);
+        padding-left: 10px;
+    }
+
+    .uploaduserphoto .uploadphoto__rightblock .name {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .uploaduserphoto .uploadphoto__rightblock label {
+        font-size: 13px;
+    }
+
+    .profsett .selleraddproduct__title {
+        margin-bottom: 15px;
+    }
+
+    .uploaduserphoto {
+        margin: 25px 0;
+    }
+
+    .profsett .formbox {
+        padding: 20px 10px;
+    }
+
+    .txinfo {
+        margin-bottom: 10px;
+    }
+
+    .templwrap p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .templwrap .checkfield {
+        margin-bottom: 5px;
+    }
+
+    .setsubtitle {
+        margin-bottom: 25px;
+    }
+
+    .shippingtemplate {
+        padding-top: 20px;
+    }
+
+    .crcardwrap .crcardbox {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    .formbox .inputicon:after {
+        left: 20px;
+        top: 49px;
+    }
+
+    .profsettbtns {
+        flex-wrap: wrap;
+
+        .bordergreenbtn {
+            margin: 0 0 10px 0;
+            width: 100%;
+        }
+
+       .greenbtn {
+        width: 100%;
+        }
+    }
+}
