@@ -791,3 +791,68 @@
 
 }
 
+// Sign out
+.modal.small {
+    .modal-dialog {
+        max-width: 385px;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 22px;
+    }
+}
+
+.signoutwrap {
+    padding: 65px 47px 55px;
+    text-align: center;
+
+    img {
+        max-width: 100px;
+        margin-bottom: 35px;
+    }
+
+    .title {
+        margin-bottom: 35px;
+        color: $bace-color;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .greenbtn {
+        min-height: 45px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .bordergreenbtn {
+        min-height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .modal.small .modal-dialog {
+        margin: auto;
+    }
+
+    .modal.small .modal-dialog {
+        max-width: 300px;
+    }
+
+    .signoutwrap {
+        padding: 45px 30px 35px;
+    }
+
+    .signoutwrap img {
+        max-width: 70px;
+        margin-bottom: 15px;
+    }
+
+    .signoutwrap .title {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+}

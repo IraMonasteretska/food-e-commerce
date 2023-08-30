@@ -8,7 +8,6 @@ $(document).ready(function () {
         });
     }
 
-
     // header acc dropdown
     $('.header__account').click(function () {
         $(this).toggleClass('active');
@@ -17,7 +16,7 @@ $(document).ready(function () {
 
     $(document).click(function (event) {
         let $target = $(event.target);
-        if (!$target.closest('.headeraccwrap').length && !$target.closest('.sellacc__brandnamehead').length) {
+        if (!$target.closest('.headeraccwrap').length && !$target.closest('.sellacc__brandnamehead').length && !$target.closest('.header__accdropdown').length) {
             $('.header__account').removeClass('active');
             $('.header__accdropdown').hide();
         }
@@ -842,6 +841,24 @@ $(document).ready(function () {
         $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
         newIngrinp.find('.editcontent').focus();
     });
+    
+
+
+    // ADMIN pages
+    // sidebar
+    $('.adminmenu').click(function(){
+        $('.adminpage').toggleClass('hidemenu');
+        $('.adsidebarlist .subitem a').next('.sublist').hide();
+    });
+
+
+    $('.adsidebarlist .subitem a').click(function(e){
+        e.preventDefault();
+        $(this).parent().addClass('open');
+        $(this).next('.sublist').slideToggle();
+    });
+
+
 
 });
 
