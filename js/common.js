@@ -8,6 +8,7 @@ $(document).ready(function () {
         });
     }
 
+
     // header acc dropdown
     $('.header__account').click(function () {
         $(this).toggleClass('active');
@@ -859,6 +860,24 @@ $(document).ready(function () {
     });
 
 
+
+    $('.admincontent__user span').click(function(){
+        $('.admincontent__userdd').toggle();
+    });
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.admincontent__user span').length && !$target.closest('.admincontent__userdd').length ) {
+            $('.admincontent__userdd').hide();
+        }
+    });
+
+    // action dropdown
+    $('.admaction__btn').click(function(){
+        $(this).toggleClass('open');
+        $(this).next('.admaction__dropdown').toggle();
+    });
+
+    
 
 });
 
