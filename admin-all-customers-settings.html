@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - All customers - User Profile</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/sortable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="adminpage">
+            <aside class="asminsidebar">
+                <div class="asminsidebar__head">
+                    <div class="adminlogo">
+                        <img src="img/admin/logo-admin.svg" alt="logo">
+                    </div>
+                    <span class="adminmenu">
+                        <img src="img/admin/admin-menu.svg" alt="menu">
+                    </span>
+                </div>
+                <div class="asminsidebar__body">
+                    <ul class="adsidebarlist">
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic0.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic1.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    all customers
+                                </span>
+                            </a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic2.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Sellers
+                                </span>
+                            </a>
+                            <ul class="sublist">
+                                <li><a href="#">All Selers</a></li>
+                                <li><a href="#">Need to be approved</a></li>
+                                <li><a href="#">Whale sellers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic3.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Receipts
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="adsidebarlist signout">
+                        <li>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#signout">
+                                <span class="iconwrap">
+                                    <img src="img/account/acc-signout.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Sign Out
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="admincontent">
+                <div class="admincontent__head">
+                    <div class="searchblock">
+                        <input type="text" placeholder="Search on Food...">
+                        <button><img src="img/header/search-icon.svg" alt="search"></button>
+                    </div>
+                    <div class="admincontent__head-rightsect">
+                        <div class="admincontent__user">
+                            <span><img src="img/header/user-icon.png" alt=""></span>
+
+                            <div class="admincontent__userdd">
+                                <p>Lorem, ipsum dolor.</p>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                </ul>
+                                <a href="#" class="bordergreenbtn">Button</a>
+                            </div>
+                        </div>
+                        <a href="#" class="notification">
+                            <img src="img/admin/notification.svg" alt="img">
+                            <span>1</span>
+                        </a>
+                        <a href="#">
+                            <img src="img/selleracc/question-icon.svg" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="img/selleracc/settings-icon.svg" alt="img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="admincontent__body">
+                    <div class="admininfosect">
+                        <div class="admininfosect__header">
+                            <div class="admininfosect__title">
+                                <img src="img/admin/allcustic.svg" alt="icon">
+                                <p>User Profile</p>
+                            </div>
+                            <div class="admininfosect__rightbox">
+                                <ul class="admininfosect__rightboxlist">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Settings</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                        <div class="admininfosect__body p0">
+                            <div class="flex">
+                                <div class="admininfosect__userleft">
+                                    <div class="admininfosect__usercontinfo">
+                                        <div class="imgwrap">
+                                            <img src="img/admin/userpic.png" alt="img">
+                                        </div>
+                                        <p class="name">Anna Halland</p>
+                                        <p class="email">name@surname.com</p>
+                                        <a href="#" class="greenbtn">Enable wholesale</a>
+                                        <a href="#" class="bordergreenbtn">Allow sending a receipt</a>
+                                    </div>
+                                    <div class="contactbox">
+                                        <p class="title">Contact Information</p>
+                                        <ul>
+                                            <li>
+                                                <p>Email addres</p>
+                                                <a href="mailto:name@surname.com">name@surname.com</a>
+                                            </li>
+                                            <li>
+                                                <p>Phone Number</p>
+                                                <a href="tel:+12234567890">+1 223 456 7890</a>
+                                            </li>
+                                            <li>
+                                                <p>Birthday</p>
+                                                <span>Dec 10, 1991</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="admininfosect__userright">
+                                    <div class="admininfosect__userrightwrap">
+                                        <div class="adminsettingssect">
+                                            <p class="title">Payment options</p>
+                                            <div class="row">
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock">
+                                                        <input type="checkbox" id="admch1" checked>
+                                                        <label for="admch1">Payment by credit card</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock">
+                                                        <input type="checkbox" id="admch2" checked>
+                                                        <label for="admch2">Net 30</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="adminsettingssect">
+                                            <p class="title">Delivery options</p>
+                                            <div class="row">
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock">
+                                                        <input type="checkbox" id="admch3" checked>
+                                                        <label for="admch3">Ground</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock">
+                                                        <input type="checkbox" id="admch4" checked>
+                                                        <label for="admch4">Second day</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock">
+                                                        <input type="checkbox" id="admch5">
+                                                        <label for="admch5">next day</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="adminsettingssect adminsettingssect_delivery">
+                                            <p class="title">Type of delivery</p>
+                                            <div class="row">
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock">
+                                                        <input type="checkbox" id="admch6" checked>
+                                                        <label for="admch6">Free shipping</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="delivoption">
+                                                        <input type="checkbox" id="admch7" >
+                                                        <label for="admch7">Option in percentage</label>
+                                                        
+                                                        <div class="inputfield inputfield__infobtn">
+                                                            <input type="text" placeholder="0" required="">
+                                                            <div class="input-infobtn">%</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="delivoption">
+                                                        <input type="checkbox" id="admch8" >
+                                                        <label for="admch8">Option in dollars</label>
+                                                        
+                                                        <div class="inputfield inputfield__infobtn">
+                                                            <input type="text" placeholder="0" required="">
+                                                            <div class="input-infobtn">$</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="adminsettingssect">
+                                            <p class="title">Shipping options</p>
+                                            <div class="row">
+                                                <div class="col-xxl-5 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock radio">
+                                                        <input type="radio" id="shipp1" checked name="chipping">
+                                                        <label for="shipp1">Automatically approve all recipes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6">
+                                                    <div class="adminsettingssect__chooseblock radio">
+                                                        <input type="radio" id="shipp2" name="chipping">
+                                                        <label for="shipp2">Wholesalers</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Sign OUt -->
+    <div class="modal fade small" id="signout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="signoutwrap">
+                    <img src="img/selleracc/signoutimg.svg" alt="img">
+                    <p class="title">
+                        Oh no! You’re Leaving...<br>
+                        Are you sure?
+                    </p>
+                    <a href="#" class="greenbtn">Naah, just kidding</a>
+                    <a href="#" class="bordergreenbtn">Yes, Log Me Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/popper.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

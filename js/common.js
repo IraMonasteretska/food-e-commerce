@@ -859,8 +859,6 @@ $(document).ready(function () {
         $(this).next('.sublist').slideToggle();
     });
 
-
-
     $('.admincontent__user span').click(function(){
         $('.admincontent__userdd').toggle();
     });
@@ -876,7 +874,6 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $(this).next('.admaction__dropdown').toggle();
     });
-
     
 
 });

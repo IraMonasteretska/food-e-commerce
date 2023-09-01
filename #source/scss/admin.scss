@@ -138,7 +138,7 @@
         }
 
         &.active {
-            a {
+            &>a {
                 background: #E7F5EC;
                 color: $base-green;
             }
@@ -1396,7 +1396,7 @@
 
         p {
             font-size: 12px;
-    
+
             img {
                 width: 12px;
                 margin-right: 3px;
@@ -1423,4 +1423,188 @@
         padding: 15px;
     }
 
+}
+
+// Admin all customers settings
+.adminsettingssect {
+    margin-bottom: 40px;
+
+    .title {
+        margin-bottom: 20px;
+        color: $bace-color;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.adminsettingssect__chooseblock {
+
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked+label {
+            &::after {
+                border-color: #158466;
+                background-color: #158466;
+                background-image: url(../img/selleracc/white-check.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 14px;
+            }
+        }
+    }
+
+    label {
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        padding: 5px 20px;
+        cursor: pointer;
+        color: $bace-color;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        padding-left: 60px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            border: 1px solid #DBDCE2;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        &:checked+label {
+            &::after {
+                border-color: $base-green;
+                background: url(../img/recipes/radio-checked.svg) no-repeat center/10px 10px;
+            }
+        }
+    }
+
+}
+
+.delivoption {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    min-height: 114px;
+    padding: 15px;
+
+    input[type='checkbox'] {
+        display: none;
+
+        &:checked+label {
+            &::after {
+                border-color: #158466;
+                background-color: #158466;
+                background-image: url(../img/selleracc/white-check.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 14px;
+            }
+        }
+    }
+
+    label {
+        color: $bace-color;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 40px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            border: 1px solid #DBDCE2;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .inputfield {
+        max-width: 197px;
+        margin-bottom: 0;
+
+        input {
+            height: 45px;
+
+            &:focus+.input-infobtn {
+
+                border-left: 2px solid $base-green;
+            }
+        }
+    }
+
+    .input-infobtn {
+        height: 45px;
+        width: 73px;
+        font-size: 15px;
+    }
+}
+
+.adminsettingssect.adminsettingssect_delivery {
+    .adminsettingssect__chooseblock label {
+        min-height: 114px;
+    }
+}
+
+.adminsettingssect__chooseblock.radio {
+    label {
+        &::after {
+            border-radius: 50%;
+        }
+    }
+}
+
+@media(max-width: 1440.8px) {
+    .delivoption label {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .adminsettingssect__chooseblock,
+    .delivoption {
+        margin-bottom: 15px;
+    }
+}
+
+// Seller Account
+
+.admininfosect__usercontinfo .bordergreenbtn img {
+    margin-right: 6px;
+}
+
+.adsidebarlist>li.subitem .sublist.open {
+    display: block;
+
+    &>li.active {
+        a {
+            color: $base-green;
+        }
+    }
+}
+
+.adminsettingssect__chooseblock {
+    margin-bottom: 15px;
 }
