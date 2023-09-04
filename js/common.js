@@ -876,6 +876,12 @@ $(document).ready(function () {
     });
     
 
+    $('.switchpage__btn').click(function(){
+        $(this).next('ul').toggle();
+    });
+
+    
+
 });
 
 
