@@ -748,7 +748,7 @@
             background: transparent;
         }
 
-        .adsidebarlist li.active a {
+        .adsidebarlist>li.active>a {
             background: #E7F5EC;
         }
 
@@ -1885,7 +1885,7 @@
         padding-right: 0;
     }
 
-    .admininfosect__filtersect .datebtn {
+    .admininfosect__filtersect.admininfosect__filtersect-switch .datebtn {
         max-width: calc(100% - 67px);
         flex: 0 0 calc(100% - 67px);
     }
@@ -1973,7 +1973,7 @@
                     }
 
                     &:hover {
-                        box-shadow: 0 4px 10px rgba(21,132,102,0.3);
+                        box-shadow: 0 4px 10px rgba(21, 132, 102, 0.3);
                     }
                 }
 
@@ -1988,7 +1988,7 @@
                     }
 
                     &:hover {
-                        box-shadow: 0 4px 10px rgba(201,39,58,0.3);
+                        box-shadow: 0 4px 10px rgba(201, 39, 58, 0.3);
                     }
                 }
             }
@@ -1996,3 +1996,150 @@
         }
     }
 }
+
+// need to be approved
+.sellertable {
+
+    &.sellertable__nosort {
+        th:after {
+            display: none;
+        }
+    }
+
+    .ntba-profile {
+        width: 100px;
+
+        .imgwrap {
+            width: 45px;
+            height: 45px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+
+    .ntba-name {
+        width: 19%;
+    }
+
+    .ntba-email {
+        width: 21%;
+    }
+
+    .ntba-phone {
+        width: 19%;
+    }
+
+    .ntba-status {
+        width: 16%;
+
+        span {
+            color: #3B454C;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 110%;
+            padding: 5px 10px;
+            border-radius: 70px;
+        }
+    }
+
+    .ntba-action {
+        width: calc(85% - 100px);
+
+        a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 110%;
+            text-align: center;
+            width: 100%;
+            border-radius: 35px;
+            background: $base-green;
+            display: block;
+            padding: 12px 5px 12px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #13b086;
+            }
+        }
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+    .sellertable .ntba-action a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .adsidebarlist {
+        width: 100%;
+    }
+
+    .adsidebarlist>li .sublist {
+        padding-left: 30px;
+    }
+}
+
+.borderredbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid #C9273A;
+    min-height: 45px;
+    color: #C9273A;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 4px 10px rgba(201, 39, 58, 0.3);
+    }
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.userproftitle.userproftitle__boxtitle {
+    margin-bottom: 35px;
+}
+
+.inputfield input[readonly] {
+    background: rgba(217, 217, 217, 0.25);
+    pointer-events: none;
+}
+
+.sellerinfo {
+    label {
+        pointer-events: none;
+    }
+
+    .inputfield {
+        margin-bottom: 20px;
+    }
+
+    .inputfield input+input {
+        margin-top: 15px;
+    }
+
+    .creditcardssect {
+        margin-top: 35px;
+    }
+
+   
+}
+ 
+
+
