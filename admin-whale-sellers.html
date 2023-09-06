@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Sellers</title>
+    <title>Admin - Whale sellers</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -48,9 +48,9 @@
                                 </span>
                             </a>
                             <ul class="sublist open">
-                                <li class="active"><a href="#">All Selers</a></li>
+                                <li><a href="#">All Selers</a></li>
                                 <li><a href="#">Need to be approved</a></li>
-                                <li><a href="#">Whale sellers</a></li>
+                                <li class="active"><a href="#">Whale sellers</a></li>
                             </ul>
                         </li>
                         <li>
@@ -174,18 +174,12 @@
                     <div class="admininfosect">
                         <div class="admininfosect__header">
                             <div class="admininfosect__title">
-                                <img src="img/admin/admin-sidebar-ic2.svg" alt="icon">
-                                <p>all Sellers</p>
-                            </div>
-                            <div class="admininfosect__rightbox">
-                                <a href="#" class="greenbtn">
-                                    <img src="img/admin/plusbtn.svg" alt="img">
-                                    Add User
-                                </a>
+                                <img src="img/admin/admin-sidebar-ic5.svg" alt="icon">
+                                <p>Whale sellers</p>
                             </div>
                         </div>
                         <div class="admininfosect__body">
-                            <div class="admininfosect__filtersect admininfosect__filtersect-switch">
+                            <div class="admininfosect__filtersect">
                                 <div class="searchwrap">
                                     <div class="searchblock">
                                         <input type="text" placeholder="Search...">
@@ -207,28 +201,18 @@
                                     Date
                                     <img src="img/selleracc/table-arrow.svg" alt="img">
                                 </button>
-
-                                <div class="switchpage">
-                                    <span class="switchpage__btn">
-                                        <img src="img/admin/swpage.svg" alt="img">
-                                    </span>
-                                    <ul>
-                                        <li><a href="admin-sellers-cards.html">Seller Cards</a></li>
-                                        <li><a href="admin-sellers-list.html">Seller List</a></li>
-                                    </ul>
-                                </div>
                             </div>
 
                             <div class="sellertable">
                                 <table class="table sortable">
                                     <thead>
                                         <tr>
-                                            <th class="admsellerimg no-sort">Seller</th>
+                                            <th class="admsellerimg no-sort">Profile</th>
                                             <th class="admsellername">Name</th>
-                                            <th class="admsellerid">Seller id</th>
-                                            <th class="admselleremail">Email</th>
+                                            <th class="admselleremail">Phone</th>
+                                            <th class="admsellerid">Email</th>
                                             <th class="admsellerstatus">Status</th>
-                                            <th class="admsellerbtngroup">Action</th>
+                                            <th class="admsellerbtngroup no-sort"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -241,19 +225,18 @@
                                             <td class="admsellername">
                                                 Anna Halland
                                             </td>
-                                            <td class="admsellerid">
-                                                01234565
-                                            </td>
                                             <td class="admselleremail">
                                                 name@surname.com
                                             </td>
+                                            <td class="admsellerid">
+                                                +1 223 456 7890
+                                            </td>
                                             <td class="admsellerstatus">
-                                                <span style="background: #E7F5EC;">Active</span>
+                                                <span style="background: #E7F5EC;">Expected</span>
                                             </td>
                                             <td class="admsellerbtngroup">
                                                 <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit"><img
-                                                            src="img/admin/edit-white.svg" alt="img">Edit</a>
+                                                    <a href="#" class="admsellerbtnedit">Approve</a>
                                                     <a href="#" class="admsellerbtnremove"><img
                                                             src="img/admin/trash-icon.svg" alt="img">Reject</a>
                                                 </div>
@@ -268,14 +251,14 @@
                                             <td class="admsellername">
                                                 Tom Halland
                                             </td>
-                                            <td class="admsellerid">
-                                                01234564
-                                            </td>
                                             <td class="admselleremail">
                                                 name@surname.com
                                             </td>
+                                            <td class="admsellerid">
+                                                +5 256 325 8652
+                                            </td>
                                             <td class="admsellerstatus">
-                                                <span style="background: #C9273A; color: #fff;">Inactive</span>
+                                                <span style="background: #E7F5EC;">Expected</span>
                                             </td>
                                             <td class="admsellerbtngroup">
                                                 <div class="btnswrapper">
@@ -292,16 +275,16 @@
                                                 </div>
                                             </td>
                                             <td class="admsellername">
-                                                Tom Halland
-                                            </td>
-                                            <td class="admsellerid">
-                                                01234563
+                                                Kira Daniels
                                             </td>
                                             <td class="admselleremail">
                                                 name@surname.com
                                             </td>
+                                            <td class="admsellerid">
+                                                +91 154 325 8652
+                                            </td>
                                             <td class="admsellerstatus">
-                                                <span style="background: #E7F5EC;">Active</span>
+                                                <span style="background: #E7F5EC;">Expected</span>
                                             </td>
                                             <td class="admsellerbtngroup">
                                                 <div class="btnswrapper">
@@ -318,16 +301,16 @@
                                                 </div>
                                             </td>
                                             <td class="admsellername">
-                                                Tom Halland
-                                            </td>
-                                            <td class="admsellerid">
-                                                01234562
+                                                Celeste Richard
                                             </td>
                                             <td class="admselleremail">
                                                 name@surname.com
                                             </td>
+                                            <td class="admsellerid">
+                                                +1 967 325 1122
+                                            </td>
                                             <td class="admsellerstatus">
-                                                <span style="background: #E7F5EC;">Active</span>
+                                                <span style="background: #E7F5EC;">Expected</span>
                                             </td>
                                             <td class="admsellerbtngroup">
                                                 <div class="btnswrapper">
@@ -344,16 +327,16 @@
                                                 </div>
                                             </td>
                                             <td class="admsellername">
-                                                Tom Halland
-                                            </td>
-                                            <td class="admsellerid">
-                                                01234562
+                                                Cory Fox
                                             </td>
                                             <td class="admselleremail">
                                                 name@surname.com
                                             </td>
+                                            <td class="admsellerid">
+                                                +91 989 325 8652
+                                            </td>
                                             <td class="admsellerstatus">
-                                                <span style="background: #E7F5EC;">Active</span>
+                                                <span style="background: #E7F5EC;">Expected</span>
                                             </td>
                                             <td class="admsellerbtngroup">
                                                 <div class="btnswrapper">
@@ -380,15 +363,12 @@
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-
 
 
     <script src="js/lib/jquery.js"></script>

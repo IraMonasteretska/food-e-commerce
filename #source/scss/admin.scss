@@ -288,8 +288,19 @@
 
     .notification {
         position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 72px;
+        height: 50px;
+        cursor: pointer;
 
-        span {
+        img {
+            width: 24px;
+        }
+
+        &>span {
             min-width: 13px;
             height: 13px;
             border-radius: 50%;
@@ -303,6 +314,17 @@
             color: #fff;
             font-weight: 600;
             font-size: 10px;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #E9E9EA;
         }
     }
 
@@ -1114,6 +1136,7 @@
     align-items: center;
     margin-bottom: 25px;
 
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -1338,7 +1361,8 @@
         margin: 0 auto;
     }
 
-    .admininfosect__usercontinfo .greenbtn {
+    .admininfosect__usercontinfo .greenbtn,
+    .admininfosect__usercontinfo .borderredbtn {
         max-width: 300px;
         margin: 0 auto 10px;
     }
@@ -2138,8 +2162,257 @@
         margin-top: 35px;
     }
 
-   
+    .btnsgroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        a {
+            width: 100%;
+            min-height: 45px;
+            font-size: 15px;
+            border-radius: 40px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .reject {
+            background: #fff;
+            max-width: 170px;
+            flex: 0 0 170px;
+            border: 1px solid #C9273A;
+            color: #C9273A;
+
+            img {
+                margin-right: 10px;
+                width: 20px;
+            }
+
+            &:hover {
+                box-shadow: 0 4px 10px rgba(201, 39, 58, 0.3);
+            }
+        }
+
+        .approve {
+            background: $base-green;
+            max-width: 221px;
+            flex: 0 0 221px;
+            margin-left: 15px;
+            color: #fff;
+
+            &:hover {
+                background: #13b086;
+            }
+        }
+    }
+
 }
- 
 
+@media(max-width:1199.8px) {
+    .sellerinfo .btnsgroup {
+        justify-content: space-between;
 
+        .reject,
+        .approve {
+            max-width: calc(50% - 5px);
+            flex: 0 0 calc(50% - 5px);
+            margin: 0;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .sellerinfo .btnsgroup .approve,
+    .sellerinfo .btnsgroup .reject {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .sellerinfo .btnsgroup .reject {
+        margin-bottom: 10px;
+    }
+}
+
+// Notification
+.notification__dropdown {
+    width: 445px;
+    padding: 20px 22px;
+    background: #fff;
+    z-index: 3;
+    position: absolute;
+    right: 30px;
+    top: 105px;
+    border: 1px solid #D9DBDF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    cursor: auto;
+    border-radius: 5px;
+    display: none;
+
+    .notification__title {
+        font-size: 19px;
+        color: #3B454C;
+        font-weight: 500;
+        line-height: 110%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #D9DBDF;
+        margin-bottom: 20px;
+    }
+
+}
+
+.notification__row {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+
+    .notification__img {
+        width: 100%;
+        max-width: 40px;
+        flex: 0 0 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .notification__descr {
+        width: 100%;
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+        padding-left: 16px;
+        padding-right: 20px;
+
+        .title {
+            margin: 0;
+            color: #3B454C;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 160%;
+        }
+
+        .description {
+            margin: 0;
+            color: #3B454C;
+            font-size: 13px;
+            line-height: 150%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+    }
+
+    .notification__time {
+        width: 100%;
+        max-width: 60px;
+        flex: 0 0 60px;
+        text-align: right;
+
+        img {
+            width: 15px;
+            margin-top: -2px;
+            margin-right: 6px;
+        }
+
+        span {
+            color: #179D79;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+
+.notification__row-btns {
+    margin-top: 5px;
+
+    a {
+        border-radius: 20px;
+        min-height: 24px;
+        width: 70px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 11px;
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 110%;
+        transition: 0.3s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .approve {
+        background: $base-green;
+        color: #fff;
+
+        &:hover {
+            background: #13b086;
+        }
+    }
+
+    .delete {
+        background: #fff;
+        color: #C9273A;
+        border: 1px solid #C9273A;
+
+        &:hover {
+            box-shadow: 0 4px 10px rgba(201,39,58,0.3);
+        }
+    }
+}
+
+@media(max-width:767.8px) {
+    .admincontent__head-rightsect {
+        position: relative;
+    }
+
+    .notification__dropdown {
+        top: 50px;
+        right: 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .notification__dropdown {
+        width: 320px;
+    }
+
+    .notification__row .notification__descr {
+        max-width: calc(100% - 40px);
+        flex: 0 0 calc(100% - 40px);
+        padding-right: 0;
+    }
+
+    .notification__row .notification__time {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .notification__row {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .notification__dropdown {
+        padding: 20px 15px;
+        width: 300px;
+        right: -5px;
+    }
+}
+
+.sellertable th.no-sort:after {
+    display: none;
+}

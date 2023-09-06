@@ -842,44 +842,59 @@ $(document).ready(function () {
         $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
         newIngrinp.find('.editcontent').focus();
     });
-    
+
 
 
     // ADMIN pages
     // sidebar
-    $('.adminmenu').click(function(){
+    $('.adminmenu').click(function () {
         $('.adminpage').toggleClass('hidemenu');
         $('.adsidebarlist .subitem a').next('.sublist').hide();
     });
 
 
-    $('.adsidebarlist .subitem a').click(function(e){
+    $('.adsidebarlist .subitem a').click(function (e) {
         e.preventDefault();
         $(this).parent().addClass('open');
         $(this).next('.sublist').slideToggle();
     });
 
-    $('.admincontent__user span').click(function(){
+    $('.admincontent__user span').click(function () {
         $('.admincontent__userdd').toggle();
     });
     $(document).click(function (event) {
         let $target = $(event.target);
-        if (!$target.closest('.admincontent__user span').length && !$target.closest('.admincontent__userdd').length ) {
+        if (!$target.closest('.admincontent__user span').length && !$target.closest('.admincontent__userdd').length) {
             $('.admincontent__userdd').hide();
         }
     });
 
     // action dropdown
-    $('.admaction__btn').click(function(){
+    $('.admaction__btn').click(function () {
         $(this).toggleClass('open');
         $(this).next('.admaction__dropdown').toggle();
     });
-    
 
-    $('.switchpage__btn').click(function(){
+
+    $('.switchpage__btn').click(function () {
         $(this).next('ul').toggle();
     });
+
+    // admin notification
+
+    $('.notification').click(function(){
+        $('.notification__dropdown').toggle();
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.notification').length && !$target.closest('.notification__dropdown').length) {
+            $('.notification__dropdown').hide();
+        }
+    });
     
+
+
 
 });
 
