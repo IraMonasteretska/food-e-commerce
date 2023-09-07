@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Receipts</title>
+    <title>Admin - Categories</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -48,7 +48,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="subitem">
+                        <li class="subitem active">
                             <a href="#">
                                 <span class="iconwrap">
                                     <img src="img/admin/admin-sidebar-ic2.svg" alt="icon">
@@ -57,14 +57,14 @@
                                     Sellers
                                 </span>
                             </a>
-                            <ul class="sublist">
+                            <ul class="sublist open">
                                 <li><a href="#">All Selers</a></li>
                                 <li><a href="#">Need to be approved</a></li>
                                 <li><a href="#">Whale sellers</a></li>
-                                <li><a href="#">Categories</a></li>
+                                <li class="active"><a href="#">Categories</a></li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#">
                                 <span class="iconwrap">
                                     <img src="img/admin/admin-sidebar-ic3.svg" alt="icon">
@@ -100,7 +100,6 @@
                     </ul>
                 </div>
             </aside>
-
             <div class="admincontent">
                 <div class="admincontent__head">
                     <div class="searchblock">
@@ -127,7 +126,7 @@
                         <div class="notification__dropdown">
                             <p class="notification__title">Notifications</p>
                             <div class="notification__list">
-                                
+
                                 <a href="#" class="notification__row">
                                     <div class="notification__img">
                                         <img src="img/admin/notification-icon1.svg" alt="icon">
@@ -187,196 +186,167 @@
                     <div class="admininfosect">
                         <div class="admininfosect__header">
                             <div class="admininfosect__title">
-                                <img src="img/admin/admin-sidebar-ic3.svg" alt="icon">
-                                <p>Receipts</p>
+                                <img class="acccontentsect__header-icon" src="img/selleracc/seller-asideic1.svg"
+                                    alt="img">
+                                <p>Categories</p>
+                            </div>
+                            <div class="admininfosect__rightbox">
+                                <a href="#" class="circpluslink">
+                                    <img src="img/selleracc/plus-icon.svg" alt="add">
+                                    Add Categories
+                                </a>
                             </div>
                         </div>
                         <div class="admininfosect__body">
                             <div class="admininfosect__filtersect">
-                                <div class="searchwrap">
+                                <div class="searchwrap w100">
                                     <div class="searchblock">
                                         <input type="text" placeholder="Search...">
                                         <button><img src="img/header/search-icon.svg" alt="search"></button>
                                     </div>
                                 </div>
-
-                                <div class="showcount">
-                                    <div class="generalselect">
-                                        <select class="customselect" name="category" id="unit">
-                                            <option value="1">Show 20</option>
-                                            <option value="2">Show 30</option>
-                                            <option value="3">Show 40</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <button class="datebtn">
-                                    Date
-                                    <img src="img/selleracc/table-arrow.svg" alt="img">
-                                </button>
                             </div>
 
                             <div class="sellertable">
-                                <table class="table sortable">
+                                <table class="table table__categories sortable">
                                     <thead>
                                         <tr>
-                                            <th class="recdate no-sort">Date</th>
-                                            <th class="recvendor">Vendor</th>
-                                            <th class="rectotal">Total</th>
-                                            <th class="rectax">Tax</th>
-                                            <th class="recstatus">Status</th>
-                                            <th class="recview">View</th>
-                                            <th class="recaction no-sort">Action</th>
+                                            <th class="catcat">Category</th>
+                                            <th class="catstatus">Status</th>
+                                            <th class="catsortorder">Sort order</th>
+                                            <th class="cataction no-sort">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="recdate">
-                                                10/05/2023
+                                            <td class="catcat">
+                                                <ul>
+                                                    <li>Gluten-free</li>
+                                                    <li>Sweet</li>
+                                                    <li>Cake</li>
+                                                </ul>
                                             </td>
-                                            <td class="recvendor">
-                                                Anna Halland
+                                            <td class="catstatus">
+                                                <span style="color: #158466;">Active</span>
                                             </td>
-                                            <td class="rectotal">
-                                                $10.00
-                                            </td>
-                                            <td class="rectax">
-                                                $00.00
-                                            </td>
-                                            <td class="recstatus">
-                                                <span style="background: #E7F5EC;">Expected</span>
-                                            </td>
-                                            <td class="recview">
-                                                <span>
-                                                    Save
-                                                    <img src="img/admin/pdf-icon.svg" alt="img">
-                                                </span>
-                                            </td>
-                                            <td class="recaction">
-                                                <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                            <td class="catsortorder">0</td>
+                                            <td class="cataction">
+                                                <div class="cataction__btns">
+                                                    <a href="#" class="cataction__edit">
+                                                        <img src="img/admin/catedit.svg" alt="edit">
+                                                    </a>
+                                                    <a href="#" class="cataction__delete">
+                                                        <img src="img/admin/catdelete.svg" alt="edit">
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="recdate">
-                                                11/05/2023
+                                            <td class="catcat">
+                                                <ul>
+                                                    <li>Gluten-free</li>
+                                                    <li>Sweet</li>
+                                                </ul>
                                             </td>
-                                            <td class="recvendor">
-                                                Anna Halland
+                                            <td class="catstatus">
+                                                <span style="color: #158466;">Active</span>
                                             </td>
-                                            <td class="rectotal">
-                                                $20.00
-                                            </td>
-                                            <td class="rectax">
-                                                $00.50
-                                            </td>
-                                            <td class="recstatus">
-                                                <span style="background: #E7F5EC;">Expected</span>
-                                            </td>
-                                            <td class="recview">
-                                                <span>
-                                                    Save
-                                                    <img src="img/admin/pdf-icon.svg" alt="img">
-                                                </span>
-                                            </td>
-                                            <td class="recaction">
-                                                <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                            <td class="catsortorder">0</td>
+                                            <td class="cataction">
+                                                <div class="cataction__btns">
+                                                    <a href="#" class="cataction__edit">
+                                                        <img src="img/admin/catedit.svg" alt="edit">
+                                                    </a>
+                                                    <a href="#" class="cataction__delete">
+                                                        <img src="img/admin/catdelete.svg" alt="edit">
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="recdate">
-                                                09/05/2023
+                                            <td class="catcat">
+                                                <ul>
+                                                    <li>Gluten-free</li>
+                                                </ul>
                                             </td>
-                                            <td class="recvendor">
-                                                Anna Halland
+                                            <td class="catstatus">
+                                                <span style="color: #158466;">Active</span>
                                             </td>
-                                            <td class="rectotal">
-                                                $50.00
-                                            </td>
-                                            <td class="rectax">
-                                                $00.00
-                                            </td>
-                                            <td class="recstatus">
-                                                <span style="background: #E7F5EC;">Expected</span>
-                                            </td>
-                                            <td class="recview">
-                                                <span>
-                                                    Save
-                                                    <img src="img/admin/pdf-icon.svg" alt="img">
-                                                </span>
-                                            </td>
-                                            <td class="recaction">
-                                                <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                            <td class="catsortorder">0</td>
+                                            <td class="cataction">
+                                                <div class="cataction__btns">
+                                                    <a href="#" class="cataction__edit">
+                                                        <img src="img/admin/catedit.svg" alt="edit">
+                                                    </a>
+                                                    <a href="#" class="cataction__delete">
+                                                        <img src="img/admin/catdelete.svg" alt="edit">
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="recdate">
-                                                08/05/2023
+                                            <td class="catcat">
+                                                <ul>
+                                                    <li>Sweet</li>
+                                                </ul>
                                             </td>
-                                            <td class="recvendor">
-                                                Anna Halland
+                                            <td class="catstatus">
+                                                <span style="color: #158466;">Active</span>
                                             </td>
-                                            <td class="rectotal">
-                                                $1520.00
-                                            </td>
-                                            <td class="rectax">
-                                                $00.00
-                                            </td>
-                                            <td class="recstatus">
-                                                <span style="background: #E7F5EC;">Expected</span>
-                                            </td>
-                                            <td class="recview">
-                                                <span>
-                                                    Save
-                                                    <img src="img/admin/pdf-icon.svg" alt="img">
-                                                </span>
-                                            </td>
-                                            <td class="recaction">
-                                                <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                            <td class="catsortorder">0</td>
+                                            <td class="cataction">
+                                                <div class="cataction__btns">
+                                                    <a href="#" class="cataction__edit">
+                                                        <img src="img/admin/catedit.svg" alt="edit">
+                                                    </a>
+                                                    <a href="#" class="cataction__delete">
+                                                        <img src="img/admin/catdelete.svg" alt="edit">
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="recdate">
-                                                08/05/2023
+                                            <td class="catcat">
+                                                <ul>
+                                                    <li>Protein</li>
+                                                    <li>Protein bars</li>
+                                                </ul>
                                             </td>
-                                            <td class="recvendor">
-                                                Anna Halland
+                                            <td class="catstatus">
+                                                <span style="color: #158466;">Active</span>
                                             </td>
-                                            <td class="rectotal">
-                                                $1520.00
+                                            <td class="catsortorder">0</td>
+                                            <td class="cataction">
+                                                <div class="cataction__btns">
+                                                    <a href="#" class="cataction__edit">
+                                                        <img src="img/admin/catedit.svg" alt="edit">
+                                                    </a>
+                                                    <a href="#" class="cataction__delete">
+                                                        <img src="img/admin/catdelete.svg" alt="edit">
+                                                    </a>
+                                                </div>
                                             </td>
-                                            <td class="rectax">
-                                                $00.00
+                                        </tr>
+                                        <tr>
+                                            <td class="catcat">
+                                                <ul>
+                                                    <li>Protein</li>
+                                                    <li>Sweet</li>
+                                                    <li>Protein ice cream</li>
+                                                </ul>
                                             </td>
-                                            <td class="recstatus">
-                                                <span style="background: #E7F5EC;">Expected</span>
+                                            <td class="catstatus">
+                                                <span style="color: #158466;">Active</span>
                                             </td>
-                                            <td class="recview">
-                                                <span>
-                                                    Save
-                                                    <img src="img/admin/pdf-icon.svg" alt="img">
-                                                </span>
-                                            </td>
-                                            <td class="recaction">
-                                                <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                            <td class="catsortorder">0</td>
+                                            <td class="cataction">
+                                                <div class="cataction__btns">
+                                                    <a href="#" class="cataction__edit">
+                                                        <img src="img/admin/catedit.svg" alt="edit">
+                                                    </a>
+                                                    <a href="#" class="cataction__delete">
+                                                        <img src="img/admin/catdelete.svg" alt="edit">
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -402,6 +372,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     
 

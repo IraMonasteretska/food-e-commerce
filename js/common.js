@@ -892,9 +892,6 @@ $(document).ready(function () {
             $('.notification__dropdown').hide();
         }
     });
-    
-
-
 
 });
 

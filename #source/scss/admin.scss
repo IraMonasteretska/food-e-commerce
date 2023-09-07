@@ -207,6 +207,7 @@
     border-top: 1px solid #D9DBDF;
 }
 
+
 // ---------
 .admincontent__head {
     height: 103px;
@@ -1446,7 +1447,6 @@
     .recentorders__body {
         padding: 15px;
     }
-
 }
 
 // Admin all customers settings
@@ -2365,7 +2365,7 @@
         border: 1px solid #C9273A;
 
         &:hover {
-            box-shadow: 0 4px 10px rgba(201,39,58,0.3);
+            box-shadow: 0 4px 10px rgba(201, 39, 58, 0.3);
         }
     }
 }
@@ -2415,4 +2415,279 @@
 
 .sellertable th.no-sort:after {
     display: none;
+}
+
+.adsidebarlist>li>a .listtext i {
+    font-style: normal;
+    background: #FF810D;
+    border-radius: 50%;
+    min-width: 17px;
+    min-height: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 150%;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+// admin sellers
+
+.sellertable {
+    .recdate {
+        width: 11%;
+    }
+
+    .recvendor {
+        width: calc(38% - 260px);
+    }
+
+    .rectotal {
+        width: 12%;
+    }
+
+    .rectax {
+        width: 12%;
+    }
+
+    .recstatus {
+        width: 15%;
+
+        span {
+            padding: 3px 9px;
+            display: inline-block;
+            border-radius: 70px;
+        }
+    }
+
+    .recview {
+        width: 12%;
+
+        span {
+            img {
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .recaction {
+        width: 260px;
+        padding-right: 0;
+
+        .btnswrapper {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 120px;
+                flex: 0 0 120px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 110%;
+                border-radius: 35px;
+                min-height: 40px;
+                transition: 0.3s;
+
+                &.admsellerbtnedit {
+                    background: $base-green;
+                    color: #fff;
+
+                    img {
+                        width: 11px;
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 4px 10px rgba(21, 132, 102, 0.3);
+                    }
+                }
+
+                &.admsellerbtnremove {
+                    background: #fff;
+                    border: 1px solid #C9273A;
+                    color: #C9273A;
+
+                    img {
+                        width: 13px;
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 4px 10px rgba(201, 39, 58, 0.3);
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media(max-width:575.8px) {
+    .sellertable .recaction .btnswrapper a {
+        font-size: 12px;
+        max-width: 100px;
+        min-height: 34px;
+    }
+
+    .sellertable .recaction {
+        width: 210px;
+    }
+
+    .sellertable .recvendor {
+        width: calc(38% - 210px);
+    }
+}
+
+.adminpage.hidemenu {
+    .adsidebarlist>li>a:hover {
+        background: transparent;
+        color: #158466;
+    }
+
+    .iconwrap:hover {
+        background: rgb(231, 245, 236);
+    }
+}
+
+.admininfosect__rightbox .circpluslink {
+    color: $bace-color;
+    font-size: 14px;
+
+    img {
+        margin-right: 6px;
+        vertical-align: middle;
+        margin-top: -3px;
+    }
+}
+
+.admininfosect__filtersect .searchwrap.w100 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-right: 0;
+}
+
+.sellertable th:first-child:not(.no-sort)::after {
+    display: inline-block;
+}
+
+.sellertable {
+    .catcat {
+        text-align: center;
+        width: calc(64% - 75px);
+    }
+
+    .catstatus {
+        width: 17%;
+    }
+
+    .catsortorder {
+        width: 19%;
+    }
+
+    .cataction {
+        width: 75px;
+    }
+
+    tbody {
+        .catcat {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    margin-right: 25px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 3px;
+                        right: -20px;
+                        background: url('../img/admin/catarr.svg') no-repeat center / 100%;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .catstatus {
+            span {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+.cataction__btns {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        height: 30px;
+        border-radius: 5px;
+        transition: 0.3s;
+        background: #fff;
+
+        img {
+            max-width: 20px;
+        }
+    }
+}
+
+.cataction__edit {
+    border: 1px solid $base-green;
+
+    &:hover {
+        box-shadow: 0 4px 10px rgba(21,132,102,0.3);
+    }
+}
+
+.cataction__delete {
+    border: 1px solid #C9273A;
+
+    &:hover {
+        box-shadow: 0 4px 10px rgba(201,39,58,0.3);
+    }
+}
+
+@media(max-width:991.8px) {
+    .sellertable table.table__categories {
+        width: 700px;
+    }
 }
