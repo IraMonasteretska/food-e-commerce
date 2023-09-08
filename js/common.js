@@ -851,6 +851,16 @@ $(document).ready(function () {
         $('.adminpage').toggleClass('hidemenu');
         $('.adsidebarlist .subitem a').next('.sublist').hide();
     });
+    
+
+    if ($(window).width() < 992) {
+        $(document).click(function (event) {
+            let $target = $(event.target);
+            if (!$target.closest('.adminmenu').length && !$target.closest('.asminsidebar__body').length) {
+                $('.adminpage').removeClass('hidemenu');
+            }
+        });
+    }
 
 
     $('.adsidebarlist .subitem a').click(function (e) {
@@ -892,6 +902,9 @@ $(document).ready(function () {
             $('.notification__dropdown').hide();
         }
     });
+    
+
+
 
 });
 
