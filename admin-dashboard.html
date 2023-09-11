@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/sortable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+
+    <main>
+        <div class="adminpage">
+            <aside class="asminsidebar">
+                <div class="asminsidebar__head">
+                    <div class="adminlogo">
+                        <img src="img/admin/logo-admin.svg" alt="logo">
+                    </div>
+                    <span class="adminmenu">
+                        <img src="img/admin/admin-menu.svg" alt="menu">
+                    </span>
+                </div>
+                <div class="asminsidebar__body">
+                    <ul class="adsidebarlist">
+                        <li class="active">
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic0.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic1.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    all customers
+                                </span>
+                            </a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic2.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Sellers
+                                </span>
+                            </a>
+                            <ul class="sublist">
+                                <li><a href="#">All Selers</a></li>
+                                <li><a href="#">Need to be approved</a></li>
+                                <li><a href="#">Whale sellers</a></li>
+                                <li class="active"><a href="#">Categories</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic3.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Receipts
+                                    <i>5</i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic4.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Reports
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="adsidebarlist signout">
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/account/acc-signout.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Sign Out
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="admincontent">
+                <div class="admincontent__head">
+                    <div class="searchblock">
+                        <input type="text" placeholder="Search on Food...">
+                        <button><img src="img/header/search-icon.svg" alt="search"></button>
+                    </div>
+                    <div class="admincontent__head-rightsect">
+                        <div class="admincontent__user">
+                            <span><img src="img/header/user-icon.png" alt=""></span>
+
+                            <div class="admincontent__userdd">
+                                <p>Lorem, ipsum dolor.</p>
+                                <ul>
+                                    <li><a href="#">Lorem Ipsum</a></li>
+                                    <li><a href="#">Lorem Ipsum</a></li>
+                                </ul>
+                                <a href="#" class="greenbtn">Button</a>
+                            </div>
+                        </div>
+                        <div class="notification">
+                            <img src="img/admin/notification.svg" alt="img">
+                            <span>1</span>
+                        </div>
+                        <div class="notification__dropdown">
+                            <p class="notification__title">Notifications</p>
+                            <div class="notification__list">
+
+                                <a href="#" class="notification__row">
+                                    <div class="notification__img">
+                                        <img src="img/admin/notification-icon1.svg" alt="icon">
+                                    </div>
+                                    <div class="notification__descr">
+                                        <p class="title">Support Call</p>
+                                        <p class="description">Has placed suport call</p>
+                                    </div>
+                                    <div class="notification__time">
+                                        <img src="img/admin/clock-icon.svg" alt="img">
+                                        <span>12 PM</span>
+                                    </div>
+                                </a>
+                                <div class="notification__row">
+                                    <div class="notification__img">
+                                        <img src="img/admin/notification-icon2.svg" alt="icon">
+                                    </div>
+                                    <div class="notification__descr">
+                                        <p class="title">New request</p>
+                                        <p class="description">Add Dany Jones as your cont...</p>
+                                        <div class="notification__row-btns">
+                                            <a href="#" class="approve">Approve</a>
+                                            <a href="#" class="delete">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="notification__time">
+                                        <img src="img/admin/clock-icon.svg" alt="img">
+                                        <span>12 PM</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="notification__row">
+                                    <div class="notification__img">
+                                        <img src="img/admin/notification-icon3.svg" alt="icon">
+                                    </div>
+                                    <div class="notification__descr">
+                                        <p class="title">Server overloaded</p>
+                                        <p class="description">Donec mattis augue a ni...</p>
+                                    </div>
+                                    <div class="notification__time">
+                                        <img src="img/admin/clock-icon.svg" alt="img">
+                                        <span>12 PM</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <a href="#">
+                            <img src="img/selleracc/question-icon.svg" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="img/selleracc/settings-icon.svg" alt="img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="admincontent__body">
+                    <div class="admininfosect">
+                        <div class="admininfosect__header">
+                            <div class="admininfosect__title">
+                                <img class="acccontentsect__header-icon" src="img/admin/seller-asideic7.svg" alt="img">
+                                <p>
+                                    Dashboard
+                                </p>
+                            </div>
+                            <div class="admininfosect__rightbox">
+                                <a href="#" class="createreport">
+                                    <img src="img/admin/crrep.svg" alt="img">
+                                    Create report
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admininfosect__body">
+                            <div class="dashboardinfosect">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class="uplinbox">
+                                            <div class="imgwrap">
+                                                <img src="img/admin/linkic5.svg" alt="icon">
+                                            </div>
+                                            <div class="textwrap">
+                                                <p class="title">Total Salers</p>
+                                                <p class="descr">$22,456,058,20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="uplinbox">
+                                            <div class="imgwrap">
+                                                <img src="img/admin/linkic6.svg" alt="icon">
+                                            </div>
+                                            <div class="textwrap">
+                                                <p class="title">Total Orders</p>
+                                                <p class="descr">$22,456,058,20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="uplinbox">
+                                            <div class="imgwrap">
+                                                <img src="img/admin/linkic1.svg" alt="icon">
+                                            </div>
+                                            <div class="textwrap">
+                                                <p class="title">Total Products</p>
+                                                <p class="descr">19,456</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="uplinbox">
+                                            <div class="imgwrap">
+                                                <img src="img/admin/linkic7.svg" alt="icon">
+                                            </div>
+                                            <div class="textwrap">
+                                                <p class="title">Monthly Earning</p>
+                                                <p class="descr">$10,456</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xl-8">
+                                    <div class="salestatistics">
+                                        <p class="salestatistics__title">Sales statistics</p>
+                                        <p class="salestatistics__subtitle">
+                                            The comparison date is equal to the total amount of the order and the Bit
+                                            units
+                                        </p>
+                                        <div class="salestatistics__header">
+                                            <div class="salestatistics__weekinfo">
+                                                <div class="weekinfo">
+                                                    <div class="imgwrap">
+                                                        <img src="img/admin/staup.svg" alt="img">
+                                                    </div>
+                                                    <div class="textwrap">
+                                                        <p class="num">21800</p>
+                                                        <p>Current Week</p>
+                                                    </div>
+                                                </div>
+                                                <div class="weekinfo">
+                                                    <div class="imgwrap">
+                                                        <img src="img/admin/stadown.svg" alt="img">
+                                                    </div>
+                                                    <div class="textwrap">
+                                                        <p class="num">19.400</p>
+                                                        <p>Last Week</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="salestatistics__dates">
+                                                <div class="form-group-zeus">
+                                                    <div class="input-group-zeus input-group-zeus--icon-append">
+                                                      <input type="text" name="u-daterange" value="01/01/2018 - 01/15/2018" class="form-control-zeus" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                    </div>
+                                                  </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="salestatistics__body">
+
+                                           
+                                            <div style="width: 100%; height: 400px;">
+                                                <canvas id="myChart"></canvas>
+                                            </div>
+
+
+
+
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/popper.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="js/common.js"></script>
+</body>
+
+</html>

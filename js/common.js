@@ -8,7 +8,6 @@ $(document).ready(function () {
         });
     }
 
-
     // header acc dropdown
     $('.header__account').click(function () {
         $(this).toggleClass('active');
@@ -851,7 +850,7 @@ $(document).ready(function () {
         $('.adminpage').toggleClass('hidemenu');
         $('.adsidebarlist .subitem a').next('.sublist').hide();
     });
-    
+
 
     if ($(window).width() < 992) {
         $(document).click(function (event) {
@@ -892,7 +891,7 @@ $(document).ready(function () {
 
     // admin notification
 
-    $('.notification').click(function(){
+    $('.notification').click(function () {
         $('.notification__dropdown').toggle();
     });
 
@@ -902,8 +901,93 @@ $(document).ready(function () {
             $('.notification__dropdown').hide();
         }
     });
-    
 
+
+
+
+    // datepicker
+    $(function () {
+
+        $('input[name="u-daterange"]').daterangepicker({
+            "autoApply": true,
+            "opens": "center"
+        });
+
+        $('.daterangepicker').addClass('u-daterangepicker');
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   chart
+    // Дані для графіка
+    var months = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+    var values = [
+        [700, 900, 1500, 300, 700, 900, 1500, 300, 700, 900, 1500, 300], // Група 1
+        [750, 850, 1400, 500, 700, 900, 1500, 300, 700, 900, 1500, 300], // Група 2 (при бажанні, можете додати ще групи)
+    ];
+
+    // Отримати посилання на контейнер графіка
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    // Створити графік
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        // maintainAspectRatio: false,
+        data: {
+            labels: months, // Ось X з місяцями
+            datasets: [{
+                label: 'Ціни 1', // Підпис для групи 1
+                data: values[0], // Дані для групи 1
+                backgroundColor: 'rgba(75, 192, 192, 0.2)', // Колір стовпців
+                borderColor: 'rgba(75, 192, 192, 1)', // Колір межі стовпців
+                borderWidth: 1, // Товщина межі стовпців
+            },
+            {
+                label: 'Ціни 2', // Підпис для групи 2 (при бажанні, додайте ще групи)
+                data: values[1], // Дані для групи 2
+                backgroundColor: 'rgba(255, 99, 132, 0.2)', // Колір стовпців для групи 2
+                borderColor: 'rgba(255, 99, 132, 1)', // Колір межі стовпців для групи 2
+                borderWidth: 1, // Товщина межі стовпців для групи 2
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value, index, values) {
+                            return '$' + value; // Додаємо знак долару перед числом
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+
+    window.addEventListener('resize', function() {
+        myChart.resize(); // Оновлюємо графік при зміні розмірів вікна браузера
+    });
 
 
 });
