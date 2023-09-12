@@ -940,10 +940,10 @@ $(document).ready(function () {
 
     //   chart
     // Дані для графіка
-    var months = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var values = [
-        [700, 900, 1500, 300, 700, 900, 1500, 300, 700, 900, 1500, 300], // Група 1
-        [750, 850, 1400, 500, 700, 900, 1500, 300, 700, 900, 1500, 300], // Група 2 (при бажанні, можете додати ще групи)
+        [700, 900, 1500, 300, 700, 900, 1500, 300, 700, 900, 1500, 300], // group 1
+        [750, 850, 1400, 500, 700, 900, 1500, 300, 700, 900, 1500, 300], // group 2 
     ];
 
     // Отримати посилання на контейнер графіка
@@ -954,39 +954,83 @@ $(document).ready(function () {
         type: 'bar',
         // maintainAspectRatio: false,
         data: {
-            labels: months, // Ось X з місяцями
+            labels: months, //  X 
             datasets: [{
-                label: 'Ціни 1', // Підпис для групи 1
-                data: values[0], // Дані для групи 1
-                backgroundColor: 'rgba(75, 192, 192, 0.2)', // Колір стовпців
-                borderColor: 'rgba(75, 192, 192, 1)', // Колір межі стовпців
+                label: 'label 1',
+                data: values[0],
+                backgroundColor: 'rgba(19, 176, 134, 1)', // Колір стовпців
+                borderColor: 'rgba(19, 176, 134, 1)', // Колір межі стовпців
                 borderWidth: 1, // Товщина межі стовпців
+                borderRadius: 10,
+                // barThickness: 8,
             },
             {
-                label: 'Ціни 2', // Підпис для групи 2 (при бажанні, додайте ще групи)
+                label: 'label 2', // Підпис для групи 2 (при бажанні, додайте ще групи)
                 data: values[1], // Дані для групи 2
-                backgroundColor: 'rgba(255, 99, 132, 0.2)', // Колір стовпців для групи 2
-                borderColor: 'rgba(255, 99, 132, 1)', // Колір межі стовпців для групи 2
-                borderWidth: 1, // Товщина межі стовпців для групи 2
+                backgroundColor: 'rgba(23, 157, 121, 0.30)', // Колір стовпців для групи 2
+                borderColor: 'rgba(23, 157, 121, 0.30)', // Колір межі стовпців для групи 2
+                borderWidth: 1,
+                borderRadius: 10,
+                // barThickness: 8,
             }]
         },
         options: {
+            barPercentage: 0.6,
+            categoryPercentage: 0.7,
             scales: {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        callback: function(value, index, values) {
+                        callback: function (value, index, values) {
                             return '$' + value; // Додаємо знак долару перед числом
                         }
                     }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false,
                 }
             }
         }
     });
 
 
-    window.addEventListener('resize', function() {
-        myChart.resize(); // Оновлюємо графік при зміні розмірів вікна браузера
+    window.addEventListener('resize', function () {
+        myChart.resize(); 
+    });
+
+    // DONUT CHART
+    var ctx = document.getElementById('donutChart').getContext('2d');
+
+    var data = {
+        labels: ['Order Completed', 'Order Pending', 'Order Unpaid', 'Order Canceled', 'Order Returned', 'Order Broken'],
+        datasets: [{
+            data: [25, 10, 15, 20, 5, 8], 
+            backgroundColor: ['#13B086', '#1378B0', '#158466', '#FF810D', '#AED76C', '#C9273A'], 
+            borderWidth: 5,
+
+        }],
+    };
+
+    var myDonutChart = new Chart(ctx, {
+        type: 'doughnut', 
+        data: data,
+        options: {
+            cutout: '80%',
+            plugins: {
+                legend: {
+                    display: false,
+                    // position: 'bottom',
+                    labels: {
+                        font: {
+                            size: 16,
+                        }
+                    }
+                }
+    
+            }
+        }
     });
 
 

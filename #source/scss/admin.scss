@@ -3463,9 +3463,84 @@
     align-items: center;
 }
 
+.salestatistics__body {
+    margin-top: 20px;
+}
 
+.salestatistics__dates {
+    .form-group-zeus {
+        position: relative;
+    }
 
+    label {
+        position: absolute;
+        left: 25px;
+        top: 9px;
 
+        img {
+            width: 16px;
+        }
+    }
 
+    input {
+        border: 1px solid #D9DBDF;
+        background: #fff;
+        height: 43px;
+        border-radius: 26px;
+        padding-left: 50px;
+        width: 100%;
+        font-size: 12px;
+    }
+}
 
+.orderoverview {
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    min-height: 100%;
+
+    .title {
+        color: $bace-color;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 160%;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 35px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 100%;
+            max-width: 45%;
+            flex: 0 0 45%;
+            color: #81868A;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 160%;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+
+            .orderoverview__listpoint {
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                position: absolute;
+                left: 0;
+                top: 6px;
+            }
+        }
+    }
+}
+
+.donutwrapper {
+    padding: 0 50px;
+}
 
