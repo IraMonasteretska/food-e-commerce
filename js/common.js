@@ -997,24 +997,31 @@ $(document).ready(function () {
 
 
     window.addEventListener('resize', function () {
-        myChart.resize(); 
+        myChart.resize(); // Оновлюємо графік при зміні розмірів вікна браузера
     });
 
+
+
+
+
     // DONUT CHART
+    // Отримайте контекст для вашого canvas
     var ctx = document.getElementById('donutChart').getContext('2d');
 
+    // Ваші дані для діаграми
     var data = {
         labels: ['Order Completed', 'Order Pending', 'Order Unpaid', 'Order Canceled', 'Order Returned', 'Order Broken'],
         datasets: [{
-            data: [25, 10, 15, 20, 5, 8], 
-            backgroundColor: ['#13B086', '#1378B0', '#158466', '#FF810D', '#AED76C', '#C9273A'], 
+            data: [25, 10, 15, 20, 5, 8], // Значення для кожної категорії
+            backgroundColor: ['#13B086', '#1378B0', '#158466', '#FF810D', '#AED76C', '#C9273A'], // Кольори секторів
             borderWidth: 5,
 
         }],
     };
 
+    // Створення і відображення діаграми
     var myDonutChart = new Chart(ctx, {
-        type: 'doughnut', 
+        type: 'doughnut', // Вказуємо тип діаграми
         data: data,
         options: {
             cutout: '80%',
@@ -1032,6 +1039,18 @@ $(document).ready(function () {
             }
         }
     });
+
+
+
+
+
+    // Pauments dashboard
+
+    $('.ps-amount img').click(function(){
+        $(this).parents('.paymentssection__bodysect').toggleClass('active');
+    });
+
+
 
 
 });

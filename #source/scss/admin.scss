@@ -3496,7 +3496,7 @@
 .orderoverview {
     background: #fff;
     padding: 40px 30px;
-    box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     min-height: 100%;
 
@@ -3541,6 +3541,763 @@
 }
 
 .donutwrapper {
-    padding: 0 50px;
+    // padding: 0 50px;
+
+    &>* {
+        outline: none !important;
+    }
 }
 
+.daterangepicker {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.u-daterangepicker td.today:after {
+    background: transparent !important;
+}
+
+.u-daterangepicker td.end-date:before,
+.u-daterangepicker td.start-date:before {
+    background-color: #158466 !important;
+}
+
+.u-daterangepicker td.in-range {
+    background-color: rgba(19, 176, 134, 0.1) !important;
+}
+
+.u-daterangepicker td.available:hover:not(.active):before,
+.u-daterangepicker td.end-date:hover:before,
+.u-daterangepicker td.start-date:hover:before {
+    border: 2px solid #158466 !important;
+}
+
+
+.u-daterangepicker .calendar-table thead th {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media(min-width:1750px) {
+    .donutwrapper {
+        padding: 0 50px;
+
+    }
+}
+
+.dashboardsection {
+    margin-top: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+}
+
+.dashboardsection_title {
+    margin-bottom: 35px;
+    color: $bace-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.dashboardsection__filter {
+    margin-bottom: 30px;
+
+    .searchblock {
+        max-width: 266px;
+        width: 100%;
+    }
+}
+
+.dashboardsection__filter-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    .salestatistics__dates {
+        width: 100%;
+        max-width: 211px;
+        flex: 0 0 211px;
+        margin-right: 25px;
+    }
+
+    .generalselect {
+        width: 100%;
+        max-width: 167px;
+        flex: 0 0 167px;
+    }
+}
+
+.dashboardsection__content {
+    table {
+        width: 100%;
+
+        thead {
+            th {
+                color: #3B454C;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 110%;
+                padding: 19px 5px 19px 0;
+            }
+        }
+
+        tbody {
+            td {
+                padding: 19px 5px 19px 0;
+                font-size: 15px;
+                color: #3B454C;
+                line-height: 160%;
+            }
+        }
+
+        .sales-orderid {
+            width: 9%;
+            font-weight: 600;
+        }
+
+        .sales-seller {
+            width: 17%;
+            font-weight: 600;
+        }
+
+        .sales-prodname {
+            width: calc(24% - 75px);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .sales-units {
+            width: 10%;
+        }
+
+        .sales-orddate {
+            width: 14%;
+        }
+
+        .sales-ordcost {
+            width: 12%;
+        }
+
+        .sales-status {
+            width: 14%;
+
+            span {
+                border-radius: 99px;
+                display: inline-block;
+                padding: 5.5px;
+                text-align: center;
+                max-width: 110px;
+                width: 100%;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 110%;
+            }
+        }
+
+        .sales-action {
+            width: 75px;
+        }
+    }
+}
+
+.paymentssection {
+    .ps-billingname {
+        width: 100%;
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+
+    .ps-type {
+        width: 100%;
+        max-width: 14%;
+        flex: 0 0 14%;
+    }
+
+    .ps-paymentstatus {
+        width: 100%;
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+
+    .ps-paymentmethod {
+        width: 100%;
+        max-width: 16%;
+        flex: 0 0 16%;
+    }
+
+    .ps-transactiondate {
+        width: 100%;
+        max-width: 14%;
+        flex: 0 0 14%;
+    }
+
+    .ps-amount {
+        width: 100%;
+        max-width: 11%;
+        flex: 0 0 11%;
+    }
+
+    .paymentssection__header {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 110%;
+        color: #3B454C;
+        padding: 0 10px;
+
+        &>div {
+            padding: 15px 0;
+        }
+    }
+}
+
+.paymentssection__body-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ps-billingnamewrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .imgwrap {
+        width: 100%;
+        max-width: 45px;
+        flex: 0 0 45px;
+        height: 45px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #3B454D;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 150%;
+        width: 100%;
+        max-width: calc(100% - 45px);
+        flex: 0 0 calc(100% - 45px);
+        padding-left: 15px;
+    }
+}
+
+.ps-paymentmethodwrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .imgwrap {
+        width: 100%;
+        max-width: 35px;
+        flex: 0 0 35px;
+        height: 22px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: $bace-color;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 160%;
+        padding-left: 10px;
+        width: 100%;
+        max-width: calc(100% - 35px);
+        flex: 0 0 calc(100% - 35px);
+    }
+}
+
+.paymentssection__body-row {
+    position: relative;
+    border-radius: 10px;
+
+    .ps-type {
+        color: #3B454C;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 160%;
+    }
+
+    .ps-paymentstatus {
+        .pslabel {
+            display: inline-block;
+            border-radius: 99px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 110%;
+            padding: 5px;
+            max-width: 135px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .ps-transactiondate {
+        color: #3B454C;
+        font-size: 15px;
+        line-height: 160%;
+    }
+
+    .ps-amount {
+        position: relative;
+        padding-right: 25px;
+        font-size: 15px;
+        color: #3B454C;
+        line-height: 160%;
+
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.paymentssection__bodysect {
+    margin-bottom: 23px;
+
+    &.active {
+        background: rgba(235, 243, 241, 0.60);
+        border-radius: 0 0 10px 10px;
+
+        .paymentssection__body-row {
+            background: #C8E7DF;
+        }
+
+        .paymentssectiondd {
+            display: flex;
+        }
+
+        .ps-amount img {
+            transform: rotate(-180deg);
+        }
+
+    }
+}
+
+.paymentssectiondd {
+    flex-wrap: wrap;
+    padding: 19px 69px 30px 69px;
+    display: none;
+
+    .paymentssectiondd__left {
+        width: 100%;
+        max-width: 66%;
+        flex: 0 0 66%;
+    }
+
+    .paymentssectiondd__right {
+        width: 100%;
+        max-width: 34%;
+        flex: 0 0 34%;
+    }
+
+}
+
+.paymentssection-info {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #D9DBDF;
+    padding-top: 25px;
+
+    .title {
+        margin-bottom: 16px;
+        color: $base-green;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:first-child {
+        padding-top: 0;
+    }
+}
+
+.paymentssection-infocontent {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .piccol1 {
+        width: 100%;
+        max-width: 29%;
+        flex: 0 0 29%;
+    }
+
+    .piccol2 {
+        width: 100%;
+        max-width: 29%;
+        flex: 0 0 29%;
+    }
+
+    .piccol3 {
+        width: 100%;
+        max-width: 26%;
+        flex: 0 0 26%;
+    }
+
+    .piccol4 {
+        width: 100%;
+        max-width: 16%;
+        flex: 0 0 16%;
+    }
+}
+
+.piccol__title {
+    margin-bottom: 5px;
+    color: #3B454C;
+    font-size: 13px;
+    line-height: 160%;
+}
+
+.piccol__descr {
+    margin: 0;
+    color: #3B454C;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.paymentssection__log {
+    padding-left: 30%;
+
+    .title {
+        margin-bottom: 10px;
+        color: $base-green;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 150%;
+        text-transform: capitalize;
+    }
+
+    .loglist {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+
+        li {
+            padding-bottom: 19px;
+            position: relative;
+            padding-left: 28px;
+
+            &:last-child {
+                padding-bottom: 0;
+
+                &::before {
+                    display: none;
+                }
+
+                p {
+                    color: #3B454C;
+                }
+            }
+
+            p {
+                margin: 0;
+                color: #9DA2A6;
+                font-size: 13px;
+                line-height: 160%;
+            }
+
+            .loglist__title {
+                font-weight: 600;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                background: #C9273A;
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 3.5px;
+                top: 6px;
+                height: calc(100% - 3px);
+                width: 2px;
+                border-left: 2px dashed #C9273A;
+            }
+
+            &.active {
+                &::after {
+                    background: #13B086;
+                }
+
+                &::before {
+                    border-left: 2px dashed #13B086;
+                }
+            }
+        }
+    }
+}
+
+.sbpcol {
+    width: 100%;
+    max-width: 61%;
+    flex: 0 0 61%;
+
+    table {
+        width: 100%;
+
+        thead {
+            color: #3B454C;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 110%;
+
+            th {
+                padding-bottom: 25px;
+            }
+        }
+
+        .sbpcol__units {
+            width: 22%;
+        }
+
+        .sbpcol__sold {
+            width: 14%;
+        }
+
+        tbody {
+            td {
+                padding: 10px 5px 10px 0;
+                color: #3B454C;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .ordtabprod {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .imgwrap {
+            width: 100%;
+            max-width: 45px;
+            flex: 0 0 45px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        p {
+            width: 100%;
+            max-width: calc(100% - 45px);
+            flex: 0 0 calc(100% - 45px);
+            margin: 0;
+            padding-left: 13px;
+            color: #3B454C;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+
+    .sbpcol__sold {
+        img {
+            width: 17px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -3px;
+            margin-left: 7px;
+        }
+    }
+}
+
+.topcustcol {
+    width: 100%;
+    max-width: 39%;
+    flex: 0 0 39%;
+
+    table {
+        width: 100%;
+
+        thead {
+            color: #3B454C;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 110%;
+
+            th {
+                padding-bottom: 25px;
+            }
+        }
+
+        .topcustcol__income {
+            width: 70px;
+            font-size: 15px;
+        }
+        
+        tbody {
+            td {
+                padding: 11px 5px 10px 0;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .ordtabprod {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .imgwrap {
+            width: 100%;
+            max-width: 45px;
+            flex: 0 0 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        p {
+            width: 100%;
+            max-width: calc(100% - 45px);
+            flex: 0 0 calc(100% - 45px);
+            margin: 0;
+            padding-left: 13px;
+            color: #3B454C;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+   
+}
+
+.salestatistics__body > div {
+    height: 400px;
+}
+
+@media(max-width:1440.8px) {
+    .dashboardinfosect .uplinbox .descr {
+        font-size: 16px;
+    }
+
+    .salestatistics__body > div {
+        height: auto;
+    }
+
+    .salestatistics {
+        height: 100%;
+    }
+
+    .orderoverview ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 3px;
+    }
+
+    .sbpcol table tbody td:last-child {
+        padding-right: 0;
+    }
+
+    .sbpcol .sbpcol__sold img {
+        margin-left: 3px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .salestatistics__header .salestatistics__weekinfo,
+    .salestatistics__header .salestatistics__dates {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .salestatistics__header .salestatistics__dates {
+        margin-top: 10px;
+    }
+
+
+    .tablescroll {
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            height: 6px;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(21, 132, 102, 0.2);
+            border-radius: 10px;
+        }
+    }
+
+    .dashboardsection.dashboardsection__sales {
+        table {
+            width: 900px;
+        }
+    }
+
+    .dashboardsection__content table tbody td,
+    .paymentssection__body-row .ps-transactiondate,
+    .ps-paymentmethodwrap p,
+    .paymentssection__body-row .ps-type {
+        font-size: 14px;
+    }
+
+    .dashboardsection.dashboardsection__payments {
+        .paymentssection {
+            width: 900px;
+        }
+    }
+
+}

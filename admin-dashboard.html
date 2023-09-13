@@ -16,6 +16,7 @@
 <body>
 
     <main>
+
         <div class="adminpage">
             <aside class="asminsidebar">
                 <div class="asminsidebar__head">
@@ -201,7 +202,7 @@
                         <div class="admininfosect__body">
                             <div class="dashboardinfosect">
                                 <div class="row">
-                                    <div class="col-xl-3">
+                                    <div class="col-xxl-3 col-xl-6">
                                         <div class="uplinbox">
                                             <div class="imgwrap">
                                                 <img src="img/admin/linkic5.svg" alt="icon">
@@ -212,7 +213,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3">
+                                    <div class="col-xxl-3 col-xl-6">
                                         <div class="uplinbox">
                                             <div class="imgwrap">
                                                 <img src="img/admin/linkic6.svg" alt="icon">
@@ -223,7 +224,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3">
+                                    <div class="col-xxl-3 col-xl-6">
                                         <div class="uplinbox">
                                             <div class="imgwrap">
                                                 <img src="img/admin/linkic1.svg" alt="icon">
@@ -234,7 +235,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3">
+                                    <div class="col-xxl-3 col-xl-6">
                                         <div class="uplinbox">
                                             <div class="imgwrap">
                                                 <img src="img/admin/linkic7.svg" alt="icon">
@@ -296,7 +297,7 @@
 
                                         <div class="salestatistics__body">
 
-                                            <div style="width: 100%; height: 400px;">
+                                            <div style="width: 100%;">
                                                 <canvas id="myChart"></canvas>
                                             </div>
 
@@ -347,11 +348,816 @@
                                 </div>
                             </div>
 
+                            <div class="dashboardsection dashboardsection__sales">
+                                <p class="dashboardsection_title">Sales</p>
+                                <div class="dashboardsection__filter">
+                                    <div class="row">
+                                        <div class="col-xxl-6 col-xl-4">
+                                            <div class="searchblock">
+                                                <input type="text" placeholder="Search">
+                                                <button><img src="img/header/search-icon.svg" alt="search"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-8">
+                                            <div class="dashboardsection__filter-right">
+                                                <div class="salestatistics__dates">
+                                                    <div class="form-group-zeus">
+                                                        <div class="input-group-zeus input-group-zeus--icon-append">
+                                                            <label for="dates2"><img src="img/admin/calendat-icon.svg"
+                                                                    alt="icon"></label>
+                                                            <input type="text" name="u-daterange" value="" id="dates2"
+                                                                class="form-control-zeus"
+                                                                placeholder="Recipient's username"
+                                                                aria-label="Recipient's username"
+                                                                aria-describedby="basic-addon2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="generalselect">
+                                                    <!-- data-placeholder="" -->
+                                                    <select class="customselect" name="category">
+                                                        <option value="0">All</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboardsection__content">
+                                    <div class="tablescroll">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="sales-orderid">Order ID</th>
+                                                    <th class="sales-seller">Seller</th>
+                                                    <th class="sales-prodname">Product Name</th>
+                                                    <th class="sales-units">Units</th>
+                                                    <th class="sales-orddate">Order Date</th>
+                                                    <th class="sales-ordcost">Order Cost</th>
+                                                    <th class="sales-status">Status</th>
+                                                    <th class="sales-action">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="sales-orderid">243466</td>
+                                                    <td class="sales-seller">Anna Halland</td>
+                                                    <td class="sales-prodname">Bauli Plumcake...</td>
+                                                    <td class="sales-units">1 Unit</td>
+                                                    <td class="sales-orddate">Oct 20, 2023</td>
+                                                    <td class="sales-ordcost">$230</td>
+                                                    <td class="sales-status">
+                                                        <span style="background-color: #13B086;">Completed</span>
+                                                    </td>
+                                                    <td class="sales-action">
+                                                        <div class="cataction__btns">
+                                                            <a href="#" class="cataction__edit">
+                                                                <img src="img/admin/catedit.svg" alt="edit">
+                                                            </a>
+                                                            <a href="#" class="cataction__delete">
+                                                                <img src="img/admin/catdelete.svg" alt="edit">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sales-orderid">243465</td>
+                                                    <td class="sales-seller">Angel Kerr</td>
+                                                    <td class="sales-prodname">Céréal Apricot</td>
+                                                    <td class="sales-units">2 Unit</td>
+                                                    <td class="sales-orddate">Nov 15, 2023</td>
+                                                    <td class="sales-ordcost">$400</td>
+                                                    <td class="sales-status">
+                                                        <span style="background-color: #EFBA03;">Dalayed</span>
+                                                    </td>
+                                                    <td class="sales-action">
+                                                        <div class="cataction__btns">
+                                                            <a href="#" class="cataction__edit">
+                                                                <img src="img/admin/catedit.svg" alt="edit">
+                                                            </a>
+                                                            <a href="#" class="cataction__delete">
+                                                                <img src="img/admin/catdelete.svg" alt="edit">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sales-orderid">243464</td>
+                                                    <td class="sales-seller">Nieve Montoya</td>
+                                                    <td class="sales-prodname">Gluten Free</td>
+                                                    <td class="sales-units">1 Unit</td>
+                                                    <td class="sales-orddate">Nov 9, 2023</td>
+                                                    <td class="sales-ordcost">$30</td>
+                                                    <td class="sales-status">
+                                                        <span style="background-color: #13B086;">Completed</span>
+                                                    </td>
+                                                    <td class="sales-action">
+                                                        <div class="cataction__btns">
+                                                            <a href="#" class="cataction__edit">
+                                                                <img src="img/admin/catedit.svg" alt="edit">
+                                                            </a>
+                                                            <a href="#" class="cataction__delete">
+                                                                <img src="img/admin/catdelete.svg" alt="edit">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sales-orderid">243463</td>
+                                                    <td class="sales-seller">Priya Schultz</td>
+                                                    <td class="sales-prodname">Gluten Free</td>
+                                                    <td class="sales-units">2 Unit</td>
+                                                    <td class="sales-orddate">Dec 22, 2023</td>
+                                                    <td class="sales-ordcost">$55</td>
+                                                    <td class="sales-status">
+                                                        <span style="background-color: #C9273A;">Cancelled</span>
+                                                    </td>
+                                                    <td class="sales-action">
+                                                        <div class="cataction__btns">
+                                                            <a href="#" class="cataction__edit">
+                                                                <img src="img/admin/catedit.svg" alt="edit">
+                                                            </a>
+                                                            <a href="#" class="cataction__delete">
+                                                                <img src="img/admin/catdelete.svg" alt="edit">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sales-orderid">243462</td>
+                                                    <td class="sales-seller">Constance Ferrell</td>
+                                                    <td class="sales-prodname">Gluten Free</td>
+                                                    <td class="sales-units">1 Unit</td>
+                                                    <td class="sales-orddate">Dec 15, 2023</td>
+                                                    <td class="sales-ordcost">$16</td>
+                                                    <td class="sales-status">
+                                                        <span style="background-color: #FF810D;">On Hold</span>
+                                                    </td>
+                                                    <td class="sales-action">
+                                                        <div class="cataction__btns">
+                                                            <a href="#" class="cataction__edit">
+                                                                <img src="img/admin/catedit.svg" alt="edit">
+                                                            </a>
+                                                            <a href="#" class="cataction__delete">
+                                                                <img src="img/admin/catdelete.svg" alt="edit">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dashboardsection dashboardsection__payments">
+                                <p class="dashboardsection_title">Payments</p>
+                                <div class="dashboardsection__filter">
+                                    <div class="row">
+                                        <div class="col-xxl-6 col-xl-4">
+                                            <div class="searchblock">
+                                                <input type="text" placeholder="Search">
+                                                <button><img src="img/header/search-icon.svg" alt="search"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-8">
+                                            <div class="dashboardsection__filter-right">
+                                                <div class="salestatistics__dates">
+                                                    <div class="form-group-zeus">
+                                                        <div class="input-group-zeus input-group-zeus--icon-append">
+                                                            <label for="dates3"><img src="img/admin/calendat-icon.svg"
+                                                                    alt="icon"></label>
+                                                            <input type="text" name="u-daterange" value="" id="dates3"
+                                                                class="form-control-zeus"
+                                                                placeholder="Recipient's username"
+                                                                aria-label="Recipient's username"
+                                                                aria-describedby="basic-addon2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="generalselect">
+                                                    <!-- data-placeholder="" -->
+                                                    <select class="customselect" name="category">
+                                                        <option value="0">All</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboardsection__content">
+                                    <div class="tablescroll">
+                                        <div class="paymentssection">
+                                            <div class="paymentssection__header">
+                                                <div class="ps-billingname">Billing Name</div>
+                                                <div class="ps-type">Type</div>
+                                                <div class="ps-paymentstatus">Payment Status</div>
+                                                <div class="ps-paymentmethod">Payment Method</div>
+                                                <div class="ps-transactiondate">Transaction Date</div>
+                                                <div class="ps-amount">Amount</div>
+                                            </div>
+                                            <div class="paymentssection__body">
+                                                <div class="paymentssection__bodysect">
+                                                    <div class="paymentssection__body-row">
+                                                        <div class="ps-billingname">
+                                                            <div class="ps-billingnamewrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/admin/ava1.png" alt="img">
+                                                                </div>
+                                                                <p>Anna Halland</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-type">Sale</div>
+                                                        <div class="ps-paymentstatus">
+                                                            <span class="pslabel"
+                                                                style="background: #13B086;">Approved</span>
+                                                        </div>
+                                                        <div class="ps-paymentmethod">
+                                                            <div class="ps-paymentmethodwrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/account/cardicon.png" alt="img">
+                                                                </div>
+                                                                <p>**** 5943</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-transactiondate">8/12/17</div>
+                                                        <div class="ps-amount">
+                                                            $128.25
+                                                            <img src="img/admin/arrcircle.svg" alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="paymentssectiondd">
+                                                        <div class="paymentssectiondd__left">
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Payment method</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Transaction Type</p>
+                                                                        <p class="piccol__descr">Visa</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Credit ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Recipient profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Full Name</p>
+                                                                        <p class="piccol__descr">Tom Herley</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Account Number</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Account Type</p>
+                                                                        <p class="piccol__descr">Seller</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Bank Profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Bank Name</p>
+                                                                        <p class="piccol__descr">BNY Mellon</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">City</p>
+                                                                        <p class="piccol__descr">New York</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Country</p>
+                                                                        <p class="piccol__descr">United States</p>
+                                                                    </div>
+                                                                    <div class="piccol4">
+                                                                        <p class="piccol__title">Bank ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="paymentssectiondd__right">
+                                                            <div class="paymentssection__log">
+                                                                <p class="title">LOG</p>
+                                                                <ul class="loglist">
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Request Created</p>
+                                                                        <p>Apr 2 2023 13:40</p>
+                                                                    </li>
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Transfer Sent</p>
+                                                                        <p>Apr 2 2023 13:45</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Pending refund</p>
+                                                                        <p>Apr 2 2023 13:48</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Returned</p>
+                                                                        <p>Apr 2 2023 13:55</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="paymentssection__bodysect">
+                                                    <div class="paymentssection__body-row">
+                                                        <div class="ps-billingname">
+                                                            <div class="ps-billingnamewrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/admin/ava2.png" alt="img">
+                                                                </div>
+                                                                <p>Priya Schultz</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-type">Refund</div>
+                                                        <div class="ps-paymentstatus">
+                                                            <span class="pslabel"
+                                                                style="background: #C9273A;">Returned</span>
+                                                        </div>
+                                                        <div class="ps-paymentmethod">
+                                                            <div class="ps-paymentmethodwrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/account/card-1.png" alt="img">
+                                                                </div>
+                                                                <p>**** 4055</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-transactiondate">2/11/12</div>
+                                                        <div class="ps-amount">
+                                                            $200.66
+                                                            <img src="img/admin/arrcircle.svg" alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="paymentssectiondd">
+                                                        <div class="paymentssectiondd__left">
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Payment method</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Transaction Type</p>
+                                                                        <p class="piccol__descr">Visa</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Credit ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Recipient profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Full Name</p>
+                                                                        <p class="piccol__descr">Tom Herley</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Account Number</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Account Type</p>
+                                                                        <p class="piccol__descr">Seller</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Bank Profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Bank Name</p>
+                                                                        <p class="piccol__descr">BNY Mellon</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">City</p>
+                                                                        <p class="piccol__descr">New York</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Country</p>
+                                                                        <p class="piccol__descr">United States</p>
+                                                                    </div>
+                                                                    <div class="piccol4">
+                                                                        <p class="piccol__title">Bank ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="paymentssectiondd__right">
+                                                            <div class="paymentssection__log">
+                                                                <p class="title">LOG</p>
+                                                                <ul class="loglist">
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Request Created</p>
+                                                                        <p>Apr 2 2023 13:40</p>
+                                                                    </li>
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Transfer Sent</p>
+                                                                        <p>Apr 2 2023 13:45</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Pending refund</p>
+                                                                        <p>Apr 2 2023 13:48</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Returned</p>
+                                                                        <p>Apr 2 2023 13:55</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="paymentssection__bodysect">
+                                                    <div class="paymentssection__body-row">
+                                                        <div class="ps-billingname">
+                                                            <div class="ps-billingnamewrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/admin/ava3.png" alt="img">
+                                                                </div>
+                                                                <p>Constance Ferrell</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-type">Refund</div>
+                                                        <div class="ps-paymentstatus">
+                                                            <span class="pslabel" style="background: #FF810D;">Pending
+                                                                refund</span>
+                                                        </div>
+                                                        <div class="ps-paymentmethod">
+                                                            <div class="ps-paymentmethodwrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/account/card-1.png" alt="img">
+                                                                </div>
+                                                                <p>**** 0039</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-transactiondate">6/10/11</div>
+                                                        <div class="ps-amount">
+                                                            $156.12
+                                                            <img src="img/admin/arrcircle.svg" alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="paymentssectiondd">
+                                                        <div class="paymentssectiondd__left">
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Payment method</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Transaction Type</p>
+                                                                        <p class="piccol__descr">Visa</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Credit ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Recipient profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Full Name</p>
+                                                                        <p class="piccol__descr">Tom Herley</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Account Number</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Account Type</p>
+                                                                        <p class="piccol__descr">Seller</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Bank Profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Bank Name</p>
+                                                                        <p class="piccol__descr">BNY Mellon</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">City</p>
+                                                                        <p class="piccol__descr">New York</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Country</p>
+                                                                        <p class="piccol__descr">United States</p>
+                                                                    </div>
+                                                                    <div class="piccol4">
+                                                                        <p class="piccol__title">Bank ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="paymentssectiondd__right">
+                                                            <div class="paymentssection__log">
+                                                                <p class="title">LOG</p>
+                                                                <ul class="loglist">
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Request Created</p>
+                                                                        <p>Apr 2 2023 13:40</p>
+                                                                    </li>
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Transfer Sent</p>
+                                                                        <p>Apr 2 2023 13:45</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Pending refund</p>
+                                                                        <p>Apr 2 2023 13:48</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Returned</p>
+                                                                        <p>Apr 2 2023 13:55</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="paymentssection__bodysect">
+                                                    <div class="paymentssection__body-row">
+                                                        <div class="ps-billingname">
+                                                            <div class="ps-billingnamewrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/admin/ava4.png" alt="img">
+                                                                </div>
+                                                                <p>Angel Kerr</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-type">Refund</div>
+                                                        <div class="ps-paymentstatus">
+                                                            <span class="pslabel"
+                                                                style="background: #13B086;">Completed</span>
+                                                        </div>
+                                                        <div class="ps-paymentmethod">
+                                                            <div class="ps-paymentmethodwrap">
+                                                                <div class="imgwrap">
+                                                                    <img src="img/account/card-1.png" alt="img">
+                                                                </div>
+                                                                <p>**** 5524</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-transactiondate">2/9/9</div>
+                                                        <div class="ps-amount">
+                                                            $156.12
+                                                            <img src="img/admin/arrcircle.svg" alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="paymentssectiondd">
+                                                        <div class="paymentssectiondd__left">
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Payment method</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Transaction Type</p>
+                                                                        <p class="piccol__descr">Visa</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Credit ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Recipient profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Full Name</p>
+                                                                        <p class="piccol__descr">Tom Herley</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">Account Number</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Account Type</p>
+                                                                        <p class="piccol__descr">Seller</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymentssection-info">
+                                                                <p class="title">Bank Profile</p>
+                                                                <div class="paymentssection-infocontent">
+                                                                    <div class="piccol1">
+                                                                        <p class="piccol__title">Bank Name</p>
+                                                                        <p class="piccol__descr">BNY Mellon</p>
+                                                                    </div>
+                                                                    <div class="piccol2">
+                                                                        <p class="piccol__title">City</p>
+                                                                        <p class="piccol__descr">New York</p>
+                                                                    </div>
+                                                                    <div class="piccol3">
+                                                                        <p class="piccol__title">Country</p>
+                                                                        <p class="piccol__descr">United States</p>
+                                                                    </div>
+                                                                    <div class="piccol4">
+                                                                        <p class="piccol__title">Bank ID</p>
+                                                                        <p class="piccol__descr">1234567890</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="paymentssectiondd__right">
+                                                            <div class="paymentssection__log">
+                                                                <p class="title">LOG</p>
+                                                                <ul class="loglist">
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Request Created</p>
+                                                                        <p>Apr 2 2023 13:40</p>
+                                                                    </li>
+                                                                    <li class="active">
+                                                                        <p class="loglist__title">Transfer Sent</p>
+                                                                        <p>Apr 2 2023 13:45</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Pending refund</p>
+                                                                        <p>Apr 2 2023 13:48</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="loglist__title">Returned</p>
+                                                                        <p>Apr 2 2023 13:55</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
 
+                            <div class="row">
+                                <div class="col sbpcol">
+                                    <div class="dashboardsection">
+                                        <p class="dashboardsection_title">Sales by product</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="sbpcol__prodname">Product name</th>
+                                                    <th class="sbpcol__units">Units</th>
+                                                    <th class="sbpcol__sold">%Sold</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="sbpcol__prodname">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/product1.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Bauli Plumcake "Senza"...
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="sbpcol__units">9</td>
+                                                    <td class="sbpcol__sold">
+                                                        30%
+                                                        <img src="img/admin/soldtop.svg" alt="img">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sbpcol__prodname">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/product2.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Céréal Apricot
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="sbpcol__units">6</td>
+                                                    <td class="sbpcol__sold">
+                                                        150%
+                                                        <img src="img/admin/soldtop.svg" alt="img">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sbpcol__prodname">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/product3.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Musclefit Protein Pancake
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="sbpcol__units">4</td>
+                                                    <td class="sbpcol__sold">
+                                                        50%
+                                                        <img src="img/admin/soldtop.svg" alt="img">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sbpcol__prodname">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/product4.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Pesoforma Porridge Cacao
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="sbpcol__units">10</td>
+                                                    <td class="sbpcol__sold">
+                                                        300%
+                                                        <img src="img/admin/soldbott.svg" alt="img">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
+                                    </div>
+                                </div>
+                                <div class="col topcustcol">
+                                    <div class="dashboardsection">
+                                        <p class="dashboardsection_title">Top Customers</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="topcustcol__name">Name</th>
+                                                    <th class="topcustcol__income">Income</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="topcustcol__name">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/ava1.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Nieve Montoya
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="topcustcol__income">$3,560</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="topcustcol__name">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/ava2.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Constance Ferrell
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="topcustcol__income">$2,124</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="topcustcol__name">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/ava3.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Angel Kerr
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="topcustcol__income">$1,234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="topcustcol__name">
+                                                        <div class="ordtabprod">
+                                                            <div class="imgwrap">
+                                                                <img src="img/admin/ava4.png" alt="img">
+                                                            </div>
+                                                            <p>
+                                                                Priya Schultz
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="topcustcol__income">$900</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -369,10 +1175,14 @@
     <script src="js/lib/sortable.min.js"></script>
     <script src="js/lib/popper.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
     <script src="js/common.js"></script>
 </body>
 
