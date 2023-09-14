@@ -22,8 +22,10 @@ $input-border-color: #ced4da;
 /* _colors.scss END*/
 
 /* _variables.scss */
-$input-border-radius: 0.25rem; /* 4px */
-$drop-border-radius: 1rem; /* 16px */
+$input-border-radius: 0.25rem;
+/* 4px */
+$drop-border-radius: 1rem;
+/* 16px */
 $check-box-dimention: 18px;
 /* _variables.scss */
 
@@ -48,6 +50,7 @@ $check-box-dimention: 18px;
   font-size: 1rem;
   line-height: 1.2;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1), 0 0 5px 0 rgba(0, 0, 0, 0.15);
+
   &:before {
     position: absolute;
     display: inline-block;
@@ -59,6 +62,7 @@ $check-box-dimention: 18px;
     border-bottom: 9px solid #ddd;
     z-index: -1;
   }
+
   &:after {
     position: absolute;
     display: inline-block;
@@ -69,18 +73,22 @@ $check-box-dimention: 18px;
     border-bottom: 10px solid #fff;
     border-left: 10px solid transparent;
   }
+
   .drp-calendar {
     display: none;
     max-width: 330px;
   }
+
   .drp-calendar.left,
   .drp-calendar.right {
     padding: 1rem;
+
     td.is-first-day,
     td.is-last-day {
       position: relative;
     }
   }
+
   .left {
     td {
       &:not(.start-date) {
@@ -95,16 +103,15 @@ $check-box-dimention: 18px;
             top: -1px;
             background-color: none;
             background-color: unset;
-            background-image: linear-gradient(
-              270deg,
-              rgba(255, 255, 255, 0) 0%,
-              rgba(241, 247, 254, 0.5) 30%,
-              #f1f7fe 100%
-            );
+            background-image: linear-gradient(270deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(241, 247, 254, 0.5) 30%,
+                #f1f7fe 100%);
             z-index: -1;
           }
         }
       }
+
       &.start-date {
         &.is-last-day {
           &:after {
@@ -116,18 +123,17 @@ $check-box-dimention: 18px;
             left: 50%;
             top: -1px;
             background-color: unset;
-            background-image: linear-gradient(
-              270deg,
-              rgba(255, 255, 255, 0) 0%,
-              rgba(241, 247, 254, 0.5) 30%,
-              #f1f7fe 100%
-            );
+            background-image: linear-gradient(270deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(241, 247, 254, 0.5) 30%,
+                #f1f7fe 100%);
             z-index: -2;
           }
         }
       }
     }
   }
+
   .right {
     td {
       &:not(.end-date) {
@@ -142,23 +148,23 @@ $check-box-dimention: 18px;
             top: -1px;
             background-color: none;
             background-color: unset;
-            background-image: linear-gradient(
-              -270deg,
-              rgba(255, 255, 255, 0) 0%,
-              rgba(241, 247, 254, 0.5) 30%,
-              #f1f7fe 100%
-            );
+            background-image: linear-gradient(-270deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(241, 247, 254, 0.5) 30%,
+                #f1f7fe 100%);
             z-index: -1;
           }
         }
       }
     }
   }
+
   .drp-calendar.single {
     .calendar-table {
       border: none;
     }
   }
+
   .calendar-table {
     .next {
       span {
@@ -172,6 +178,7 @@ $check-box-dimention: 18px;
         -webkit-transform: rotate(-45deg);
       }
     }
+
     .prev {
       span {
         color: #fff;
@@ -184,6 +191,7 @@ $check-box-dimention: 18px;
         -webkit-transform: rotate(135deg);
       }
     }
+
     thead {
       th {
         white-space: nowrap;
@@ -200,6 +208,7 @@ $check-box-dimention: 18px;
         cursor: default;
         color: $text-color-thirdary;
         text-transform: lowercase;
+
         &.month {
           width: auto;
           color: $text-color-primary;
@@ -209,6 +218,7 @@ $check-box-dimention: 18px;
         }
       }
     }
+
     tbody {
       td {
         &.off.available {
@@ -216,6 +226,7 @@ $check-box-dimention: 18px;
         }
       }
     }
+
     th {
       white-space: nowrap;
       text-align: center;
@@ -232,6 +243,7 @@ $check-box-dimention: 18px;
       color: $text-color-thirdary;
       text-transform: lowercase;
     }
+
     td {
       white-space: nowrap;
       text-align: center;
@@ -249,9 +261,11 @@ $check-box-dimention: 18px;
       position: relative;
       z-index: 2;
     }
+
     border: 1px solid #fff;
     border-radius: 4px;
     background-color: #fff;
+
     table {
       width: 100%;
       margin: 0;
@@ -263,6 +277,7 @@ $check-box-dimention: 18px;
   td.available {
     &:hover {
       position: relative;
+
       &:not(.active) {
         &:before {
           z-index: -1;
@@ -279,8 +294,9 @@ $check-box-dimention: 18px;
         }
       }
     }
+
     &.in-range {
-      + td.available.in-range {
+      +td.available.in-range {
         &:hover {
           /*border-top-right-radius: 50%;
           border-bottom-right-radius: 50%;*/
@@ -296,45 +312,55 @@ $check-box-dimention: 18px;
       color: inherit;
     }
   }
+
   td.week {
     font-size: 80%;
     color: #ccc;
   }
+
   th.week {
     font-size: 80%;
     color: #ccc;
   }
+
   td.off {
     background-color: #fff;
     border-color: transparent;
     color: #999;
   }
+
   td.off.ends {
     opacity: 0;
     pointer-events: none;
   }
+
   td.off.in-range {
     background-color: #fff;
     border-color: transparent;
     color: #999;
   }
+
   td.off.start-date {
     background-color: #fff;
     border-color: transparent;
     color: #999;
   }
+
   td.off.end-date {
     background-color: #fff;
     border-color: transparent;
     color: #999;
   }
+
   td.in-range {
     background-color: #f1f7fe;
     border-color: transparent;
     color: #152935;
     border-radius: 0;
   }
+
   td {
+
     &.start-date,
     &.end-date {
       border-radius: 100%;
@@ -356,6 +382,7 @@ $check-box-dimention: 18px;
         box-sizing: content-box;
         transition: border 0.33s ease-out;
       }
+
       &:after {
         content: "";
         display: block;
@@ -367,6 +394,7 @@ $check-box-dimention: 18px;
         height: calc(100% + 4px);
         width: 50%;
       }
+
       &:hover {
         &:before {
           border: 2px solid darken($brand-color-primary, 10);
@@ -374,17 +402,20 @@ $check-box-dimention: 18px;
         }
       }
     }
+
     &.start-date {
       &:after {
         right: -2px;
       }
     }
+
     &.end-date {
       &:after {
         left: -2px;
       }
     }
   }
+
   td.active {
     border-color: transparent;
     color: #fff;
@@ -396,16 +427,19 @@ $check-box-dimention: 18px;
       }
     }*/
   }
+
   td.disabled {
     color: #999;
     cursor: not-allowed;
     text-decoration: line-through;
   }
+
   option.disabled {
     color: #999;
     cursor: not-allowed;
     text-decoration: line-through;
   }
+
   select.monthselect {
     font-size: 12px;
     padding: 1px;
@@ -415,6 +449,7 @@ $check-box-dimention: 18px;
     margin-right: 2%;
     width: 56%;
   }
+
   select.yearselect {
     font-size: 12px;
     padding: 1px;
@@ -423,6 +458,7 @@ $check-box-dimention: 18px;
     cursor: default;
     width: 40%;
   }
+
   select.hourselect {
     width: 50px;
     margin: 0 auto;
@@ -432,6 +468,7 @@ $check-box-dimention: 18px;
     outline: 0;
     font-size: 12px;
   }
+
   select.minuteselect {
     width: 50px;
     margin: 0 auto;
@@ -441,6 +478,7 @@ $check-box-dimention: 18px;
     outline: 0;
     font-size: 12px;
   }
+
   select.secondselect {
     width: 50px;
     margin: 0 auto;
@@ -450,6 +488,7 @@ $check-box-dimention: 18px;
     outline: 0;
     font-size: 12px;
   }
+
   select.ampmselect {
     width: 50px;
     margin: 0 auto;
@@ -459,16 +498,19 @@ $check-box-dimention: 18px;
     outline: 0;
     font-size: 12px;
   }
+
   .calendar-time {
     text-align: center;
     margin: 4px auto 0 auto;
     line-height: 30px;
     position: relative;
+
     select.disabled {
       color: #ccc;
       cursor: not-allowed;
     }
   }
+
   .drp-buttons {
     clear: both;
     text-align: right;
@@ -477,6 +519,7 @@ $check-box-dimention: 18px;
     display: none;
     line-height: 12px;
     vertical-align: middle;
+
     .btn {
       margin-left: 8px;
       font-size: 12px;
@@ -484,43 +527,52 @@ $check-box-dimention: 18px;
       padding: 4px 8px;
     }
   }
+
   .drp-selected {
     display: inline-block;
     font-size: 12px;
     padding-right: 8px;
   }
+
   .ranges {
     float: none;
     text-align: left;
     margin: 0;
+
     ul {
       list-style: none;
       margin: 0 auto;
       padding: 0;
       width: 100%;
     }
+
     li {
       font-size: 12px;
       padding: 8px 12px;
       cursor: pointer;
+
       &:hover {
         background-color: #eee;
       }
     }
+
     li.active {
       background-color: #08c;
       color: #fff;
     }
   }
 }
+
 .u-daterangepicker.opensleft {
   &:before {
     right: 9px;
   }
+
   &:after {
     right: 10px;
   }
 }
+
 .u-daterangepicker.openscenter {
   &:before {
     left: 0;
@@ -529,6 +581,7 @@ $check-box-dimention: 18px;
     margin-left: auto;
     margin-right: auto;
   }
+
   &:after {
     left: 0;
     right: 0;
@@ -537,22 +590,27 @@ $check-box-dimention: 18px;
     margin-right: auto;
   }
 }
+
 .u-daterangepicker.opensright {
   &:before {
     left: 9px;
   }
+
   &:after {
     left: 10px;
   }
 }
+
 .u-daterangepicker.drop-up {
   margin-top: -7px;
+
   &:before {
     top: initial;
     bottom: -7px;
     border-bottom: initial;
     border-top: 7px solid #ccc;
   }
+
   &:after {
     top: initial;
     bottom: -6px;
@@ -560,69 +618,85 @@ $check-box-dimention: 18px;
     border-top: 6px solid #fff;
   }
 }
+
 .u-daterangepicker.single {
   .daterangepicker {
     .ranges {
       float: none;
     }
   }
+
   .drp-calendar {
     float: none;
   }
+
   .drp-selected {
     display: none;
   }
 }
+
 .u-daterangepicker.show-calendar {
   .drp-calendar {
     display: block;
   }
+
   .drp-buttons {
     display: block;
   }
+
   .ranges {
     margin-top: 8px;
   }
 }
+
 .u-daterangepicker.auto-apply {
   .drp-buttons {
     display: none;
   }
 }
+
 .u-daterangepicker.show-ranges.single.rtl {
   .drp-calendar.left {
     border-right: 1px solid #ddd;
   }
 }
+
 .u-daterangepicker.show-ranges.single.ltr {
   .drp-calendar.left {
     border-left: 1px solid #ddd;
   }
 }
+
 .u-daterangepicker.show-ranges.rtl {
   .drp-calendar.right {
     border-right: 1px solid #ddd;
   }
 }
+
 .u-daterangepicker.show-ranges.ltr {
   .drp-calendar.left {
     border-left: 1px solid #ddd;
   }
 }
+
 @media (min-width: 564px) {
   .u-daterangepicker {
     width: auto;
     direction: ltr;
     text-align: left;
+
     .ranges {
       ul {
         width: 140px;
       }
+
       float: left;
     }
+
     .drp-calendar.left {
       clear: left;
       margin-right: 0;
+
       .calendar-table {
         border-right: none;
         border-top-right-radius: 0;
@@ -630,47 +704,83 @@ $check-box-dimention: 18px;
         padding-right: 8px;
       }
     }
+
     .drp-calendar.right {
       margin-left: 0;
+
       .calendar-table {
         border-left: none;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
       }
     }
+
     .drp-calendar {
       float: left;
     }
   }
+
   .u-daterangepicker.single {
     .ranges {
       ul {
         width: 100%;
       }
+
       float: left;
     }
+
     .drp-calendar.left {
       clear: none;
     }
+
     .drp-calendar {
       float: left;
     }
   }
 }
+
 @media (min-width: 730px) {
   .u-daterangepicker {
     .ranges {
       width: auto;
       float: left;
     }
+
     .drp-calendar.left {
       clear: none !important;
     }
   }
+
   .u-daterangepicker.rtl {
     .ranges {
       float: right;
     }
   }
 }
+
 /*  Daterangepicker END */
+
+@media(max-width:575.8px) {
+  .u-daterangepicker .calendar-table td {
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+  }
+
+  .u-daterangepicker .calendar-table thead th {
+    width: 35px;
+    min-width: 35px;
+  }
+
+  .u-daterangepicker .calendar-table table {
+    border-spacing: 0px 4px;
+  }
+
+  .u-daterangepicker .drp-calendar.left {
+    padding-bottom: 0;
+  }
+
+  .u-daterangepicker .drp-calendar.right {
+    padding-top: 0;
+  }
+}

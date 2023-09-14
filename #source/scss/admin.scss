@@ -4222,6 +4222,10 @@
     height: 400px;
 }
 
+.salestatistics__weekinfo {
+    flex-wrap: wrap;
+}
+
 @media(max-width:1440.8px) {
     .dashboardinfosect .uplinbox .descr {
         font-size: 16px;
@@ -4300,4 +4304,103 @@
         }
     }
 
+    .sbpcol,
+    .topcustcol {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+    .donutwrapper {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .orderoverview ul li {
+        max-width: 45%;
+        flex: 0 0 45%;
+    }
+
+    .dashboardinfosect {
+        margin-bottom: 20px;
+    }
+
+    .salestatistics {
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    .dashboardsection__filter .searchblock {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .dashboardsection_title {
+        margin-bottom: 20px;
+    }
+
+    .dashboardsection__filter-right {
+        justify-content: space-between;
+    }
+
+    .dashboardsection__filter-right .salestatistics__dates,
+    .dashboardsection__filter-right .generalselect {
+        margin-right: 0;
+        max-width: calc(50% - 15px);
+        flex: 0 0 calc(50% - 15px);
+    }
+
+    .salestatistics__body > div {
+        text-align: center;
+
+        canvas {
+            display: inline-block !important;
+        }
+    }
+   
+}
+
+@media(max-width:991.8px) {
+    .dashboardsection__filter-right .generalselect, .dashboardsection__filter-right .salestatistics__dates {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .dashboardsection__filter-right .salestatistics__dates,
+    .dashboardsection__filter .searchblock {
+        margin-bottom: 10px;
+    }
+
+    .salestatistics,
+    .orderoverview,
+    .dashboardsection {
+        padding: 30px;
+    }
+
+    .sbpcol table .sbpcol__sold {
+        width: 20%;
+    }
+
+    .sbpcol table .sbpcol__units {
+        width: 17%;
+    }
+}
+
+@media(max-width:575.8px) {
+    .orderoverview ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .dashboardsection, .orderoverview, .salestatistics {
+        padding: 20px;
+    }
+
+    .sbpcol table {
+        width: 400px;
+    }
 }
