@@ -1069,6 +1069,24 @@ $(document).ready(function () {
 
 
 
+    
+
+    // new DataTable('#example');
+    $('#example').DataTable({
+        columnDefs: [
+            { targets: [0], orderable: false } 
+        ],
+        "language": {
+            "search": "",
+            searchPlaceholder: "Search on Food...",
+            sLengthMenu: " _MENU_"
+        },
+        "drawCallback": function(settings) {
+            var info = $(this).DataTable().page.info();
+            $('.dataTables_info').text(''); 
+        }
+    });
+   
 
 });
 
