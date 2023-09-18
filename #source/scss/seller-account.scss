@@ -210,7 +210,6 @@
         cursor: pointer;
     }
 
-
 }
 
 .sellertable {
@@ -526,12 +525,6 @@
         width: 100px;
     }
 
-
-
-
-
-
-
 }
 
 @media(max-width:1399.8px) {
@@ -551,7 +544,6 @@
             width: 1000px;
         }
     }
-
 
 }
 
@@ -890,7 +882,6 @@ input:focus+label+.input-infobtn {
         margin-right: 30px;
     }
 
-    .bordergreenbtn {}
 }
 
 @media(max-width:1199.8px) {
@@ -3450,7 +3441,242 @@ input:focus+label+.input-infobtn {
     }
 }
 
+.col.repsalespr {
+    width: 100%;
+    max-width: 47%;
+    flex: 0 0 47%;
 
+    .dashboardsection {
+        padding: 25px;
+    }
+
+    .sbpcol__units,
+    .sbpcol__sold {
+        width: 80px;
+    }
+
+    .ordtabprod {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .imgwrap {
+            width: 100%;
+            max-width: 45px;
+            flex: 0 0 45px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        p {
+            width: 100%;
+            max-width: calc(100% - 45px);
+            flex: 0 0 calc(100% - 45px);
+            margin: 0;
+            padding-left: 13px;
+            color: #3B454C;
+            display: -webkit-box;
+            overflow: hidden;
+        }
+    }
+
+    td {
+        vertical-align: middle !important;
+    }
+
+
+
+}
+
+.col.repbestitems {
+    width: 100%;
+    max-width: 53%;
+    flex: 0 0 53%;
+}
+
+.col.repsalespr,
+.col.repbestitems {
+    font-size: 14px;
+    // height: 100%;
+
+    table {
+        width: 100%;
+
+        th {
+            padding-bottom: 25px;
+        }
+
+        td {
+            padding: 10px 5px 10px 0;
+            color: #3B454C;
+            font-size: 15px;
+        }
+    }
+
+    .dashboardsection {
+        padding: 25px;
+    }
+
+    .dashboardsection,
+    .dashboardsection {
+        height: calc(100% - 40px);
+    }
+}
+
+.bestitemsrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .imgwrap {
+        width: 100%;
+        max-width: 100px;
+        flex: 0 0 100px;
+        height: 96px;
+        background: #fff;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            max-height: 90%;
+        }
+    }
+
+    .descr {
+        padding-right: 15px;
+        padding-left: 19px;
+        width: 100%;
+        max-width: calc(100% - 180px);
+        flex: 0 0 calc(100% - 180px);
+
+        p {
+            font-size: 14px;
+            color: #3B454C;
+            line-height: 130%;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .title {
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 160%;
+        }
+
+        .price {
+            margin: 0;
+            font-weight: 600;
+            line-height: 160%;
+        }
+    }
+
+    .sales {
+        width: 100%;
+        max-width: 80px;
+        flex: 0 0 80px;
+
+        p {
+            margin: 0;
+            font-size: 12px;
+            color: #3B454C;
+            text-align: right;
+        }
+    }
+}
+
+@media(max-width:1399.8px) {
+    .salestatistics.reports .salestatistics__body>div {
+        height: auto;
+    }
+
+    .comparedbtn {
+        margin-top: 15px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .dashboardsection.reports .dashboardsection__content table {
+        width: 800px;
+    }
+
+    .dashboardsection.reports .rep-status {
+        width: 15%;
+    }
+
+    .col.repsalespr,
+    .col.repbestitems {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+}
+
+@media(max-width:991.8px) {
+    .today-yesterday {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .comparedbtn,
+    .today-yesterday a {
+        font-size: 12px;
+    }
+
+    .dashboardsection.reports,
+    .col.repbestitems .dashboardsection,
+    .col.repsalespr .dashboardsection {
+        padding: 15px;
+    }
+
+    .col.repsalespr table {
+        width: 400px;
+    }
+
+    .bestitemsrow .descr,
+    .bestitemsrow .imgwrap,
+    .bestitemsrow .sales {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .bestitemsrow .imgwrap {
+        margin-bottom: 10px;
+    }
+
+    .bestitemsrow .descr {
+        padding: 0;
+    }
+
+    .bestitemsrow .sales p {
+        text-align: left;
+    }
+
+    .bestitemsrow {
+        margin-bottom: 20px;
+    }
+
+    .orderoverview.reports ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
 
 
 
@@ -3482,9 +3708,8 @@ input:focus+label+.input-infobtn {
         margin-left: 3px;
     }
 
-   
-}
 
+}
 
 .dataTables_filter {
     label {
@@ -3532,16 +3757,13 @@ input:focus+label+.input-infobtn {
     }
 }
 
-
-
-
 .dataTables_paginate .paginate_button.previous {
     a {
         background-image: url('../img/general/pagination-prev.svg');
         background-repeat: no-repeat;
         background-position: center;
         font-size: 0 !important;
-        
+
     }
 }
 
@@ -3594,7 +3816,6 @@ input:focus+label+.input-infobtn {
 .prodlist-selectbox {
     padding-top: 30px;
 }
-
 
 @media(max-width: 1399.8px) {
 

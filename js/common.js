@@ -905,11 +905,7 @@ $(document).ready(function () {
     });
 
 
-
-
     // datepicker
-
-
 
     if ($('input[name="u-daterange"]').length) {
         $(function () {
@@ -923,28 +919,9 @@ $(document).ready(function () {
 
         });
 
-
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Chart
     if ($('#myChart').length) {
         //   chart
         // Дані для графіка
@@ -1011,11 +988,6 @@ $(document).ready(function () {
     }
 
 
-
-
-
-
-
     // DONUT CHART
     if ($('#donutChart').length) {
 
@@ -1058,9 +1030,6 @@ $(document).ready(function () {
     }
 
 
-
-
-
     // Pauments dashboard
 
     $('.ps-amount img').click(function () {
@@ -1068,25 +1037,23 @@ $(document).ready(function () {
     });
 
 
-
-    
-
-    // new DataTable('#example');
-    $('#example').DataTable({
-        columnDefs: [
-            { targets: [0], orderable: false } 
-        ],
-        "language": {
-            "search": "",
-            searchPlaceholder: "Search on Food...",
-            sLengthMenu: " _MENU_"
-        },
-        "drawCallback": function(settings) {
-            var info = $(this).DataTable().page.info();
-            $('.dataTables_info').text(''); 
-        }
-    });
-   
+    if ($('.datatable').length) {
+        // new DataTable('#example');
+        $('#example').DataTable({
+            columnDefs: [
+                { targets: [0], orderable: false }
+            ],
+            "language": {
+                "search": "",
+                searchPlaceholder: "Search on Food...",
+                sLengthMenu: " _MENU_"
+            },
+            "drawCallback": function (settings) {
+                var info = $(this).DataTable().page.info();
+                $('.dataTables_info').text('');
+            }
+        });
+    }
 
 });
 
