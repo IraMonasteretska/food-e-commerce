@@ -207,7 +207,6 @@
     border-top: 1px solid #D9DBDF;
 }
 
-// ---------
 .admincontent__head {
     height: 103px;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
@@ -657,10 +656,6 @@
         width: 15%;
     }
 
-
-
-
-
 }
 
 @media(max-width:1199.8px) {
@@ -779,22 +774,6 @@
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media(max-width:575.8px) {
@@ -854,13 +833,6 @@
     .admininfosect__filtersect .showcount {
         padding-right: 15px;
     }
-
-
-
-
-
-
-
 
     .admininfosect__header .admininfosect__title p {
         font-size: 16px;
@@ -1383,14 +1355,7 @@
         .admininfosect__rightbox {
             justify-content: flex-start;
         }
-
     }
-
-
-
-
-
-
 
 }
 
@@ -1701,8 +1666,6 @@
         }
     }
 
-
-
 }
 
 .sellerscard {
@@ -1828,7 +1791,6 @@
         }
     }
 
-
 }
 
 .sellerscardswrap .pagination {
@@ -1879,9 +1841,7 @@
             max-width: calc(100% - 187px);
             flex: 0 0 calc(100% - 187px);
         }
-
     }
-
 }
 
 @media(max-width:850.8px) {
@@ -1913,8 +1873,6 @@
         max-width: calc(100% - 67px);
         flex: 0 0 calc(100% - 67px);
     }
-
-
 
 }
 
@@ -2094,7 +2052,6 @@
             }
         }
     }
-
 
 }
 
@@ -3541,8 +3498,6 @@
 }
 
 .donutwrapper {
-    // padding: 0 50px;
-
     &>* {
         outline: none !important;
     }
@@ -3571,7 +3526,6 @@
     border: 2px solid #158466 !important;
 }
 
-
 .u-daterangepicker .calendar-table thead th {
     border: none !important;
     outline: none !important;
@@ -3581,7 +3535,6 @@
 @media(min-width:1750px) {
     .donutwrapper {
         padding: 0 50px;
-
     }
 }
 
@@ -4169,7 +4122,7 @@
             width: 70px;
             font-size: 15px;
         }
-        
+
         tbody {
             td {
                 padding: 11px 5px 10px 0;
@@ -4215,10 +4168,9 @@
         }
     }
 
-   
 }
 
-.salestatistics__body > div {
+.salestatistics__body>div {
     height: 400px;
 }
 
@@ -4226,12 +4178,32 @@
     flex-wrap: wrap;
 }
 
+.admbgel1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.admbgel2 {
+    position: absolute;
+    left: 165px;
+    top: 60%;
+    z-index: -1;
+}
+
+.admininfosect__body,
+.asminsidebar__body,
+.asminsidebar__head {
+    background: #fff;
+}
+
 @media(max-width:1440.8px) {
     .dashboardinfosect .uplinbox .descr {
         font-size: 16px;
     }
 
-    .salestatistics__body > div {
+    .salestatistics__body>div {
         height: auto;
     }
 
@@ -4255,6 +4227,7 @@
 }
 
 @media(max-width:1399.8px) {
+
     .salestatistics__header .salestatistics__weekinfo,
     .salestatistics__header .salestatistics__dates {
         max-width: 100%;
@@ -4354,7 +4327,7 @@
         flex: 0 0 calc(50% - 15px);
     }
 
-    .salestatistics__body > div {
+    .salestatistics__body>div {
         text-align: center;
 
         canvas {
@@ -4362,11 +4335,12 @@
         }
     }
 
-   
 }
 
 @media(max-width:991.8px) {
-    .dashboardsection__filter-right .generalselect, .dashboardsection__filter-right .salestatistics__dates {
+
+    .dashboardsection__filter-right .generalselect,
+    .dashboardsection__filter-right .salestatistics__dates {
         max-width: 100%;
         flex: 0 0 100%;
     }
@@ -4397,7 +4371,9 @@
         flex: 0 0 100%;
     }
 
-    .dashboardsection, .orderoverview, .salestatistics {
+    .dashboardsection,
+    .orderoverview,
+    .salestatistics {
         padding: 20px;
     }
 

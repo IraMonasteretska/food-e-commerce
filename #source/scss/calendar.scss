@@ -19,19 +19,10 @@ $support-color-info: #36a3f7;
 $text-color-placeholder: #909090;
 
 $input-border-color: #ced4da;
-/* _colors.scss END*/
-
-/* _variables.scss */
 $input-border-radius: 0.25rem;
-/* 4px */
 $drop-border-radius: 1rem;
-/* 16px */
 $check-box-dimention: 18px;
-/* _variables.scss */
 
-
-
-/*  Daterangepicker */
 .u-daterangepicker {
   position: absolute;
   color: inherit;
@@ -294,15 +285,6 @@ $check-box-dimention: 18px;
         }
       }
     }
-
-    &.in-range {
-      +td.available.in-range {
-        &:hover {
-          /*border-top-right-radius: 50%;
-          border-bottom-right-radius: 50%;*/
-        }
-      }
-    }
   }
 
   th.available {
@@ -419,13 +401,6 @@ $check-box-dimention: 18px;
   td.active {
     border-color: transparent;
     color: #fff;
-    /*&:not(.start-date) {
-    &:hover {
-      background-color: #357ebd;
-      border-color: transparent;
-      color: #fff;
-      }
-    }*/
   }
 
   td.disabled {

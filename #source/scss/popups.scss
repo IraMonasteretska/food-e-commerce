@@ -212,8 +212,6 @@
 
 }
 
-
-
 // video modal
 
 .videopopup {
@@ -294,10 +292,6 @@
     .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
         background: rgba(19, 176, 134, 0.78);
     }
-
-
-
-
 
     .plyr--full-ui input[type=range] {
         color: $base-green;

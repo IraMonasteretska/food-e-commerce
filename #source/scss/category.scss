@@ -169,7 +169,6 @@
                     bottom: 0;
                 }
             }
-
         }
     }
 
@@ -197,7 +196,6 @@
 .categorysect__filter {
     padding-right: 30px;
 
-    // filter selected
     .filter__selected {
         margin-bottom: 25px;
     }
@@ -258,15 +256,12 @@
         }
     }
 
-    // filter togglebox
-
     .filter__toogleblock {
         position: relative;
         padding-bottom: 25px;
 
         .filter__toogleblock-head {
             cursor: pointer;
-            // padding-bottom: 15px;
 
             p {
                 padding-right: 25px;
@@ -471,8 +466,6 @@
         padding-top: 15px;
     }
 
-
-
 }
 
 .categorysect__prodsect {
@@ -590,18 +583,6 @@
         margin-right: 30px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media(max-width:991.8px) {
@@ -611,7 +592,6 @@
         img {
             object-position: 60% 0;
         }
-
     }
 
     .categorysect__filter {
@@ -726,7 +706,6 @@
         }
     }
 
-
 }
 
 @media(max-width:575.8px) {
@@ -775,10 +754,6 @@
         }
     }
 
-
-    
-
-
 }
 
 @media(max-width:360.8px) {
@@ -786,26 +761,7 @@
     .pagination ul li {
         margin: 0 1px;
     }
-
-
 }
-
-
-
-// food-e-commerce
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // RANGE SLIDER
 .rangesliderwrap {
@@ -884,7 +840,6 @@
 
     .irs--flat .irs-from,
     .irs--flat .irs-to {
-        // display: none;
         top: 26px;
         color: #3B454D;
         font-size: 14px;
@@ -900,7 +855,6 @@
 
     .irs--flat .irs-min,
     .irs--flat .irs-max {
-        // display: none;
         font-family: 'Montserrat', sans-serif;
         top: 26px;
         color: #3B454D;

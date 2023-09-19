@@ -8,7 +8,6 @@ $(document).ready(function () {
         });
     }
 
-
     // header acc dropdown
     $('.header__account').click(function () {
         $(this).toggleClass('active');
@@ -54,7 +53,6 @@ $(document).ready(function () {
     });
 
     // MAIN================================================
-
     // main slider
 
     var swiper = new Swiper(".mainslider", {
@@ -70,7 +68,6 @@ $(document).ready(function () {
     var swiper2 = new Swiper(".productsection-slider.ps1", {
         slidesPerView: 4,
         spaceBetween: 36,
-        // loop: true,
 
         navigation: {
             nextEl: ".swiper-button-next.custom.sl2",
@@ -110,8 +107,6 @@ $(document).ready(function () {
     var swiper3 = new Swiper(".productsection-slider.ps2", {
         slidesPerView: 4,
         spaceBetween: 36,
-        // loop: true,
-
         navigation: {
             nextEl: ".swiper-button-next.custom.sl3",
             prevEl: ".swiper-button-prev.custom.sl3",
@@ -143,8 +138,6 @@ $(document).ready(function () {
     var swiper4 = new Swiper(".recipes-slider", {
         slidesPerView: 3,
         spaceBetween: 35,
-        // loop: true,
-
         navigation: {
             nextEl: ".swiper-button-next.custom.sl4",
             prevEl: ".swiper-button-prev.custom.sl4",
@@ -176,8 +169,6 @@ $(document).ready(function () {
     var swiper5 = new Swiper(".discuss-slider", {
         slidesPerView: 3,
         spaceBetween: 35,
-        // loop: true,
-
         navigation: {
             nextEl: ".swiper-button-next.custom.sl5",
             prevEl: ".swiper-button-prev.custom.sl5",
@@ -219,14 +210,12 @@ $(document).ready(function () {
     });
 
     // Contact Us - faq
-
     $('.faqsect__rowheader').click(function () {
         $(this).toggleClass('open');
         $(this).next('.faqsect__rowbody').slideToggle();
     });
 
     // input password 
-
     $('.passeye').click(function () {
         $(this).toggleClass('showpass');
 
@@ -255,7 +244,6 @@ $(document).ready(function () {
     });
 
     // range slider init
-
     if ($('#rangeslider').length) {
         $("#rangeslider").ionRangeSlider({
             type: 'double',
@@ -268,7 +256,6 @@ $(document).ready(function () {
     }
 
     // Catalog filter (tablet/mobile)
-
     $('.filterbtn').click(function () {
         $('body').addClass('hidden');
         $('.categorysect__body .categorysect__filter').addClass('show');
@@ -316,7 +303,6 @@ $(document).ready(function () {
         },
     });
 
-
     if ($(window).width() > 991) {
         if ($('.example').length) {
             $(function () {
@@ -325,13 +311,8 @@ $(document).ready(function () {
         }
     }
 
-
-
     var swiper6 = new Swiper(".productsection-slider.ps3", {
         slidesPerView: 5,
-        // spaceBetween: 19,
-        // loop: true,
-
         navigation: {
             nextEl: ".swiper-button-next.custom.sl2",
             prevEl: ".swiper-button-prev.custom.sl2",
@@ -370,21 +351,17 @@ $(document).ready(function () {
     // gallery
     if ($('[data-fancybox]').length) {
         Fancybox.bind("[data-fancybox]", {
-            // Custom options for all galleries
         });
     }
 
     // Upload photo
-
     if ($('.uploadphoto').length) {
         $('input[type="file"]').imageuploadify();
     }
 
     // popups
-
     $('.popup__btn').on('click', function (e) {
         $('body').addClass('offscroll');
-
         e.preventDefault;
         var indexPopup = $(this).attr('data-popup');
         $('.popup__window').removeClass('active');
@@ -426,12 +403,10 @@ $(document).ready(function () {
         $('.paymentform').removeClass('hide');
     })
 
-    // Recipes --------------------------------------------------------
+    // Recipes --------------------------------
     var swiper4 = new Swiper(".recipes-vslider", {
         slidesPerView: 3,
         spaceBetween: 35,
-        // loop: true,
-
         navigation: {
             nextEl: ".swiper-button-next.custom.slv",
             prevEl: ".swiper-button-prev.custom.slv",
@@ -465,33 +440,18 @@ $(document).ready(function () {
         window.print();
     });
 
-
     // VIDEO
     // const player = new Plyr('#player');
     if ($('.js-player').length) {
         const players = Plyr.setup('.js-player');
     }
 
-
     $('.videopopup .popup__close').click(function () {
         player.pause();
     });
 
-    // $('.addingr').on('click', function () {
-
-
-    //     const newIngrinp = $('<div class="ingrinp"><textarea class="auto-resize-textarea"></textarea></div>');
-
-    //     $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
-
-    //     newIngrinp.find('textarea').focus();
-
-    // });
-
-
     //   POST
     //   upload photo
-
     $('#chooseFile').bind('change', function () {
         var filename = $("#chooseFile").val();
         if (/^\s*$/.test(filename)) {
@@ -505,10 +465,6 @@ $(document).ready(function () {
     });
 
     // text editor
-
-
-
-
     if ($('#editor').length) {
         CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
             toolbar: {
@@ -669,7 +625,6 @@ $(document).ready(function () {
         }
     });
 
-
     // toggle accsect
     $('.togglebtn').click(function () {
         $(this).toggleClass('rotate');
@@ -708,8 +663,6 @@ $(document).ready(function () {
         var tabId = $(this).data('tab');
         $('.tabcontent').removeClass('show');
         $('#' + tabId).addClass('show');
-
-
     });
 
     // edit btn
@@ -751,8 +704,6 @@ $(document).ready(function () {
         $('.cart__product-check input').prop('checked', true);
     });
 
-
-
     // SELLER ACCOUNT
     // header dropdown
     $('.sellacc__brandnamehead').click(function () {
@@ -766,9 +717,7 @@ $(document).ready(function () {
         $(this).toggleClass('open');
     });
 
-
     // edit date
-
     $('.editdate').click(function () {
         var spanElement = $(this).closest('.date').find('span');
         spanElement.attr('contenteditable', 'true');
@@ -804,12 +753,10 @@ $(document).ready(function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     // Seller acc - delete items
-
     $('.actionsbox__btn').click(function () {
         $(this).toggleClass('active')
         $(this).next('.actionsbox__dropdown').toggle();
     });
-
 
     // Coupon code edit
     $('.coupon .code').click(function () {
@@ -835,16 +782,12 @@ $(document).ready(function () {
         }
     });
 
-
     // create recipes - textarea height
-
     $('.addingr').on('click', function () {
         const newIngrinp = $('<div class="ingrinp"><p class="editcontent" contenteditable="true"></p></div>');
         $(this).parent('.addingredients').find('.ingrwrap').append(newIngrinp);
         newIngrinp.find('.editcontent').focus();
     });
-
-
 
     // ADMIN pages
     // sidebar
@@ -852,7 +795,6 @@ $(document).ready(function () {
         $('.adminpage').toggleClass('hidemenu');
         $('.adsidebarlist .subitem a').next('.sublist').hide();
     });
-
 
     if ($(window).width() < 768) {
         $(document).click(function (event) {
@@ -862,7 +804,6 @@ $(document).ready(function () {
             }
         });
     }
-
 
     $('.adsidebarlist .subitem a').click(function (e) {
         e.preventDefault();
@@ -886,7 +827,6 @@ $(document).ready(function () {
         $(this).next('.admaction__dropdown').toggle();
     });
 
-
     $('.switchpage__btn').click(function () {
         $(this).next('ul').toggle();
     });
@@ -904,9 +844,7 @@ $(document).ready(function () {
         }
     });
 
-
     // datepicker
-
     if ($('input[name="u-daterange"]').length) {
         $(function () {
 
@@ -987,7 +925,6 @@ $(document).ready(function () {
 
     }
 
-
     // DONUT CHART
     if ($('#donutChart').length) {
 
@@ -1029,16 +966,12 @@ $(document).ready(function () {
 
     }
 
-
     // Pauments dashboard
-
     $('.ps-amount img').click(function () {
         $(this).parents('.paymentssection__bodysect').toggleClass('active');
     });
 
-
     if ($('.datatable').length) {
-        // new DataTable('#example');
         $('#example').DataTable({
             columnDefs: [
                 { targets: [0], orderable: false }

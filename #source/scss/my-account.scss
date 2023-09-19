@@ -105,7 +105,6 @@
     line-height: 130%;
 }
 
-// ---
 .acccontentsect {
     margin-bottom: 50px;
     overflow: hidden;
@@ -302,7 +301,6 @@
         }
     }
 
-
 }
 
 .solocard {
@@ -476,7 +474,6 @@
         z-index: 12;
 
         .accountsidebar {
-            // display: none;
             padding-top: 0;
             background: rgba(3, 3, 3, 0.5);
             position: fixed;
@@ -541,11 +538,6 @@
         }
     }
 
-
-
-
-
-
 }
 
 @media(max-width:575.8px) {
@@ -579,8 +571,6 @@
     .acccontentsect__header p span {
         font-size: 14px;
     }
-
-
 }
 
 // Personal INFO
@@ -796,7 +786,6 @@
 
 .accountsection {
     position: relative;
-    // z-index: 2;
 }
 
 .mainbgelem {
@@ -1009,7 +998,6 @@
 
 .accountsection {
     position: relative;
-    // z-index: 12;
 }
 
 @media(max-width:1199.8px) {
@@ -1151,7 +1139,6 @@
             left: 0;
         }
     }
-
 
 }
 
@@ -1442,7 +1429,6 @@
         padding-right: 0;
     }
 
-
 }
 
 // Recent orders
@@ -1707,7 +1693,6 @@
             }
         }
     }
-
 
 }
 
@@ -1986,9 +1971,6 @@
         }
     }
 
-
-
-
 }
 
 @media(max-width:991.8px) {
@@ -2004,7 +1986,6 @@
     .postedreviewbox__bottomsect .btngroup .greenbtn {
         max-width: 160px;
     }
-
 
 }
 
@@ -2144,8 +2125,6 @@
         left: 20px;
         top: 49px;
     }
-    
-
 }
 
 @media(max-width:360.8px) {
@@ -2157,6 +2136,7 @@
 
 // My posted blog
 .postedblogrow {
+
     .col-lg-4,
     .col-xl-4 {
         margin-bottom: 18px;
@@ -2230,7 +2210,7 @@
         font-size: 16px;
         min-height: 46px;
     }
-    
+
 }
 
 // Posted recipes
@@ -2250,9 +2230,5 @@
             }
         }
     }
-
-
-
-
 
 }

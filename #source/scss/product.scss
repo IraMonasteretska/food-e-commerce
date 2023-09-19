@@ -96,7 +96,6 @@
     padding: 0 50px;
 }
 
-// ---------------
 .productinfo {
     padding-top: 20px;
 
@@ -301,8 +300,6 @@
 .productsection_product {
     padding-bottom: 45px;
 }
-
-// ---
 
 .prinfobox {
     background: $white;
@@ -526,11 +523,7 @@
         }
     }
 
-
-
 }
-
-// ---
 
 .custreviews {
     width: 100%;
@@ -790,13 +783,9 @@
 
 }
 
-
-
 .productinfo.mob {
     display: none;
 }
-
-
 
 @media(max-width:1550.8px) {
     .product-description.review .prinfobox {
@@ -900,8 +889,6 @@
         margin-top: 30px;
         text-align: center;
     }
-
-
 
     .accordeonsect .accordeonsect_header p {
         font-size: 18px;
@@ -1054,8 +1041,6 @@
     .prodbig {
         margin: 0;
     }
-
-
 
 }
 

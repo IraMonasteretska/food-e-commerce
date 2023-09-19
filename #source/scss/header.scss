@@ -502,7 +502,6 @@ header.header {
     display: none;
 }
 
-// header select
 header.header {
     .select2-container {
         width: 153px !important;
@@ -569,21 +568,7 @@ header.header {
     .select2-results__option--selected {
         background: $white;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media(max-width:1199.8px) {
 
@@ -606,7 +591,6 @@ header.header {
     .header__leftsect .header__searchbox {
         width: calc(100% - 130px);
     }
-
 
 }
 
@@ -782,17 +766,6 @@ header.header {
         padding: 0;
     }
 
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media(max-width:575.8px) {
@@ -890,14 +863,7 @@ header.header {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
-
-
-
-
-
 }
-
-
 
 // login user
 
@@ -934,7 +900,6 @@ header.header {
                 flex: 0 0 150px;
                 padding-left: 10px;
             }
-
         }
     }
 
@@ -943,8 +908,6 @@ header.header {
     }
 
 }
-
-
 
 @media(max-width:1199.8px) {
 
@@ -995,9 +958,6 @@ header.header {
             padding-left: 15px;
         }
 
-        .header__rightsect .header__accdropdown {
-            // top: 70px;
-        }
     }
 
 }
@@ -1022,9 +982,6 @@ header.header {
             padding-left: 0;
         }
 
-        .header__rightsect .header__cartdropdown {
-            // top: 70px;
-        }
     }
 }
 
@@ -1091,11 +1048,8 @@ header.header {
             top: 0;
             right: 0;
         }
-
-
     }
 }
-
 
 // SELLER ACC - header
 .header__selleraccsect {
@@ -1190,9 +1144,6 @@ header.header {
     .header__rightsect.selleracc {
         justify-content: flex-end;
     }
-
-  
-
 }
 
 @media(max-width:767.8px) {

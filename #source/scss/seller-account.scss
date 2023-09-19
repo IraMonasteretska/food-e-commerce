@@ -1205,11 +1205,6 @@ input:focus+label+.input-infobtn {
         }
     }
 
-
-
-
-
-
 }
 
 .productdetails .greenbtn.editinformation {
@@ -1255,8 +1250,6 @@ input:focus+label+.input-infobtn {
         right: 20px;
     }
 
-
-
 }
 
 @media(max-width:991.8px) {
@@ -1285,17 +1278,6 @@ input:focus+label+.input-infobtn {
     .roductdetails__infoblock .positionname {
         font-size: 18px;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -1331,19 +1313,13 @@ input:focus+label+.input-infobtn {
         }
     }
 
-    .check {}
-
     .name {
         width: calc(100% - 617px);
     }
 
-    .code {}
-
     .qty {
         width: 99px;
     }
-
-    .price {}
 
     .orders {
         width: 115px;
@@ -1566,7 +1542,6 @@ input:focus+label+.input-infobtn {
     .sellertable .orderlist .name {
         width: calc(100% - 630px);
     }
-
 
 }
 
@@ -1841,10 +1816,6 @@ input:focus+label+.input-infobtn {
         flex: 0 0 calc(100% - 300px);
     }
 
-
-
-
-
 }
 
 @media(max-width:1199.8px) {
@@ -1868,8 +1839,6 @@ input:focus+label+.input-infobtn {
     .selleraccwhwrap {
         height: auto;
     }
-
-
 
 }
 
@@ -2090,7 +2059,6 @@ input:focus+label+.input-infobtn {
             margin-bottom: 10px;
         }
 
-
     }
 
     .productdetails.productdetails__order .paymentinfo:after {
@@ -2120,8 +2088,6 @@ input:focus+label+.input-infobtn {
             display: none;
         }
     }
-
-
 
     .name {
         width: calc(100% - 751px);
@@ -2237,8 +2203,6 @@ input:focus+label+.input-infobtn {
         width: calc(100% - 670px);
     }
 
-
-
 }
 
 // add promotion
@@ -2340,10 +2304,6 @@ input:focus+label+.input-infobtn {
             background-size: 14px;
         }
     }
-
-
-
-
 
 }
 
@@ -2758,8 +2718,6 @@ input:focus+label+.input-infobtn {
         width: 100%;
     }
 
-
-
 }
 
 @media(max-width:360.8px) {
@@ -2927,13 +2885,8 @@ input:focus+label+.input-infobtn {
                 top: 50%;
                 transform: translateY(-50%);
             }
-
-
-
         }
-
     }
-
 }
 
 .selleraddproduct__subtitle {
@@ -3226,9 +3179,6 @@ input:focus+label+.input-infobtn {
     }
 }
 
-
-// datearrow
-
 .salestatistics__dates {
     .input-group-zeus {
         &::after {
@@ -3499,7 +3449,6 @@ input:focus+label+.input-infobtn {
 .col.repsalespr,
 .col.repbestitems {
     font-size: 14px;
-    // height: 100%;
 
     table {
         width: 100%;
@@ -3623,7 +3572,6 @@ input:focus+label+.input-infobtn {
         flex: 0 0 100%;
     }
 
-
 }
 
 @media(max-width:991.8px) {
@@ -3678,13 +3626,6 @@ input:focus+label+.input-infobtn {
     }
 }
 
-
-
-
-
-
-
-// --------------
 .datatablewrapper {
     padding: 0 35px;
 
@@ -3707,7 +3648,6 @@ input:focus+label+.input-infobtn {
     th:after {
         margin-left: 3px;
     }
-
 
 }
 
@@ -3819,7 +3759,9 @@ input:focus+label+.input-infobtn {
 
 @media(max-width: 1399.8px) {
 
-    .datatablewrapper.sellertable {
+    .sellertable {
+
+        overflow: auto;
 
         &::-webkit-scrollbar {
             height: 6px;
@@ -3836,8 +3778,6 @@ input:focus+label+.input-infobtn {
             border-radius: 10px;
         }
     }
-
-
 }
 
 @media(max-width: 991.8px) {

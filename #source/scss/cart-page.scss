@@ -302,7 +302,6 @@
     }
 }
 
-// --
 .basketblock {
     border-radius: 10px;
     overflow: hidden;
@@ -467,12 +466,14 @@
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 260px;
 }
 
 .cartbgelem2 {
     position: absolute;
     bottom: 140px;
     left: 0;
+    max-width: 208px;
 }
 
 .cart__product-header .mobtitle {
@@ -510,9 +511,6 @@
         max-width: 180px;
         flex: 0 0 180px;
     }
-
-
-
 
     .basketblock .basketblock__header p,
     .shippingest__header p {
@@ -698,5 +696,13 @@
     .basketblock__totalbox .greenbtn,
     .cart__product-header p {
         font-size: 14px;
+    }
+
+    .cartbgelem1 {
+        max-width: 110px;
+    }
+    
+    .cartbgelem2 {
+        max-width: 110px;
     }
 }

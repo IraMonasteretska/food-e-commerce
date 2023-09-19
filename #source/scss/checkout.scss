@@ -54,7 +54,6 @@
     }
 }
 
-// ---
 .checkoutsect {
     position: relative;
     padding: 50px 0 70px;
@@ -351,7 +350,6 @@
     }
 }
 
-// ------
 .basketblock.checkout {
     .basketblock__totalbox .totalinfo .totalinfo__title {
         max-width: 100%;
@@ -701,22 +699,11 @@
         font-size: 18px;
     }
 
-
-
-
-
-
-
-
-
-
 }
 
 .paymethod.hide {
     display: none;
 }
-
-
 
 @media(max-width:1399.8px) {
 
@@ -780,7 +767,6 @@
     .chippingoptions .chippingoption.addr label .paytextwrap .title {
         padding-right: 0;
     }
-
 
 }
 
@@ -859,12 +845,6 @@
         font-size: 14px;
         padding-left: 18px;
     }
-
-
-
-
-
-
 
     .chunfosect__header p {
         font-size: 18px;
@@ -984,7 +964,6 @@
         flex: 0 0 100%;
     }
 
-
     .shipping-addressform .inputfield .generalselect .select2-container .select2-selection--single {
         height: 46px;
     }
@@ -1030,8 +1009,6 @@
         }
     }
 }
-
-
 
 // THANK YOU page
 .checkouttywrap {
@@ -1114,7 +1091,6 @@
         font-size: 18px;
         margin-bottom: 20px;
     }
-
 }
 
 @media(max-width:1199.8px) {
@@ -1138,9 +1114,6 @@
     .checkout-tysect .continf {
         margin-bottom: 30px;
     }
-
-
-
 }
 
 @media(max-width:575.8px) {
@@ -1181,5 +1154,4 @@
         top: 48px;
         left: 20px;
     }
-
 }
