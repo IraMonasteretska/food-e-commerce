@@ -595,3 +595,144 @@
     }
 
 }
+
+
+
+// new section (main page)
+.infoblock {
+    padding: 80px 0 20px 0;
+
+    .imgwrap {
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .infoblock__textwrap {
+        padding-left: 100px;
+    }
+
+    .title {
+        font-family: 'Poetsenone';
+        margin-bottom: 25px;
+        color: #158466;
+        font-size: 40px;
+        line-height: 110%;
+        text-transform: uppercase;
+        letter-spacing: 1.879px;
+    }
+
+    .subtitle {
+        margin-bottom: 5px;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    p {
+        color: #3B454D;
+        line-height: 160%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .descr {
+        margin-bottom: 45px;
+    }
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #158466;
+        border-radius: 40px;
+        min-height: 56px;
+        min-width: 240px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 16.597px;
+        font-weight: 700;
+        text-transform: capitalize;
+        transition: 0.3s;
+
+        img {
+            margin-left: 10px;
+            width: 22px;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            background: #13b086;
+
+            img {
+                transform: translateX(5px);
+            }
+        }
+
+        
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .infoblock .infoblock__textwrap {
+        padding-left: 50px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .infoblock .infoblock__textwrap {
+        padding-left: 50px;
+    }
+
+    .infoblock .title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .infoblock .descr {
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .infoblock {
+        .col-lg-6 {
+            &:nth-child(2) {
+                order: 1;
+            }
+
+            &:nth-child(1) {
+                order: 2;
+            }
+        }
+    }
+
+    .infoblock {
+        padding: 60px 0 20px 0;
+    }
+
+    .infoblock .infoblock__textwrap {
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .infoblock .title {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .infoblock .title {
+        font-size: 32px;
+    }
+
+
+
+
+    
+}
