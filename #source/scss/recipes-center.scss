@@ -1166,3 +1166,292 @@
 
 
 
+
+
+
+// Update page
+.recipessearch .recipessearch__selectbox {
+    padding-right: 20px;
+    width: 100%;
+    max-width: 42%;
+    flex: 0 0 42%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .generalselect {
+        width: 100%;
+        max-width: 270px;
+        flex: 0 0 270px;
+    }
+}
+
+.selectcheck {
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+    flex: 0 0 270px;
+
+    .selectcheck__choose {
+        height: 43px;
+        border-radius: 35px;
+        border: 1px solid #D9DBDF;
+        display: flex;
+        align-items: center;
+        padding: 5px 30px 5px 25px;
+        cursor: pointer;
+
+        p {
+            color: #3B454C;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 26px;
+            position: absolute;
+            right: 15px;
+            top: 8px;
+            transition: 0.3s;
+            background: url(../img/header/select-arrow.svg) no-repeat center center/16px;
+        }
+
+        &.open {
+            &::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+
+.selectcheck__list {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #D9DBDF;
+    margin-top: 5px;
+    width: 100%;
+    display: none;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 5px 15px;
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .selectcheck__ckeckfield {
+        input {
+            display: none;
+
+            &:checked+label {
+                &::before {
+                    border: 1px solid #158466;
+                    background-color: #158466;
+                    background-image: url(../img/selleracc/white-check.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 14px;
+                }
+            }
+        }
+
+        label {
+            margin: 0;
+            display: block;
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                border: 1px solid #3b454d;
+                border-radius: 3px;
+                position: absolute;
+                left: 0;
+                top: -1px;
+            }
+        }
+    }
+}
+
+.recipessearch .recipessearch__searchbox {
+    width: 100%;
+    max-width: 58%;
+    flex: 0 0 58%;
+    padding-left: 20px;
+    padding-right: 10%;
+}
+
+// selected rec
+.recipe-infopanel {
+    .recipe-infopanel__prlist {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 270px;
+        background: #fff;
+        z-index: 3;
+        border-radius: 9px;
+        display: block;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+        padding: 25px;
+        display: none;
+
+        li {
+            display: block;
+            width: 100% !important;
+            max-width: 100% !important;
+            flex: 0 0 100% !important;
+            text-align: left !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(55, 55, 55);
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:1550.8px) {
+
+    .recipessearch .recipessearch__selectbox .generalselect,
+    .selectcheck {
+        max-width: 240px;
+        flex: 0 0 240px;
+    }
+
+    .recipessearch {
+        .searchblock {
+            max-width: 300px;
+            flex: 0 0 300px;
+        }
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .recipessearch .recipessearch__selectbox {
+        max-width: 46%;
+        flex: 0 0 46%;
+        padding-right: 10px;
+    }
+
+    .recipessearch .recipessearch__searchbox {
+        max-width: 54%;
+        flex: 0 0 54%;
+        padding-right: 0;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .recipessearch .recipessearch__selectbox .generalselect,
+    .selectcheck {
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+
+    .selectcheck .selectcheck__choose p {
+        padding: 0;
+    }
+
+    .recipessearch .searchblock {
+        max-width: 220px;
+    }
+
+    .recipessearch .bordergreenbtn {
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+
+    .recipessearch .recipessearch__searchbox {
+        justify-content: space-between;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .recipessearch {
+        .recipessearch__wrap {
+            flex-wrap: wrap;
+        }
+
+        .recipessearch__selectbox,
+        .recipessearch__searchbox {
+            max-width: 100%;
+            flex: 0 0 100%;
+            padding: 0;
+        }
+
+        .recipessearch__selectbox .generalselect,
+        .selectcheck,
+        .searchblock,
+        .bordergreenbtn {
+            max-width: 47%;
+            flex: 0 0 47%;
+
+        }
+
+        .recipessearch__selectbox {
+            margin-bottom: 15px;
+        }
+
+        .selectcheck__choose p {
+            text-align: left;
+        }
+
+
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .recipessearch {
+
+        .recipessearch__selectbox .generalselect,
+        .selectcheck,
+        .searchblock,
+        .bordergreenbtn {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .recipessearch__selectbox {
+            flex-wrap: wrap;
+        }
+
+        .recipessearch__selectbox .generalselect {
+            margin-bottom: 15px;
+        }
+
+
+    }
+
+
+
+
+}
