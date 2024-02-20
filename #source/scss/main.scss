@@ -781,6 +781,12 @@
     }
 }
 
+@media(max-width:991.8px) {
+    .mainslidersect .mainslider__slide .slideinfo .descr {
+        -webkit-line-clamp: 2;
+    }
+}
+
 @media(max-width:575.8px) {
     .mainslidersect .mainslider__slide .imgwrapper {
         height: auto;

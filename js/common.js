@@ -1006,8 +1006,9 @@ $(document).ready(function () {
 
 
 
-    // UPDATE 
 
+
+    // UPDATE 
 
     $('.selectcheck__choose').click(function () {
         $(this).toggleClass('open');

@@ -1169,6 +1169,7 @@
 
 
 
+
 // Update page
 .recipessearch .recipessearch__selectbox {
     padding-right: 20px;
@@ -1334,6 +1335,74 @@
     }
 }
 
+// create rec
+.radinpwrap {
+    flex-wrap: wrap;
+}
+
+.crrecradiobox.checkboxes {
+    align-items: flex-start;
+}
+
+.checkinpwrap {
+    width: 100%;
+    flex: 0 0 calc(100% - 300px);
+    flex: 0 0 calc(100% - 300px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .checkinpbox {
+       width: 100%;
+       max-width: 33.333%;
+       flex: 0 0 33.333%;
+       margin-bottom: 25px;
+
+        input {
+            display: none;
+
+            &:checked + label {
+                &::after {
+                    border-color: #158466;
+                    background-color: #158466;
+                    background-image: url(../img/selleracc/white-check.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 14px;
+                }
+            }
+        }
+
+        label {
+            position: relative;
+            padding-left: 32px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 160%;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #3B454C;
+                position: absolute;
+                left: 0;
+                top: 3px;
+                border-radius: 3px;
+                transition: 0s;
+            }
+        }
+    }
+}
+
+
+
+// responsive
+
+
+
 @media(max-width:1550.8px) {
 
     .recipessearch .recipessearch__selectbox .generalselect,
@@ -1349,6 +1418,14 @@
         }
     }
 
+}
+
+@media(max-width:1399.8px) {
+    .checkinpwrap .checkinpbox {
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 15px;
+    }
 }
 
 @media(max-width:1399.8px) {
@@ -1392,6 +1469,14 @@
         justify-content: space-between;
     }
 
+    .checkinpwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .checkinpwrap .checkinpbox label {
+        font-size: 16px;
+    }
 }
 
 @media(max-width:991.8px) {
