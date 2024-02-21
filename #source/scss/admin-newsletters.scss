@@ -141,6 +141,180 @@
     }
 }
 
+// -
+
+.createtemplate-wrapper {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.createtemplate {
+    .admininfosect__body {
+        padding: 50px 0 85px;
+    }
+
+    .inputfield {
+        margin-bottom: 25px;
+    }
+
+    .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar {
+        background: rgba(#DBDCE2, 0.5);
+        height: 60px;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+    }
+
+    .ck.ck-editor__main>.ck-editor__editable {
+        border-top: 2px solid rgba(#DBDCE2, 0.5) !important;
+
+        &:focus {
+            border-top: 2px solid #158466 !important;
+        }
+    }
+
+    .savefield {
+        margin-top: 55px;
+        padding-top: 50px;
+        border-top: 2px solid rgba(#158466, 0.5);
+
+        .templsubmit {
+            min-height: 60px;
+            max-width: 328px;
+            font-size: 17px;
+        }
+    }
+
+
+
+}
+
+.templateimgtitle {
+    color: #21292F;
+    font-weight: 500;
+    line-height: 160%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.guidance {
+    font-size: 14px;
+    color: #919295;
+    margin-bottom: 25px;
+}
+
+// -
+
+.admininfosect.previewtemplate {
+
+    .admininfosect__header {
+        display: flex;
+        flex-wrap: wrap;
+
+        .admininfosect__title {
+            width: 100%;
+            max-width: calc(100% - 380px);
+            flex: 0 0 calc(100% - 380px);
+        }
+
+        .admininfosect__rbtns {
+            width: 100%;
+            max-width: 380px;
+            flex: 0 0 380px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .edit {
+                min-height: 45px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                border: 1px solid #158466;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                max-width: 128px;
+                width: 100%;
+                font-size: 15px;
+                font-weight: 600;
+                color: #158466;
+                transition: 0.3s;
+
+                &:hover {
+                    background: #158466;
+                    color: #fff;
+
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                svg {
+                    margin-right: 5px;
+                    width: 15px;
+
+                    path {
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+            .greenbtn {
+                min-height: 45px;
+                max-width: 225px;
+                font-size: 15px;
+                
+            }
+        }
+    }
+
+    .admininfosect__body {
+        padding-top: 30px;
+    }
+
+}
+
+.previewsection {
+    max-width: 670px;
+    margin: 0 auto;
+
+    p {
+        font-size: 16px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .subject {
+        margin-bottom: 5px;
+        font-weight: 500;
+        line-height: 160%;
+    }
+}
+
+.prevtemplate {
+    background: #F1F1F1;
+    padding: 55px 20px;
+
+    table {
+        width: 388px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1399.8px) {
     .templatebox__top {
         padding: 30px 40px 0;
@@ -162,7 +336,7 @@
     .templatebox__bottom {
         padding: 8px 10px;
     }
-    
+
 }
 
 @media(max-width:1199.8px) {
@@ -173,6 +347,7 @@
 
     .templatebox__bottom {
         padding: 15px;
+
         p {
             margin-bottom: 10px;
         }
@@ -183,5 +358,73 @@
         max-width: 100%;
         flex: 0 0 100%;
     }
+
+    .createtemplate .admininfosect__body {
+        padding: 30px 0 40px;
+    }
+
+    .createtemplate-wrapper {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .createtemplate .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar {
+        height: auto;
+    }
+
+    .createtemplate .admininfosect__header .admininfosect__title p {
+        font-size: 18px;
+    }
+
 }
 
+@media(max-width:991.8px) {
+    .templatebox {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .templatebox__bottom p {
+        font-size: 18px;
+    }
+
+    .templatebox__bottom a {
+        font-size: 16px;
+    }
+
+    .templatebox__top {
+        padding: 20px 20px 0;
+    }
+
+    .createtemplate .admininfosect__body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .createtemplate .savefield {
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .templatebox {
+        margin-bottom: 20px;
+    }
+
+    .admininfosect.selecttemplate .pagination {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .createtemplate .admininfosect__body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .createtemplate .savefield .templsubmit {
+        max-width: 100%;
+    }
+}
