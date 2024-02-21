@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Select Template</title>
+    <title>Admin - Create Template</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+
     <main>
 
         <div class="adminpage">
@@ -192,55 +192,31 @@
                 </div>
 
                 <div class="admincontent__body">
-                    <div class="admininfosect selecttemplate">
+                    <div class="admininfosect createtemplate">
                         <div class="admininfosect__header">
                             <div class="admininfosect__title">
                                 <a href="#"><img src="img/selleracc/back-arr.svg" alt="img"></a>
-                                <p>Add newsletters</p>
+                                <p>Create newsletters (Only text)</p>
                             </div>
                         </div>
                         <div class="admininfosect__body">
                             
-                            <div class="seller-productslist">
-                                <a href="#" class="active">All</a>
-                                <a href="#">At a discount</a>
-                                <a href="#">Hidden</a>
+                            <div class="createtemplate-wrapper">
+                                <form action="#">
+                                    <div class="inputfield">
+                                        <input type="text" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject*</label>
+                                    </div>
+                                    <div class="texteditor">
+                                        <div id="temaplateeditor">
+                                        </div>
+                                    </div>
+                                    <div class="savefield">
+                                        <input class="templsubmit greenbtn" type="submit" value="Save">
+                                    </div>
+                                </form>
                             </div>
 
-                            <div class="templateswrapper">
-                                <div class="templatebox">
-                                    <div class="templatebox__top">
-                                        <img src="img/newsletters/template1.png" alt="img">
-                                    </div>
-                                    <div class="templatebox__bottom">
-                                        <p class="title">only text</p>
-                                        <a href="#">Use this template</a>
-                                    </div>
-                                </div>
-                                <div class="templatebox">
-                                    <div class="templatebox__top">
-                                        <img src="img/newsletters/template2.png" alt="img">
-                                    </div>
-                                    <div class="templatebox__bottom">
-                                        <p class="title">Text, image and CTO button</p>
-                                        <a href="#">Use this template</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pagination">
-                                <ul>
-                                    <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a>
-                                    </li>
-                                    <li><a href="#">1</a></li>
-                                    <li class="active"><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li>...</li>
-                                    <li><a href="#">11</a></li>
-                                    <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -260,6 +236,7 @@
     <script src="js/lib/sortable.min.js"></script>
     <script src="js/lib/popper.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/super-build/ckeditor.js"></script>
     <script src="js/common.js"></script>
 </body>
 

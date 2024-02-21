@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Select Template</title>
+    <title>Admin - Preview</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lib/swiper.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+
     <main>
 
         <div class="adminpage">
@@ -192,55 +192,52 @@
                 </div>
 
                 <div class="admincontent__body">
-                    <div class="admininfosect selecttemplate">
+                    <div class="admininfosect previewtemplate">
                         <div class="admininfosect__header">
                             <div class="admininfosect__title">
                                 <a href="#"><img src="img/selleracc/back-arr.svg" alt="img"></a>
-                                <p>Add newsletters</p>
+                                <p>Preview</p>
+                            </div>
+                            <div class="admininfosect__rbtns">
+                                <a href="#" class="edit">
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.78354 3.16074L10.0027 5.19494L4.3854 10.3441L2.1675 8.30993L7.78354 3.16074ZM11.6866 2.67013L10.6969 1.76295C10.3145 1.41235 9.69343 1.41235 9.30966 1.76295L8.36167 2.63194L10.5808 4.66617L11.6866 3.65253C11.9832 3.38059 11.9832 2.94206 11.6866 2.67013ZM1.00618 11.1692C0.96579 11.3358 1.12989 11.4851 1.31167 11.4446L3.78454 10.8949L1.56665 8.86073L1.00618 11.1692Z" fill="#158466"/>
+                                        </svg>
+                                        
+                                    Edit
+                                </a>
+                                <a href="#" class="greenbtn">Select a recipient</a>
                             </div>
                         </div>
                         <div class="admininfosect__body">
-                            
-                            <div class="seller-productslist">
-                                <a href="#" class="active">All</a>
-                                <a href="#">At a discount</a>
-                                <a href="#">Hidden</a>
-                            </div>
+                            <div class="previewsection">
+                                <p class="subject">Subject</p>
+                                <p>News shares</p>
 
-                            <div class="templateswrapper">
-                                <div class="templatebox">
-                                    <div class="templatebox__top">
-                                        <img src="img/newsletters/template1.png" alt="img">
-                                    </div>
-                                    <div class="templatebox__bottom">
-                                        <p class="title">only text</p>
-                                        <a href="#">Use this template</a>
-                                    </div>
-                                </div>
-                                <div class="templatebox">
-                                    <div class="templatebox__top">
-                                        <img src="img/newsletters/template2.png" alt="img">
-                                    </div>
-                                    <div class="templatebox__bottom">
-                                        <p class="title">Text, image and CTO button</p>
-                                        <a href="#">Use this template</a>
-                                    </div>
-                                </div>
-                            </div>
+                                <div class="prevtemplate">
 
-                            <div class="pagination">
-                                <ul>
-                                    <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a>
-                                    </li>
-                                    <li><a href="#">1</a></li>
-                                    <li class="active"><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li>...</li>
-                                    <li><a href="#">11</a></li>
-                                    <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a>
-                                    </li>
-                                </ul>
+                                    <table style="width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th width="100%" style="padding:24px 16px;background: #158466; text-align: center;">
+                                                    <img src="img/newsletters/logo.svg" alt="food" style="width: 92px; height: auto; background-size: cover;
+                                                        margin: 0 auto;">
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>sd</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+
                             </div>
+                        
+
                         </div>
                     </div>
                 </div>
@@ -252,14 +249,13 @@
     </main>
 
 
-
-
     <script src="js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/lib/swiper.js"></script>
     <script src="js/lib/sortable.min.js"></script>
     <script src="js/lib/popper.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/super-build/ckeditor.js"></script>
     <script src="js/common.js"></script>
 </body>
 
