@@ -32,8 +32,6 @@
     }
 }
 
-// -
-
 .admininfosect.selecttemplate {
     .admininfosect__title {
         max-width: 100%;
@@ -73,7 +71,6 @@
 .templatebox__top {
     padding: 44px 86px 0;
     background: #F1F1F1;
-    // height: 373px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px #f1f1f1;
@@ -141,8 +138,6 @@
     }
 }
 
-// -
-
 .createtemplate-wrapper {
     max-width: 670px;
     margin: 0 auto;
@@ -184,8 +179,6 @@
         }
     }
 
-
-
 }
 
 .templateimgtitle {
@@ -201,8 +194,6 @@
     color: #919295;
     margin-bottom: 25px;
 }
-
-// -
 
 .admininfosect.previewtemplate {
 
@@ -306,8 +297,6 @@
     }
 }
 
-// -
-
 .previewoptions__alert {
     padding: 20px;
     border-radius: 10px;
@@ -358,7 +347,39 @@
     }
 }
 
+.sentpopup {
+    .modal-dialog {
+        max-width: 384px;
+        text-align: center;
+    }
 
+    .modal-content {
+        padding: 85px 47px;
+    }
+
+    .topimg {
+        margin: 0 auto;
+        max-width: 100px;
+        margin-bottom: 35px;
+    }
+
+    p {
+        color: #21292F;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .greenbtn {
+        margin-top: 25px;
+    }
+}
 
 @media(max-width:1399.8px) {
     .templatebox__top {
@@ -440,6 +461,28 @@
         }
     }
 
+    .sentpopup {
+        .modal-dialog {
+            max-width: 300px;
+        }
+
+        .topimg {
+            max-width: 75px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            margin-bottom: 10px;
+        }
+
+        .greenbtn {
+            margin-top: 10px;
+        }
+
+        .modal-content {
+            padding: 60px 30px;
+        }
+    }
 }
 
 @media(max-width:991.8px) {
@@ -491,7 +534,6 @@
         }
     }
 
-    // ----------------
     .templatebox {
         margin-bottom: 20px;
     }
@@ -570,6 +612,11 @@
         padding: 15px;
         font-size: 14px;
     }
+
+    .sentpopup .modal-dialog {
+        margin: 0 auto;
+    }
+
 }
 
 @media(max-width:360.8px) {
@@ -586,7 +633,7 @@
     .admininfosect.previewtemplate .admininfosect__header .admininfosect__rbtns .edit {
         margin-bottom: 15px;
     }
-    
+
     .admbgel2 {
         display: none;
     }

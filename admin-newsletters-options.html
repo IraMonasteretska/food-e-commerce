@@ -15,7 +15,6 @@
 <body>
 
     <main>
-
         <div class="adminpage">
             <aside class="asminsidebar">
                 <div class="asminsidebar__head">
@@ -199,7 +198,8 @@
                                 <p>Recipient options</p>
                             </div>
                             <div class="admininfosect__rbtns justify-content-xl-end">
-                                <a href="#" class="greenbtn">Save changes</a>
+                                <a href="#" class="greenbtn" data-bs-toggle="modal" data-bs-target="#sentpopup">Save
+                                    changes</a>
                             </div>
                         </div>
                         <div class="admininfosect__body">
@@ -217,7 +217,9 @@
                                                 <input type="checkbox" id="opt1" checked="">
                                                 <label for="opt1">
                                                     Send to all users
-                                                    <i>
+                                                    <i data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-custom-class="custom-tooltip"
+                                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
                                                         <img src="img/newsletters/question-icon.png" alt="img">
                                                     </i>
                                                 </label>
@@ -228,7 +230,9 @@
                                                 <input type="checkbox" id="opt2" checked="">
                                                 <label for="opt2">
                                                     Send to followers
-                                                    <i>
+                                                    <i data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-custom-class="custom-tooltip"
+                                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
                                                         <img src="img/newsletters/question-icon.png" alt="img">
                                                     </i>
                                                 </label>
@@ -239,7 +243,9 @@
                                                 <input type="checkbox" id="opt3" checked="">
                                                 <label for="opt3">
                                                     Send to all users
-                                                    <i>
+                                                    <i data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-custom-class="custom-tooltip"
+                                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
                                                         <img src="img/newsletters/question-icon.png" alt="img">
                                                     </i>
                                                 </label>
@@ -250,7 +256,9 @@
                                                 <input type="checkbox" id="opt4" checked="">
                                                 <label for="opt4">
                                                     Send to followers
-                                                    <i>
+                                                    <i data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-custom-class="custom-tooltip"
+                                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
                                                         <img src="img/newsletters/question-icon.png" alt="img">
                                                     </i>
                                                 </label>
@@ -261,7 +269,9 @@
                                                 <input type="checkbox" id="opt5" checked="">
                                                 <label for="opt5">
                                                     Send to all users
-                                                    <i>
+                                                    <i data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-custom-class="custom-tooltip"
+                                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
                                                         <img src="img/newsletters/question-icon.png" alt="img">
                                                     </i>
                                                 </label>
@@ -272,7 +282,9 @@
                                                 <input type="checkbox" id="opt6" checked="">
                                                 <label for="opt6">
                                                     Send to followers
-                                                    <i>
+                                                    <i data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-custom-class="custom-tooltip"
+                                                        data-bs-title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
                                                         <img src="img/newsletters/question-icon.png" alt="img">
                                                     </i>
                                                 </label>
@@ -291,6 +303,19 @@
         </div>
     </main>
 
+    <div class="modal fade sentpopup" id="sentpopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img class="topimg" src="img/newsletters/sent.png" alt="img">
+                <p class="title">Woo hoo!</p>
+                <p>
+                    Your newsletter was sent
+                </p>
+                <a href="#" class="greenbtn">Continue</a>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/lib/jquery.js"></script>
