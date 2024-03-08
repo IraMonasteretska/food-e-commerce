@@ -1,11 +1,12 @@
 header.header {
-    height: 100px;
+    height: auto;
     background: $white;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
     display: flex;
     align-items: center;
     position: relative;
     z-index: 11;
+    padding: 20px 0 15px;
 
     .col-xl-5 {
         position: initial;
@@ -570,6 +571,36 @@ header.header {
     }
 }
 
+.header__nav {
+    ul {
+        list-style-type: none;
+        margin: 15px 0 0 0;
+        padding: 15px 0 0 0;
+        border-top: 1px solid rgba(217, 219, 223, 0.6);
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 88px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 15px;
+                color: rgba(59, 69, 77, 1);
+                transition: 0.3s;
+
+                &:hover {
+                    color: #158466;
+                }
+            }
+        }
+    }
+}
+
 @media(max-width:1199.8px) {
 
     .header__rightsect .headercartwrap {
@@ -590,6 +621,10 @@ header.header {
 
     .header__leftsect .header__searchbox {
         width: calc(100% - 130px);
+    }
+
+    .header__nav ul li {
+        margin-right: 60px;
     }
 
 }
@@ -645,6 +680,10 @@ header.header {
 
     .header__rightsect .headeraccwrap {
         position: initial;
+    }
+
+    .header__nav ul li {
+        margin-right: 30px;
     }
 
 }
@@ -861,6 +900,25 @@ header.header {
 
     .header__cartdropdown {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .header__nav ul {
+       padding-top: 5px;
+
+        li {
+            margin-right: 15px;
+            margin-top: 10px;
+    
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .header__leftsect .header__searchbox.show,
+    .header__rightsect .header__accdropdown,
+    .header__cartdropdown {
+        top: 70px;
     }
 
 }
@@ -1147,6 +1205,7 @@ header.header {
 }
 
 @media(max-width:767.8px) {
+
     .sellacc__brandnamehead .infowrap,
     .sellacc__brandnamehead:after {
         display: none;
