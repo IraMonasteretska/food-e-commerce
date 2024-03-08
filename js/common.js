@@ -1183,16 +1183,16 @@ $(document).ready(function () {
 
 
     // add new faq question
+    if ($('.faqquestions').length) {
+        var addBtn = document.querySelector('.faqquestions .addbtn');
+        var addqboxes = document.querySelector('.faqquestions .addqboxes');
 
-    var addBtn = document.querySelector('.faqquestions .addbtn');
-    var addqboxes = document.querySelector('.faqquestions .addqboxes');
+        addBtn.addEventListener('click', function () {
 
-    addBtn.addEventListener('click', function () {
+            var newAddqbox = document.createElement('div');
+            newAddqbox.classList.add('addqbox');
 
-        var newAddqbox = document.createElement('div');
-        newAddqbox.classList.add('addqbox');
-
-        newAddqbox.innerHTML = `
+            newAddqbox.innerHTML = `
         <div class="row">
             <div class="col-xl-8">
                 <div class="inputfield">
@@ -1213,12 +1213,13 @@ $(document).ready(function () {
         </div>
     `;
 
-        addqboxes.appendChild(newAddqbox);
+            addqboxes.appendChild(newAddqbox);
 
-        var tooltips = newAddqbox.querySelectorAll('[data-bs-toggle="tooltip"]');
-        tooltips.forEach(function (tooltip) {
-            new bootstrap.Tooltip(tooltip);
+            var tooltips = newAddqbox.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltips.forEach(function (tooltip) {
+                new bootstrap.Tooltip(tooltip);
+            });
         });
-    });
+    }
 
 });
