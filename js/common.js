@@ -1181,11 +1181,44 @@ $(document).ready(function () {
         });
     }
 
+
+    // add new faq question
+
+    var addBtn = document.querySelector('.faqquestions .addbtn');
+    var addqboxes = document.querySelector('.faqquestions .addqboxes');
+
+    addBtn.addEventListener('click', function () {
+
+        var newAddqbox = document.createElement('div');
+        newAddqbox.classList.add('addqbox');
+
+        newAddqbox.innerHTML = `
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="inputfield">
+                    <input type="text" placeholder="Musclefit Protein Pancake Prepared Fast easy..." required="">
+                    <label for="posname">Question
+                        <img src="img/selleracc/question-icon.svg" alt="question" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="inputfield">
+                    <textarea placeholder="This description will be located after the title and price. For example: Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas "></textarea>
+                    <label for="posname">Answer
+                        <img src="img/selleracc/question-icon.svg" alt="question" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                    </label>
+                </div>
+            </div>
+        </div>
+    `;
+
+        addqboxes.appendChild(newAddqbox);
+
+        var tooltips = newAddqbox.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltips.forEach(function (tooltip) {
+            new bootstrap.Tooltip(tooltip);
+        });
+    });
+
 });
-
-
-
-
-
-
-
