@@ -340,6 +340,43 @@
     }
 }
 
+.contactussect {
+    padding-bottom: 35px;
+}
+
+.contactinfo {
+    p {
+        color: #21292F;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 15px;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #4D5760;
+        position: relative;
+        padding-left: 45px;
+        display: inline-block;
+        margin-bottom: 34px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #158466;
+        }
+
+        img {
+            width: 35px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
 @media(max-width:1199.8px) {
 
     .contactussect {
