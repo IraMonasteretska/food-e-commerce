@@ -744,6 +744,84 @@
     }
 }
 
+
+// upload photo - add radio
+.imageuploadify .imageuploadify-images-list .imageuploadify-container {
+    margin-bottom: 40px;
+}
+
+.uploadradio {
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(154, 160, 164, 1);
+
+    label {
+        cursor: pointer;
+    }
+
+    span {
+        display: block;
+        padding-left: 25px;
+    }
+    
+    span::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 19px;
+        background: #fff;
+        border: 1px solid rgba(59, 69, 76, 0.4);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 2px;
+    }
+
+    input {
+        display: none;
+
+        &:checked+span {
+            &::after {
+                border-color: #158466;
+                background: url(../img/recipes/radio-checked.svg) no-repeat center / 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .createrec-uploadphoto.blog .imageuploadify .imageuploadify-images-list .imageuploadify-container,
+    .uploadphoto .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+        width: 100% !important;
+    }
+
+    .uploadradio {
+        font-size: 14px;
+
+        span {
+            padding-left: 20px;
+            
+        }
+
+        span:after {
+            width: 16px;
+            height: 16px;
+            top: 3px;
+        }
+    }
+
+    .formbox .imageuploadify {
+        min-width: initial;
+    }
+
+    .uploadphoto .imageuploadify .imageuploadify-images-list .imageuploadify-container {
+        margin-right: 0 !important;
+    }
+}
+// ----
+
 @media(max-width:1399.8px) {
 
     .createrec-uploadphoto.blog {
