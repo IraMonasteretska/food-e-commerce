@@ -1229,7 +1229,7 @@ $(document).ready(function () {
 
     // update profile picture
 
-    if ($('.updateimg').length) {
+    if ($('.updateava__img').length) {
         const fileInput = document.getElementById('updateimg');
         const profilePicture = document.querySelector('.updateava__img img');
 
