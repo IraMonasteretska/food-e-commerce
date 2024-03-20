@@ -2232,3 +2232,117 @@
     }
 
 }
+
+
+// update profile pic
+
+
+.updateava__left {
+    width: 100%;
+    max-width: calc(100% - 150px);
+    flex: 0 0 calc(100% - 150px);
+    display: flex;
+    flex-wrap: wrap;
+
+    .updateava__img {
+        width: 100%;
+        max-width: 63px;
+        flex: 0 0 63px;
+        height: 63px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            object-position: 50% 50%;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    .updateava__descr {
+        width: 100%;
+        max-width: calc(100% - 63px);
+        flex: 0 0 calc(100% - 63px);
+        padding-left: 16px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #21292F;
+        }
+
+        .title {
+            margin-bottom: 10px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #21292F;
+            line-height: 160%;
+        }
+    }
+}
+
+.updateava__right {
+    width: 100%;
+    max-width: 150px;
+    flex: 0 0 150px;
+    text-align: right;
+
+    input {
+        display: none;
+    }
+
+    label {
+        color: #259688;
+        font-size: 15px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .updateava__right,
+    .updateava__left {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .updateava__right {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .updateava__left {
+        order: 2;
+    }
+
+    .updateava__left .updateava__descr p {
+        font-size: 12px;
+    }
+
+    .updateava__left .updateava__descr .title {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .updateava__left .updateava__img {
+        max-width: 50px;
+        flex: 0 0 50px;
+        height: 50px;
+    }
+
+    .updateava__left .updateava__descr {
+        max-width: calc(100% - 50px);
+        flex: 0 0 calc(100% - 50px);
+        padding-left: 10px;
+    }
+}
+
