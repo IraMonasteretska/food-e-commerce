@@ -1222,4 +1222,34 @@ $(document).ready(function () {
         });
     }
 
+
+
+
+
+
+    // update profile picture
+
+    if ($('.updateimg').length) {
+        const fileInput = document.getElementById('updateimg');
+        const profilePicture = document.querySelector('.updateava__img img');
+
+        fileInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                profilePicture.src = e.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        });
+    }
+
+    // strip
+    $('.topinfoblock .closetrip').click(function(){
+        $(this).parents('.topinfoblock').slideUp();
+    });
+
+
+
 });
