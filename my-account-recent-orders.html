@@ -256,13 +256,6 @@
                                                 <button><img src="img/header/search-icon.svg" alt="search"></button>
                                             </div>
                                         </div>
-
-
-
-
-
-
-
                                     </div>
 
                                     <div class="myacc-deliveredwrap">
@@ -282,16 +275,8 @@
                                                             <img src="img/account/recent-order1.png" alt="img">
                                                         </div>
                                                         <div class="deliveredproduct__descr">
-                                                            <p class="title">Musclefit Protein Pancake Prepared Fast easy</p>
-                                                            <p class="units">Units: 1</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="deliveredproduct">
-                                                        <div class="deliveredproduct__img">
-                                                            <img src="img/account/recent-order2.png" alt="img">
-                                                        </div>
-                                                        <div class="deliveredproduct__descr">
-                                                            <p class="title">Bauli Plumcake "Senza" Mela - 132 G</p>
+                                                            <p class="title">Musclefit Protein Pancake Prepared Fast
+                                                                easy</p>
                                                             <p class="units">Units: 1</p>
                                                         </div>
                                                     </div>
@@ -300,7 +285,9 @@
 
                                             <div class="myacc-delivered__right">
                                                 <a href="#" class="bordergreenbtn">Write a review</a>
-                                                <a href="#" class="greenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#custserv">Customer Servise</a>
                                             </div>
                                         </div>
                                         <div class="myacc-delivered">
@@ -319,7 +306,8 @@
                                                             <img src="img/account/recent-order3.png" alt="img">
                                                         </div>
                                                         <div class="deliveredproduct__descr">
-                                                            <p class="title">Pesoforma Porridge Cacao e Avena, 5 x 55g</p>
+                                                            <p class="title">Pesoforma Porridge Cacao e Avena, 5 x 55g
+                                                            </p>
                                                             <p class="units">Units: 1</p>
                                                         </div>
                                                     </div>
@@ -328,7 +316,9 @@
 
                                             <div class="myacc-delivered__right">
                                                 <a href="#" class="bordergreenbtn">Write a review</a>
-                                                <a href="#" class="greenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#custserv">Customer Servise</a>
                                             </div>
                                         </div>
                                         <div class="myacc-delivered">
@@ -351,25 +341,15 @@
                                                             <p class="units">Units: 1</p>
                                                         </div>
                                                     </div>
-                                                    <div class="deliveredproduct">
-                                                        <div class="deliveredproduct__img">
-                                                            <img src="img/account/recent-order5.png" alt="img">
-                                                        </div>
-                                                        <div class="deliveredproduct__descr">
-                                                            <p class="title">Alpro Avena senza zuccheri 1l</p>
-                                                            <p class="units">Units: 2</p>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
 
                                             <div class="myacc-delivered__right">
                                                 <a href="#" class="bordergreenbtn">Write a review</a>
-                                                <a href="#" class="greenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn">Buy again</a>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
 
                                 <div class="pagination">
@@ -459,8 +439,35 @@
         </div>
     </footer>
 
-
-
+    <!-- custserv -->
+    <div class="modal fade generalmodal custservice" id="custserv" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img class="custservice__topimg" src="img/new/customer-serviceimg.svg" alt="img">
+                <p class="title">Confirm customer service</p>
+                <form action="#">
+                    <div class="inputfield">
+                        <input type="text" id="title" placeholder="Title" required="">
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="inputfield">
+                        <textarea placeholder="message"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="custservice__modalbtns">
+                        <button class="bordergreenbtn" data-bs-dismiss="modal">
+                            Cancel button
+                        </button>
+                        <button type="submit" class="greenbtn">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
     <script src="js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/lib/swiper.js"></script>

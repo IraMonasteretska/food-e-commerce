@@ -164,10 +164,10 @@
             .discountbox__circle {
                 box-shadow: 0 0 10px $base-green;
 
-                &::after {
-                    right: 0;
-                    bottom: 0;
-                }
+                // &::after {
+                //     right: 0;
+                //     bottom: 0;
+                // }
             }
         }
     }
@@ -873,3 +873,5 @@
         display: none !important;
     }
 }
+
+// upd1

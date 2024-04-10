@@ -2236,7 +2236,6 @@
 
 // update profile pic
 
-
 .updateava__left {
     width: 100%;
     max-width: calc(100% - 150px);
@@ -2346,3 +2345,174 @@
     }
 }
 
+
+// upd1
+.myacc-delivered {
+
+    .myacc-delivered__left,
+    .myacc-delivered__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .myacc-delivered__right {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 100px;
+    }
+
+    .bordergreenbtn {
+        margin: 0 20px 0 0;
+        display: inline-flex;
+        width: auto;
+        min-width: 205px;
+        padding: 3px 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.custservice {
+    .modal-content {
+        padding: 40px 40px 55px;
+        border-radius: 22px;
+        border: none;
+    }
+
+    .modal-dialog {
+        max-width: 665px;
+    }
+
+    .custservice__topimg {
+        max-width: 100px;
+        margin: 0 auto 35px;
+    }
+
+    .title {
+        text-align: center;
+        color: #21292F;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .inputfield {
+        margin-bottom: 30px;
+    }
+
+    .custservice__modalbtns {
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            width: 100%;
+            max-width: calc(50% - 15px);
+            flex: 0 0 calc(50% - 15px);
+            min-height: 45px;
+            font-size: 15px;
+        }
+    }
+
+}
+
+@media(max-width:1599.8px) {
+    .custservice .custservice__topimg {
+        max-width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .custservice .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .custservice .custservice__modalbtns {
+        padding-top: 0;
+    }
+
+    .custservice .inputfield {
+        margin-bottom: 20px;
+    }
+
+    .custservice .modal-dialog {
+        max-width: 600px;
+    }
+
+
+}
+
+@media(max-width:1399.8px) {
+
+    .myacc-delivered .myacc-delivered__right {
+        padding-left: 0;
+        padding-top: 20px;
+
+        .bordergreenbtn {
+            margin-bottom: 10px;
+            margin-right: 10px;
+            min-width: 170px;
+        }
+    }
+
+}
+
+@media(max-width: 991.8px) {
+    .custservice .custservice__modalbtns {
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 767.8px) {
+    .custservice .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 575.8px) {
+    .custservice .modal-content {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .custservice .title {
+        font-size: 22px;
+    }
+
+    .custservice .custservice__modalbtns {
+        padding-top: 10px;
+
+        button {
+            max-width: calc(50% - 5px);
+            flex: 0 0 calc(50% - 5px);
+            font-size: 13px !important;
+            min-height: 40px !important;
+        }
+    }
+}
+
+@media(max-width:480.8px) {
+    .myacc-delivered .myacc-delivered__right .bordergreenbtn {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 360.8px) {
+    .custservice .title {
+        font-size: 19px;
+    }
+
+    .custservice .modal-content {
+        padding: 20px 15px;
+    }
+
+    .custservice .custservice__topimg {
+        max-width: 60px;
+    }
+}
