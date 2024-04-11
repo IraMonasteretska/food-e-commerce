@@ -252,15 +252,17 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <!-- upd1 -->
                                                 <div class="col-xl-4 col-md-6">
                                                     <div class="inputfield">
-                                                        <label for="kosher">Kosher certificate <img
-                                                                src="img/selleracc/question-icon.svg" alt="question"
+                                                        <label for="kosher">Category on the marketplace*
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
                                                                 data-bs-toggle="tooltip"
                                                                 data-bs-title="Default tooltip"></label>
                                                         <div class="generalselect">
                                                             <select class="customselect" name="category" id="kosher">
-                                                                <option value="0">Select kosher certificate</option>
+                                                                <option value="0">Product</option>
                                                                 <option value="1">lorem</option>
                                                                 <option value="2">lorem</option>
                                                             </select>
@@ -269,12 +271,42 @@
                                                 </div>
                                                 <div class="col-xl-4 col-md-6">
                                                     <div class="inputfield">
-                                                        <label for="upc">Product UPC/EAN <img
-                                                                src="img/selleracc/question-icon.svg" alt="question"
+                                                        <label for="upc">Brand*
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
                                                                 data-bs-toggle="tooltip"
                                                                 data-bs-title="Default tooltip"></label>
                                                         <div class="generalselect">
                                                             <select class="customselect" name="category" id="upc">
+                                                                <option value="0">Select a brand from the list</option>
+                                                                <option value="1">lorem</option>
+                                                                <option value="2">lorem</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="pt">Select a product type*
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip"></label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category" id="pt">
+                                                                <option value="0">Cakes</option>
+                                                                <option value="1">lorem</option>
+                                                                <option value="2">lorem</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="upcean">Product UPC/EAN
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip"></label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category" id="upcean">
                                                                 <option value="0">48121620</option>
                                                                 <option value="1">lorem</option>
                                                                 <option value="2">lorem</option>
@@ -282,25 +314,20 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-12">
                                                     <div class="inputfield">
-                                                        <p>Kosher certificate visibility*</p>
-                                                        <div class="radioinprow">
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="rad1" name="kosher">
-                                                                <label for="rad1">Published</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="rad2" name="kosher">
-                                                                <label for="rad2">Draft</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="rad3" name="kosher">
-                                                                <label for="rad3">Hidden</label>
-                                                            </div>
-                                                        </div>
+                                                        <p class="titleinfo">
+                                                            Kosher certificate
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip">
+                                                        </p>
+                                                        
                                                     </div>
                                                 </div>
+
+                                                <!-- - -->
                                             </div>
                                         </div>
 
@@ -392,6 +419,41 @@
                                                     </label>
                                                 </div>
                                             </div>
+
+                                            <!-- upd1 -->
+                                            <div class="col-12">
+                                                <div class="inputfield">
+                                                    <p class="titleinfo">
+                                                        Storage Conditions
+                                                        <img src="img/selleracc/question-icon.svg" alt="question"
+                                                            data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                                                    </p>
+                                                    <div class="radioinprow">
+                                                        <div class="radiobox">
+                                                            <input type="radio" id="storcond1" name="storcond" checked>
+                                                            <label for="storcond1">Frozen</label>
+                                                        </div>
+                                                        <div class="radiobox">
+                                                            <input type="radio" id="storcond2" name="storcond">
+                                                            <label for="storcond2">Shelf-Stable</label>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                                <div class="inputfield">
+                                                    <input type="text" id="shalflive" placeholder="12 messi"
+                                                        required="">
+                                                    <label for="shalflive">Shalf Live
+                                                        <img src="img/selleracc/question-icon.svg" alt="question"
+                                                            data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- - -->
+
                                             <div class="col-12">
                                                 <div class="inputfield">
                                                     <p>Visibility*</p>
@@ -411,36 +473,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12">
-                                                <p class="titleinfo">Supplement Facts <img
-                                                        src="img/selleracc/question-icon.svg" alt="question"
-                                                        data-bs-toggle="tooltip" data-bs-title="Default tooltip"></p>
-                                                <div class="addingredients">
-                                                    <div class="ingrwrap">
-                                                        <!-- <div class="ingrinp">
-                                                            <input type="text" value="3 tablespoons Gefen Olive Oil">
-                                                        </div>
-                                                        <div class="ingrinp">
-                                                            <input type="text" value="1/2 teaspoon salt">
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="addingr">
-                                                        <span class="addbtn">Add table +</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                             <div class="col-12">
                                                 <p class="titleinfo">Tags <img src="img/selleracc/question-icon.svg"
                                                         alt="question" data-bs-toggle="tooltip"
                                                         data-bs-title="Default tooltip"></p>
                                                 <div class="addingredients">
                                                     <div class="ingrwrap">
-                                                        <!-- <div class="ingrinp">
-                                                            <input type="text" value="Tag title 1">
-                                                        </div>
-                                                        <div class="ingrinp">
-                                                            <input type="text" value="Tag title 2">
-                                                        </div> -->
                                                     </div>
                                                     <div class="addingr">
                                                         <span class="addbtn">Add Tag +</span>

@@ -875,3 +875,66 @@
 }
 
 // upd1
+.catdiscounts__box {
+    margin-right: 25px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .discountbox {
+        cursor: pointer;
+        max-width: 89px;
+        width: 105px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        padding: 9px;
+        transition: 0.3s;
+        min-height: 114px;
+    }
+
+    input {
+        display: none;
+
+        &:checked+.discountbox {
+            border: 1px solid #158466;
+        }
+    }
+}
+
+.categorysect__discounts .discountbox p {
+    margin-top: 2px;
+}
+
+@media(max-width:1599.8px) {
+    .catdiscounts__box {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .catdiscounts__box {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .catdiscounts__box {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .catdiscounts__box {
+        margin-bottom: 5px;
+
+        .discountbox {
+            max-width: 76px;
+            min-height: 110px;
+        }
+    }
+
+    .categorysect__discounts {
+        justify-content: flex-start;
+    }
+}
