@@ -1222,11 +1222,6 @@ $(document).ready(function () {
         });
     }
 
-
-
-
-
-
     // update profile picture
 
     if ($('.updateava__img').length) {
@@ -1246,10 +1241,63 @@ $(document).ready(function () {
     }
 
     // strip
-    $('.topinfoblock .closetrip').click(function(){
+    $('.topinfoblock .closetrip').click(function () {
         $(this).parents('.topinfoblock').slideUp();
     });
 
+
+    // upd1
+    function addChangeEventToInput(input) {
+        input.addEventListener('change', function () {
+            var file = this.files[0];
+            var reader = new FileReader();
+            var img = this.closest('.addedsertificate').querySelector('.selectedImage');
+
+            reader.onload = function (e) {
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+
+    if ($('.addkoshercertificate').length) {
+        var addCertificateButton = document.getElementById('addCertificate');
+
+        addCertificateButton.addEventListener('click', function () {
+            var certificateContainer = document.getElementById('certificateContainer');
+            var newCertificate = document.createElement('div');
+            newCertificate.classList.add('addedsertificate');
+
+            newCertificate.innerHTML = `
+                <div class="addedsertificate__file">
+                    <div class="file-upload">
+                        <div class="file-select">
+                            <label>
+                                <div class="file-select-button"><img src="img/blog/photo-ic.svg" alt="icon">Add icon</div>
+                                <input type="file" class="chooseFile">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="addedsertificate__img">
+                    <img class="selectedImage" src="" alt="">
+                </div>
+                <div class="addedsertificate__text">
+                    <input type="text">
+                </div>
+            `;
+
+            certificateContainer.appendChild(newCertificate);
+
+            var newInput = newCertificate.querySelector('.chooseFile');
+            addChangeEventToInput(newInput);
+        });
+    }
+
+    var existingInputs = document.querySelectorAll('.chooseFile');
+    existingInputs.forEach(function (input) {
+        addChangeEventToInput(input);
+    });
 
 
 });
