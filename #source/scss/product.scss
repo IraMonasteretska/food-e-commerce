@@ -116,8 +116,6 @@
 }
 
 .sellratbox {
-    margin-bottom: 20px;
-
     .seller {
         width: 100%;
         max-width: calc(100% - 220px);
@@ -1101,15 +1099,15 @@
 
         img {
             width: 100%;
-            max-width: 40px;
-            flex: 0 0 40px;
-            height: 40px;
+            max-width: 24px;
+            flex: 0 0 24px;
+            height: 24px;
         }
 
         span {
             width: 100%;
-            max-width: calc(100% - 40px);
-            flex: 0 0 calc(100% - 40px);
+            max-width: calc(100% - 24px);
+            flex: 0 0 calc(100% - 24px);
             padding-left: 10px;
         }
 
@@ -1177,6 +1175,31 @@
     }
 }
 
+// upd2
+.productcode {
+    font-size: 16px;
+    color: #21292F;
+    line-height: 150%;
+    margin-bottom: 30px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.sellratbox {
+    padding: 20px 0;
+    border-bottom: 1px solid #D9DBDF;
+}
+
+.productinfo__alergyfree .categorysect__discounts .discountbox:hover .discountbox__circle {
+    box-shadow: none;
+}
+
+.selleraddproduct .acccontentsect__body.p0 {
+    padding-bottom: 30px;
+}
+
 @media(max-width:1599.8px) {
     .certificates .certificatebox {
         margin-bottom: 10px;
@@ -1212,6 +1235,17 @@
         .prinfobox__body {
             padding-bottom: 0;
         }
+    }
+
+    // upd2
+    .sellratbox .seller {
+        margin-bottom: 15px;
+    }
+
+    .sellratbox .seller,
+    .sellratbox .ratingresponse {
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 }
 
