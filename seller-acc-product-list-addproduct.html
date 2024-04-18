@@ -190,15 +190,72 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12">
+                                                <div class="col-xl-4">
                                                     <div class="inputfield">
-                                                        <textarea
-                                                            placeholder="This description will be located after the title and price. For example: Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas "></textarea>
-                                                        <label for="posname">Short description*
+                                                        <input type="text" id="upcean"
+                                                            placeholder="481216204236"
+                                                            required="">
+                                                        <label for="upcean">Product UPC/EAN
                                                             <img src="img/selleracc/question-icon.svg" alt="question"
                                                                 data-bs-toggle="tooltip"
                                                                 data-bs-title="Default tooltip">
                                                         </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="inputfield">
+                                                        <textarea id="shortdescr"
+                                                            placeholder="This description will be located after the title and price. For example: Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas "></textarea>
+                                                        <label for="shortdescr">Short description*
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="kosher">Category on the marketplace*
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip"></label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category" id="kosher">
+                                                                <option value="0">Products</option>
+                                                                <option value="1">lorem</option>
+                                                                <option value="2">lorem</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="upc">Brand*
+                                                            <img src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip"></label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category" id="upc">
+                                                                <option value="0">Select a brand from the list</option>
+                                                                <option value="1">lorem</option>
+                                                                <option value="2">lorem</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="prodtype">Select a product type* <img
+                                                                src="img/selleracc/question-icon.svg" alt="question"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Default tooltip"></label>
+                                                        <div class="generalselect">
+                                                            <select class="customselect" name="category" id="prodtype">
+                                                                <option value="0">Cakes</option>
+                                                                <option value="1">lorem</option>
+                                                                <option value="2">lorem</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-2 col-md-6">
@@ -239,60 +296,13 @@
                                                 </div>
                                                 <div class="col-xl-5 col-md-6">
                                                     <div class="inputfield">
-                                                        <label for="prodtype">Select a product type* <img
-                                                                src="img/selleracc/question-icon.svg" alt="question"
-                                                                data-bs-toggle="tooltip"
-                                                                data-bs-title="Default tooltip"></label>
-                                                        <div class="generalselect">
-                                                            <select class="customselect" name="category" id="prodtype">
-                                                                <option value="0">Cakes</option>
-                                                                <option value="1">lorem</option>
-                                                                <option value="2">lorem</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- upd1 -->
-                                                <div class="col-xl-4 col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="kosher">Category on the marketplace*
-                                                            <img src="img/selleracc/question-icon.svg" alt="question"
-                                                                data-bs-toggle="tooltip"
-                                                                data-bs-title="Default tooltip"></label>
-                                                        <div class="generalselect">
-                                                            <select class="customselect" name="category" id="kosher">
-                                                                <option value="0">Product</option>
-                                                                <option value="1">lorem</option>
-                                                                <option value="2">lorem</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-4 col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="upc">Brand*
-                                                            <img src="img/selleracc/question-icon.svg" alt="question"
-                                                                data-bs-toggle="tooltip"
-                                                                data-bs-title="Default tooltip"></label>
-                                                        <div class="generalselect">
-                                                            <select class="customselect" name="category" id="upc">
-                                                                <option value="0">Select a brand from the list</option>
-                                                                <option value="1">lorem</option>
-                                                                <option value="2">lorem</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-4 col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="pt">Select a product type*
+                                                        <label for="pt">Select quality available
                                                             <img src="img/selleracc/question-icon.svg" alt="question"
                                                                 data-bs-toggle="tooltip"
                                                                 data-bs-title="Default tooltip"></label>
                                                         <div class="generalselect">
                                                             <select class="customselect" name="category" id="pt">
-                                                                <option value="0">Cakes</option>
+                                                                <option value="0">Hight</option>
                                                                 <option value="1">lorem</option>
                                                                 <option value="2">lorem</option>
                                                             </select>
@@ -301,62 +311,16 @@
                                                 </div>
                                                 <div class="col-xl-4 col-md-6">
                                                     <div class="inputfield">
-                                                        <label for="upcean">Product UPC/EAN
-                                                            <img src="img/selleracc/question-icon.svg" alt="question"
-                                                                data-bs-toggle="tooltip"
-                                                                data-bs-title="Default tooltip"></label>
-                                                        <div class="generalselect">
-                                                            <select class="customselect" name="category" id="upcean">
-                                                                <option value="0">48121620</option>
-                                                                <option value="1">lorem</option>
-                                                                <option value="2">lorem</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <p class="titleinfo">
-                                                            Kosher certificate
+                                                        <input type="text" id="sku"
+                                                            placeholder="481216204236"
+                                                            required="">
+                                                        <label for="sku">Product SKU
                                                             <img src="img/selleracc/question-icon.svg" alt="question"
                                                                 data-bs-toggle="tooltip"
                                                                 data-bs-title="Default tooltip">
-                                                        </p>
-                                                        <div class="addkoshercertificate">
-                                                            <div class="ingrwrap" id="certificateContainer">
-                                                                <div class="addedsertificate">
-                                                                    <div class="addedsertificate__file">
-                                                                        <div class="file-upload">
-                                                                            <div class="file-select">
-                                                                                <label for="chooseFile1">
-                                                                                    <div class="file-select-button"
-                                                                                        id="fileName1"><img
-                                                                                            src="img/blog/photo-ic.svg"
-                                                                                            alt="icon">Add icon</div>
-                                                                                </label>
-                                                                                <input type="file" name="chooseFile1"
-                                                                                    id="chooseFile1" class="chooseFile">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="addedsertificate__img">
-                                                                        <img class="selectedImage" src="" alt="">
-                                                                    </div>
-                                                                    <div class="addedsertificate__text">
-                                                                        <input type="text">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="addingr">
-                                                                <span class="addbtn" id="addCertificate">Add Certificate
-                                                                    +</span>
-                                                            </div>
-                                                        </div>
+                                                        </label>
                                                     </div>
                                                 </div>
-
-                                                <!-- - -->
                                             </div>
                                         </div>
 
@@ -394,7 +358,7 @@
                                                         <input type="text" id="weight" placeholder="25" required="">
                                                         <label for="weight">Weight
                                                         </label>
-                                                        <div class="input-infobtn">cm</div>
+                                                        <div class="input-infobtn">g</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -431,7 +395,50 @@
                                                         <input type="text" id="weight2" placeholder="25" required="">
                                                         <label for="weight2">Weight
                                                         </label>
-                                                        <div class="input-infobtn">cm</div>
+                                                        <div class="input-infobtn">g</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="formbox">
+                                            <div class="col-12">
+                                                <div class="inputfield">
+                                                    <p class="titleinfo">
+                                                        Kosher certificate
+                                                        <img src="img/selleracc/question-icon.svg" alt="question"
+                                                            data-bs-toggle="tooltip"
+                                                            data-bs-title="Default tooltip">
+                                                    </p>
+                                                    <div class="addkoshercertificate">
+                                                        <div class="ingrwrap" id="certificateContainer">
+                                                            <!-- <div class="addedsertificate">
+                                                                <div class="addedsertificate__file">
+                                                                    <div class="file-upload">
+                                                                        <div class="file-select">
+                                                                            <label for="chooseFile1">
+                                                                                <div class="file-select-button"
+                                                                                    id="fileName1"><img
+                                                                                        src="img/blog/photo-ic.svg"
+                                                                                        alt="icon">Add icon</div>
+                                                                            </label>
+                                                                            <input type="file" name="chooseFile1"
+                                                                                id="chooseFile1" class="chooseFile">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="addedsertificate__img">
+                                                                    <img class="selectedImage" src="" alt="">
+                                                                </div>
+                                                                <div class="addedsertificate__text">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="addingr">
+                                                            <span class="addbtn" id="addCertificate">Add Certificate
+                                                                +</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -442,7 +449,7 @@
                                                 <div class="inputfield">
                                                     <textarea id="proddescr"
                                                         placeholder="This description will be located after the title and price. For example: Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas "></textarea>
-                                                    <label for="proddescr">Short description*
+                                                    <label for="proddescr">Product description*
                                                         <img src="img/selleracc/question-icon.svg" alt="question"
                                                             data-bs-toggle="tooltip" data-bs-title="Default tooltip">
                                                     </label>
