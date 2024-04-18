@@ -1300,4 +1300,24 @@ $(document).ready(function () {
     });
 
 
+    // upd2
+    if ($('.datatable').length) {
+        $('#example1').DataTable({
+            "dom": 'rtip',
+            "bInfo" : false,
+            columnDefs: [
+                { targets: [0], orderable: false }
+            ],
+            // "language": {
+            //     "search": "",
+            //     searchPlaceholder: "Search on Food...",
+            //     sLengthMenu: " _MENU_"
+            // },
+            // "drawCallback": function (settings) {
+            //     var info = $(this).DataTable().page.info();
+            //     $('.dataTables_info').text('');
+            // }
+        });
+    }
+
 });
