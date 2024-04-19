@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Product Approval</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/sortable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="adminpage">
+            <aside class="asminsidebar">
+                <div class="asminsidebar__head">
+                    <div class="adminlogo">
+                        <img src="img/admin/logo-admin.svg" alt="logo">
+                    </div>
+                    <span class="adminmenu">
+                        <img src="img/admin/admin-menu.svg" alt="menu">
+                    </span>
+                </div>
+                <div class="asminsidebar__body">
+                    <ul class="adsidebarlist">
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic0.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic1.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    all customers
+                                </span>
+                            </a>
+                        </li>
+                        <li class="subitem">
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic2.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Sellers
+                                </span>
+                            </a>
+                            <ul class="sublist">
+                                <li class="active"><a href="#">All Selers</a></li>
+                                <li><a href="#">Need to be approved</a></li>
+                                <li><a href="#">Whale sellers</a></li>
+                                <li><a href="#">Categories</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic3.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Receipts
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic4.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Reports
+                                    <i>0</i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/admin/admin-sidebar-ic6.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    product
+                                    <i>5</i>
+                                </span>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="adsidebarlist signout">
+                        <li>
+                            <a href="#">
+                                <span class="iconwrap">
+                                    <img src="img/account/acc-signout.svg" alt="icon">
+                                </span>
+                                <span class="listtext">
+                                    Sign Out
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="admincontent">
+                <div class="admincontent__head">
+                    <div class="searchblock">
+                        <input type="text" placeholder="Search on Food...">
+                        <button><img src="img/header/search-icon.svg" alt="search"></button>
+                    </div>
+                    <div class="admincontent__head-rightsect">
+                        <div class="admincontent__user">
+                            <span><img src="img/header/user-icon.png" alt=""></span>
+
+                            <div class="admincontent__userdd">
+                                <p>Lorem, ipsum dolor.</p>
+                                <ul>
+                                    <li><a href="#">Lorem Ipsum</a></li>
+                                    <li><a href="#">Lorem Ipsum</a></li>
+                                </ul>
+                                <a href="#" class="greenbtn">Button</a>
+                            </div>
+                        </div>
+                        <div class="notification">
+                            <img src="img/admin/notification.svg" alt="img">
+                            <span>1</span>
+                        </div>
+                        <div class="notification__dropdown">
+                            <p class="notification__title">Notifications</p>
+                            <div class="notification__list">
+
+                                <a href="#" class="notification__row">
+                                    <div class="notification__img">
+                                        <img src="img/admin/notification-icon1.svg" alt="icon">
+                                    </div>
+                                    <div class="notification__descr">
+                                        <p class="title">Support Call</p>
+                                        <p class="description">Has placed suport call</p>
+                                    </div>
+                                    <div class="notification__time">
+                                        <img src="img/admin/clock-icon.svg" alt="img">
+                                        <span>12 PM</span>
+                                    </div>
+                                </a>
+                                <div class="notification__row">
+                                    <div class="notification__img">
+                                        <img src="img/admin/notification-icon2.svg" alt="icon">
+                                    </div>
+                                    <div class="notification__descr">
+                                        <p class="title">New request</p>
+                                        <p class="description">Add Dany Jones as your cont...</p>
+                                        <div class="notification__row-btns">
+                                            <a href="#" class="approve">Approve</a>
+                                            <a href="#" class="delete">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="notification__time">
+                                        <img src="img/admin/clock-icon.svg" alt="img">
+                                        <span>12 PM</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="notification__row">
+                                    <div class="notification__img">
+                                        <img src="img/admin/notification-icon3.svg" alt="icon">
+                                    </div>
+                                    <div class="notification__descr">
+                                        <p class="title">Server overloaded</p>
+                                        <p class="description">Donec mattis augue a ni...</p>
+                                    </div>
+                                    <div class="notification__time">
+                                        <img src="img/admin/clock-icon.svg" alt="img">
+                                        <span>12 PM</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <a href="#">
+                            <img src="img/selleracc/question-icon.svg" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="img/selleracc/settings-icon.svg" alt="img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="admincontent__body">
+                    <div class="admininfosect">
+                        <div class="admininfosect__header">
+                            <div class="admininfosect__title">
+                                <img src="img/admin/product-approval-icon.svg" alt="icon">
+                                <p>Product</p>
+                            </div>
+                        </div>
+                        <div class="admininfosect__body">
+                            <div class="admininfosect__filtersect">
+                                <div class="searchwrap">
+                                    <div class="searchblock">
+                                        <input type="text" placeholder="Search...">
+                                        <button><img src="img/header/search-icon.svg" alt="search"></button>
+                                    </div>
+                                </div>
+
+                                <div class="showcount">
+                                    <div class="generalselect">
+                                        <select class="customselect" name="category" id="unit">
+                                            <option value="1">Show 20</option>
+                                            <option value="2">Show 30</option>
+                                            <option value="3">Show 40</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <button class="datebtn">
+                                    Date
+                                    <img src="img/selleracc/table-arrow.svg" alt="img">
+                                </button>
+                            </div>
+
+                            <div class="sellertable admappr">
+                                <table class="table sortable">
+                                    <thead>
+                                        <tr>
+                                            <th class="appr-name">Name</th>
+                                            <th class="appr-date">Date</th>
+                                            <th class="appr-vendor">Vendor</th>
+                                            <th class="appr-code">Code</th>
+                                            <th class="appr-status">Status</th>
+                                            <th class="appr-action no-sort">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="appr-name">
+                                                <div class="seller-tableproduct">
+                                                    <div class="imgwrap">
+                                                        <img src="img/selleracc/table-product2.png" alt="img">
+                                                    </div>
+                                                    <div class="descrwrap">
+                                                        <p class="title">
+                                                            Céréal Apricot Tart, Gluten Free, Lactose Free
+                                                        </p>
+                                                        <a href="#" class="details" data-bs-toggle="modal"
+                                                            data-bs-target="#proddetails">Details</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="appr-date">
+                                                10/05/2023
+                                            </td>
+                                            <td class="appr-vendor">
+                                                Anna Halland
+                                            </td>
+                                            <td class="appr-code">
+                                                456704
+                                            </td>
+                                            <td class="appr-status">
+                                                <span style="background: #E7F5EC;">Expected</span>
+                                            </td>
+                                            <td class="appr-action">
+                                                <div class="btnswrapper">
+                                                    <a href="#" class="admsellerbtnedit">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove"><img
+                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="appr-name">
+                                                <div class="seller-tableproduct">
+                                                    <div class="imgwrap">
+                                                        <img src="img/selleracc/table-product1.png" alt="img">
+                                                    </div>
+                                                    <div class="descrwrap">
+                                                        <p class="title">
+                                                            Musclefit Protein Pancake Prepared Fast easy...
+                                                        </p>
+                                                        <a href="#" class="details" data-bs-toggle="modal"
+                                                            data-bs-target="#proddetails">Details</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="appr-date">
+                                                10/05/2023
+                                            </td>
+                                            <td class="appr-vendor">
+                                                Stiven Klin
+                                            </td>
+                                            <td class="appr-code">
+                                                557849
+                                            </td>
+                                            <td class="appr-status">
+                                                <span style="background: #FF878E;">Cancelled</span>
+                                            </td>
+                                            <td class="appr-action">
+                                                <div class="btnswrapper">
+                                                    <a href="#" class="admsellerbtnedit">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove"><img
+                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="appr-name">
+                                                <div class="seller-tableproduct">
+                                                    <div class="imgwrap">
+                                                        <img src="img/selleracc/table-product4.png" alt="img">
+                                                    </div>
+                                                    <div class="descrwrap">
+                                                        <p class="title">
+                                                            Pesoforma Porridge Cacao e Avena, 5 x 55g
+                                                        </p>
+                                                        <a href="#" class="details" data-bs-toggle="modal"
+                                                            data-bs-target="#proddetails">Details</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="appr-date">
+                                                09/05/2023
+                                            </td>
+                                            <td class="appr-vendor">
+                                                Erika Monca
+                                            </td>
+                                            <td class="appr-code">
+                                                346281
+                                            </td>
+                                            <td class="appr-status">
+                                                <span style="background: #20CFA0;">Aprrow</span>
+                                            </td>
+                                            <td class="appr-action">
+                                                <div class="btnswrapper">
+                                                    <a href="#" class="admsellerbtnedit">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove"><img
+                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="appr-name">
+                                                <div class="seller-tableproduct">
+                                                    <div class="imgwrap">
+                                                        <img src="img/selleracc/table-product3.png" alt="img">
+                                                    </div>
+                                                    <div class="descrwrap">
+                                                        <p class="title">
+                                                            Bucce di Psillio Biologico - Purezza 99% - da 200 g.
+                                                        </p>
+                                                        <a href="#" class="details" data-bs-toggle="modal"
+                                                            data-bs-target="#proddetails">Details</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="appr-date">
+                                                08/05/2023
+                                            </td>
+                                            <td class="appr-vendor">
+                                                Mario Anders
+                                            </td>
+                                            <td class="appr-code">
+                                                267882
+                                            </td>
+                                            <td class="appr-status">
+                                                <span style="background: #FF878E;">Cancelled</span>
+                                            </td>
+                                            <td class="appr-action">
+                                                <div class="btnswrapper">
+                                                    <a href="#" class="admsellerbtnedit">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove"><img
+                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="appr-name">
+                                                <div class="seller-tableproduct">
+                                                    <div class="imgwrap">
+                                                        <img src="img/selleracc/table-product6.png" alt="img">
+                                                    </div>
+                                                    <div class="descrwrap">
+                                                        <p class="title">
+                                                            Bauli Plumcake "Senza" Mela - 132 G
+                                                        </p>
+                                                        <a href="#" class="details" data-bs-toggle="modal"
+                                                            data-bs-target="#proddetails">Details</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="appr-date">
+                                                08/05/2023
+                                            </td>
+                                            <td class="appr-vendor">
+                                                Sofia Bunii
+                                            </td>
+                                            <td class="appr-code">
+                                                267882
+                                            </td>
+                                            <td class="appr-status">
+                                                <span style="background: #E7F5EC;">Expected</span>
+                                            </td>
+                                            <td class="appr-action">
+                                                <div class="btnswrapper">
+                                                    <a href="#" class="admsellerbtnedit">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove"><img
+                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="pagination">
+                                <ul>
+                                    <li><a href="#"><img src="img/general/pagination-prev.svg" alt="prev"></a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li>...</li>
+                                    <li><a href="#">11</a></li>
+                                    <li><a href="#"><img src="img/general/pagination-next.svg" alt="next"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="admbgel1" src="img/background-elements/bgelem9.png" alt="img">
+            <img class="admbgel2" src="img/background-elements/bgelem5.png" alt="img">
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade generalmodal largemodal prapprmodal" id="proddetails" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="productdetails">
+                    <div class="closedetails" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="img/account/close.svg" alt="close">
+                    </div>
+                    <div class="title">Product details</div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Position name</p>
+                                <p class="positionname">
+                                    Musclefit Pancake Proteico Preparato Fast facile e veloce 250g per la tua colazione
+                                    Fit (Original)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Short description</p>
+                                <p>
+                                    Etiam non nunc vehicula, facilisis nunc vitae, tristique leo. Suspendisse lectus
+                                    justo, commodo ut dapibus nec, aliquam vitae nulla. Maecenas ultricies viverra mi,
+                                    vel feugiat nunc bibendum at. Aenean eget dolor elit. Nam ac lorem ipsum. Nullam
+                                    pretium nunc eget suscipit finibus. Sed a orci quis lectus aliquet posuere.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <ul class="infoblock__list">
+                                    <li>Price: <span class="infoblock__list-price">$ 20.99</span></li>
+                                    <li>
+                                        Unit: <span>Pcs</span>
+                                    </li>
+                                    <li>
+                                        Code: <span>345678</span>
+                                    </li>
+                                    <li>
+                                        Brand <span>Céréal</span>
+                                    </li>
+                                    <li>Category on the marketplace: <span>Products</span></li>
+                                    <li>
+                                        Select a product type: <span>Cakes</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Product description</p>
+                                <p>
+                                    Most orders are shipped within 1 hour of being placed. Food will not be able to
+                                    cancel an order once it has been shipped. You will be able to start the return
+                                    process after receiving your order. For this you need to contact one of our
+                                    managers. Refunds will be made after the goods are returned in their original
+                                    condition:
+                                </p>
+                                <ul>
+                                    <li>20 g Protein - Per 55 g Serving</li>
+                                    <li>100% Whole Grains</li>
+                                    <li>No Added Sugar</li>
+                                    <li>Just Add Water</li>
+                                </ul>
+                                <p class="subtitle">Suggested use Pancakes</p>
+                                <p>1/2 cup mix + 1/3 cup cold water</p>
+                                <p><b>Heat griddle</b> to low heat (285-295°F).</p>
+                                <p><b>Combine & whisk</b> ingredients until blended. Set aside and let batter thicken
+                                    for 3
+                                    minutes.</p>
+                                <p>For thinner pancakes add 1-2 tbsp of water.</p>
+                                <p>
+                                    <b>Pour batter</b> into 3-4 four inch pancakes on a lightly greased, pre-heated
+                                    griddle.
+                                </p>
+                                <p>
+                                    <b>Cook slow-on-low</b> until no more bubbles are forming in the center and edges
+                                    look dry
+                                    (about 3 minutes). Flip and cook until golden brown.
+                                </p>
+                                <p class="subtitle">Want More Protein?</p>
+                                <p>
+                                    <b>23 g</b> - Replace water 1:1 with fat-free milk.
+                                </p>
+                                <p>
+                                    <b>26 g</b> - Replace water with 1 large egg + 1 Tbsp water.
+                                </p>
+                                <p class="subtitle">Disclaimer</p>
+                                <p class="fz15">
+                                    While Food strives to ensure the accuracy of its product images and information,
+                                    some manufacturing changes to packaging and/or ingredients may be pending update on
+                                    our site. Although items may occasionally ship with alternate packaging, freshness
+                                    is always guaranteed. We recommend that you read labels, warnings and directions of
+                                    all products before use and not rely solely on the information provided by Food.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock storagecond">
+                                <p class="infoblock__title">Storage Conditions</p>
+                                <p>
+                                    <b>
+                                        Frozen:
+                                    </b>
+                                    This product is a frozen product and will be coming packed in ice.
+                                </p>
+                                <p>
+                                    <b>
+                                        Shalf Live:
+                                    </b>
+                                    This product is a frozen product and will be coming packed in ice.
+                                </p>
+                                <div class="noteinfo">
+                                    <span>*PLEASE NOTE:</span> Ess Gezunt is not responsible for any manufacturer claim
+                                    including
+                                    allergens, kosher status, or any other special ingredients. Ess Gezunt suggests that
+                                    manufacturers post all health features as well as kosher certifications
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="roductdetails__infoblock">
+                                <p class="infoblock__title">Image</p>
+                                <div class="imgsbox">
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg1.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg2.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg3.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg4.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="imgcol">
+                                        <div class="imgwrap">
+                                            <img src="img/selleracc/modalimg5.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btnswrapper">
+                            <a href="#" class="rejectinformation" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="img/admin/trash-icon.svg" alt="img">
+                                Reject
+                            </a>
+                            <a href="#" class="greenbtn editinformation">Edit information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/sortable.min.js"></script>
+    <script src="js/lib/popper.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
