@@ -916,6 +916,16 @@
     .catdiscounts__box {
         margin-right: 15px;
     }
+
+    .smallpageinf.category {
+        .reccatnamewrap .reccatnamewrap__img img {
+            object-position: 100% 100%;
+            border-radius: 100px 0 0 100px;
+            
+        }
+    }
+
+    
 }
 
 @media(max-width:991.8px) {
@@ -936,5 +946,13 @@
 
     .categorysect__discounts {
         justify-content: flex-start;
+    }
+
+    .smallpageinf.category {
+        .reccatnamewrap .reccatnamewrap__img img {
+            object-position: 70% 50%;
+            border-radius: 100px 0 0 100px;
+            
+        }
     }
 }
