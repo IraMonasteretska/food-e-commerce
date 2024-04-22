@@ -4549,6 +4549,16 @@
     }
 }
 
+#reject .signoutwrap {
+    .title {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 23px;
+    }
+}
+
 @media(max-width:1600.8px) {
     .sellertable .appr-name {
         width: calc(100% - 810px);
@@ -4696,3 +4706,4 @@
         width: 134px;
     }
 }
+
