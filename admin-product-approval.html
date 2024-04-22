@@ -15,7 +15,6 @@
 <body>
 
     <main>
-
         <div class="adminpage">
             <aside class="asminsidebar">
                 <div class="asminsidebar__head">
@@ -269,9 +268,11 @@
                                             </td>
                                             <td class="appr-action">
                                                 <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                    <a href="#" class="admsellerbtnedit" data-bs-toggle="modal"
+                                                        data-bs-target="#approve">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove" data-bs-toggle="modal"
+                                                        data-bs-target="#reject"><img src="img/admin/trash-icon.svg"
+                                                            alt="img">Reject</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -304,9 +305,11 @@
                                             </td>
                                             <td class="appr-action">
                                                 <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                    <a href="#" class="admsellerbtnedit" data-bs-toggle="modal"
+                                                        data-bs-target="#approve">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove" data-bs-toggle="modal"
+                                                        data-bs-target="#reject"><img src="img/admin/trash-icon.svg"
+                                                            alt="img">Reject</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -339,9 +342,11 @@
                                             </td>
                                             <td class="appr-action">
                                                 <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                    <a href="#" class="admsellerbtnedit" data-bs-toggle="modal"
+                                                        data-bs-target="#approve">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove" data-bs-toggle="modal"
+                                                        data-bs-target="#reject"><img src="img/admin/trash-icon.svg"
+                                                            alt="img">Reject</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -374,9 +379,11 @@
                                             </td>
                                             <td class="appr-action">
                                                 <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                    <a href="#" class="admsellerbtnedit" data-bs-toggle="modal"
+                                                        data-bs-target="#approve">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove" data-bs-toggle="modal"
+                                                        data-bs-target="#reject"><img src="img/admin/trash-icon.svg"
+                                                            alt="img">Reject</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -409,9 +416,11 @@
                                             </td>
                                             <td class="appr-action">
                                                 <div class="btnswrapper">
-                                                    <a href="#" class="admsellerbtnedit">Approve</a>
-                                                    <a href="#" class="admsellerbtnremove"><img
-                                                            src="img/admin/trash-icon.svg" alt="img">Reject</a>
+                                                    <a href="#" class="admsellerbtnedit" data-bs-toggle="modal"
+                                                        data-bs-target="#approve">Approve</a>
+                                                    <a href="#" class="admsellerbtnremove" data-bs-toggle="modal"
+                                                        data-bs-target="#reject"><img src="img/admin/trash-icon.svg"
+                                                            alt="img">Reject</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -612,6 +621,37 @@
         </div>
     </div>
 
+    <div class="modal fade small" id="approve" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="signoutwrap">
+                    <img src="img/new/approve.svg" alt="img">
+                    <p class="title">
+                        Approve Product
+                    </p>
+
+                    <a href="#" class="greenbtn">Ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade small" id="reject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="signoutwrap">
+                    <img src="img/new/reject.svg" alt="img">
+                    <p class="title">
+                        Reject Product
+                    </p>
+                    <p>
+                        Sure you want to reject
+                    </p>
+                    <a href="#" class="greenbtn" data-bs-dismiss="modal">Cancel</a>
+                    <a href="#" class="bordergreenbtn">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -621,5 +661,6 @@
     <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
 </body>
+
 
 </html>
