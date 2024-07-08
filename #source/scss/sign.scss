@@ -39,6 +39,37 @@
         line-height: 160%;
     }
 
+    .signcontent__description {
+        margin-bottom: 40px;
+
+        h4 {
+            color: #21292F;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: #158466;
+            transition: .3s;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
     .logbtngroup {
         display: flex;
         flex-wrap: wrap;
