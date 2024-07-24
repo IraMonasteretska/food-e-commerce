@@ -1201,6 +1201,25 @@
     padding-bottom: 30px;
 }
 
+.ingredientslist {
+    padding-top: 20px;
+
+    ul {
+        padding-left: 20px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+            padding-right: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
 @media(max-width:1599.8px) {
     .certificates .certificatebox {
         margin-bottom: 10px;
@@ -1251,6 +1270,11 @@
 }
 
 @media(max-width:575.8px) {
+    .ingredientslist ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
     .productinfo {
         display: block;
 
