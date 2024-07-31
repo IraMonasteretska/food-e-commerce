@@ -1183,9 +1183,27 @@
     margin-top: 15px;
     border-bottom: 1px solid #D9DBDF;
     padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
 
     span {
         font-weight: 500;
+    }
+
+    p {
+        margin: 0;
+
+        &:nth-child(1) {
+            width: 100%;
+            max-width: 35%;
+            flex: 0 0 35%;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+            max-width: 65%;
+            flex: 0 0 65%;
+        }
     }
 }
 
@@ -1257,7 +1275,6 @@
         }
     }
 
-    // upd2
     .sellratbox .seller {
         margin-bottom: 15px;
     }
@@ -1266,6 +1283,20 @@
     .sellratbox .ratingresponse {
         max-width: 100%;
         flex: 0 0 100%;
+    }
+
+    .productcode p {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
     }
 }
 
