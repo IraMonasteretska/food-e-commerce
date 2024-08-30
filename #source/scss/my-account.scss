@@ -2366,7 +2366,8 @@
         margin: 0 20px 0 0;
         display: inline-flex;
         width: auto;
-        min-width: 205px;
+        max-width: 195px;
+        width: 100%;
         padding: 3px 10px;
 
         &:last-child {
@@ -2374,6 +2375,125 @@
         }
     }
 }
+
+
+
+
+
+
+@media(max-width:1599.8px) {
+    .custservice .custservice__topimg {
+        max-width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .custservice .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .custservice .custservice__modalbtns {
+        padding-top: 0;
+    }
+
+    .custservice .inputfield {
+        margin-bottom: 20px;
+    }
+
+    .custservice .modal-dialog {
+        max-width: 600px;
+    }
+
+    .myacc-delivered .bordergreenbtn {
+        max-width: 180px;
+        margin-right: 15px;
+    }
+
+
+}
+
+@media(max-width:1399.8px) {
+
+    .myacc-delivered .myacc-delivered__right {
+        padding-left: 0;
+        padding-top: 20px;
+
+        .bordergreenbtn {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .myacc-delivered .bordergreenbtn {
+        max-width: 170px;
+    }
+}
+
+@media(max-width: 991.8px) {
+    .custservice .custservice__modalbtns {
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 767.8px) {
+    .custservice .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 575.8px) {
+    .custservice .modal-content {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .custservice .title {
+        font-size: 22px;
+    }
+
+    .custservice .custservice__modalbtns {
+        padding-top: 10px;
+
+        button {
+            max-width: calc(50% - 5px);
+            flex: 0 0 calc(50% - 5px);
+            font-size: 13px !important;
+            min-height: 40px !important;
+        }
+    }
+
+    .myacc-delivered .bordergreenbtn {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:480.8px) {
+    .myacc-delivered .myacc-delivered__right .bordergreenbtn {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 360.8px) {
+    .custservice .title {
+        font-size: 19px;
+    }
+
+    .custservice .modal-content {
+        padding: 20px 15px;
+    }
+
+    .custservice .custservice__topimg {
+        max-width: 60px;
+    }
+}
+
+
+// recent orders - new btn
+
 
 .custservice {
     .modal-content {
@@ -2421,98 +2541,269 @@
 
 }
 
-@media(max-width:1599.8px) {
-    .custservice .custservice__topimg {
-        max-width: 80px;
-        margin-bottom: 20px;
-    }
-
-    .custservice .title {
-        font-size: 26px;
-        margin-bottom: 20px;
-    }
-
-    .custservice .custservice__modalbtns {
-        padding-top: 0;
-    }
-
-    .custservice .inputfield {
-        margin-bottom: 20px;
-    }
-
-    .custservice .modal-dialog {
-        max-width: 600px;
-    }
-
-
+// modal-recent orders
+.recorder__infoblock {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    height: calc(100% - 20px);
+    color: #21292F;
 }
 
-@media(max-width:1399.8px) {
+.recorder__infoblock {
+    height: auto;
 
-    .myacc-delivered .myacc-delivered__right {
-        padding-left: 0;
-        padding-top: 20px;
+    .rotitle {
+        font-size: 22px;
+        font-weight: 500;
+        color: #21292F;
+        line-height: 120%;
+        margin: 0;
 
-        .bordergreenbtn {
-            margin-bottom: 10px;
-            margin-right: 10px;
-            min-width: 170px;
+        span {
+            font-size: 14px;
+            color: #3B454D;
+            margin-left: 16px;
         }
+    }
+
+    .recorder__infobox {
+        width: 100%;
+        max-width: 267px;
+        flex: 0 0 267px;
+
+        .rotitle {
+            margin-bottom: 25px;
+        }
+
+        p:not(.rotitle) {
+            font-size: 14px;
+            color: #21292F;
+            margin: 0;
+        }
+
+        a {
+            font-size: 14px;
+            color: #158466;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 5px;
+                font-size: 14px;
+                color: #21292F;
+                display: flex;
+                text-align: right;
+                width: 100%;
+
+                .listinfo {
+                    text-align: left;
+                    width: 100%;
+                    max-width: 135px;
+                    flex: 0 0 135px;
+                }
+
+                .listprice {
+                    width: 100%;
+                    max-width: calc(100% - 135px);
+                    flex: 0 0 calc(100% - 135px);
+                    text-align: right;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .roaboutorder {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .imgwrap {
+            width: 100%;
+            max-width: 130px;
+            flex: 0 0 130px;
+            height: 115px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(#000, 0.06);
+            border-radius: 5px;
+
+            img {
+                max-width: 85px;
+                max-height: 95px;
+            }
+        }
+
+        .description {
+            padding-left: 15px;
+            width: 100%;
+            max-width: 310px;
+            flex: 0 0 310px;
+
+            p {
+                color: #6A747B;
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .name {
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: #3B454D;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+
+        .prices {
+            width: 100%;
+            max-width: 150px;
+            flex: 0 0 150px;
+
+            .price {
+                margin-bottom: 0;
+                color: #158466;
+                font-size: 18px;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .oldprice {
+                margin: 0;
+                color: #7E8386;
+                font-size: 15px;
+                text-decoration: line-through;
+                display: inline-block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.productdetails {
+    .col-12 {
+        &:last-child {
+            .recorder__infoblock {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 1199.8px) {
+
+    .recorder__infoblock .recorder__infobox {
+        max-width: 33%;
+        flex: 0 0 33%;
+        padding-right: 15px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .recorder__infoblock .roaboutorder {
+        margin-top: 20px;
+    }
+
+    .recorder__infoblock .recorder__infobox .rotitle {
+        margin-bottom: 20px;
     }
 
 }
 
 @media(max-width: 991.8px) {
-    .custservice .custservice__modalbtns {
-        padding-top: 20px;
+    .recorder__infoblock .roaboutorder .prices {
+        width: 100%;
+        max-width: 100px;
+        flex: 0 0 100px;
     }
+
+    .recorder__infoblock .roaboutorder .description {
+        width: 100%;
+        max-width: calc(100% - 230px);
+        flex: 0 0 calc(100% - 230px);
+    }
+
 }
 
 @media(max-width: 767.8px) {
-    .custservice .modal-dialog {
-        max-width: 500px;
+    .recorder__infoblock .recorder__infobox {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
+
+    .recorder__infoblock .rotitle {
+        font-size: 20px;
+    }
+
+    .recorder__infoblock .roaboutorder .description {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
 
 @media(max-width: 575.8px) {
-    .custservice .modal-content {
-        padding: 20px;
-        border-radius: 10px;
+    .recorder__infoblock .rotitle {
+        font-size: 18px;
     }
 
-    .custservice .title {
-        font-size: 22px;
+    .recorder__infoblock .rotitle span {
+        margin-left: 10px;
     }
 
-    .custservice .custservice__modalbtns {
-        padding-top: 10px;
-
-        button {
-            max-width: calc(50% - 5px);
-            flex: 0 0 calc(50% - 5px);
-            font-size: 13px !important;
-            min-height: 40px !important;
-        }
-    }
-}
-
-@media(max-width:480.8px) {
-    .myacc-delivered .myacc-delivered__right .bordergreenbtn {
-        margin-right: 0;
-        width: 100%;
-    }
-}
-
-@media(max-width: 360.8px) {
-    .custservice .title {
-        font-size: 19px;
+    .recorder__infoblock .recorder__infobox .rotitle {
+        margin-bottom: 10px;
     }
 
-    .custservice .modal-content {
-        padding: 20px 15px;
+    .recorder__infoblock .recorder__infobox {
+        margin-bottom: 25px;
     }
 
-    .custservice .custservice__topimg {
-        max-width: 60px;
+    .recorder__infoblock .roaboutorder .imgwrap,
+    .recorder__infoblock .roaboutorder .description,
+    .recorder__infoblock .roaboutorder .prices {
+        max-width: 100%;
+        flex: 0 0 100%;
     }
+
+    .recorder__infoblock .roaboutorder .imgwrap {
+        margin-bottom: 15px;
+    }
+
+    .recorder__infoblock .roaboutorder .description {
+        margin-bottom: 15px;
+        padding-left: 0;
+    }
+
 }
