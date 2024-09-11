@@ -1320,4 +1320,44 @@ $(document).ready(function () {
         });
     }
 
+
+
+
+
+
+    // cart page - slider
+
+    var swiper2 = new Swiper(".productsection-slider.prevboughtslider", {
+        spaceBetween: 15,
+
+        navigation: {
+            nextEl: ".swiper-button-next.custom.sl2",
+            prevEl: ".swiper-button-prev.custom.sl2",
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            575: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            991: {
+                slidesPerView: 4,
+            },
+            1550: {
+                slidesPerView: 5,
+            },
+        },
+    });
+
+
+
+
+
+    // prevboughtslider
+
 });
