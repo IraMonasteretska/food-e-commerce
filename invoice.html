@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="invoicepage">
+        <div class="invoiceheader">
+            <img class="invoiceheader__bg" src="img/invoice/invoice-hero.jpg" alt="img">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="invoiceheader__left">
+                            <p class="title">Invoice to</p>
+                            <ul>
+                                <li>Date: 3/2/2023</li>
+                                <li>Invoice No: 2787</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="invoiceheader__right">
+                            <img src="img/invoice/food.svg" alt="logo">
+                            <p>6 Bedford Court Spring Valley NY 10977</p>
+                            <ul>
+                                <li>
+                                    <a href="tel:3187020311">
+                                        <img src="img/invoice/tel-ic.svg" alt="tel">
+                                        318-702-0311
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:contact@info.com">
+                                        <img src="img/invoice/mail-ic.svg" alt="tel">
+                                        contact@info.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="totaldue">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="totaldue__wrap">
+                            <div class="totaldue__invoiceto">
+                                <p class="due-title">Invoice to</p>
+                                <ul>
+                                    <li>
+                                        <b>
+                                            Marvel<br>
+                                            Mr. Chezkel Holtzer
+                                        </b>
+                                    </li>
+                                    <li>
+                                        81 Harrison Avenue,<br> Brooklyn NY 11206
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="totaldue__shipto">
+                                <p class="due-title">Ship to</p>
+                                <ul>
+                                    <li>
+                                        <b>
+                                            Marvel<br>
+                                            Mr. Chezkel Holtzer
+                                        </b>
+                                    </li>
+                                    <li>
+                                        81 Harrison Avenue,<br> Brooklyn NY 11206
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="totaldue__total">
+                                <p class="title">Total due</p>
+                                <span>
+                                    $ 75.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="itemdescription">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="itemdescription__wrapper">
+                            <div class="ltbl">
+                                <div class="scrollbox">
+                                <div class="ltbl__header">
+                                    <div class="idesc">
+                                        <p>Item description</p>
+                                    </div>
+                                    <div class="iprice">
+                                        <p>Price</p>
+                                    </div>
+                                    <div class="iquan">
+                                        <p>Quantity</p>
+                                    </div>
+                                    <div class="itot">
+                                        <p>Total</p>
+                                    </div>
+                                </div>
+                                <div class="ltbl__body">
+                                    <div class="ltbl__row">
+                                        <div class="idesc">
+                                            <div class="idbox">
+                                                <div class="imgwrap">
+                                                    <img src="img/invoice/pod1.jpg" alt="">
+                                                </div>
+                                                <div class="descrwrap">
+                                                    <p class="nameprod">
+                                                        Céréal Apricot Tart, Gluten Free, Lactose<br> Free
+                                                    </p>
+                                                    <p>
+                                                        Weight: 0.45 kg
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iprice">
+                                            <p>
+                                                <span class="mainprice">$ 15.77</span>
+                                                <span class="oldprice">$ 25.12</span>
+                                            </p>
+                                        </div>
+                                        <div class="iquan">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="itot">
+                                            <p>$ 15.77</p>
+                                        </div>
+                                    </div>
+                                    <div class="ltbl__row">
+                                        <div class="idesc">
+                                            <div class="idbox">
+                                                <div class="imgwrap">
+                                                    <img src="img/invoice/pod2.jpg" alt="">
+                                                </div>
+                                                <div class="descrwrap">
+                                                    <p class="nameprod">
+                                                        Bucce di Psillio Biologico - Purezza 99% -<br> da 200 g.
+                                                    </p>
+                                                    <p>
+                                                        Weight: 200 kg
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iprice">
+                                            <p>
+                                                <span class="mainprice">$ 22.77</span>
+                                                <span class="oldprice">$ 29.12</span>
+                                            </p>
+                                        </div>
+                                        <div class="iquan">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="itot">
+                                            <p>$ 22.77</p>
+                                        </div>
+                                    </div>
+                                    <div class="ltbl__row">
+                                        <div class="idesc">
+                                            <div class="idbox">
+                                                <div class="imgwrap">
+                                                    <img src="img/invoice/pod3.png" alt="">
+                                                </div>
+                                                <div class="descrwrap">
+                                                    <p class="nameprod">
+                                                        NABALI FAIRKOST Freekeh Frikeh<br> secondo Ottolenghi 250 g
+                                                    </p>
+                                                    <p>
+                                                        Weight: 250 kg
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iprice">
+                                            <p>
+                                                <span class="mainprice">$ 15.77</span>
+                                                <span class="oldprice">$ 25.12</span>
+                                            </p>
+                                        </div>
+                                        <div class="iquan">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="itot">
+                                            <p>$ 15.77</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="ltbl__footer">
+                                    <div class="ltbl__footerleft">
+                                        <p class="title">
+                                            Payment Methods
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <span>Paypal:</span>
+                                                paypal@company.com Card
+                                            </li>
+                                            <li>
+                                                <span>Payment:</span>
+                                                Visa, Master Card We accept Chenque
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ltbl__footerright">
+                                        <ul>
+                                            <li>
+                                                <p class="tot">
+                                                    <span>Subtotal</span> ( 2 items )
+                                                </p>
+                                                <p class="price">$70.99</p>
+                                            </li>
+                                            <li>
+                                                <p class="tot">
+                                                    <span>Discount</span> ( 2 items )
+                                                </p>
+                                                <p class="price"><span>-$5.99</span></p>
+                                            </li>
+                                            <li>
+                                                <p class="tot">
+                                                    Shipping (below $25 order minimum)
+                                                </p>
+                                                <p class="price">$4.99</p>
+                                            </li>
+                                        </ul>
+                                        <p class="grtotal">
+                                            <span>Grand total:</span><span>$ 75.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="invoicebottsect">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-7">
+                        <p class="title">Terms&Condition:</p>
+                        <p>
+                            Lectus leo convallis eget hendrerit cursus sit eu dignissim etiam. Dignissim at nisl egestas
+                            sem urna proin odio orci mauris. Rhoncus luctus cum id tellus nibh. Dignissim ipsum donec
+                            sed nisl dictum. In interdum molestie nam enim urna vitae.
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-md-5 text-end">
+                        <div class="pdp">
+                            <img src="img/invoice/img.png" alt="img">
+                            <p class="name">Art. fgrgrw</p>
+                            <p>
+                                Acount Maneger
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="invoicefooter">
+            <div class="container">
+                <p>
+                    Thank you for your purchase
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
