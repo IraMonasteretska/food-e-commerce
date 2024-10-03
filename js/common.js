@@ -57,6 +57,7 @@ $(document).ready(function () {
 
     var swiper = new Swiper(".mainslider", {
         loop: true,
+        spaceBetween: 20,
         navigation: {
             nextEl: ".swiper-button-next.custom.sl1",
             prevEl: ".swiper-button-prev.custom.sl1",
