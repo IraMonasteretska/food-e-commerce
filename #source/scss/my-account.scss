@@ -573,8 +573,6 @@
     }
 }
 
-// Personal INFO
-
 .acccontentsect__header.acccontentsect__header-delacc {
     flex-wrap: wrap;
 
@@ -675,8 +673,6 @@
         padding-bottom: 40px;
     }
 }
-
-// My Address
 
 .acccontentsect__header.twocol {
     flex-wrap: wrap;
@@ -816,7 +812,6 @@
         flex: 0 0 260px;
         margin-right: 15px;
     }
-
 }
 
 @media(max-width:1399.8px) {
@@ -949,8 +944,6 @@
     }
 }
 
-// Personal info - edit
-
 .personalinfoeditsect {
     max-width: 771px;
     width: 100%;
@@ -1033,7 +1026,6 @@
     }
 }
 
-// Credit cards
 .creditcardswrapper {
     max-width: 970px;
 }
@@ -1061,8 +1053,6 @@
         text-decoration: none;
     }
 }
-
-// ADD CARD
 
 .widthwrap {
     max-width: 770px;
@@ -1141,8 +1131,6 @@
     }
 
 }
-
-// Edit card
 
 .cardhead {
     display: flex;
@@ -1258,8 +1246,6 @@
     }
 
 }
-
-// Email preferences
 
 .marketingemailsbox {
     color: $bace-color;
@@ -2366,7 +2352,7 @@
         margin: 0 20px 0 0;
         display: inline-flex;
         width: auto;
-        max-width: 195px;
+        max-width: 165px;
         width: 100%;
         padding: 3px 10px;
 
@@ -2377,9 +2363,93 @@
 }
 
 
+.automodal {
+    .productdetails .title {
+        margin-bottom: 65px;
+    }
 
+    .prar__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
 
+    .prar__box {
+        width: 100%;
+        max-width: calc(33.333% - 10px);
+        flex: 0 0 calc(33.333% - 10px);
 
+        input {
+            display: none;
+
+            &:checked+label {
+                border-color: #158466;
+
+                &::after {
+                    border: 1px solid #158466;
+                    background: url(../img/checkout/radiocheck.png) no-repeat center / 10px;
+                }
+            }
+        }
+
+        label {
+            display: block;
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            width: 100%;
+            height: 100%;
+            padding: 5px 15px 5px 45px;
+            border: 1px solid #D9DBDF;
+            border-radius: 10px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            transition: 0.3s;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                border: 1px solid rgba(#3B454C, 0.4);
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .unsub {
+        color: #259688;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .automodal__bottombtns {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+
+        .bordergreenbtn {
+            max-width: 128px;
+            margin-right: 20px;
+        }
+
+        .greenbtn {
+            max-width: 225px;
+        }
+    }
+
+}
 
 @media(max-width:1599.8px) {
     .custservice .custservice__topimg {
@@ -2405,11 +2475,26 @@
     }
 
     .myacc-delivered .bordergreenbtn {
-        max-width: 180px;
         margin-right: 15px;
     }
 
+}
 
+@media(max-width:1550.8px) {
+    .myacc-delivered .bordergreenbtn {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width:1440.8px) {
+    .automodal .productdetails .title {
+        margin-bottom: 30px;
+    }
+
+    .automodal .automodal__bottombtns {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width:1399.8px) {
@@ -2428,7 +2513,7 @@
 
 @media(max-width:1199.8px) {
     .myacc-delivered .bordergreenbtn {
-        max-width: 170px;
+        max-width: 160px;
     }
 }
 
@@ -2441,6 +2526,11 @@
 @media(max-width: 767.8px) {
     .custservice .modal-dialog {
         max-width: 500px;
+    }
+
+    .automodal .modal-content {
+        width: calc(100% - 30px);
+        margin: 0 auto;
     }
 }
 
@@ -2468,6 +2558,29 @@
     .myacc-delivered .bordergreenbtn {
         max-width: 100%;
     }
+
+    .automodal .prar__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .automodal .prar__box {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .automodal .prar__wrapper {
+        margin-bottom: 25px;
+    }
+
+    .automodal .automodal__bottombtns .bordergreenbtn {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .automodal .modal-content {
+        width: 100%;
+    }
 }
 
 @media(max-width:480.8px) {
@@ -2493,7 +2606,6 @@
 
 
 // recent orders - new btn
-
 
 .custservice {
     .modal-content {
@@ -2828,7 +2940,7 @@
         margin-bottom: 5px;
         display: inline-block;
         transition: 0.3s;
-        
+
         &:hover {
             color: #259688;
         }
