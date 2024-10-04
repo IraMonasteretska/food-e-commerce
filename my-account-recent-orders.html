@@ -292,9 +292,11 @@
 
                                             <div class="myacc-delivered__right">
                                                 <a href="#" class="bordergreenbtn">Write a review</a>
-                                                <a href="#" class="bordergreenbtn">Buy again</a>
                                                 <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
                                                     data-bs-target="#custserv">Customer Servise</a>
+                                                <a href="#" class="bordergreenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#autopopup">Auto-reorder</a>
                                                 <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
                                                     data-bs-target="#recentorderspopup">Recent orders </a>
                                             </div>
@@ -332,9 +334,11 @@
 
                                             <div class="myacc-delivered__right">
                                                 <a href="#" class="bordergreenbtn">Write a review</a>
-                                                <a href="#" class="bordergreenbtn">Buy again</a>
                                                 <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
                                                     data-bs-target="#custserv">Customer Servise</a>
+                                                <a href="#" class="bordergreenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#autopopup">Auto-reorder</a>
                                                 <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
                                                     data-bs-target="#recentorderspopup">Recent orders </a>
                                             </div>
@@ -371,9 +375,11 @@
 
                                             <div class="myacc-delivered__right">
                                                 <a href="#" class="bordergreenbtn">Write a review</a>
-                                                <a href="#" class="bordergreenbtn">Buy again</a>
                                                 <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
                                                     data-bs-target="#custserv">Customer Servise</a>
+                                                <a href="#" class="bordergreenbtn">Buy again</a>
+                                                <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
+                                                    data-bs-target="#autopopup">Auto-reorder</a>
                                                 <a href="#" class="bordergreenbtn" data-bs-toggle="modal"
                                                     data-bs-target="#recentorderspopup">Recent orders </a>
                                             </div>
@@ -497,9 +503,7 @@
         </div>
     </div>
 
-
     <!-- recentorderspopup -->
-
     <div class="modal fade generalmodal largemodal prapprmodal" id="recentorderspopup" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -597,6 +601,49 @@
         </div>
     </div>
 
+    <!-- autoorder popup -->
+    <div class="modal fade generalmodal automodal" id="autopopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="productdetails">
+                    <div class="closedetails" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="img/account/close.svg" alt="close">
+                    </div>
+                    <div class="title">Auto-reorder</div>
+                    <div class="prar__wrapper">
+                        <div class="prar__box">
+                            <input type="radio" name="autoreorder" id="ar1" checked="">
+                            <label for="ar1">
+                                Every week
+                            </label>
+                        </div>
+                        <div class="prar__box">
+                            <input type="radio" name="autoreorder" id="ar2">
+                            <label for="ar2">
+                                Bi-Weekly
+                            </label>
+                        </div>
+                        <div class="prar__box">
+                            <input type="radio" name="autoreorder" id="ar3">
+                            <label for="ar3">
+                                Monthly
+                            </label>
+                        </div>
+                    </div>
+                    <a href="#" class="unsub">Unsubscribe</a>
+                    <div class="automodal__bottombtns">
+                        <button class="bordergreenbtn" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+                        <button type="submit" class="greenbtn">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
