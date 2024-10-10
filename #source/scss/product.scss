@@ -1456,8 +1456,8 @@
 
     .prar__box {
         width: 100%;
-        max-width: calc(33.333% - 10px);
-        flex: 0 0 calc(33.333% - 10px);
+        max-width: calc(25% - 7px);
+        flex: 0 0 calc(25% - 7px);
 
         input {
             display: none;
@@ -1466,7 +1466,7 @@
                 border-color: #158466;
 
                 &::after {
-                    border:1px solid #158466;
+                    border: 1px solid #158466;
                     background: url(../img/checkout/radiocheck.png) no-repeat center / 10px;
                 }
             }
@@ -1479,7 +1479,7 @@
             font-weight: 500;
             width: 100%;
             height: 100%;
-            padding: 5px 15px 5px 45px;
+            padding: 5px 10px 5px 35px;
             border: 1px solid #D9DBDF;
             border-radius: 10px;
             min-height: 50px;
@@ -1497,9 +1497,112 @@
                 border-radius: 50%;
                 border: 1px solid rgba(#3B454C, 0.4);
                 position: absolute;
-                left: 15px;
+                left: 8px;
                 top: 50%;
                 transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.prar-select {
+    padding-top: 0;
+
+    .col-lg-6 {
+        padding-top: 20px;
+
+        &.hide {
+            display: none;
+        }
+    }
+}
+
+.startdatewrapper {
+    position: relative;
+
+    label {
+        position: absolute;
+        left: 25px;
+        top: 11px;
+    }
+}
+
+.startdate {
+    width: 100%;
+    height: 43px;
+    color: #3B454C;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 35px;
+    border: 1px solid #D9DBDF;
+    padding-left: 55px;
+}
+.ui-datepicker {
+    background: #fff;
+    border: 1px solid #D9DBDF;
+    border-radius: 10px;
+    width: 235px;
+    padding: 25px;
+    display: none;
+}
+
+.ui-datepicker-title {
+    font-weight: 600;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ui-datepicker-prev {
+    position: absolute;
+    right: 40px;
+    text-indent: 0;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: url(../img/product/date-prev.svg) no-repeat center / auto 100%;
+    cursor: pointer;
+}
+
+.ui-datepicker-next {
+    position: absolute;
+    right: 25px;
+    text-indent: 0;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: url(../img/product/date-next.svg) no-repeat center / auto 100%;
+    cursor: pointer;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+
+    thead {
+        th {
+            span {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    tbody {
+        td {
+            a {
+                color: #5A5D60;
+                font-size: 12px;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                &.ui-state-active {
+                    color: #fff;
+                    background: #158466;
+                }
             }
         }
     }
@@ -1526,4 +1629,17 @@
             margin-bottom: 0;
         }
     }
+
+    .prar-select .col-lg-6 {
+        padding-top: 0;
+    }
+
+    .prar__wrapper {
+        margin-bottom: 20px;
+    }
+
+    .cart__aowrap .cart__aobox {
+        margin-bottom: 10px;
+    }
+
 }

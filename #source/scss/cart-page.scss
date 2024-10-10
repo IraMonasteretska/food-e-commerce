@@ -794,7 +794,7 @@
 }
 
 .cart__aowrap .cart__aobox {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .cart__aowrap .cart__aobox input {
@@ -933,5 +933,12 @@
 
     .cartcontent .chinfosect .chunfosect__body {
         padding: 20px 15px;
+    }
+
+    .cart__aowrap .cart__aobox {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin: 0 0 10px 0;
     }
 }

@@ -1305,7 +1305,7 @@ $(document).ready(function () {
     if ($('.datatable').length) {
         $('#example1').DataTable({
             "dom": 'rtip',
-            "bInfo" : false,
+            "bInfo": false,
             columnDefs: [
                 { targets: [0], orderable: false }
             ],
@@ -1356,9 +1356,41 @@ $(document).ready(function () {
     });
 
 
+    // ------------------
 
+    $(function () {
+        $(".datepicker").datepicker();
+    });
 
+    // product page
+    $('input[name="autoreorder"]').on('change', function () {
+        var selectedValue = $(this).attr('id');
 
-    // prevboughtslider
+        $('.select-weekday, .select-mounthly, .select-startdate').addClass('hide');
+
+        if (selectedValue === 'ar1' || selectedValue === 'ar2') {
+            $('.select-weekday, .select-startdate').removeClass('hide');
+        } else if (selectedValue === 'ar3') {
+            $('.select-mounthly, .select-startdate').removeClass('hide');
+        } else if (selectedValue === 'ar4') {
+            $('.select-weekday, .select-mounthly, .select-startdate').addClass('hide');
+        }
+    });
+
+    // cart page
+    $('.cart__aowrap input[type="radio"]').on('change', function() {
+        var selectedValue = $(this).attr('id');
+        var parentSection = $(this).closest('.cart__aowrap').next('.row');
+
+        parentSection.find('.select-weekday, .select-mounthly, .select-startdate').addClass('hide');
+
+        if (selectedValue.includes('cao1') || selectedValue.includes('cao2')) {
+            parentSection.find('.select-weekday, .select-startdate').removeClass('hide');
+        } else if (selectedValue.includes('cao3')) {
+            parentSection.find('.select-mounthly, .select-startdate').removeClass('hide');
+        } else if (selectedValue.includes('cao4')) {
+            parentSection.find('.select-weekday, .select-mounthly, .select-startdate').addClass('hide');
+        }
+    });
 
 });
