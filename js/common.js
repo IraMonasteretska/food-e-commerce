@@ -1358,9 +1358,11 @@ $(document).ready(function () {
 
     // ------------------
 
-    $(function () {
-        $(".datepicker").datepicker();
-    });
+    if ($('.datepicker').length) {
+        $(function () {
+            $(".datepicker").datepicker();
+        });
+    }
 
     // product page
     $('input[name="autoreorder"]').on('change', function () {
@@ -1378,7 +1380,7 @@ $(document).ready(function () {
     });
 
     // cart page
-    $('.cart__aowrap input[type="radio"]').on('change', function() {
+    $('.cart__aowrap input[type="radio"]').on('change', function () {
         var selectedValue = $(this).attr('id');
         var parentSection = $(this).closest('.cart__aowrap').next('.row');
 
@@ -1392,5 +1394,42 @@ $(document).ready(function () {
             parentSection.find('.select-weekday, .select-mounthly, .select-startdate').addClass('hide');
         }
     });
+
+    // -----------------------
+
+    document.querySelectorAll('.catdiscounts__box input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            const labelsRow = document.querySelector('.labelsrow');
+            const labelText = this.nextElementSibling.querySelector('p').textContent;
+
+            if (this.checked) {
+                const labelBox = document.createElement('div');
+                labelBox.className = 'labelbox';
+                labelBox.innerHTML = `
+                <p>${labelText}</p>
+                <button class="remove">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            `;
+
+
+                labelsRow.appendChild(labelBox);
+
+
+                labelBox.querySelector('.remove').addEventListener('click', () => {
+                    labelBox.remove();
+                    checkbox.checked = false;
+                });
+            } else {
+
+                const existingLabel = Array.from(labelsRow.children).find(child => child.querySelector('p').textContent === labelText);
+                if (existingLabel) existingLabel.remove();
+            }
+        });
+    });
+
+
+
+
 
 });
