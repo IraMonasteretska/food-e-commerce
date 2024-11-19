@@ -1431,7 +1431,7 @@ $(document).ready(function () {
     // hide reminder-registration
     $(document).click(function (event) {
         let $target = $(event.target);
-        if (!$target.closest('.reminder-registration').length) {
+        if (!$target.closest('.reminder-registration').length && !$target.closest('.modal').length) {
             $('.reminder-registration').fadeOut();
         }
     });
@@ -1443,8 +1443,8 @@ $(document).ready(function () {
 
 
 if ($('#discount').length) {
-document.addEventListener('DOMContentLoaded', function () {
-    var myModal = new bootstrap.Modal(document.getElementById('discount'));
-    myModal.show();
-});
+    document.addEventListener('DOMContentLoaded', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('discount'));
+        myModal.show();
+    });
 }
