@@ -1043,7 +1043,7 @@
         }
     }
 
-    
+
     .imgwrap {
         position: relative;
         height: 100%;
@@ -1147,6 +1147,165 @@
     }
 }
 
+// ----
+.reminder-registration {
+    width: 180px;
+    padding: 16px 16px 9px 16px;
+    border-radius: 10px;
+    background: #F4F4F4;
+    box-shadow: 0 4px 9px rgba(#000, 0.3);
+    position: absolute;
+    left: 20px;
+    top: calc(100% + 10px);
+    border: 1px solid rgba(217, 219, 223, 0.6);
+    text-align: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(217, 219, 223, 0.6);
+        border-right: none;
+        border-bottom: none;
+        background: #F4F4F4;
+        top: -9px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 2;
+        transform: rotate(45deg);
+
+    }
+
+    a {
+        display: inline-block;
+        color: #158466;
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 500;
+    }
+
+    .greenbtn {
+        margin-bottom: 8px;
+        color: #fff;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        margin: 0;
+        color: #9AA0A4;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+}
+
+// discount popup
+.custom-backdrop .modal-backdrop {
+    background-color: transparent;
+}
+
+.discountpopup {
+    .modal-content {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .modal-dialog {
+        max-width: 680px;
+    }
+
+    .modal-header {
+        background: #E0AEAD;
+        height: 127px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .header-title {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 100%;
+        color: #158466;
+        text-transform: uppercase;
+    }
+
+    .modal-body {
+        padding: 50px 20px 48px;
+        background: #158466;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .body-title {
+        max-width: 509px;
+        margin: 0 auto 38px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 28px 0;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 100%;
+    }
+
+    .btnswrapper {
+        max-width: 266px;
+        margin: 0 auto;
+
+        a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 100%;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .getcode {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            border-radius: 40px;
+            background: #E0AEAD;
+            color: #21292F;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            width: 100%;
+            margin-bottom: 15px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+
+    .btn-close {
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+}
+
+
 
 
 @media(max-width:1599.8px) {
@@ -1179,11 +1338,38 @@
         padding-top: 30px;
     }
 }
+
 @media(max-width:1550.8px) {
     .maincategories {
         padding-top: 75px;
     }
+
+    .discountpopup .modal-dialog {
+        max-width: 600px;
+    }
+
+    .discountpopup .header-title {
+        font-size: 32px;
+    }
+
+    .discountpopup .modal-header {
+        height: 100px;
+    }
+
+    .discountpopup .body-title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .discountpopup .modal-body {
+        padding: 40px 30px 30px 30px;
+    }
+
+
+
+
 }
+
 @media(max-width:1399.8px) {
     .mnslide.v2 {
         .mbsl__info .title {
@@ -1236,6 +1422,7 @@
 
     .mnslide.v2 .imgwrap {
         position: relative;
+
         img {
             position: absolute;
             left: 0;
@@ -1246,10 +1433,16 @@
             max-width: initial;
         }
     }
+
+    .reminder-registration {
+        left: 0;
+    }
 }
 
 @media(max-width:991.8px) {
-    .mnslide.v1 .imgwrap img, .mnslide.v2 .imgwrap img {
+
+    .mnslide.v1 .imgwrap img,
+    .mnslide.v2 .imgwrap img {
         max-width: initial;
         position: absolute;
         left: 0;
@@ -1291,6 +1484,10 @@
         padding: 60px 0 0 0;
     }
 
+    .reminder-registration {
+        display: none;
+    }
+
 }
 
 @media(max-width:767.8px) {
@@ -1315,6 +1512,12 @@
         max-width: 50%;
         flex: 0 0 50%;
     }
+
+    .discountpopup .modal-dialog {
+        max-width: 500px;
+    }
+
+
 
 
 }
@@ -1348,8 +1551,39 @@
     .maincategory p {
         font-size: 14px;
     }
-    
+
     .maincategory .imgwrap {
         margin-bottom: 15px;
     }
+
+    .discountpopup .header-title {
+        font-size: 24px;
+    }
+
+    .discountpopup .modal-header {
+        height: 70px;
+    }
+
+    .discountpopup .btn-close {
+        top: 10px;
+        right: 10px;
+    }
+
+    .discountpopup .body-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .discountpopup .body-title {
+        padding: 15px 0;
+    }
+
+    .discountpopup .btnswrapper {
+        max-width: 230px;
+    }
+
+    .discountpopup .btnswrapper .getcode {
+        margin-bottom: 10px;
+    }
+
 }
