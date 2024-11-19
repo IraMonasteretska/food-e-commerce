@@ -1428,8 +1428,23 @@ $(document).ready(function () {
         });
     });
 
-
+    // hide reminder-registration
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.reminder-registration').length) {
+            $('.reminder-registration').fadeOut();
+        }
+    });
 
 
 
 });
+
+
+
+if ($('#discount').length) {
+document.addEventListener('DOMContentLoaded', function () {
+    var myModal = new bootstrap.Modal(document.getElementById('discount'));
+    myModal.show();
+});
+}
