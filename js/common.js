@@ -69,7 +69,12 @@ $(document).ready(function () {
     var swiper2 = new Swiper(".productsection-slider.ps1", {
         slidesPerView: 4,
         spaceBetween: 36,
-
+        speed: 1200,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-button-next.custom.sl2",
             prevEl: ".swiper-button-prev.custom.sl2",
@@ -108,6 +113,12 @@ $(document).ready(function () {
     var swiper3 = new Swiper(".productsection-slider.ps2", {
         slidesPerView: 4,
         spaceBetween: 36,
+        speed: 1200,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-button-next.custom.sl3",
             prevEl: ".swiper-button-prev.custom.sl3",
@@ -139,6 +150,12 @@ $(document).ready(function () {
     var swiper4 = new Swiper(".recipes-slider", {
         slidesPerView: 3,
         spaceBetween: 35,
+        speed: 1200,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-button-next.custom.sl4",
             prevEl: ".swiper-button-prev.custom.sl4",
@@ -170,6 +187,12 @@ $(document).ready(function () {
     var swiper5 = new Swiper(".discuss-slider", {
         slidesPerView: 3,
         spaceBetween: 35,
+        speed: 1200,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-button-next.custom.sl5",
             prevEl: ".swiper-button-prev.custom.sl5",
@@ -1436,15 +1459,55 @@ $(document).ready(function () {
         }
     });
 
+    // scroll category
+    var swiper = new Swiper(".maincategory-slider", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        speed: 1200,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next.custom",
+            prevEl: ".swiper-button-prev.custom",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
 
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            375: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            991: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 5,
+            },
+        },
+    });
 
 });
 
 
 
-if ($('#discount').length) {
+// if ($('#discount').length) {
+//     document.addEventListener('DOMContentLoaded', function () {
+//         var myModal = new bootstrap.Modal(document.getElementById('discount'));
+//         myModal.show();
+//     });
+// }
+
+
+if ($('#discount2').length) {
     document.addEventListener('DOMContentLoaded', function () {
-        var myModal = new bootstrap.Modal(document.getElementById('discount'));
+        var myModal = new bootstrap.Modal(document.getElementById('discount2'));
         myModal.show();
     });
 }

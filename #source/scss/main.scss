@@ -1210,6 +1210,7 @@
     background-color: transparent;
 }
 
+// 1 disc
 .discountpopup {
     .modal-content {
         border: none;
@@ -1303,6 +1304,139 @@
         transition: 0.3s;
     }
 
+}
+
+// 2 disc
+.discountpopup2 {
+    .modal-content {
+        border: none;
+        border-radius: 30px;
+        background: #E9F3F0;
+    }
+
+    .modal-dialog {
+        max-width: 374px;
+    }
+
+    .modal-body {
+        padding: 122px 54px 48px 54px;
+        text-align: center;
+    }
+
+    .body-title {
+        margin-bottom: 20px;
+        color: #808080;
+        font-weight: 700;
+    }
+
+    .discont-text {
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 100%;
+        color: #C9273A;
+        margin-bottom: 8px;
+    }
+
+    .inptitle {
+        text-transform: uppercase;
+        color: #3B454C;
+        line-height: 140%;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+
+    form {
+        input {
+            height: 45px;
+            width: 100%;
+            margin-bottom: 9px;
+            border-radius: 40px;
+            background: #fff;
+            padding-left: 24px;
+            font-weight: 500;
+            font-size: 14px;
+            border: none;
+            transition: 0.3s;
+            border: 1px solid #fff;
+
+            &::placeholder {
+                color: #808080;
+            }
+
+            &:focus {
+                border: 1px solid #158466;
+            }
+        }
+
+        .getcode {
+            height: 45px;
+            width: 100%;
+            border-radius: 40px;
+            border: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #158466;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+            margin-bottom: 15px;
+
+            &:hover {
+                background: #13b086;
+            }
+        }
+
+        .btnswrapper {
+            a {
+                color: #808080;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 100%;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .discontpic {
+        position: absolute;
+        left: 0;
+        top: -110px;
+        max-width: 100%;
+    }
+
+    .discclose {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 2;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        outline: none;
+
+        img {
+            width: 24px;
+        }
+    }
+
+}
+
+.sliderwrappersect {
+    position: relative;
+}
+
+.maincategory {
+    display: block;
+    max-width: 250px;
 }
 
 
@@ -1465,12 +1599,12 @@
         font-size: 30px;
     }
 
-    .maincategory {
-        max-width: 33.333%;
-        flex: 0 0 33.333%;
-        margin-bottom: 30px;
-        padding: 0 15px;
-    }
+    // .maincategory {
+    //     max-width: 33.333%;
+    //     flex: 0 0 33.333%;
+    //     margin-bottom: 30px;
+    //     padding: 0 15px;
+    // }
 
     .maincategories {
         padding-bottom: 0;
@@ -1486,6 +1620,10 @@
 
     .reminder-registration {
         display: none;
+    }
+
+    .discountpopup2 .modal-dialog {
+        padding-top: 70px;
     }
 
 }
@@ -1508,10 +1646,10 @@
         padding: 0 20px;
     }
 
-    .maincategory {
-        max-width: 50%;
-        flex: 0 0 50%;
-    }
+    // .maincategory {
+    //     max-width: 50%;
+    //     flex: 0 0 50%;
+    // }
 
     .discountpopup .modal-dialog {
         max-width: 500px;
@@ -1586,4 +1724,25 @@
         margin-bottom: 10px;
     }
 
+    .discountpopup2 .discontpic {
+        width: 260px;
+        display: block;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        top: -40px;
+    }
+
+    .discountpopup2 .modal-body {
+        padding: 122px 40px 40px 40px;
+    }
+   
+
+
+}
+
+@media(max-width:374.8px) {
+    .maincategory {
+        max-width: 100%;
+    }
 }
