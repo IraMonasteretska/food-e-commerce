@@ -1509,7 +1509,25 @@ $(document).ready(function () {
         }
     });
 
+    // Shop products
     
+
+    if ($(window).width() < 1200) {
+        $('.header__nav-dditem span').click(function(){
+            $('.shopproducts-wrap').toggleClass('show');
+        })
+    }
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.shopproducts-wrap').length && !$target.closest('.header__nav-dditem span').length) {
+            $('.shopproducts-wrap').removeClass('show');
+        }
+    });
+
+
+
+
 
 
 
