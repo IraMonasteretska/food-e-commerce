@@ -1493,6 +1493,27 @@ $(document).ready(function () {
         },
     });
 
+
+
+    // SEARCH dropdown
+    const searchField = document.querySelector('.searchinputfield');
+    const searchDropdown = document.querySelector('.search-dd');
+
+    searchField.addEventListener('focusin', () => {
+        searchDropdown.classList.add('active');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!searchField.contains(e.target) && !searchDropdown.contains(e.target)) {
+            searchDropdown.classList.remove('active');
+        }
+    });
+
+    
+
+
+
+
 });
 
 
