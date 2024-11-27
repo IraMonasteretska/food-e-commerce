@@ -1773,10 +1773,28 @@
 
     }
 
+    #timer .days {
+        font-size: 30px;
+    }
 
+    #timer .linetime>div span {
+        font-size: 24px;
+    }
 
+    .timerwrapper .timerwrapper__content a {
+        font-size: 16px;
+        height: 40px;
+        width: 140px;
+        margin-bottom: 10px;
+    }
 
+    .timerwrapper .timerwrapper__content .title {
+        font-size: 42px;
+    }
 
+    .mnslide.v1.sltimer .timerwrapper {
+        padding: 30px 20px;
+    }
 
 }
 
