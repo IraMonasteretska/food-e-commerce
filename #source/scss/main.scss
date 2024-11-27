@@ -905,7 +905,7 @@
 
 // --08.11
 .maincategories {
-    padding: 95px 0 15px;
+    padding: 50px 0 15px;
 
     .d-flex {
         justify-content: space-between;
@@ -914,12 +914,10 @@
 
 .maincategory {
     width: 100%;
-    max-width: 17%;
-    flex: 0 0 17%;
 
     .imgwrap {
         aspect-ratio: 1 / 1;
-        border-radius: 200px;
+        border-radius: 10px;
         // border: 1px solid #e7e7e7;
         border: 1px solid #158466;
         margin-bottom: 28px;
@@ -1244,9 +1242,151 @@
 }
 
 // --------------------------------------
+.maincategory-slider {
+    .swiper-wrapper {
+        padding: 40px 0;
+    }
+
+    .swiper-slide .maincategory {
+        transition: all 300ms linear;
+        transform: scale(0.9);
+
+    }
+
+    .swiper-slide.swiper-slide-active .maincategory {
+        transform: scale(1.2);
+
+    }
+}
+
+.mnslide.v1.sltimer {
+    padding-left: 0;
+
+    .mainslider__centerbox {
+        width: 100%;
+        max-width: calc(60% - 226px);
+        flex: 0 0 calc(60% - 226px);
+    }
+
+    .mainslider__rightbox {
+        width: 100%;
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+}
+
+.timerwrapper {
+    width: 100%;
+    max-width: 226px;
+    flex: 0 0 226px;
+    position: relative;
+    height: 100%;
+    padding: 15px 14px;
+    border-radius: 10px;
+    overflow: hidden;
 
 
+    .timerimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
+    .timerwrapper__content {
+        position: relative;
+        z-index: 2;
+
+        p {
+            font-size: 12px;
+            font-weight: 700;
+            color: #21292F;
+            margin: 0;
+        }
+
+        .title {
+            font-family: "Racing Sans One", sans-serif;
+            text-transform: uppercase;
+            color: #842C2C;
+            line-height: 120%;
+            font-size: 50px;
+            font-size: 36px;
+        }
+
+        a {
+            color: #158466;
+            font-size: 12px;
+            font-weight: 700;
+            height: 30px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 34px;
+            border: 1px solid #158466;
+            margin-bottom: 5px;
+        }
+
+        .minorder {
+            font-weight: 500;
+        }
+    }
+}
+
+#timer {
+    margin-bottom: 6px;
+
+    .days {
+        display: block;
+        text-transform: uppercase;
+        color: #158466;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .linetime {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 120px;
+
+        &>div {
+            width: 100%;
+            max-width: 33.333%;
+            flex: 0 0 33.333%;
+            font-size: 10px;
+            color: #000;
+            font-weight: 500;
+
+            span {
+                display: block;
+                color: #21292F;
+                font-size: 21px;
+                line-height: 120%;
+                font-weight: 400;
+                position: relative;
+
+                &::after {
+                    content: ':';
+                    display: inline-block;
+                    position: absolute;
+                    right: 5px;
+                    top: 0;
+                }
+            }
+
+            &:last-child {
+                span {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media(max-width:1599.8px) {
     .mbsl__info .title {
@@ -1409,13 +1549,6 @@
         font-size: 30px;
     }
 
-    // .maincategory {
-    //     max-width: 33.333%;
-    //     flex: 0 0 33.333%;
-    //     margin-bottom: 30px;
-    //     padding: 0 15px;
-    // }
-
     .maincategories {
         padding-bottom: 0;
     }
@@ -1435,6 +1568,25 @@
     .discountpopup2 .modal-dialog {
         padding-top: 70px;
     }
+
+    .mnslide.v1.sltimer .mainslider__rightbox {
+       display: none;
+    }
+
+    .mnslide.v1.sltimer .mainslider__centerbox {
+        max-width: calc(100% - 226px);
+        flex: 0 0 calc(100% - 226px);
+    }
+
+    .mnslide.v1.sltimer .mbsl__info {
+        padding-top: 50px;
+    }
+
+    .mnslide.v1.sltimer .row {
+        height: 100%;
+    }
+
+
 
 }
 
@@ -1456,17 +1608,29 @@
         padding: 0 20px;
     }
 
-    // .maincategory {
-    //     max-width: 50%;
-    //     flex: 0 0 50%;
-    // }
-
     .discountpopup .modal-dialog {
         max-width: 500px;
     }
 
+    .shopproducts {
+        padding: 20px;
+    }
 
+    .shopproducts__sortby {
+        max-width: 150px;
+        flex: 0 0 150px;
+    }
 
+    .shopproducts__tabs {
+        max-width: calc(100% - 150px);
+        flex: 0 0 calc(100% - 150px);
+        padding-left: 20px;
+    }
+
+    .shopproducts__tab .shoppr__brands ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 
 }
 
@@ -1546,7 +1710,72 @@
     .discountpopup2 .modal-body {
         padding: 122px 40px 40px 40px;
     }
-   
+
+    .shopproducts {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .shopproducts__sortby,
+    .shopproducts__tabs {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .shopproducts__sortby {
+        border-right: none;
+    }
+
+    .shopproducts__tabs {
+        padding-left: 0;
+    }
+
+    .shopproducts__radiowrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shopproducts__radio {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .shopproducts__tab .shoppr__tags .discountbox {
+        margin: 0 6px;
+    }
+
+    .shopproducts .title {
+        font-size: 15px;
+    }
+
+    .maincategories {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .mnslide.v1.sltimer {
+        padding: 0 0 20px 0;
+        height: auto;
+
+        .timerwrapper {
+            height: 300px;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .mainslider__centerbox {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+    }
+
+
+
+
 
 
 }

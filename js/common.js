@@ -56,8 +56,9 @@ $(document).ready(function () {
     // main slider
 
     var swiper = new Swiper(".mainslider", {
-        loop: true,
+        // loop: true,
         spaceBetween: 20,
+        autoHeight: true,
         navigation: {
             nextEl: ".swiper-button-next.custom.sl1",
             prevEl: ".swiper-button-prev.custom.sl1",
@@ -1465,6 +1466,8 @@ $(document).ready(function () {
         spaceBetween: 30,
         speed: 1200,
         loop: true,
+        centeredSlides: true,
+
         navigation: {
             nextEl: ".swiper-button-next.custom",
             prevEl: ".swiper-button-prev.custom",
@@ -1510,10 +1513,20 @@ $(document).ready(function () {
     });
 
     // Shop products
-    
+    const radios = document.querySelectorAll('.shopproducts__radiowrap input[type="radio"]');
+    const tabs = document.querySelectorAll('.shopproducts__tab');
+
+    radios.forEach((radio, index) => {
+        radio.addEventListener('change', () => {
+            tabs.forEach(tab => tab.classList.add('hide'));
+            if (radio.checked) {
+                tabs[index].classList.remove('hide');
+            }
+        });
+    });
 
     if ($(window).width() < 1200) {
-        $('.header__nav-dditem span').click(function(){
+        $('.header__nav-dditem span').click(function () {
             $('.shopproducts-wrap').toggleClass('show');
         })
     }
@@ -1525,7 +1538,35 @@ $(document).ready(function () {
         }
     });
 
+    // Countdown timer
 
+    const compareDate = new Date();
+    compareDate.setDate(compareDate.getDate() + 15); // Встановлюємо кінцеву дату
+
+    function updateTimer() {
+        const now = new Date();
+        const difference = compareDate.getTime() - now.getTime();
+
+        if (difference <= 0) {
+            clearInterval(timerInterval); // Зупиняємо таймер
+            document.getElementById("timer").innerHTML = "Timer finished!";
+            return;
+        }
+
+        const seconds = Math.floor(difference / 1000) % 60;
+        const minutes = Math.floor(difference / (1000 * 60)) % 60;
+        const hours = Math.floor(difference / (1000 * 60 * 60)) % 24;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+    }
+
+    // Запускаємо оновлення кожну секунду
+    updateTimer(); // Виклик перед першим інтервалом
+    const timerInterval = setInterval(updateTimer, 1000);
 
 
 
