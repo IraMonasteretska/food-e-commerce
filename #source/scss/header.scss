@@ -8,9 +8,18 @@ header.header {
     z-index: 11;
     padding: 20px 0 15px;
 
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+
     .col-xl-5 {
         position: initial;
     }
+}
+
+header.header + main {
+    padding-top: 97px;
 }
 
 .header__leftsect {
