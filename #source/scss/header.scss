@@ -1694,6 +1694,8 @@ header.header {
         margin-bottom: 15px;
     }
 
-
+    header.header+main {
+        padding-top: 140px;
+    }
 
 }
