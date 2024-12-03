@@ -391,162 +391,168 @@
     <main class="main">
         <section class="mainslidersect">
             <div class="container">
-                <div class="swiper mainslider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="mnslide v1 sltimer">
-                                <img class="mnslide__bg" src="img/main/mnbg1.png" alt="bg">
-                                <div class="row g-0">
-                                    <div class="timerwrapper">
-                                        <img class="timerimg" src="img/main/rafflebox.png" alt="img">
-                                        <div class="timerwrapper__content">
-                                            <p>Chance to win in the</p>
-                                            <p class="title">raffle!</p>
-                                            <div id="timer">
-                                                <div class="days">
-                                                    <span id="days"></span>days
-                                                </div>
-                                                <div class="linetime">
-                                                    <div class="hours">
-                                                        <span id="hours"></span>hours
-                                                    </div>
-                                                    <div class="minutes">
-                                                        <span id="minutes"></span>min
-                                                    </div>
-                                                    <div class="seconds">
-                                                        <span id="seconds"></span>sec
-                                                    </div>
+                <div class="mainsliderrow">
+                    <div class="timerwrapper">
+                        <img class="timerimg" src="img/main/rafflebox.png" alt="img">
+                        <div class="timerwrapper__content">
+                            <p>Chance to win in the</p>
+                            <p class="title">raffle!</p>
+                            <div id="timer">
+                                <div class="days">
+                                    <span id="days"></span>days
+                                </div>
+                                <div class="linetime">
+                                    <div class="hours">
+                                        <span id="hours"></span>hours
+                                    </div>
+                                    <div class="minutes">
+                                        <span id="minutes"></span>min
+                                    </div>
+                                    <div class="seconds">
+                                        <span id="seconds"></span>sec
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                Order now
+                            </a>
+                            <p class="minorder">Minimum order <b>$75</b></p>
+                        </div>
+                    </div>
+                    <div class="mainsldierwrapper">
+                        <div class="swiper mainslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="mnslide v1">
+                                        <img class="mnslide__bg" src="img/main/mnbg1.png" alt="bg">
+                                        <div class="row g-0">
+                                            <div class="col-xl-1 col-lg-1 col-md-2">
+                                                <p class="mnsl__sponsored">
+                                                    Sponsored
+                                                </p>
+                                                <img class="mnsl__sponsoredlogo" src="img/main/mnlogo1.png" alt="img">
+                                            </div>
+                                            <div class="col-xl-5 col-lg-5 col-md-7">
+                                                <div class="mbsl__info text-center">
+                                                    <p class="title">Chocolate Babka <span>Sugar Free</span></p>
+                                                    <a href="#">
+                                                        Buy now
+                                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
+                                                                fill="#842C2C"></path>
+                                                        </svg>
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <a href="#">
-                                                Order now
-                                            </a>
-                                            <p class="minorder">Minimum order <b>$75</b></p>
-                                        </div>
-                                    </div>
-                                    <div class="mainslider__centerbox">
-                                        <div class="mbsl__info text-center">
-                                            <p class="title">Chocolate Babka <span>Sugar Free</span></p>
-                                            <a href="#">
-                                                Buy now
-                                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
-                                                        fill="#842C2C"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="mainslider__rightbox hidetel">
-                                        <div class="imgwrap text-center">
-                                            <img src="img/main/mnslpic1.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <!-- <div class="swiper-slide">
-                            <div class="mnslide v1">
-                                <img class="mnslide__bg" src="img/main/mnbg1.png" alt="bg">
-                                <div class="row g-0">
-                                    <div class="col-xl-1 col-lg-1 col-md-2">
-                                        <p class="mnsl__sponsored">
-                                            Sponsored
-                                        </p>
-                                        <img class="mnsl__sponsoredlogo" src="img/main/mnlogo1.png" alt="img">
-                                    </div>
-                                    <div class="col-xl-5 col-lg-5 col-md-5">
-                                        <div class="mbsl__info text-center">
-                                            <p class="title">Chocolate Babka <span>Sugar Free</span></p>
-                                            <a href="#">
-                                                Buy now
-                                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
-                                                        fill="#842C2C"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-5 hidetel">
-                                        <div class="imgwrap text-center">
-                                            <img src="img/main/mnslpic1.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="swiper-slide">
-                            <div class="mnslide v2">
-                                <div class="row g-0">
-                                    <div class="col-xl-1 col-lg-1 col-md-2">
-                                        <p class="mnsl__sponsored">
-                                            Sponsored
-                                        </p>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-5 col-md-5">
-                                        <div class="mbsl__info">
-                                            <p class="title">cheating never felt so good.</p>
-                                            <div class="coltext">
-                                                <p>Because you aren’t</p>
-                                                <p>indulge in gluten free goodness</p>
+                                            <div class="col-xl-6 col-lg-6 col-md-5 hidetel">
+                                                <div class="imgwrap text-center">
+                                                    <img src="img/main/mnslpic1.png" alt="img">
+                                                </div>
                                             </div>
-                                            <a href="#">
-                                                Buy now
-                                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
-                                                        fill="#fff"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-5 col-lg-6 col-md-5 hidetel">
-                                        <div class="imgwrap text-right">
-                                            <img src="img/main/mnslpic2.png" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="mnslide">
-                                <div class="row g-0">
-                                    <div class="col-xl-1 col-lg-1 col-md-2">
-                                        <p class="mnsl__sponsored">
-                                            Sponsored
-                                        </p>
-                                    </div>
-                                    <div class="col-xl-5 col-lg-5 col-md-5">
-                                        <div class="mbsl__info">
-                                            <p class="title">Your product here!</p>
-                                            <p>See how you can have your product shown here</p>
-                                            <a href="#">
-                                                Buy now
-                                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                            </a>
+                                <div class="swiper-slide">
+                                    <div class="mnslide v2">
+                                        <div class="row g-0">
+                                            <div class="col-xl-1 col-lg-1 col-md-2">
+                                                <p class="mnsl__sponsored">
+                                                    Sponsored
+                                                </p>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-5 col-md-7">
+                                                <div class="mbsl__info">
+                                                    <p class="title">cheating never felt so good.</p>
+                                                    <div class="coltext">
+                                                        <p>Because you aren’t</p>
+                                                        <p>indulge in gluten free goodness</p>
+                                                    </div>
+                                                    <a href="#">
+                                                        Buy now
+                                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
+                                                                fill="#fff"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-6 col-md-5 hidetel">
+                                                <div class="imgwrap text-right">
+                                                    <img src="img/main/mnslpic2.png" alt="img">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-5 hidetel"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mnslide v3">
+                                        <div class="row g-0">
+                                            <div class="col-xl-1 col-lg-1 col-md-2">
+                                                <p class="mnsl__sponsored">
+                                                    Sponsored 
+                                                </p>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-5 col-md-7">
+                                                <div class="mbsl__info">
+                                                    <p class="title">Have a cake and eat it too!</p>
+                                                   <p>tempting recipes to treat the heath conscious</p>
+                                                    <a href="#">
+                                                        Buy now
+                                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
+                                                                fill="#fff"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-6 col-md-5 hidetel">
+                                                <div class="imgwrap text-right">
+                                                    <img src="img/main/mnslpic3.png" alt="img">
+                                                </div>
+                                                <img class="topbnpic" src="img/main/mnslpic3_1.png" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mnslide">
+                                        <div class="row g-0">
+                                            <div class="col-xl-1 col-lg-1 col-md-2">
+                                                <p class="mnsl__sponsored">
+                                                    Sponsored
+                                                </p>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-5 col-md-7">
+                                                <div class="mbsl__info">
+                                                    <p class="title">Your product here!</p>
+                                                    <p>See how you can have your product shown here</p>
+                                                    <a href="#">
+                                                        Buy now
+                                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M21.3454 9.907L14.9287 3.782C14.7558 3.62261 14.5242 3.53442 14.2839 3.53641C14.0436 3.5384 13.8136 3.63043 13.6437 3.79266C13.4737 3.95489 13.3773 4.17435 13.3752 4.40377C13.3731 4.6332 13.4655 4.85422 13.6325 5.01925L18.4844 9.65062H2.36393C2.12082 9.65062 1.88766 9.74281 1.71575 9.90691C1.54384 10.071 1.44727 10.2936 1.44727 10.5256C1.44727 10.7577 1.54384 10.9802 1.71575 11.1443C1.88766 11.3084 2.12082 11.4006 2.36393 11.4006H18.4844L13.6325 16.032C13.545 16.1127 13.4751 16.2093 13.4271 16.316C13.379 16.4228 13.3538 16.5376 13.3527 16.6538C13.3516 16.77 13.3748 16.8852 13.4209 16.9927C13.467 17.1002 13.5351 17.1979 13.6212 17.2801C13.7072 17.3623 13.8096 17.4272 13.9222 17.4712C14.0349 17.5152 14.1556 17.5374 14.2773 17.5363C14.399 17.5353 14.5193 17.5112 14.6311 17.4653C14.743 17.4195 14.8441 17.3528 14.9287 17.2693L21.3454 11.1442C21.5172 10.9802 21.6137 10.7576 21.6137 10.5256C21.6137 10.2936 21.5172 10.0711 21.3454 9.907Z"
+                                                                fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-5 hidetel"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-button-next custom sl1"></div>
+                    <div class="swiper-button-next custom sl1"></div>
                 <div class="swiper-button-prev custom sl1"></div>
+                </div>
             </div>
         </section>
 

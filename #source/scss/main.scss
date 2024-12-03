@@ -715,7 +715,7 @@
             }
 
             &:nth-child(1) {
-                font-size: 20px;
+                font-size: 18px;
                 color: #fff;
                 line-height: 110%;
                 font-weight: 600;
@@ -723,7 +723,7 @@
             }
 
             &:nth-child(2) {
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 500;
                 font-family: 'Mustard';
                 line-height: 140%;
@@ -749,7 +749,7 @@
         font-family: "Poetsenone";
         color: #fff;
         line-height: 110%;
-        font-size: 49px;
+        font-size: 40px;
         margin-bottom: 25px;
         text-transform: uppercase;
         font-weight: 400;
@@ -771,7 +771,7 @@
         border-radius: 40px;
         border: 2px solid #fff;
         color: #fff;
-        font-size: 16.6px;
+        font-size: 16px;
         font-weight: 700;
         transition: 0.3s;
 
@@ -867,7 +867,7 @@
 
     .mbsl__info {
         .title {
-            font-size: 36px;
+            font-size: 28px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
         }
@@ -1388,9 +1388,92 @@
     }
 }
 
+.mnslide.v3 {
+    background: #13B086;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 173px;
+        height: 173px;
+        background: #158466;
+        position: absolute;
+        left: -86px;
+        bottom: -69px;
+        border-radius: 50%;
+    }
+
+    .mbsl__info {
+        text-align: center;
+        padding-top: 35px;
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .mnsl__sponsored {
+        color: rgba(#3B454C, 0.7);
+    }
+
+    .imgwrap {
+        height: 226px;
+
+        img {
+            width: 440px;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    }
+
+    .hidetel {
+        position: relative;
+    }
+
+    .topbnpic {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: drop-shadow(5px 7px 12px rgba(#000, 0.25));
+        width: 140px;
+    }
+
+}
+
+
+
+
+
+
+
+
+.mainsliderrow {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.mainsldierwrapper {
+    width: 100%;
+    max-width: calc(100% - 226px);
+    flex: 0 0 calc(100% - 226px);
+    padding-left: 12px;
+}
+
+.mnslide.v2 .imgwrap img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
+
 @media(max-width:1599.8px) {
     .mbsl__info .title {
-        font-size: 40px;
+        font-size: 36px;
         margin-bottom: 20px;
     }
 
@@ -1416,6 +1499,32 @@
 
     .mnslide.v1 .mbsl__info {
         padding-top: 30px;
+    }
+
+
+
+    .mnslide.v1 .mbsl__info .title {
+        font-size: 36px;
+    }
+
+    .mnslide.v3 .mbsl__info .title {
+        font-size: 30px;
+    }
+
+    .mnslide.v2 .mbsl__info .title {
+        font-size: 24px;
+    }
+
+    .mnslide .coltext p:first-child {
+        font-size: 15px;
+    }
+
+    .mnslide .coltext p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .mbsl__info {
+        padding-left: 10px;
     }
 }
 
@@ -1453,12 +1562,13 @@
 @media(max-width:1399.8px) {
     .mnslide.v2 {
         .mbsl__info .title {
-            font-size: 27px;
+            font-size: 24px;
         }
     }
 
     .mbsl__info {
         padding-left: 10px;
+        padding-top: 15px;
     }
 
     .mnslide .coltext p:first-child {
@@ -1476,6 +1586,29 @@
     .maincategory p {
         font-size: 16px;
     }
+
+    .mnsl__sponsored {
+        font-size: 12px;
+    }
+
+    .mnslide.v2 .mbsl__info .title,
+    .mnslide .coltext {
+        margin-bottom: 10px;
+    }
+
+    .mnslide.v3 .mbsl__info {
+        padding-top: 25px;
+    }
+
+    .mbsl__info .title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .mbsl__info p {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media(max-width:1199.8px) {
@@ -1521,6 +1654,23 @@
     .header__nav .header__nav-dditem span:hover+.shopproducts-wrap {
         display: none;
     }
+
+    .timerwrapper {
+        height: 260px;
+    }
+
+    .mnsl__sponsored {
+        font-size: 10px;
+    }
+
+    .mnslide.v3 .imgwrap {
+        height: 260px;
+    }
+
+    .mbsl__info {
+        padding-top: 25px;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -1534,7 +1684,7 @@
     }
 
     .mnslide.v2 .mbsl__info .title {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .mnslide .coltext p:nth-child(2) {
@@ -1546,7 +1696,7 @@
     }
 
     .mbsl__info .title {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .maincategories {
@@ -1570,7 +1720,7 @@
     }
 
     .mnslide.v1.sltimer .mainslider__rightbox {
-       display: none;
+        display: none;
     }
 
     .mnslide.v1.sltimer .mainslider__centerbox {
@@ -1586,7 +1736,16 @@
         height: 100%;
     }
 
+    .mnslide  {
+        .col-xl-1 {
+            display: none;
+        }
+    }
 
+    .mnslide.v3 .mbsl__info .title {
+        font-size: 24px;
+    }
+    
 
 }
 
@@ -1630,6 +1789,68 @@
     .shopproducts__tab .shoppr__brands ul li {
         max-width: 100%;
         flex: 0 0 100%;
+    }
+
+    .timerwrapper {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .timerwrapper .timerwrapper__content .title {
+        font-size: 46px;
+    }
+
+    #timer .days {
+        font-size: 28px;
+    }
+
+    .timerwrapper {
+        height: auto;
+    }
+
+    #timer .linetime>div span {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    #timer .linetime>div span:after {
+        top: -2px;
+    }
+
+    .timerwrapper .timerwrapper__content a {
+        height: 40px;
+        width: 180px;
+        font-size: 16px;
+    }
+
+    #timer .linetime {
+        max-width: 160px;
+    }
+
+    .mainsldierwrapper {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .mnslide .row {
+        height: auto;
+    }
+
+    .mnslide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 260px;
+    }
+
+    .mainslidersect .swiper-button-next.custom, .mainslidersect .swiper-button-prev.custom {
+        top: initial !important;
+        bottom: 110px;
+    }
+
+    .mainsldierwrapper {
+        padding-left: 0;
     }
 
 }
