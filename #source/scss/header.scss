@@ -1569,6 +1569,23 @@ header.header {
     }
 }
 
+.shopproducts {
+    overflow: auto;
+    max-height: calc(100vh - 200px);
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ededed;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #158466;
+        border-radius: 10px;
+    }
+}
 
 @media(max-width:1600.8px) {
 

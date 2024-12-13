@@ -1539,36 +1539,35 @@ $(document).ready(function () {
     });
 
     // Countdown timer
+    if ($('#timer').length) {
+        const compareDate = new Date();
+        compareDate.setDate(compareDate.getDate() + 15); // Встановлюємо кінцеву дату
 
-    const compareDate = new Date();
-    compareDate.setDate(compareDate.getDate() + 15); // Встановлюємо кінцеву дату
+        function updateTimer() {
+            const now = new Date();
+            const difference = compareDate.getTime() - now.getTime();
 
-    function updateTimer() {
-        const now = new Date();
-        const difference = compareDate.getTime() - now.getTime();
+            if (difference <= 0) {
+                clearInterval(timerInterval); // Зупиняємо таймер
+                document.getElementById("timer").innerHTML = "Timer finished!";
+                return;
+            }
 
-        if (difference <= 0) {
-            clearInterval(timerInterval); // Зупиняємо таймер
-            document.getElementById("timer").innerHTML = "Timer finished!";
-            return;
+            const seconds = Math.floor(difference / 1000) % 60;
+            const minutes = Math.floor(difference / (1000 * 60)) % 60;
+            const hours = Math.floor(difference / (1000 * 60 * 60)) % 24;
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
         }
 
-        const seconds = Math.floor(difference / 1000) % 60;
-        const minutes = Math.floor(difference / (1000 * 60)) % 60;
-        const hours = Math.floor(difference / (1000 * 60 * 60)) % 24;
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-        document.getElementById("days").textContent = days;
-        document.getElementById("hours").textContent = hours;
-        document.getElementById("minutes").textContent = minutes;
-        document.getElementById("seconds").textContent = seconds;
+        // Запускаємо оновлення кожну секунду
+        updateTimer(); // Виклик перед першим інтервалом
+        const timerInterval = setInterval(updateTimer, 1000);
     }
-
-    // Запускаємо оновлення кожну секунду
-    updateTimer(); // Виклик перед першим інтервалом
-    const timerInterval = setInterval(updateTimer, 1000);
-
-
 
 
 
